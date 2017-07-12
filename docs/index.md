@@ -4,7 +4,7 @@ layout: default
 
 ---
 
-# Hi, I'm YOUR NAME HERE
+# Hi, I'm Julien Assouline
 
 This is my site of projects for the [Lede Program](http://ledeprogram.com)
 

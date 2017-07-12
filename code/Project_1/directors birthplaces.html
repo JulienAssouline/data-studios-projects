@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Loading TopoJSON data and generating SVG paths</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .country1{
+    fill: #E8E8E8;
+  }  
+  .country2{
+    fill: #E8E8E8;
+  }  
+
+   #chart1{
+    background-color: #F5F2EB;
+    border: 1px solid #F5F2EB;
+  }
+
+  #chart2 {
+    background-color: #F5F2EB;
+    border: 1px solid #F5F2EB;
+  }
+
+  #chart3{
+    background-color: #F5F2EB;
+    border: 1px solid #F5F2EB;
+  }
+
+ /* rect {
+    fill: #7f0000;
+    stroke: #7f0000;
+    fill-opacity: 0;
+    stroke-width: 1.5;
+
+  }*/
+
+  div.tooltip1 { 
+    position: absolute;     
+    text-align: center;     
+    width: 190px;          
+    height: 18px;  
+    padding: 5px;       
+    font: 14px sans-serif;    
+    background: white; 
+    border: rgba(0,0,0,0.3) solid 1px;
+    pointer-events: none;     
+}
+
+div.tooltip2 { 
+    position: absolute;     
+    text-align: center;     
+    width: 190px;          
+    height: 18px;  
+    padding: 5px;       
+    font: 14px sans-serif;    
+    background: white; 
+    border: rgba(0,0,0,0.3) solid 1px;
+    pointer-events: none;     
+}
+
+div.tooltip3 { 
+    position: absolute;     
+    text-align: center;     
+    width: 180px;          
+    height: 25px;  
+    padding: 5px;       
+    font: 14px sans-serif;    
+    background: #F5F2EB; 
+    pointer-events: none;     
+}
+
+
+.axis1 path,
+.axis1 line {
+    fill: none;
+    stroke: #F5F2EB;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+
+  .axis2 path,
+  .axis2 line {
+    fill: none;
+    stroke: #F5F2EB;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+
+  .axis3 path,
+  .axis3 line {
+    fill: none;
+    stroke: none;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+  }
+
+  .gridlines path,
+  .gridlines line {
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.3;
+    stroke-dasharray: 5,3;
+  }
+
+
+
+  </style>
+  </head>
+  <body>
+  <h1 align="middle" style = "font-size:35px;"> The Lack of Diversity in BBC's List of Best Movies of the 21st Century</h1>
+
+  <div align="left" style="width:600px; margin:0 auto; font-size:17px">
+  <br>
+    In late August of 2016, the BBC came out with a list of the 100 best movies of the 21st century. The goal of the list was to demonstrate that movies aren't dead, that "If you can’t find masterpieces amid the blockbuster flotsam, you simply aren’t looking hard enough," wrote the BBC.  
+    <br>
+
+<br>
+This reaction from the BBC Culture editors came after they asked critics to name the greatest American films of all time, and only six films made since 2000 made the top 100 list. What they hoped to show from this list was that movies from the 21st century are just as good as any, from any era. <br>
+
+<br>
+Now, obviously, this exercise is completely futile. Making a new arbitrary list because you are not happy with the results from the old arbitrary list won't exactly deliver much insight into the greatness of movies in the 21st century. <br>
+
+<br>
+Truth be told, the list is fun but doesn't provide mush insight. What is interesting, however, is that this time the BBC decided to reveal how the critics voted. <br>
+
+<br>
+They were also nice enough to provide where the critics are from, and thanks to this information, it's easy to examine a potential bias within the list. <br>
+
+</div>
+
+   <h1> Most critics are from the U.S. and it's not even close</h1>
+  <div id="critics"></div>
+
+  <div align="right" style="width:800px; margin:0 auto; font-size:12px; color: grey; font-style: italic;">
+
+<br>Source: BBC
+ <br>
+ </div>
+
+  <div align="left" style="width:600px; margin:0 auto; font-size:17px">
+
+
+<br> Ya, most critics are from the US.  Eighty-two of the 177 to be exact. <br>
+
+<br>There's a myriad of problems associated with having about half of the critics from the list from one country. If your sample of people mostly comes from one area of the world, you are going to be missing out on different points of views. People around the world grow up learning different things and having vastly different experiences and viewpoints. When you have such a skewed sample, you usually miss out on getting those experiences, and the different types of knowledge. <br>
+
+<br>This sort of skewed sample can also cause problems with the voting results. While examining where a film was filmed can be difficult, and probably inaccurate due to the different locations movies are filmed nowadays, we can examine where the directors are from. <br> 
+</div>
+
+<div align="left" style="width:600px; margin:0 auto; font-size:13px; font-style: italic;">
+
+<br>Movies with multiple directors were excluded from this sample. <br>
+</div>
+
+
+  <h1> Most Directors are from the US, obviously. </h1>
+  <div id="directors"></div>
+
+   <div align="right" style="width:800px; margin:0 auto; font-size:12px; color: grey; font-style: italic;">
+
+<br>Source: BBC, Wikipedia
+ <br>
+ </div>
+
+<div align="left" style="width:600px; margin:0 auto; font-size:17px;">
+
+<br>Of the 413 directors, where a birthplace was matched, 113 of them came from the US. The United Kingdom can boast that 47 directors on the list came from their country, and France can claim 31 directors. 
+ <br>
+
+<br>
+But, the issue remains an all too familiar. While the US isn't responsible for half of the directors, it is clear that North America and Europe dominate this sample. <br>
+
+<br>Africa and South America are barely represented in this list. With so few critics around those areas, it's possible that some real gems were missed. <br>
+
+</div>
+
+<br>
+
+ <br>
+
+ <h1 align="middle" style="font-size:25px"> Examining the Movies </h1>
+
+  
+  <div id="count_and_mean"></div>
+
+  <div align="right" style="width:800px; margin:0 auto; font-size:12px; color: grey; font-style: italic;">
+
+<br>Source: BBC
+ <br>
+ </div>
+
+<div align="left" style="width:600px; margin:0 auto; font-size:17px;">
+
+<br>Mulholland Drive was deemed as the best movie of the 21st century, but not every critic had it on their ballot. In fact, it wasn't the movie most voted for. That award goes to In the Mood for Love, directed and written by Kar-Wai Wong.  <br>
+
+ <br>Mulholland Drive, however, had a higher average rank, and that's probably what got it over the top, as the best movie of the 21st century.  <br>
+
+ <br>But, that is not the most interesting part of this dataset. It's not even the most delightful one. The most interesting, at least to yours truly, is the movies with an average rank of 1. Meaning that on average that movie was voted as the best movie of the 21st century. The irony though is that every movie with that rating was only voted for once.  <br>
+
+ <br>Basically, someone, a critic, loved that movie very much, but no other critic thought it was worthy of their top 10.  <br>
+
+ <br>It's the emblematic reminder of how subjective this process is. Even critics, who are trained, and who watch movies on end can't really seem to agree which movie is the best.  <br>
+</div>
+
+ <h1 align="middle" style="font-size:25px"></h1>
+
+  <div id="Genres"></div>
+  <div align="right" style="width:800px; margin:0 auto; font-size:12px; color: grey; font-style: italic;">
+
+<br>Source: BBC, Box Office Mojo
+ <br>
+ </div>
+  <!-- <div id="year"></div> -->
+
+  <script src="critics_world_map2.js"></script>
+  <script src="directors birthplaces2.js"></script>
+  <script src="Movie Genres2.js"></script>
+  <script src="Movies count and mean2.js"></script>
+    <!-- <script src="Movies by Year2.js"></script> -->
+
+
+
+
+
+  </body>
+</html>

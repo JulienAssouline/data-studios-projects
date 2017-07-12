@@ -1,0 +1,599 @@
+,Movies,count,mean
+0,12 Years a Slave,10,6.2
+1,2046,2,4.0
+2,24 Hour Party People,2,6.0
+3,25th Hour,12,5.5
+4,3-Iron,2,3.0
+5,35 Shots of Rum,5,7.4
+6,"4 Months, 3 Weeks & 2 Days",17,5.235294117647059
+7,5 Broken Cameras,1,8.0
+8,5x2,1,8.0
+9,678,1,8.0
+10,7 Letters,1,10.0
+11,99 Homes,1,6.0
+12,A Borrowed Identity,1,4.0
+13,A Commuter’s Life,2,7.5
+14,A Girl Walks Home Alone at Night,1,8.0
+15,A History of Violence,6,4.833333333333333
+16,A Letter to Nelson Mandela,1,3.0
+17,A Pigeon Sat on a Branch Reflecting on Existence,3,6.0
+18,A Prophet,7,7.0
+19,A Separation,28,5.571428571428571
+20,A Serious Man,8,7.5
+21,A Single Man,1,5.0
+22,A Tale of Two Sisters,1,7.0
+23,A Time for Drunken Horses,1,2.0
+24,A Touch of Sin,4,7.25
+25,A Vingança de Uma Mulher,1,8.0
+26,AI: Artificial Intelligence,4,4.0
+27,About Elly,3,8.666666666666666
+28,Actress,1,10.0
+29,Adaptation,3,5.666666666666667
+30,Adventureland,1,9.0
+31,After the Wedding,1,10.0
+32,Ajami,1,10.0
+33,Alexandre Sokurov,1,3.0
+34,All Divided Selves,1,10.0
+35,Almayer's Folly,1,7.0
+36,Almost Famous,4,3.75
+37,Alpha Dog,1,5.0
+38,American Hustle,1,8.0
+39,American Psycho,3,6.0
+40,American Splendor,1,8.0
+41,Amores Perros,4,6.75
+42,Amour,8,5.0
+43,Amélie,5,5.6
+44,An Injury to One,1,4.0
+45,Anchorman: The Legend of Ron Burgundy,1,9.0
+46,Animal Kingdom,2,5.5
+47,Ankhon Dekhi,1,1.0
+48,Anomalisa,1,3.0
+49,Another Year,1,6.0
+50,Antichrist,2,3.5
+51,Apocalypto,1,4.0
+52,Arabian Nights: Volume 1 – The Restless One,1,8.0
+53,Archipelago,1,5.0
+54,As I Was Moving Ahead Occasionally I Saw Brief Glimpses of Beauty,1,9.0
+55,At the First Breath of Wind,1,7.0
+56,Attack the Block,2,8.5
+57,Aurora,1,10.0
+58,Avatar,2,8.0
+59,Babel,1,2.0
+60,Bad Education,2,6.5
+61,Bad Lieutenant: Port of Call New Orleans,1,10.0
+62,Bamboozled,1,10.0
+63,Barbara,1,10.0
+64,Battle Royale,1,8.0
+65,Battle in Heaven,1,5.0
+66,Be Kind Rewind,1,8.0
+67,Beasts of the Southern Wild,2,5.5
+68,Before Midnight,2,3.5
+69,Before Sunset,5,4.6
+70,Before the Devil Knows You're Dead,1,9.0
+71,Beginners,1,10.0
+72,Belle,1,10.0
+73,Bend It Like Beckham,1,2.0
+74,Best in Show,1,9.0
+75,Beyond the Hills,1,3.0
+76,Birdman,5,7.2
+77,Birth,2,3.0
+78,Black Swan,1,4.0
+79,Blissfully Yours,1,7.0
+80,Blue Is the Warmest Color,7,4.285714285714286
+81,Blue Valentine,3,7.333333333333333
+82,Bone Tomahawk,1,10.0
+83,Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan,5,9.8
+84,Bowling for Columbine,2,9.5
+85,Boyhood,30,4.566666666666666
+86,Brick,2,8.0
+87,Bridesmaids,3,5.666666666666667
+88,Bright Star,1,1.0
+89,Brokeback Mountain,11,6.363636363636363
+90,Brooklyn,6,3.5
+91,Burning Bush,1,7.0
+92,Butter on the Latch,1,6.0
+93,Caché,13,5.461538461538462
+94,Café Lumière,2,5.0
+95,Capitalism: Child Labor,1,2.0
+96,Captain America: Winter Soldier,1,3.0
+97,Caramel,1,1.0
+98,Carlos,3,4.0
+99,Carol,6,5.333333333333333
+100,Casino Royale,4,7.75
+101,Cast Away,1,7.0
+102,Cave of Forgotten Dreams,1,7.0
+103,Centochiodi,1,10.0
+104,Certified Copy,9,5.777777777777778
+105,Chakde! India,1,6.0
+106,Che,2,7.0
+107,Chicago,1,7.0
+108,Children of Men,18,4.777777777777778
+109,Chuck & Buck,1,2.0
+110,City of God,10,5.8
+111,Climates,1,3.0
+112,Closed Curtain,1,6.0
+113,Collateral,1,3.0
+114,Colossal Youth,2,5.0
+115,Coma,1,10.0
+116,Coming Home,1,10.0
+117,Conversations on a Sunday Afternoon,1,9.0
+118,Cosmos,1,2.0
+119,Court,1,2.0
+120,Crank,1,6.0
+121,Crimson Gold,1,10.0
+122,"Crouching Tiger, Hidden Dragon",8,4.0
+123,Cuba: An African Odyssey,1,3.0
+124,Dancer in the Dark,2,5.5
+125,Daylight Moon,1,5.0
+126,Days of Glory,2,5.5
+127,Death Proof – Grindhouse,1,8.0
+128,Detention,1,7.0
+129,Dev D,1,5.0
+130,Dirty Pretty Things,1,5.0
+131,Distant,3,6.666666666666667
+132,District 9,3,8.333333333333334
+133,Divine Intervention,1,9.0
+134,Django Unchained,1,3.0
+135,Dogtooth,2,6.5
+136,Dogville,5,5.0
+137,Donnie Darko,3,8.666666666666666
+138,Dreams of a Life,1,3.0
+139,Drive,2,6.0
+140,Déjà Vu,1,9.0
+141,"Eat, Sleep, Die",1,9.0
+142,Eden,2,4.5
+143,Eldorado,1,9.0
+144,Elena,1,4.0
+145,Elephant,6,7.666666666666667
+146,Enter the Void,3,5.333333333333333
+147,Eternal Sunshine of the Spotless Mind,29,4.827586206896552
+148,Even If She Had Been a Criminal...,1,4.0
+149,Everyone Else,1,8.0
+150,Evolution of a Filipino Family,1,5.0
+151,Ex Machina,2,4.0
+152,Extraordinary Stories,1,6.0
+153,Ezra,1,10.0
+154,Fados,1,10.0
+155,Fantastic Mr Fox,4,7.75
+156,Far From Heaven,5,5.6
+157,Fat Girl,2,7.0
+158,Father of My Children,1,10.0
+159,Femme Fatale,5,8.4
+160,Film socialisme,2,3.5
+161,Finding Nemo,4,6.5
+162,Fish Tank,5,3.8
+163,Footnote,1,6.0
+164,Four Lions,1,5.0
+165,Frances Ha,2,9.0
+166,From What Is Before,1,9.0
+167,Frontier of Dawn,1,9.0
+168,Frozen,1,7.0
+169,Frozen River,1,9.0
+170,Fruitvale Station,4,8.25
+171,Gangs of Wasseypur,1,7.0
+172,Gerry,1,9.0
+173,Gett: The Trial of Viviane Amselem,1,1.0
+174,Ghost World,2,7.0
+175,Girl Walk: All Day,1,10.0
+176,Girlhood,1,6.0
+177,Gladiator,2,6.5
+178,Godzilla,1,9.0
+179,Gone Girl,1,6.0
+180,Good Bye Lenin!,2,4.5
+181,Good Night and Good Luck,2,2.5
+182,Goodbye to Language,6,4.0
+183,"Goodbye, Dragon Inn",1,10.0
+184,Gosford Park,2,8.5
+185,Gostanza da Libbiano,1,5.0
+186,Gran Torino,1,4.0
+187,Gravity,3,7.666666666666667
+188,Grizzly Man,4,8.75
+189,Hard to Be a God,2,3.0
+190,Hazaaron Khwaishein Aisi,1,8.0
+191,Head-On,1,9.0
+192,Heart of a Dog,1,10.0
+193,Heaven Knows What,1,7.0
+194,Heaven's Story,1,8.0
+195,Hedwig and the Angry Inch,1,6.0
+196,Her,6,6.333333333333333
+197,Hero,2,4.5
+198,High Fidelity,1,9.0
+199,Hijack Stories,1,9.0
+200,Holy Motors,16,4.8125
+201,Hooligan Sparrow,1,9.0
+202,Horse Money,1,5.0
+203,Hotel Rwanda,1,5.0
+204,House of Flying Daggers,1,5.0
+205,How to Survive a Plague,1,6.0
+206,Hugo,1,2.0
+207,Human,1,8.0
+208,Hunger,1,7.0
+209,I Am Love,2,7.5
+210,I Don't Want to Sleep Alone,1,10.0
+211,"I Travel Because I Have To, I Come Back Because I Love You",1,10.0
+212,Ida,6,4.333333333333333
+213,Idiocracy,2,8.0
+214,Import Export,1,7.0
+215,In Jackson Heights,1,6.0
+216,In Praise of Love,1,1.0
+217,In Vanda’s Room,1,10.0
+218,In the Family,1,7.0
+219,In the Mood for Love,49,4.081632653061225
+220,Incendies,1,10.0
+221,Inception,7,5.0
+222,Infernal Affairs,2,8.5
+223,Inglourious Basterds,10,7.3
+224,Inherent Vice,4,3.5
+225,Inland Empire,1,7.0
+226,Inside Llewyn Davis,20,4.55
+227,Inside Out,8,4.75
+228,Instructions for a Light and Sound Machine,1,5.0
+229,Into Great Silence,1,9.0
+230,Irreversible,1,10.0
+231,It's Such a Beautiful Day,3,7.333333333333333
+232,I’m Going Home,1,10.0
+233,I’m Not There,1,4.0
+234,Jackass 3D,1,10.0
+235,Japon,1,10.0
+236,Jersey Boys,1,1.0
+237,Journey to the West,1,6.0
+238,Katyn,1,4.0
+239,Kill Bill: Vol. 1,5,7.4
+240,Kill Bill: Vol. 2,1,10.0
+241,Kill List,1,7.0
+242,Kings and Queen,1,2.0
+243,Kiss Kiss Bang Bang,1,9.0
+244,Knight of Cups,1,5.0
+245,Kung Fu Hustle,1,4.0
+246,"LSD: Love, Sex Aur Dhokha",1,3.0
+247,La Ciénaga,1,5.0
+248,La commune,1,1.0
+249,Lagaan: Once Upon a Time in India,2,9.5
+250,Le filmeur,1,5.0
+251,Le quattro volte,1,3.0
+252,Let the Right One In,3,3.3333333333333335
+253,Letters From Iwo Jima,3,6.333333333333333
+254,Leviathan,10,5.4
+255,Life of Pi,1,5.0
+256,Lifeline,1,2.0
+257,Like Someone In Love,2,2.5
+258,Lilya 4-Ever,2,7.5
+259,Lincoln,1,4.0
+260,Listen to Me Marlon,1,7.0
+261,Locke,1,3.0
+262,Longing,1,3.0
+263,Los Angeles Plays Itself,1,1.0
+264,Lost and Beautiful,1,10.0
+265,Lost in Translation,12,5.0
+266,Lourdes,1,7.0
+267,Love & Basketball,2,7.0
+268,Love & Friendship,1,9.0
+269,Love Actually,1,5.0
+270,Love Exposure,1,8.0
+271,Lumumba,1,6.0
+272,"Lust, Caution",1,5.0
+273,Mad Max: Fury Road,14,4.928571428571429
+274,Madagascar 3: Europe's Most Wanted,1,5.0
+275,Making Of,1,4.0
+276,Man on Wire,3,7.666666666666667
+277,Manakamana,1,6.0
+278,Manchester by the Sea,3,7.0
+279,Maqbool,2,9.0
+280,Margaret,9,4.333333333333333
+281,Master and Commander: The Far Side of the World,1,7.0
+282,Match Point,1,10.0
+283,Me and You and Everyone We Know,1,5.0
+284,Meek's Cutoff,1,6.0
+285,Melancholia,7,4.142857142857143
+286,Memento,11,4.909090909090909
+287,Memories of Murder,3,8.666666666666666
+288,Men at Work,1,4.0
+289,Mia Madre,3,5.666666666666667
+290,Miami Vice,1,8.0
+291,Michael Clayton,2,6.0
+292,Michelangelo Eye to Eye,1,5.0
+293,Middle of Nowhere,1,10.0
+294,Millennium Actress,1,6.0
+295,Millennium Mambo,2,6.5
+296,Million Dollar Baby,3,5.333333333333333
+297,Miners Shot Down,1,7.0
+298,Minority Report,2,8.0
+299,Mommy,3,7.0
+300,Monsoon Wedding,2,4.5
+301,Monster,1,10.0
+302,"Monsters, Inc.",1,7.0
+303,Moolaadé,5,3.6
+304,Moon,1,1.0
+305,Moonrise Kingdom,5,6.4
+306,Morvern Callar,2,7.5
+307,Mosaik mécanique,1,10.0
+308,Mother,3,8.666666666666666
+309,Moulin Rouge!,6,4.333333333333333
+310,Mr Turner,1,5.0
+311,Mulholland Drive,47,3.0425531914893615
+312,Munich,2,4.5
+313,My Golden Days,1,6.0
+314,My Heart Beats Only for Her,1,7.0
+315,My Winnipeg,3,4.333333333333333
+316,Mysteries of Lisbon,2,5.0
+317,Mystic River,1,6.0
+318,Nebraska,3,7.0
+319,Neighboring Sounds,1,1.0
+320,Night Across the Street,1,7.0
+321,Night Will Fall,1,3.0
+322,Nightcrawler,1,5.0
+323,Nine Queens,1,3.0
+324,No,3,5.333333333333333
+325,No Country For Old Men,21,4.857142857142857
+326,No Home Movie,1,2.0
+327,No Man's Land,2,8.5
+328,Nobody Knows,1,5.0
+329,"Norte, the End of History",2,7.5
+330,Nostalgia for the Light,4,9.0
+331,Notre musique,1,1.0
+332,"O Brother, Where Art Thou?",3,7.333333333333333
+333,Oasis,1,6.0
+334,Of Gods and Men,1,8.0
+335,Oh! Man,1,10.0
+336,Oldboy,11,5.363636363636363
+337,Once,1,5.0
+338,Once Upon a Time in Anatolia,7,5.285714285714286
+339,Only Lovers Left Alive,7,6.428571428571429
+340,Open Range,1,10.0
+341,Our Daily Bread,1,10.0
+342,Paan Singh Tomar,1,6.0
+343,Pain & Gain,1,10.0
+344,Pan's Labyrinth,17,5.352941176470588
+345,Paradise Now,2,7.5
+346,Persepolis,3,4.666666666666667
+347,Phoenix,3,7.0
+348,Platform,3,7.0
+349,Poetry,1,8.0
+350,"Police, Adjective",1,4.0
+351,Primer,1,9.0
+352,Profit Motive and the Whispering Wind,1,2.0
+353,Psalm III: 'Night of the Meek',1,3.0
+354,Pulse,3,6.666666666666667
+355,Punch-Drunk Love,3,5.0
+356,Quills,1,7.0
+357,Ratatouille,4,5.25
+358,Red Leaves,1,6.0
+359,Red Road,2,9.0
+360,Regular Lovers,1,8.0
+361,Requiem for a Dream,3,4.0
+362,Restless City,1,8.0
+363,Revolutionary Road,1,7.0
+364,"Right Now, Wrong Then",1,5.0
+365,Russian Ark,4,6.5
+366,Rust and Bone,1,7.0
+367,Samson & Delilah,1,4.0
+368,Sangue,1,8.0
+369,Saraband,1,1.0
+370,Secret Sunshine,4,6.0
+371,Secret Things,1,4.0
+372,Selma,5,8.4
+373,Sembène!,1,7.0
+374,Senna,1,8.0
+375,Seventh Code,1,10.0
+376,"Sexe, gombo et beurre salé",1,4.0
+377,Sexy Beast,2,5.5
+378,Shame,4,4.0
+379,Shara,1,6.0
+380,Shaun of the Dead,1,10.0
+381,Shoot the Messenger,1,5.0
+382,Short Term 12,2,7.5
+383,Shrek,1,10.0
+384,Shutter Island,1,10.0
+385,Sicario,1,5.0
+386,Sideways,2,5.0
+387,Silent Light,1,10.0
+388,Silent Souls,2,9.0
+389,Silver Linings Playbook,3,6.0
+390,Sin Nombre,1,7.0
+391,Sita Sings the Blues,1,8.0
+392,Snow White,1,8.0
+393,Something Necessary,1,5.0
+394,Somewhere,3,5.333333333333333
+395,Son of Saul,10,5.3
+396,Song of the Sea,1,9.0
+397,Songs from the Second Floor,1,5.0
+398,Sparrow,1,9.0
+399,Spider-Man 2,1,4.0
+400,Spirited Away,34,5.117647058823529
+401,Spotlight,4,4.75
+402,Spring Breakers,7,6.571428571428571
+403,"Spring, Summer, Fall, Winter…and Spring",4,2.25
+404,Star Trek,1,3.0
+405,Star Wars: Episode III – Revenge of the Sith,1,5.0
+406,Star Wars: Episode VII – The Force Awakens,1,4.0
+407,Step Brothers,1,10.0
+408,Still Life,3,6.333333333333333
+409,Still Walking,3,6.0
+410,Storia di una donna amata e di un assassino gentile,1,6.0
+411,Stories We Tell,6,5.5
+412,Story of My Death,1,9.0
+413,Stranger by the Lake,1,7.0
+414,Stray Dogs,1,1.0
+415,Sumas y Restas,1,4.0
+416,Summer Hours,1,4.0
+417,Sweet Sixteen,1,9.0
+418,Sympathy for Mr Vengeance,1,9.0
+419,Syndromes and a Century,5,3.6
+420,"Synecdoche, New York",12,4.416666666666667
+421,Tabu,8,6.875
+422,Take Shelter,1,6.0
+423,Take This Waltz,1,5.0
+424,Talk to Her,13,6.076923076923077
+425,Talladega Nights: The Ballad of Ricky Bobby,1,9.0
+426,Tangerine,1,7.0
+427,Taxi Tehran,1,3.0
+428,Team America: World Police,1,8.0
+429,Ten,4,5.5
+430,Terra,1,9.0
+431,Tey,3,5.666666666666667
+432,The 3 Rooms of Melancholia,1,7.0
+433,The Act of Killing,16,4.625
+434,The Arbor,1,8.0
+435,The Artist,4,7.5
+436,The Assassin,5,2.6
+437,The Assassination of Jesse James by the Coward Robert Ford,3,3.3333333333333335
+438,The Avengers,1,8.0
+439,The Baader Meinhof Complex,1,6.0
+440,The Babadook,2,8.0
+441,The Band’s Visit,1,3.0
+442,The Beat That My Heart Skipped,1,4.0
+443,The Blind Swordsman: Zatoichi,1,5.0
+444,The Bourne Ultimatum,1,9.0
+445,The Box of Life,1,3.0
+446,The Captive,1,2.0
+447,The Century of the Self,1,4.0
+448,The Child,2,6.5
+449,The Circle,2,4.0
+450,The Clock,1,9.0
+451,The Colonial Misunderstanding,1,7.0
+452,The Comedy,2,5.5
+453,The Congress,2,9.0
+454,The Consequences of Love,1,6.0
+455,The Curious Case of Benjamin Button,2,8.0
+456,The Dark Knight,9,4.666666666666667
+457,The Days When I Do Not Exist,1,10.0
+458,The Death of Mr Lazarescu,3,6.333333333333333
+459,The Deep Blue Sea,2,5.0
+460,The Departed,2,5.5
+461,The Descendants,1,3.0
+462,The Diving Bell and the Butterfly,5,5.0
+463,The Edge of Heaven,1,5.0
+464,The External World,1,5.0
+465,The Five Obstructions,1,9.0
+466,The Forest for the Trees,1,7.0
+467,The Fourth Watch,1,9.0
+468,The Future,1,8.0
+469,The Gatekeepers,1,4.0
+470,The Ghost Writer,2,4.0
+471,The Gleaners and I,4,5.5
+472,The Grand Budapest Hotel,12,4.666666666666667
+473,The Great Beauty,6,5.0
+474,The Hateful Eight,1,10.0
+475,The Headless Woman,6,7.0
+476,The Holy Girl,1,9.0
+477,The Host,1,6.0
+478,The Hours,1,2.0
+479,The House of Mirth,1,10.0
+480,The Hunt,1,10.0
+481,The Hurt Locker,6,4.666666666666667
+482,The Imposter,1,7.0
+483,The Incredibles,3,6.333333333333333
+484,The Intruder,2,7.0
+485,The King’s Speech,1,8.0
+486,The Lady and the Duke,1,8.0
+487,The Last of the Unjust,3,4.333333333333333
+488,The Lives of Others,10,5.2
+489,The Lobster,1,7.0
+490,The Look of Silence,4,6.0
+491,The Lord of the Rings: The Fellowship of the Ring,2,7.0
+492,The Lord of the Rings: The Return of the King,1,3.0
+493,The Magdalene Sisters,1,8.0
+494,The Man Without A Past,1,10.0
+495,The Master,10,4.2
+496,The Matchmaker,1,5.0
+497,The Namesake,1,5.0
+498,The New World,8,4.625
+499,The Orphanage,1,9.0
+500,The Pianist,3,3.3333333333333335
+501,The Piano Teacher,1,1.0
+502,The Prestige,1,4.0
+503,The Profession of Arms,1,4.0
+504,The Queen,1,10.0
+505,The Return,5,5.2
+506,The Revenant,1,10.0
+507,The Romance of Astrea and Celadon,1,3.0
+508,The Royal Tenenbaums,7,6.142857142857143
+509,The Sapphires,1,8.0
+510,The Secret in Their Eyes,3,3.3333333333333335
+511,The Skin I Live In,1,4.0
+512,The Sky Trembles and the Earth Is Afraid and the Two Eyes Are Not Brothers,1,8.0
+513,The Social Network,13,6.0
+514,The Son,5,8.4
+515,The Son's Room,2,5.5
+516,The Squid and the Whale,1,9.0
+517,The Story of Marie and Julien,2,6.0
+518,The Strange Case of Angelica,1,4.0
+519,The Stuart Hall Project,1,1.0
+520,The Sun Also Rises,1,3.0
+521,The Taste of Others,1,5.0
+522,The Three Burials of Melquiades Estrada,1,1.0
+523,The Tiger and the Snow,1,2.0
+524,The Time That Remains,1,1.0
+525,The Tree of Life,23,3.608695652173913
+526,The Turin Horse,6,5.0
+527,The White Meadows,1,6.0
+528,The White Ribbon,13,4.3076923076923075
+529,The Wind Rises,1,6.0
+530,The Wolf of Wall Street,4,3.75
+531,The World,2,5.0
+532,The Wrestler,2,9.5
+533,The Yards,1,4.0
+534,Theeb,1,1.0
+535,There Will Be Blood,35,3.9714285714285715
+536,These Encounters of Theirs,1,1.0
+537,This Is England,1,10.0
+538,This Is Not a Film,1,8.0
+539,This Is the End,1,4.0
+540,Thithi,1,7.0
+541,Three Monkeys,1,5.0
+542,Three Times,1,6.0
+543,Tie Xi Qu: West of the Tracks,2,3.5
+544,Timbuktu,9,4.888888888888889
+545,Time Out,1,4.0
+546,Tinker Tailor Soldier Spy,1,8.0
+547,To Die Like a Man,1,9.0
+548,Toni Erdmann,6,7.5
+549,Tony Manero,1,10.0
+550,Toy Story 3,3,7.0
+551,Traffic,2,9.5
+552,Triple Agent,1,2.0
+553,Tropic Thunder,2,8.5
+554,Tropical Malady,6,4.166666666666667
+555,Twixt,1,8.0
+556,Two Lovers,1,9.0
+557,Udaan,1,7.0
+558,Un lac,1,6.0
+559,Uncle Boonmee Who Can Recall His Past Lives,9,5.111111111111111
+560,Under the Skin,7,5.714285714285714
+561,United 93,2,2.0
+562,Vera Drake,2,7.0
+563,Vincere,1,2.0
+564,WALL-E,11,5.2727272727272725
+565,Waiting for Happiness,2,2.5
+566,Waking Life,2,4.0
+567,Waltz with Bashir,4,7.5
+568,Warming by the Devil's Fire,1,6.0
+569,We Need to Talk About Kevin,3,7.0
+570,Weekend,4,8.0
+571,Wendy and Lucy,2,6.0
+572,Werckmeister Harmonies,4,1.5
+573,Wet Hot American Summer,1,6.0
+574,What Time Is It There?,1,5.0
+575,When I Saw You,1,5.0
+576,When the Levees Broke: A Requiem in Four Acts,1,2.0
+577,Where Do We Go Now?,1,9.0
+578,Whiplash,2,7.5
+579,White Material,3,3.6666666666666665
+580,Wild,1,10.0
+581,Wild Tales,3,6.0
+582,Winter Sleep,3,5.0
+583,Winter's Bone,1,9.0
+584,Wolff Von Amerongen: Did He Commit Bankruptcy Offences?,1,1.0
+585,Woman on the Beach,1,9.0
+586,World of Tomorrow,2,6.5
+587,Y Tu Mamá También,3,5.0
+588,Yi Yi: A One and a Two,22,3.5
+589,Yossi & Jagger,1,10.0
+590,You Ain’t Seen Nothin’ Yet,1,1.0
+591,You Can Count On Me,3,5.666666666666667
+592,You Can Count on Me Me,1,9.0
+593,You Will Meet a Tall Dark Stranger,1,9.0
+594,"You, The Living",2,9.0
+595,Young Adult,1,7.0
+596,Zero Dark Thirty,5,3.4
+597,Zodiac,15,3.6666666666666665

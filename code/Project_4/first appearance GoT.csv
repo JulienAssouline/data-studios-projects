@@ -1,0 +1,522 @@
+,Episodes,number,Characters
+0,1,0,Will
+1,2,0,Doreah
+2,3,0,Royal Steward
+3,4,0,Samwell Tarly
+4,5,0,Loras Tyrell
+5,6,0,Osha
+6,7,0,Lord Tywin Lannister
+7,8,0,Vayon Poole
+8,9,0,Lord Walder Frey
+9,10,0,Rickard Karstark
+10,11,0,Lothor Brune
+11,12,0, Jaqen H'ghar (as played by Tom Wlaschiha)
+12,13,0,Brienne of Tarth
+13,14,0,Rennick
+14,15,0,Emmon Cuy
+15,16,0,Farlen
+16,17,0,Torrhen Karstark
+17,18,0,The Lord of Bones
+18,19,0,Ser Boros Blount (first identified)
+19,20,0,Gelmarr (first identified)
+20,21,0,Dongo
+21,22,0,Jojen Reed
+22,23,0,Lord Hoster Tully (Deceased)
+23,24,0,Sorcerer
+24,25,0,Karstark lookout
+25,26,0,Lothar Frey
+26,27,0,Razdal mo Eraz
+27,28,0,Daario Naharis
+28,29,0,Walda Frey
+29,30,0,Frey soldier #1
+30,31,0,Prince Oberyn Martell
+31,32,0,Tansy
+32,33,0,Farmer
+33,34,0,Ser Pounce
+34,35,0,Ser Donnel Waynwood
+35,36,0,Tycho Nestoris
+36,37,0,Dying man
+37,38,0,Kegs
+38,39,0,Mag Mar Tun Doh Weg
+39,40,0,Kullback
+40,41,0,Melara Hetherspoon
+41,42,0,Captain Areo Hotah
+42,43,0,Lord Medger Cerwyn
+43,44,0,Brother Boake
+44,45,0,Stone men
+45,46,0,Joss
+46,47,0,Brant
+47,48,0,The Thin Man
+48,49,0,Brusco
+49,50,0,Gordy
+50,51,0,Maester Wolkan
+51,52,0, King's Landing boaster
+52,53,0,Ser Arthur Dayne (Flashback)
+53,54,0,Belicho Paenymion
+54,55,0,Izembaro
+55,56,0,King Aerys II Targaryen (Flashback)
+56,57,0,Brother Ray
+57,58,0,Steve
+58,59,0,Bolton general
+59,60,0,Citadel maester
+60,61,0,Ned Umber
+63,1,1,Ser Waymar Royce
+64,2,1,Irri
+65,3,1,Lord Petyr Baelish
+66,4,1,Commander Janos Slynt
+67,5,1, Joss Stilwood
+68,6,1,Stiv
+69,7,1,Armeca
+70,8,1, Ser Meryn Trant
+71,9,1, Lord Leo Lefford
+72,10,1, Jonos Bracken
+73,11,1, Ser Dontos Hollard
+74,12,1, Rorge (as played by Andy Beckwith)
+75,13,1, Queen Margaery Tyrell
+76,14,1, Lannister guardsman
+77,15,1, Robar Royce
+78,16,1,Palla
+79,17,1,Billy
+81,19,1,Ser Imry Florent
+82,20,1,Stygg (first identified)
+83,21,1, Tormund Giantsbane
+84,22,1,Riverrun traveller
+85,23,1,"Ser Brynden ""The Blackfish"" Tully"
+86,24,1, Bolton soldier
+87,25,1,Petyr Baratheon (Deceased)
+88,26,1,Black Walder Rivers
+89,27,1,Myranda
+90,28,1,Mero
+91,29,1, Arwaya Frey (first identified)
+92,30,1,Frey soldier #2
+93,31,1,Ellaria Sand
+94,32,1, Ser Axell Florent
+95,33,1,Sally
+96,34,1,Morag
+98,36,1,Lhara
+100,38,1,Black Jack Bulwer
+101,39,1,Cooper
+102,40,1,Fennesz
+103,41,1,Maggy
+104,42,1,Ser Denys Mallister
+105,43,1,The Waif
+106,44,1, Merchant captain
+107,45,1,Master Eaton
+108,46,1, Ghita
+109,47,1,Derek
+110,48,1, Karsi
+111,49,1, Braavosi madam
+112,50,1,Simpson
+113,51,1, Maester Caleotte
+114,52,1, Lyanna Stark
+115,53,1, Ser Gerold Hightower (Flashback)
+116,54,1, Ash
+117,55,1,Clarenzo
+118,56,1, Lady Melessa Tarly
+119,57,1, Lady Lyanna Mormont
+120,58,1,Riddell
+121,59,1, Captain of the Bolton archers
+122,60,1,Lord Cley Cerwyn
+123,61,1, Alys Karstark
+126,1,2,Gared
+127,2,2,Jhiqui
+128,3,2,Lord Varys
+129,4,2,Ser Hugh of the Vale
+130,5,2, Ser Vardis Egen
+131,6,2,Wallen
+132,7,2,Tomard
+133,8,2, Mirri Maz Duur
+134,9,2, Lady Joyeuse Erenford
+135,10,2, Addam Marbrand
+136,11,2, Septa Eglantine
+137,12,2, Biter (as played by Gerard Jordan)
+138,13,2, Ser Colen of Greenpools
+139,14,2, Roose Bolton
+140,15,2, Reginald Lannister
+141,16,2,The High Septon
+142,17,2,Jack
+144,19,2,Baratheon Officer
+145,20,2,Rhaego (in visions/illusions)
+146,21,2, Mance Rayder
+147,22,2,Master Torturer
+148,23,2,Lord Edmure Tully
+149,24,2, Tyrell lady
+150,25,2,Tommard Baratheon (Deceased)
+152,27,2,Violet
+153,28,2,Prendahl na Ghezn
+154,29,2, Derwa Frey
+155,30,2,Desmond Crakehall
+156,31,2,Morgan
+157,32,2, Walda Bolton
+158,33,2,Mole's Town whore
+159,34,2,Craster's last son
+161,36,2,Goatherd
+163,38,2,Mully
+164,39,2,Donnel Hill
+165,40,2,Goatherd
+166,41,2,White Rat
+167,42,2,Prince Doran Martell
+168,43,2,The High Sparrow
+169,44,2, Lead Dornish Guard
+170,45,2,Elboneno
+171,46,2, Malko
+172,47,2,Arryk
+173,48,2, Loboda
+174,49,2, Brea
+176,51,2, Akho
+177,52,2, Lord Harald Karstark
+178,53,2, Lord Howland Reed (Flashback)
+179,54,2, Kesh
+180,55,2,Lady Crane
+181,56,2, Talla Tarly
+182,57,2, Bear Island maester
+183,58,2,Red Priestess
+185,60,2, Lord Wyman Manderly
+186,61,2, Archmaester Ebrose
+189,1,3,Wildling girl
+190,2,3,Rast
+191,3,3,Lord Renly Baratheon
+192,4,3,Tobho Mott
+193,5,3,Barra
+194,6,3,Dothraki crone
+195,7,3,Little Bird
+196,8,3, Lord Greatjon Umber
+197,9,3, Ser Stevron Frey (assumed)
+198,10,3, Harys Swyft
+199,11,3, Lord Portan
+200,12,3, Captain's daughter
+201,13,3, Gerald
+202,14,3, Talisa Maegyr
+203,15,3, Wisdom Hallyne
+204,16,3,Ygritte
+208,20,3,Tom
+209,21,3, Mirelle
+210,22,3,King's Landing tailor
+211,23,3,Martyn Lannister
+213,25,3,Edric Baratheon (Deceased)
+215,27,3,Steelshanks
+216,28,3,High Septon
+217,29,3, Waldra Frey
+218,30,3,Eldrick Sarsfield
+219,31,3,Lord Blackmont
+220,32,3, Mace Tyrell
+221,33,3,Mole's Town madam
+222,34,3,White Walker
+226,38,3, Ralf Kenning
+227,39,3, 0bHobb
+228,40,3,Zalla
+229,41,3,Vala
+230,42,3,Prince Trystane Martell
+231,43,3,Red Priestess
+232,44,3, Obara Sand
+235,47,3,Erryk
+236,48,3, Wun Wun
+237,49,3, Anara
+239,51,3, Qhono
+240,52,3, Newborn Bolton
+241,53,3, Lord Smalljon Umber
+242,54,3, Iggo
+243,55,3,Camello
+244,56,3, Dickon Tarly
+245,57,3, Lord Robett Glover
+246,58,3,Lannister soldier
+252,1,4,White Walker 1
+253,2,4,Catspaw assassin
+254,3,4,Grand Maester Pycelle
+255,4,4,Gendry
+256,5,4,Mhaegen
+257,6,4,Ser Jon Lynderly
+258,7,4,Wineseller
+259,8,4, Jafer Flowers
+260,9,4, Ryger Rivers (assumed)
+261,10,4, Jaqen H'ghar (as extra)
+262,11,4, Kovarro
+263,12,4, Podrick Payne
+264,13,4, Ser Amory Lorch
+265,14,4, The Tickler
+266,15,4, Lorren
+267,16,4,Jacks
+272,21,4, Ser Jaremy Mallister
+273,22,4,Lady Olenna Tyrell
+274,23,4,Willem Lannister
+276,25,4,Princess Shireen Baratheon
+278,27,4,Ser Balon Swann
+280,29,4, Janeya Frey
+281,30,4,Night's Watchman
+282,31,4,Lord Dagos Manwoody
+283,32,4, Dwarf 1
+284,33,4,Whore
+285,34,4,Night King
+289,38,4, Adrack Humble
+290,39,4,Smitty
+291,40,4,Leaf
+292,41,4,Bowen Marsh
+293,42,4,Lollys Stokeworth
+294,43,4,Clea
+295,44,4, Nymeria Sand
+298,47,4,Yezzan zo Qaggaz
+299,48,4, Duncan Liddle
+300,49,4, Aya
+302,51,4, Khal Moro
+303,52,4, Euron Greyjoy
+304,53,4, High Priestess of the Dosh Khaleen
+305,54,4, Khal Rhalko
+306,55,4,Bobono
+307,56,4, Lord Randyll Tarly
+308,57,4, Lem
+309,58,4,Tully Bannerman
+315,1,5,White Walker 2
+316,2,5,Ser Ilyn Payne
+317,3,5,Old Nan
+318,4,5,Gyles Rosby
+319,5,5,Lysa Arryn
+320,6,5,Lord Eon Hunter
+321,7,5,Dareon
+322,8,5, Othor
+323,9,5, Arwaya Frey
+324,10,5, Rorge (as extra)
+325,11,5, Aggo
+326,12,5, King Balon Greyjoy
+327,13,5, Polliver
+328,14,5, Weasel
+329,15,5, Drennan
+330,16,5,Quent
+335,21,5, Qyburn
+336,22,5,Tyrell server
+337,23,5,Karl Tanner
+339,25,5,Grey Worm
+343,29,5, Neyela Frey
+344,30,5,Fruit vendor
+345,31,5,Ser Deziel Dalt
+346,32,5, Dwarf 2
+347,33,5,Olly
+348,34,5,Mossador
+352,38,5, Lord Yohn Royce
+354,40,5,Three-eyed raven
+355,41,5,Samwell Stone
+358,44,5, Tyene Sand
+361,47,5,Boake
+362,48,5, White Walker
+365,51,5, Bolton Officer
+366,52,5, Aeron Greyjoy
+367,53,5, Ornela
+368,54,5, Khal Forzho
+369,55,5,Bianca
+370,56,5, Tyrell bannerman
+371,57,5, Morgan
+378,1,6,Bran Stark
+379,2,6,Mycah
+380,3,6,Goldcloak 1
+381,4,6,Gregor Clegane
+382,5,6,Robin Arryn
+383,6,6,Lord Beric Dondarrion
+384,7,6,Allo
+385,8,6, Shagga
+386,9,6, Shae
+387,10,6, Biter (as extra)
+388,11,6, Eddison Tollett
+389,12,6, Princess Yara Greyjoy
+391,14,6, Tortured prisoner
+392,15,6, Dagmer
+398,21,6, Boat commander
+399,22,6,Orell
+400,23,6,Craster's wife
+402,25,6,Olyvar
+406,29,6, Serra Frey
+407,30,6,Yunkai'i slave #1
+408,31,6,Ser Endrew Tarth
+409,32,6, Dwarf 3
+410,33,6,Guymon
+415,38,6, Lady Anya Waynwood
+417,40,6,Ternesio Terys
+424,47,6,Septa Unella
+425,48,6, Johnna
+428,51,6, Khal Moro's 1st wife
+431,54,6, Khal Brozho
+432,55,6,Kinvara
+433,56,6, Lady Kitty Frey
+434,57,6, Gat 
+441,1,7,Jon Snow
+442,2,7,Lannister guardsman
+443,3,7,Goldcloak 2
+444,4,7,Marillion
+445,5,7, Wyl
+446,6,7,Steffon
+447,7,7,Balian
+448,8,7, Timett
+450,10,7, Hot Pie
+451,11,7, Craster
+452,12,7, Salladhor Saan
+454,14,7, The Spice King
+455,15,7, Malakho
+461,21,7, Margaery's handmaiden
+462,22,7,Meera Reed
+463,23,7,Gilly's baby
+469,29,7, Sarra Frey
+470,30,7,Yunkai'i slave #2
+471,31,7,Styr
+472,32,7, Dwarf 4
+473,33,7,Olly's mother
+478,38,7, Ser Vance Corbray
+480,40,7,Child of the Forest
+487,47,7,Moelle
+488,48,7, Willa
+491,51,7, Khal Moro's 2nd wife
+494,54,7, Khal Qorro
+495,55,7,Lord Rickard Stark (Flashback)
+504,1,8,Robb Stark
+506,3,8,Drunk man
+507,4,8,Masha Heddle
+508,5,8, Heward
+509,6,8,Joss
+510,7,8,Echiel
+511,8,8, Chella
+513,10,8, Lommy Greenhands
+514,11,8,Night's Watch Officer
+517,14,8, Pyat Pree
+518,15,8, Quaithe
+524,21,8, Orphan kid
+525,22,8,Thoros of Myr
+526,23,8,Tortured slave
+532,29,8, Marianne Frey
+533,30,8,Yunkai'i slave #3
+534,31,8,Magnar of Thenn
+535,32,8, Dwarf 5   
+536,33,8,Oznak zo Pahl
+541,38,8,Ser Daemon Sand
+550,47,8,Scolera
+551,48,8, Dim Dalba
+554,51,8, Zanrush
+567,1,9,Lady Catelyn Stark
+569,3,9,King's Landing whore
+570,4,9,Bronn
+571,5,9, Mord
+573,7,9,Escan
+574,8,9, Ser Kevan Lannister
+576,10,9, Drogon
+577,11,9, Gilly
+580,14,9, The Silk King
+581,15,9, Qhorin Halfhand
+587,21,9, Kraznys mo Nakloz
+588,22,9,Anguy
+589,23,9,Greizhen mo Ullhor
+595,29,9, Freya Frey
+596,30,9,Yunkai'i slave #4
+597,31,9, A Thenn Warg
+599,33,9,Hizdahr zo Loraq
+630,1,10,Lord Eddard Stark
+632,3,10,Lord Commander Jeor Mormont
+633,4,10,Ser Willis Wode
+636,7,10,Gordo
+637,8,10, Galbart Glover
+639,10,10, Viserion
+640,11,10, Melisandre
+643,14,10, Xaro Xhoan Daxos
+644,15,10, Harker
+650,21,10, Missandei
+651,22,10,Brotherhood Member
+652,23,10,Genna
+658,29,10, Merry Frey
+659,30,10,Yunkai'i slave #5
+660,31,10,Lowell
+662,33,10,Hizdahr zo Loraq's manservant
+693,1,11,Rickon Stark
+695,3,11,Pypar
+696,4,11,Kurleket
+699,7,11,Joby
+700,8,11, Lady Maege Mormont
+702,10,11, Rhaegal
+703,11,11, Maester Cressen
+706,14,11, The Copper King
+707,15,11, Stonesnake
+713,21,11, Unsullied
+714,22,11,Ramsay Snow
+715,23,11,Kayla
+721,29,11, Shirei Frey
+725,33,11,Slave master
+756,1,12,Sansa Stark
+758,3,12,Ser Alliser Thorne
+759,4,12,Knight of House Frey
+762,7,12,Halder
+763,8,12, Ser Aron Santagar
+766,11,12, Ser Davos Seaworth
+769,14,12, Thirteen member
+770,15,12, Borba
+776,21,12, Unidentified Warlock
+777,22,12,Locke
+784,29,12, Frey guard
+788,33,12,Slave master
+819,1,13,Septa Mordane
+821,3,13,Grenn
+825,7,13,Luke
+829,11,13, Matthos Seaworth
+847,29,13, Hog farmer
+851,33,13,Slave
+882,1,14,Arya Stark
+884,3,14,Lancel Lannister
+888,7,14,Matthar
+892,11,14, King Stannis Baratheon
+910,29,14, Old man
+914,33,14,Slave master
+945,1,15,Jeyne Poole
+947,3,15,Lord Commander Barristan Selmy
+951,7,15,Mink
+955,11,15, Queen Selyse Baratheon
+973,29,15, Wendel Manderly
+1008,1,16,Ser Rodrik Cassel
+1010,3,16,Rakharo
+1014,7,16,Nelugo
+1018,11,16, Ser Alton Lannister
+1036,29,16, Roslin Frey
+1071,1,17,Jory Cassel
+1073,3,17,Yoren
+1077,7,17,Niko
+1081,11,17,Stark Officer 1
+1099,29,17, Drummer
+1134,1,18,Theon Greyjoy
+1136,3,18,Maester Aemon
+1140,7,18,Rancer
+1144,11,18,Stark Officer 2
+1197,1,19,Lady
+1199,3,19,Syrio Forel
+1203,7,19,Toad
+1207,11,19, Daisy
+1260,1,20, Grey Wind
+1266,7,20,Vorkoy
+1323,1,21, Shaggydog
+1329,7,21,Jaremy Rykker
+1386,1,22, Summer
+1392,7,22,Othell Yarwyck
+1449,1,23, Nymeria
+1455,7,23,Night's Watch Officer 2
+1512,1,24, Ghost
+1518,7,24,Ser Mandon Moore
+1575,1,25,Ser Jaime Lannister
+1581,7,25,Ser Boros Blount
+1638,1,26,Queen Cersei Lannister
+1644,7,26,Ser Arys Oakheart
+1701,1,27,Maester Luwin
+1707,7,27,Clydas
+1764,1,28,Tommy
+1770,7,28,Varly
+1827,1,29,Prince Joffrey Baratheon
+1890,1,30,Sandor Clegane
+1953,1,31,Ser Preston Greenfield
+2016,1,32,Hodor
+2079,1,33,Mikken
+2142,1,34,King Robert Baratheon
+2205,1,35,Prince Tommen Baratheon
+2268,1,36,Princess Myrcella Baratheon
+2331,1,37,Tyrion Lannister
+2394,1,38,Ros
+2457,1,39,Princess Daenerys Targaryen
+2520,1,40,Prince Viserys Targaryen
+2583,1,41,Pentoshi servant
+2646,1,42,Magister Illyrio Mopatis
+2709,1,43,Khal Drogo
+2772,1,44,Qotho
+2835,1,45,Cohollo
+2898,1,46,Haggo
+2961,1,47,Benjen Stark
+3024,1,48,Ser Jorah Mormont
+3087,1,49,Mago

@@ -1,6 +1,8 @@
 ---
 
 title: We're Dying Less From Cancer
+layout: project
+
 ---
 
 # We're Dying Less From Cancer
@@ -24,7 +26,7 @@ The Vision Zero plan has made it so that the "city lowered its default speed lim
 
 New York can in fact now, claim that it is one of the safest big cities in America for pedestrians.
 
-![](Cancer-deaths-in-the-US.gif)
+<div class="image">![](Cancer-deaths-in-the-US.gif)</div>
 
 In 2015 they had the 9th lowest rate of pedestrian fatalities among US cities with at least a population of 500,000.
 

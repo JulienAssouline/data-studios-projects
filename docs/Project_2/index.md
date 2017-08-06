@@ -8,42 +8,33 @@ layout: project
 # We're Dying Less From Cancer
 
 
-Pedestrian fatalities in New York keep dropping. In 2016, there were only 181 pedestrian deaths, which is lower than 2015 which saw 197 pedestrian fatalities.
+Just about everyone has been affected by cancer in some shape or form. Whether it's by being diagnosed with the disease or having lost a loved one. Cancer remains a prevalent force in our society. Every year it affects thousands of Americans. In fact, in 2015, according to the CDC (Center for Disease Control and Prevention), cancer was the second leading cause of death in the United States. 
 
-![](We%2527re-surviving-more-from-every-type-of-cancer.gif)
+![](Cancer-is-the-second-leading-cause-of-death-in-the-US.png)
 
-Overall, since 2013, when pedestrian deaths hit a soaring spike, New York pedestrian deaths have been steeply trending downwards.
+Heart disease is the biggest cause of death in the US, but cancer is a close second, and both causes tower over any other cause. 
 
-This is the lowest it's been since De Blasio took office in 2014. De Blasio has made it his mission to reduce and eliminate traffic deaths in New York with his Vision Zero plan, and thus far it's been going well.
+That said, with regards to cancer, there's been a ton of improvement over the years. In fact, our likelihood of surviving cancer has dramatically increased. 
 
-But, the number of pedestrian fatalities isn't the only element of note, as pedestrian injuries have been steadily trending downwards since 2010.
+This isn't just on an average basis case. We are more likely to survive every type of cancer than before. 
 
-![](Cancer-is-the-second-leading-cause-of-death-in-the-US (1).gif)
+![](We%2527re-surviving-more-from-every-type-of-cancer_2.png)
 
-In this regard, 2016 was also a new low, as around 15 thousand pedestrians were injured in the city.
+chemotherapy drugs - mechlorethamine, vincristine (Oncovin), procarbazine and prednisone - in the 1970s, which has paved the way for Hodgkin lymphoma survivability rates of near 90 percent. 
 
-The Vision Zero plan has made it so that the "city lowered its default speed limit to 25 miles per hour, from 30 m.p.h., and increased enforcement of speeding laws, among other initiatives."
+Leukemia, which was once one of the deadliest types of cancer, with a survivability rate of only 10 percent has also seen major breakthroughs and now has a survivability rate of 65 percent. The big breakthrough with Leukemia was with the chemotherapy medication Imatinib, which has turned a life expectancy of only three to five years, into a long term condition with daily pill intake. 
 
-New York can in fact now, claim that it is one of the safest big cities in America for pedestrians.
+Some types of cancers have also been helped by the activism around it. One of the most prominent examples is with breast cancer, which has its own awareness month in October. Breast cancer touches around one in eight women, according to the National Breast Cancer Foundation. Breast cancers have seen many breakthroughs, and new drugs implemented to fight the disease, and now, it has a survivability rate of 92 percent, which is the 5th highest rate of survival among any type of cancer.  
 
-<img src="Cancer-deaths-in-the-US.gif">
+Other cancer types, however, have seen little improvements, and are still very difficult to treat. The one which has seen the least improvement and still, the most difficult to treat is Pancreatic cancer. It is an aggressive form of cancer and has very few symptoms until it is advanced which makes it difficult to treat. 
 
-In 2015 they had the 9th lowest rate of pedestrian fatalities among US cities with at least a population of 500,000.
+In general, though, fewer people are dying from cancer every year. Since it's peak in 1991 the rate of cancer deaths in the US has dropped by 25 percent. 
 
-This overall is good news for New York, but the US as a whole is trending in the wrong direction.
 
-![](Cancer-incidents-in-the-US.gif)
+<img src="Cancer-deaths-in-the-US.png">
 
-Since 2009 pedestrian fatalities have been on a steep rise. It's difficult to answer the question of why this is happening, and alcohol doesn't seem to be a factor.
+The number of people who are getting diagnosed with cancer has also been dropping, which could be signaling a greater awareness of the causes of cancer. 
 
-In fact, there is no relationship between the number of pedestrian fatalities, and the driver or the pedestrians alcohol level.
+![](Cancer-incidents-in-the-US.png)
 
-What is startling is the immense gap between the men and women fatalities.
- 
-Male pedestrians get killed more often than women, and at every age level. From the 0-4 age group until the 15-19 age group, there isn't a huge divide between their fatalities. What is interesting is that afterward, the divide becomes exponentially more pronounced, and never comes back to those early ages.
-
-The complexity here is that this doesn't mean that men are more likely to be hit by cars. What it does mean is that they are more likely to die after they are struck.
-
-There are a number of reasons why this could be happening, such as men being more likely to engage in risky behaviors when crossing the street. This can be jaywalking or trying to cross streets with higher speed limits. These, of course, are just hypotheses and more studies need to be done in order to find out the cause of this event.
-
-But, the US may want to invest more into this research, as lowering the number of male pedestrian deaths will certainly help stop the rising trend of pedestrians dying in the US.
+But, the rate at which we are getting diagnosed with cancer isn't dropping as precipitously as the rate of cancer deaths, which further signals that we are getting better at treating cancer, as the rate of survivability keeps rising. 

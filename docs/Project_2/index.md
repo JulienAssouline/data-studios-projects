@@ -18,7 +18,7 @@ That said, with regards to cancer, there's been a ton of improvement over the ye
 
 This isn't just on an average basis case. We are more likely to survive every type of cancer than before. 
 
-![](We%2527re-surviving-more-from-every-type-of-cancer_2.png)
+![](We%27re-surviving-more-from-every-type-of-cancer_2.gif)
 
 chemotherapy drugs - mechlorethamine, vincristine (Oncovin), procarbazine and prednisone - in the 1970s, which has paved the way for Hodgkin lymphoma survivability rates of near 90 percent. 
 

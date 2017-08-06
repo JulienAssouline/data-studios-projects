@@ -18,8 +18,8 @@ That said, with regards to cancer, there's been a ton of improvement over the ye
 
 This isn't just on an average basis case. We are more likely to survive every type of cancer than before. 
 
-![](We%2527re-surviving-more-from-every-type-of-cancer_2.png)
-
+<!-- ![](We%2527re-surviving-more-from-every-type-of-cancer_2.png)
+ -->
 chemotherapy drugs - mechlorethamine, vincristine (Oncovin), procarbazine and prednisone - in the 1970s, which has paved the way for Hodgkin lymphoma survivability rates of near 90 percent. 
 
 Leukemia, which was once one of the deadliest types of cancer, with a survivability rate of only 10 percent has also seen major breakthroughs and now has a survivability rate of 65 percent. The big breakthrough with Leukemia was with the chemotherapy medication Imatinib, which has turned a life expectancy of only three to five years, into a long term condition with daily pill intake. 

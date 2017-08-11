@@ -1,0 +1,205 @@
+,Unnamed: 0,Episodes_First,Characters,Episodes_deaths,Deaths,Difference
+0,216,1,Septa Mordane,8,Dead,-7
+1,211,1,Robert Baratheon,7,Dead,-6
+3,210,1,Robb Stark,29,Dead,-28
+4,486,1,Waymar Royce,1,Dead,0
+5,82,1,Eddard Stark,9,Dead,-8
+6,219,1,Shaggydog,53,Dead,-52
+7,207,1,Rickon Stark,59,Dead,-58
+8,86,1,Gared,1,Dead,0
+10,482,1,Viserys Targaryen,6,Dead,-5
+11,93,1,Grey Wind,29,Dead,-28
+12,99,1,Hodor,55,Dead,-54
+14,108,1,Joffrey Baratheon,32,Dead,-31
+15,110,1,Jon Snow,50,Dead,-49
+17,116,1,Khal Drogo,10,Dead,-9
+19,123,1,Lady,2,Dead,-1
+20,242,1,Tommen Baratheon,60,Dead,-59
+21,198,1,Qotho,9,Dead,-8
+23,158,1,Maester Luwin,20,Dead,-19
+25,160,1,Mago,8,Dead,-7
+26,179,1,Myrcella Baratheon,50,Dead,-49
+27,229,1,Summer,55,Dead,-54
+29,71,1,Catelyn Stark,29,Dead,-28
+31,213,1,Ros,26,Dead,-25
+34,495,1,Will,1,Dead,0
+38,202,2,Rast,35,Dead,-33
+40,102,2,Irri,16,Dead,-14
+41,125,2,Lannister guardsman,14,Dead,-12
+42,79,2,Doreah,20,Dead,-18
+43,177,2,Mycah,2,Dead,0
+44,92,3,Grenn,39,Dead,-36
+45,155,3,Maester Aemon,47,Dead,-44
+46,124,3,Lancel Lannister,60,Dead,-57
+47,52,3,Alliser Thorne,53,Dead,-50
+48,199,3,Rakharo,12,Dead,-9
+49,59,3,Barristan Selmy,44,Dead,-41
+50,107,3,Jeor Mormont,24,Dead,-21
+52,230,3,Syrio Forel,8,Dead,-5
+53,501,3,Yoren,13,Dead,-10
+54,204,3,Renly Baratheon,15,Dead,-12
+55,196,3,Pypar,39,Dead,-36
+56,89,3,Grand Maester Pycelle,60,Dead,-57
+58,105,4,Janos Slynt,43,Dead,-39
+60,122,4,Kurleket,5,Dead,-1
+62,497,4,Willis Wode,5,Dead,-1
+64,100,4,Hugh of the Vale,4,Dead,0
+66,150,5,Loras Tyrell,60,Dead,-55
+68,153,5,Lysa Arryn,37,Dead,-32
+69,498,5,Wyl,5,Dead,0
+70,58,5,Barra,11,Dead,-6
+71,479,5,Vardis Egen,6,Dead,-1
+73,97,5,Heward,5,Dead,0
+74,485,6,Wallen,6,Dead,0
+75,189,6,Osha,54,Dead,-48
+76,61,6,Beric Dondarrion,25,Dead,-19
+77,226,6,Stiv,6,Dead,0
+78,162,7,Mandon Moore,19,Dead,-12
+79,247,7,Tywin Lannister,40,Dead,-33
+80,190,7,Othell Yarwyck,53,Dead,-46
+81,480,7,Varly,7,Dead,0
+82,114,8,Kevan Lannister,60,Dead,-52
+83,191,8,Othor,8,Dead,0
+84,481,8,Vayon Poole,8,Dead,0
+85,171,8,Meryn Trant,50,Dead,-42
+86,104,8,Jafer Flowers,8,Dead,0
+87,172,8,Mirri Maz Duur,10,Dead,-2
+88,90,8,Greatjon Umber,10,Dead,-2
+90,218,9,Shae,40,Dead,-31
+91,484,9,Walder Frey,60,Dead,-51
+92,149,10,Lommy Greenhands,13,Dead,-3
+97,206,10,Rickard Karstark,25,Dead,-15
+99,73,11,Craster,24,Dead,-13
+100,77,11,Dontos Hollard,33,Dead,-22
+101,157,11,Maester Cressen,11,Dead,0
+102,53,11,Alton Lannister,17,Dead,-6
+103,215,11,Selyse Baratheon,50,Dead,-39
+105,167,11,Matthos Seaworth,19,Dead,-8
+109,224,11,Stannis Baratheon,50,Dead,-39
+111,63,12,Biter ,37,Dead,-25
+115,56,12,Balon Greyjoy,52,Dead,-40
+117,193,13,Polliver,31,Dead,-18
+118,163,13,Margaery Tyrell,60,Dead,-47
+119,54,13,Amory Lorch,16,Dead,-3
+120,212,14,Roose Bolton,52,Dead,-38
+121,236,14,The Silk,17,Dead,-3
+122,231,14,Talisa Maegyr,29,Dead,-15
+123,237,14,The Spice,17,Dead,-3
+124,238,14,The Tickler,15,Dead,-1
+125,205,14,Rennick,14,Dead,0
+126,244,14,Tortured prisoner,14,Dead,0
+127,195,14,Pyat Pree,20,Dead,-6
+128,126,14,Lannister guardsman,14,Dead,0
+129,499,14,Xaro Xhoan Daxos,20,Dead,-6
+130,233,14,The Copper,17,Dead,-3
+131,66,15,Borba,18,Dead,-3
+132,84,15,Emmon Cuy,15,Dead,0
+134,227,15,Stonesnake,18,Dead,-3
+135,209,15,Robar Royce,15,Dead,0
+136,80,15,Drennan,16,Dead,-1
+137,197,15,Qhorin Halfhand,20,Dead,-5
+138,96,15,Harker,18,Dead,-3
+139,234,16,The High Septon,16,Dead,0
+140,500,16,Ygritte,39,Dead,-23
+141,62,17,Billy,17,Dead,0
+142,103,17,Jack,17,Dead,0
+143,243,17,Torrhen Karstark,17,Dead,0
+144,57,19,Baratheon Officer,19,Dead,0
+145,241,20,Tom,20,Dead,0
+148,106,21,Jaremy Mallister,21,Dead,0
+149,161,21,Mance Rayder,41,Dead,-20
+150,75,21,Dongo,39,Dead,-18
+151,121,21,Kraznys mo Nakloz,24,Dead,-3
+153,185,22,Olenna Tyrell,63,Dead,-41
+154,201,22,Ramsay Bolton,59,Dead,-37
+155,188,22,Orell,29,Dead,-7
+156,166,22,Master Torturer,23,Dead,-1
+157,85,22,Anguy,22,Dead,0
+158,109,22,Jojen Reed,40,Dead,-18
+160,148,22,Locke,35,Dead,-13
+163,91,23,Greizhen mo Ullhor,24,Dead,-1
+164,496,23,Willem Lannister,25,Dead,-2
+165,350,23,Karl Tanner,35,Dead,-12
+166,70,23,"Brynden ""The Blackfish"" Tully",58,Dead,-35
+167,164,23,Martyn Lannister,25,Dead,-2
+169,220,25,Shireen Baratheon,49,Dead,-24
+171,112,25,Karstark lookout,25,Dead,0
+172,83,25,Edric Baratheon,25,Dead,0
+173,151,26,Lothar Frey,60,Dead,-34
+174,178,27,Myranda,50,Dead,-23
+175,203,27,Razdal mo Eraz,59,Dead,-32
+177,170,28,Mero,28,Dead,0
+179,194,28,Prendahl na Ghezn,28,Dead,0
+180,184,29,Old man,29,Dead,0
+181,487,29,Wendel Manderly,29,Dead,0
+183,183,31,Oberyn Martell,38,Dead,-7
+184,152,31,Lowell,31,Dead,0
+185,228,31,Styr,39,Dead,-8
+186,174,31,Morgan,58,Dead,-27
+187,55,32,Axell Florent,32,Dead,0
+188,232,32,Tansy,32,Dead,0
+189,483,32,Walda Bolton,52,Dead,-20
+190,154,32,Mace Tyrell,60,Dead,-28
+191,98,33,Hizdahr zo Loraq,49,Dead,-16
+192,94,33,Guymon,33,Dead,0
+193,192,33,Oznak zo Pahl,33,Dead,0
+194,173,33,Mole's Town whore,38,Dead,-5
+195,187,33,Olly's mother,33,Dead,0
+196,186,33,Olly,53,Dead,-20
+197,490,34,White Walker,28,Dead,6
+198,489,34,White Walker,55,Dead,-21
+199,491,34,White Walker,48,Dead,-14
+202,81,37,Dying man,37,Dead,0
+204,0,38,Adrack Humble,38,Dead,0
+205,113,38,Kegs,38,Dead,0
+206,64,38,Black Jack Bulwer,38,Dead,0
+207,200,38,Ralf Kenning,38,Dead,0
+208,176,38,Mully,38,Dead,0
+209,159,39,Mag Mar Tun Doh Weg,39,Dead,0
+210,76,39,Donnel Hill,39,Dead,0
+211,223,39,Smitty,39,Dead,0
+212,72,39,Cooper,39,Dead,0
+213,502,40,Zalla,40,Dead,0
+215,240,40,Three-eyed raven,55,Dead,-15
+216,146,40,Leaf,55,Dead,-15
+217,488,41,White Rat,41,Dead,0
+218,67,41,Bowen Marsh,53,Dead,-12
+220,78,42,Doran Martell,51,Dead,-9
+221,245,42,Trystane Martell,51,Dead,-9
+222,239,43,The Waif,58,Dead,-15
+223,168,43,Medger Cerwyn,43,Dead,0
+224,235,43,The High Sparrow,60,Dead,-17
+225,145,44,Lead Dornish Guard,44,Dead,0
+226,246,44,Tyene Sand,63,Dead,-19
+227,169,44,Merchant captain,44,Dead,0
+228,181,44,Nymeria Sand,62,Dead,-18
+229,182,44,Obara Sand,62,Dead,-18
+230,68,44,Brother Boake,60,Dead,-16
+231,165,45,Master Eaton,45,Dead,0
+232,87,46,Ghita,46,Dead,0
+233,217,47,Septa Unella,60,Dead,-13
+234,492,48,White Walker,55,Dead,-7
+235,494,48,White Walker,48,Dead,0
+236,493,48,White Walker,28,Dead,20
+238,111,48,Karsi,48,Dead,0
+239,147,48,Loboda,48,Dead,0
+240,88,50,Gordy,50,Dead,0
+241,221,50,Simpson,50,Dead,0
+242,156,51,Maester Caleotte,51,Dead,0
+243,65,51,Bolton Officer,51,Dead,0
+244,118,51,Khal Moro,54,Dead,-3
+245,1,51,Akho,54,Dead,-3
+248,214,52,s Landing boaster,52,Dead,0
+249,95,52,Harald Karstark,59,Dead,-7
+250,180,52,Newborn Bolton,52,Dead,0
+252,222,53,Smalljon Umber,59,Dead,-6
+253,101,54,Iggo,54,Dead,0
+254,115,54,Khal Brozho,54,Dead,0
+255,117,54,Khal Forzho,54,Dead,0
+256,119,54,Khal Qorro,54,Dead,0
+257,120,54,Khal Rhalko,54,Dead,0
+258,60,54,Belicho Paenymion,59,Dead,-5
+262,69,57,Brother Ray,57,Dead,0
+264,175,57,Morgan,58,Dead,-1
+265,225,58,Steve,58,Dead,0
+266,208,58,Riddell,58,Dead,0

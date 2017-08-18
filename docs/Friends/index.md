@@ -6,6 +6,8 @@ title: Analyzing every line from "Friends"
 
 # Visualizing all of the dialogue from "Friends"
 
+by: Julien Assouline
+
 
 ![](Friends_mentions_2.png)
 

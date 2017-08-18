@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Loading TopoJSON data and generating SVG paths</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  #chart{
+    background-color: #F5F2EB;
+    border: 1px solid #F5F2EB;
+  }
+  /*rect{
+    fill: #b0859f;
+  }*/
+  /*path.chord{
+    fill-opacity: 0.1;
+  }*/
+
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+
+      var w = 1050;
+      var h = 700;
+
+      var margin = {
+          top: 20,
+          bottom: 0,
+          left: 0,
+          right: 0
+        }
+
+        var width = w - margin.left - margin.right;
+        var height = h - margin.top - margin.bottom;
+
+
+        var svg = d3.select("body")
+        .append("svg")
+        .attr("id", "chart")
+        .attr("width", w)
+        .attr("height", h)
+        
+
+        var wrapper = svg.append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+
+        var outerRadius = Math.min(width, height) * 0.5 -55
+        var innerRadius = outerRadius - 30
+
+        var Names = ["Chandler", "Ross", "Joey", "Monica", "Rachel", "Phoebe"]
+        var colors = ["#51addf", "#c582aa", "#005b9d", "#35a993", "#cc373c", "#f7d783"]
+        var opacity = [1, 1, 0.3, 1, 1, 1]
+
+        var matrix = [
+              [0, 293, 374, 380, 132, 128], // X
+              [251, 0, 285, 197, 398, 161], // Y
+              [403, 426, 0, 200,  198, 141], // Z
+              [454, 267, 291, 0, 294, 341], // C
+              [200, 665, 403, 326, 0, 286], // B
+              [210, 251, 211, 289, 247, 0] // A
+            ];
+
+        var chordGenerator = d3.chord()
+          .padAngle(0.1)
+          .sortSubgroups(d3.descending)
+          .sortChords(d3.descending)
+          // .sortGroups(d3.descending)
+
+
+          var chord = chordGenerator(matrix);
+
+          var arcs = d3.arc()
+            .innerRadius(innerRadius)
+            .outerRadius(outerRadius);
+
+          var ribbon = d3.ribbon()
+            .radius(250)
+
+          var opacities = d3.scaleOrdinal()
+            .domain(d3.range(6))
+            .range(opacity)
+
+          var color = d3.scaleOrdinal()
+          .domain(d3.range(6))
+          .range(colors)
+
+
+          // d3.csv("Character_mentions.csv", function(error, data){
+          //   data.forEach(function(d){
+          //     d.index = d.index;
+          //     d.Character = d.Character;
+          //     d.Count = +d.Count;
+          //   })
+
+          // var g = svg.append("g")
+          //     .datum(chord(matrix))
+
+
+          // creating the fill gradient
+          function getGradID(d){ return "linkGrad-" + d.source.index + "-" + d.target.index; }
+
+
+          var grads = svg.append("defs")
+            .selectAll("linearGradient")
+            .data(chord)
+            .enter()
+            .append("linearGradient")
+            .attr("id", getGradID)
+            .attr("gradientUnits", "userSpaceOnUse")
+            .attr("x1", function(d, i){ return innerRadius * Math.cos((d.source.endAngle-d.source.startAngle) / 2 + d.source.startAngle - Math.PI/2); })
+            .attr("y1", function(d, i){ return innerRadius * Math.sin((d.source.endAngle-d.source.startAngle) / 2 + d.source.startAngle - Math.PI/2); })
+            .attr("x2", function(d,i){ return innerRadius * Math.cos((d.target.endAngle-d.target.startAngle) / 2 + d.target.startAngle - Math.PI/2); })
+            .attr("y2", function(d,i){ return innerRadius * Math.sin((d.target.endAngle-d.target.startAngle) / 2 + d.target.startAngle - Math.PI/2); })
+
+            // set the starting color (at 0%)
+
+            grads.append("stop")
+              .attr("offset", "0%")
+              .attr("stop-color", function(d){ return color(d.source.index)})
+
+              //set the ending color (at 100%)
+            grads.append("stop")
+              .attr("offset", "100%")
+              .attr("stop-color", function(d){ return color(d.target.index)})
+          // making the ribbons
+          d3.select("g")
+            .selectAll("path")
+            .attr("class", "chord")
+            .data(chord)
+            .enter()
+            .append("path")
+            .style("fill", function(d){ return "url(#" + getGradID(d) + ")"; })
+            .attr("d", ribbon)
+            // .style("stroke", function(d){ return d3.rgb(color(d.target.index)).darker(); })
+            .style("opacity", function(d){
+              if(d.target.index == "Rachel"){
+                return 1
+              } else {
+                return 1
+              }
+            })
+
+            // making the arcs
+          var g = wrapper.selectAll("g")
+            .data(chord.groups)
+            .enter()
+            .append("g")
+            .attr("class", "group")    
+
+
+          g.append("path")
+            .style("fill", function(d){ return color(d.index)})
+            // .style("stroke", function(d){ return d3.rgb(color(d.index)).darker(); })
+            .attr("d", arcs)
+            .style("opacity", 1)
+
+
+            
+
+
+
+          /// adding labels
+          g.append("text")
+            .each(function(d){ d.angle = (d.startAngle + d.endAngle) / 2; })
+            .attr("dy", ".35em")
+            .attr("class", "titles")
+            .attr("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
+            .attr("transform", function(d) {
+              return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+              + "translate(" + (outerRadius + 10) + ")"
+              + (d.angle > Math.PI ? "rotate(180)" : "");
+            })
+            .text(function(d,i){ return Names[i]; })
+            .style("font-size", "15px")
+
+
+          // })
+            // function fade(opacity) {
+            //                   return function(d,i) {
+            //                     svg.selectAll("path.chord")
+            //                         .filter(function(d) { return d.source.index != i && d.target.index != i; })
+            //                     .transition()
+            //                         .style("opacity", opacity);
+            //                   };
+            //                 }//fade
+
+      
+    </script>
+  </body>
+</html>

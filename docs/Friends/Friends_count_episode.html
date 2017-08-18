@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Loading TopoJSON data and generating SVG paths</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+    background-color: #F5F2EB;
+  }
+
+  #chart{
+    /*background-color: white;*/
+/*    border: 1px solid white;
+*/  }
+
+  .yaxis path{
+    fill: none;
+    stroke: none;
+  }
+
+  .yaxis line{
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.7;
+    stroke-dasharray: 3,3;
+  }
+
+  .xaxis path,
+  .xaxis line{
+    fill: none;
+    stroke: none;
+  }
+
+  /*path {
+    fill: none;
+    stroke: grey;
+    stroke-width: 2px;
+
+  }*/
+
+  /*rect{
+    fill: #b0859f;
+  }*/
+  /*.bar-label{
+    font-size: 14px;
+  }
+  
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #F5F2EB;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+
+.gridlines path,
+  .gridlines line {
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.3;
+    stroke-dasharray: 5,3;
+  }*/
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //Width and height
+      var w = 300;
+      var h = 500;
+
+      var margin = {
+          top: 70,
+          bottom: 40,
+          left: 70,
+          right: 60
+        }
+
+        var width = w - margin.left - margin.right;
+        var height = h - margin.top - margin.bottom;
+
+
+        // var svg = d3.select("body")
+        // .append("svg")
+        // .attr("id", "chart")
+        // .attr("width", w)
+        // .attr("height", h)
+        // .append("g")
+        // .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var xtickValues = [1,2,3,4,5,6,7,8,9,10];
+        var ytickValues = [0, 5, 10, 15, 20];
+        // var ytickFormat = [0, 5, 10, 15, "20%"];
+
+        var xScale = d3.scaleLinear()
+          .range([0, width])
+
+        var yScale = d3.scaleLinear()
+          .range([height, 0])
+
+        var line = d3.line()
+          .x(function(d){
+            return xScale(d.Season)
+          })
+          .y(function(d){
+            return yScale(d.share)
+          })
+
+          var area = d3.area()
+            .x(function(d){
+            return xScale(d.Season)
+            })
+            .y0(height)
+            .y(function(d){
+            return yScale(d.share)
+            })
+
+            var xAxis = d3.axisBottom()
+              .scale(xScale)
+              .tickValues(xtickValues)
+              .tickSizeOuter(0)
+
+            var yAxis = d3.axisLeft()
+              .scale(yScale)
+              .tickFormat(function(d,i){ return d + "%"})
+              .tickValues(ytickValues)
+              .tickSize(-width,0,0)
+              .tickSizeOuter(0)
+
+
+
+          d3.csv("Friends_Season_share.csv", function(error, data){
+              data.forEach(function(d){
+                d.Season = +d.Season
+                d.share = +d.share
+                d.Character = d.Character 
+              });
+            
+            var Characters = d3.nest()
+              .key(function(d){ return d.Character; })
+              .entries(data);
+
+              console.log(Characters)
+
+            xScale.domain([0, d3.max(data, function(d){ return d.Season})]);
+
+            yScale.domain([0, d3.max(data, function(d){ return d.share; })]);             
+    
+            var svgs = d3.select("body")
+              .selectAll("svg")
+              .data(Characters)
+              .enter()
+              .append("svg")
+              .attr("id", "chart")
+              .attr("width", w)
+              .attr("height", h)
+              .append("g")
+              .attr("transform",  "translate(" + margin.left + "," + margin.top + ")")
+
+            svgs.append("g")
+              .attr("class", "xaxis")
+              .attr("transform", "translate(0," + height + ")")
+              .call(xAxis)
+
+              svgs.append("g")
+              .attr("class", "yaxis")
+              .attr("transform", "translate(0,0)")
+              .call(yAxis)
+              .selectAll("text")
+                  .style("fill", "black")
+                  .attr("transform", "translate("+ -5 + ",0)")
+
+
+              svgs.append("path")
+                  .attr("class", "area")
+                  .attr("d", function(d){
+                    return area(d.values)
+                  })
+                  .style("fill", "grey")
+                  .style("opacity", 0.5)
+
+
+            svgs.append("path")
+              .attr("class", "line")
+              .attr("d", function(d){
+                return line(d.values)
+              })
+              .style("stroke", "#70579d")
+              .style("fill", "none")
+              .style("stroke-width", "2.5px")
+
+
+               
+
+
+            svgs.append("text")
+              .attr("x", width - 60)
+              .attr("y", height - 420)
+              .style("text-anchor", "middle")
+              .style("font-size", "15px")
+              .text(function(d) { return d.key; });
+          });
+
+
+      
+    </script>
+  </body>
+</html>

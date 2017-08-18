@@ -16,5 +16,5 @@ Some Words
 
 Some Words
 
-![](Screen Shot 2017-08-17 at 11.11.53 PM)
+![](Screen Shot 2017-08-17 at 11.11.53 PM.png)
 

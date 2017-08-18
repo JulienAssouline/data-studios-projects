@@ -1,6 +1,6 @@
 ---
 
-title: New York is getting safer for pedestrians, the US is not.
+title: Analyzing every line from "Friends"
 
 ---
 
@@ -16,4 +16,7 @@ Some Words
 
 ![](Share_of_dialogue.png)
 
+Some Words
+
+![](Screen Shot 2017-08-17 at 11.11.53 PM)
 

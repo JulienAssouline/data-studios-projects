@@ -17,7 +17,7 @@ But, while each had great chemistry. Some characters, friends, spent more time a
 
 One way of measuring this is to look at how often each character mentioned the other, as can be seen in the chart above. 
 
-This brings us some insight. Ross and Rachel for example, both mentioned each other more than any other character. Which makes a ton of sense because so much of the plotline and show is dominated by their on again off again relationship. It ended with them finally getting together in the final episode of the show, but it certainly wasn't without a lot of drama, where each character was probably shouting each other's names with love and anger. 
+This brings us some insight. Ross and Rachel for example, both mentioned each other more than any other character. Which makes a ton of sense because so much of the plotline and show is dominated by their on again off again relationship. It ended with them finally getting together in the final episode of the show, but it certainly wasn't without a lot of drama. 
 
 Monica and Chandler also mentioned each other more times than any other character. While they both didn't start out as lovers, once they did fall in love, it was good. In many ways, they probably had the strongest relationship out of anyone in the friends group. Yes, even stronger than the bond between Chandler and Joey. Joey was second on Chandler's most mentioned list, and second by a wide margin, giving a good sense of who Chandler was closest with among the six characters. 
 
@@ -33,9 +33,9 @@ In some ways, this helps bring a type of hierarchy to the show. Even though all 
 
 Ross and Rachel especially. While characters such as Joey and Phoebe certainly played a pivotal part in the show. Their story lines rarely drove the show. Those two characters in particular were more two dimentional than the othe four. 
 
-Usually, the final cliff hanger of the seasons had to do with some drama between Ross and Rachel. Or it involved some big romantic moment between Monica and Chandler. 
+Usually, the final cliff hanger of the season had to do with some drama between Ross and Rachel. Or, it involved some big romantic moment between Monica and Chandler. 
 
-But, we can also see, if some characters gained or lost dialogue or some importance in the show.
+We can also see, if some characters gained or lost dialogue in the show.
 
 ![](Share_of_dialogue.png)
 
@@ -43,7 +43,7 @@ Rachel, for example, didn't necessarily start out with the most dialogue, but by
 
 Ross, on the other hand, dominated a good part of the show's dialogue for the first three seasons, but then dropped off quickly, before regaining most of the dialogue near the end of the series. 
 
-In the end, though, the main six character's dialogue primarily hovered around 15 to 20 percent. And, even though there were other characters who appeared on the show. None of them even came close to having the same importance. 
+In the end, though, the main six characters dialogue primarily hovered around 15 to 20 percent. And, even though there were other characters who appeared on the show. None of them even came close to having the same importance. 
 
 
 

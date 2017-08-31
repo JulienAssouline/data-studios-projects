@@ -1,0 +1,37 @@
+index,movie,Country,Latitude,Longitude,Name
+United States,82,US,37.09024,-95.712891,United States
+United Kingdom,18,GB,55.378051,-3.435973,United Kingdom
+Canada,5,CA,56.130366,-106.346771,Canada
+France,5,FR,46.227638,2.213749,France
+Cuba,5,CU,21.521757,-77.781167,Cuba
+Germany,5,DE,51.165691,10.451526,Germany
+India,5,IN,20.593684,78.96288,India
+Italy,4,IT,41.87194,12.56738,Italy
+Israel,4,IL,31.046051,34.851612,Israel
+Australia,4,AU,-25.274398,133.775136,Australia
+Colombia,4,CO,4.570868,-74.297333,Colombia
+United Arab Emirates,3,AE,23.424076,53.847818,United Arab Emirates
+Lebanon,3,LB,33.854721,35.862285,Lebanon
+South Korea,2,KR,35.907757,127.766922,South Korea
+Chile,2,CL,-35.675147,-71.542969,Chile
+Mexico,2,MX,23.634501,-102.552784,Mexico
+Argentina,2,AR,-38.416097,-63.616672,Argentina
+Singapore,2,SG,1.352083,103.819836,Singapore
+Austria,2,AT,47.516231,14.550072,Austria
+Turkey,2,TR,38.963745,35.243322,Turkey
+China,1,CN,35.86166,104.195397,China
+South Africa,1,ZA,-30.559482,22.937506,South Africa
+Bangladesh,1,BD,23.684994,90.356331,Bangladesh
+Brazil,1,BR,-14.235004,-51.92528,Brazil
+Namibia,1,,-22.95764,18.49041,Namibia
+Kazakhstan,1,KZ,48.019573,66.923684,Kazakhstan
+Switzerland,1,CH,46.818188,8.227512,Switzerland
+Hong Kong,1,HK,22.396428,114.109497,Hong Kong
+Indonesia,1,ID,-0.789275,113.921327,Indonesia
+Philippines,1,PH,12.879721,121.774017,Philippines
+Egypt,1,EG,26.820553,30.802498,Egypt
+Senegal,1,SN,14.497401,-14.452362,Senegal
+Qatar,1,QA,25.354826,51.183884,Qatar
+Taiwan,1,TW,23.69781,120.960515,Taiwan
+Japan,1,JP,36.204824,138.252924,Japan
+Belgium,1,BE,50.503887,4.469936,Belgium

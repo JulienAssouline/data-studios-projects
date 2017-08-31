@@ -42,7 +42,7 @@
 
 
         d3.json("world.topojson", function(json){
-          d3.csv("Critics by Country 4.csv", function(error, data){
+          d3.csv("Critics_by_Country_4.csv", function(error, data){
 
 
 

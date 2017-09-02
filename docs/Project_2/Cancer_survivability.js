@@ -1,12 +1,12 @@
 (function () {
 
 
-var w = 123
+var w = 153
 var h = 270
 
 var margin = {
-  right: 10,
-  left: 30,
+  right: 20,
+  left: 70,
   top: 50,
   bottom: 10
 }
@@ -57,7 +57,7 @@ var height = h - margin.top - margin.bottom;
 
     
 
-    var svgs = d3.select("#cancer_survival_rates")
+    var svgs = d3.select("body")
       .selectAll("svg")
       .data(data)
       .enter()
@@ -146,7 +146,7 @@ svgs.append("line")
         .style("font-size", "12px")
 
         svgs.append("text")
-          .attr("x", -20)
+          .attr("x", -35)
           .attr("y", 35)
           .text(function(d){
             if(d.Primary_Site == "Hodgkin (lymphoma)"){
@@ -157,7 +157,7 @@ svgs.append("line")
 
 
         svgs.append("text")
-          .attr("x", -20)
+          .attr("x", -35)
           .attr("y", 50)
           .text(function(d){
             if(d.Primary_Site == "Hodgkin (lymphoma)"){
@@ -169,7 +169,7 @@ svgs.append("line")
 
 
           svgs.append("text")
-          .attr("x", -5)
+          .attr("x", -15)
           .attr("y", 155)
           .text(function(d){
             if(d.Primary_Site == "Pancreas"){
@@ -180,7 +180,7 @@ svgs.append("line")
 
 
         svgs.append("text")
-          .attr("x", -5)
+          .attr("x", -15)
           .attr("y", 170)
           .text(function(d){
             if(d.Primary_Site == "Pancreas"){
@@ -211,7 +211,7 @@ svgs.append("line")
           .style("font-size", "11px")
 
         svgs.append("text")
-          .attr("x", 40)
+          .attr("x", 30)
           .attr("y", 10)
           .text(function(d){
             if(d.Primary_Site == "Hodgkin (lymphoma)"){
@@ -222,7 +222,7 @@ svgs.append("line")
           .style("font-weight", "bold")
 
         svgs.append("text")
-          .attr("x", 0)
+          .attr("x", -10)
           .attr("y", 165)
           .text(function(d){
             if(d.Primary_Site == "Hodgkin (lymphoma)"){
@@ -233,7 +233,7 @@ svgs.append("line")
           .style("font-weight", "bold")
 
         svgs.append("text")
-          .attr("x", 70)
+          .attr("x", 60)
           .attr("y", -10)
           .text(function(d){
             if(d.Primary_Site == "Prostate"){
@@ -259,7 +259,7 @@ svgs.append("line")
         .attr("x2", 15)
         .attr("y2", 18)
         .attr("stroke-width", 1)
-        .attr("transform", "translate(40,175)")
+        .attr("transform", "translate(30,175)")
         .attr("stroke", function(d){
             if(d.Primary_Site == "Pancreas"){
               return "black"
@@ -273,7 +273,7 @@ svgs.append("line")
         .attr("x2", 23)
         .attr("y2", 28)
         .attr("stroke-width", 1)
-        .attr("transform", "translate(28,60)")
+        .attr("transform", "translate(18,60)")
         .attr("stroke", function(d){
             if(d.Primary_Site == "Hodgkin (lymphoma)"){
               return "black"
@@ -282,7 +282,6 @@ svgs.append("line")
         .style("opacity", 0.7);
 
   });
-
 
  })()
 

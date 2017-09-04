@@ -57,7 +57,7 @@ var height = h - margin.top - margin.bottom;
 
     
 
-    var svgs = d3.select("body")
+    var svgs = d3.select("#cancer_survival_rates")
       .selectAll("svg")
       .data(data)
       .enter()

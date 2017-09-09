@@ -15,7 +15,7 @@ by: Julien Assouline
 
 But, while each had great chemistry. Some characters, friends, spent more time and interacted more with others. 
 
-One way of measuring this is to look at how often each character mentioned the other, as can be seen in the chart above. 
+One way of measuring this is to look at how often each character mentioned the other.
 
 This brings us some insight. Ross and Rachel for example, both mentioned each other more than any other character. Which makes a ton of sense because so much of the plotline and show is dominated by their on again off again relationship. It ended with them finally getting together in the final episode of the show, but it certainly wasn't without a lot of drama. 
 

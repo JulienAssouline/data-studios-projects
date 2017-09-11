@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Loading TopoJSON data and generating SVG paths</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+#chart{
+    background-color: white;
+    stroke-width: 1;
+  } 
+
+  .country{
+    fill: #eeedeb;
+    stroke: lightgrey;
+  }  
+
+  #chart1{
+    background-color: white;
+    stroke-width: 0;
+  } 
+
+.yaxis line,
+  .yaxis path{
+    fill: none;
+    stroke: none;
+  }
+
+.container{
+  float: right;
+}
+.container_1{
+  float: left;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container" id="Canadian_refugees"></div>
+  <script src="Canadian_refugees.js"></script>
+
+  <div class="container_1" id= "count_refugee"></div>
+    <script src="Refugees_Origin_2016_Canada.js"></script>
+
+
+    
+  </body>
+</html>

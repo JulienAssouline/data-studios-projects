@@ -51,7 +51,7 @@ img {
 }
 #clip{
   position: absolute;
-  clip: rect(100px, 100px, 200px, 100px);
+  clip: rect(0px, 100px, 500px, 100px);
 }
 span{
   font-size: 10px;

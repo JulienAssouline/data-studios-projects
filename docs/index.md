@@ -17,7 +17,7 @@ This is my site of projects for the [Lede Program](http://ledeprogram.com)
 
 Beyong The Box Score Work 
 
-<a href = "https://www.beyondtheboxscore.com/2017/3/28/15084346/jose-altuve-so-short-but-also-outstanding-david-eckstein-can-eat-it">We’ve never seen anything like Jose Altuve</a>
+<p>*<p> <a href = "https://www.beyondtheboxscore.com/2017/3/28/15084346/jose-altuve-so-short-but-also-outstanding-david-eckstein-can-eat-it">We’ve never seen anything like Jose Altuve</a>
 
 <a href = "https://www.beyondtheboxscore.com/2017/2/23/14672334/bbwaa-mvp-voting-valuable-subjectivity-trout-mantle-mays">Evaluating the BBWAA MVP voting through the years</a>
 

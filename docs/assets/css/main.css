@@ -1,12 +1,12 @@
 .container {
-  width: 750px;
+  width: 100%;
   color: none;
   margin: 0 auto;
   padding-bottom: 60px;
   padding-top: 60px;
   font-family: Georgia, sans-serif;
   position: relative;
-  background-color: grey;
+  background-color: #F5F2EB;
 }
 
 #nav {

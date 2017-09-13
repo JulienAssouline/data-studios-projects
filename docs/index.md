@@ -19,12 +19,12 @@ These are my projects from The Lede Program
 
 <h2>Previous Work<h2>
 
-<h3>Beyong the Box Score:<h3>
+Beyong the Box Score:
 
 
-<div>
+<div class = "image">
 <br> - <a href = "https://www.beyondtheboxscore.com/2017/3/28/15084346/jose-altuve-so-short-but-also-outstanding-david-eckstein-can-eat-it">We’ve never seen anything like Jose Altuve</a> <br>
-<img src="There's no one like Altuve in today's game.png" class = "cutout">
+<img src="There's no one like Altuve in today's game.png">
 </div>
 
 <br> - <a href = "https://www.beyondtheboxscore.com/2017/2/23/14672334/bbwaa-mvp-voting-valuable-subjectivity-trout-mantle-mays">Evaluating the BBWAA MVP voting through the years</a> <br>
@@ -37,7 +37,7 @@ These are my projects from The Lede Program
 
 <br> - <a href = "https://www.sbnation.com/users/Julien%20Assouline/blog"> Author page </a><br>
 
-<h3> Baseball Prospectus & BP Mailwaukee: <h3>
+Baseball Prospectus & BP Mailwaukee: 
 
 <br> - <a href = "http://www.baseballprospectus.com/article.php?articleid=30272"> That Old Story About Teams Never Trading Prospects Anymore </a> <br>
 
@@ -51,6 +51,6 @@ These are my projects from The Lede Program
 
 <br> - <a href = "http://milwaukee.locals.baseballprospectus.com/author/jassouline/"> Author page </a><br>
 
-<h3> The Hardball times: <h3>
+The Hardball times: 
 
 <br> - <a href = "http://www.fangraphs.com/tht/gender-division-in-high-school-baseball-participation-rates/"> Gender Division in High School Baseball Participation Rates </a><br>

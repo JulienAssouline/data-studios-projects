@@ -43,17 +43,14 @@ li {
   line-height: 1.8;
 }
 img {
-    border-radius: 8px;
+    border-radius: 14px;
 }
 .image{
+  background-image: url("There's no one like Altuve in today's game.png");
+  opacity: 0.5;
   position: relative;
   top: 200;
   left: 200;
-}
-div{
-  background-image: url("There's no one like Altuve in today's game.png");
-  opacity: 0.5;
-
 }
 br {
   position: absolute;

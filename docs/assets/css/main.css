@@ -1,6 +1,6 @@
-/*.container {
+.container {
   width: 750px;
-  color: #333;
+  color: none;
   margin: 0 auto;
   padding-bottom: 60px;
   padding-top: 60px;
@@ -40,4 +40,3 @@ a {
   padding: 3px 6px;
   color: #000;
 }
-*/

@@ -23,8 +23,9 @@ Beyong the Box Score:
 
 
 <div class = "image">
-<br> - <a href = "https://www.beyondtheboxscore.com/2017/3/28/15084346/jose-altuve-so-short-but-also-outstanding-david-eckstein-can-eat-it">We’ve never seen anything like Jose Altuve</a> <br>
+<a href = "https://www.beyondtheboxscore.com/2017/3/28/15084346/jose-altuve-so-short-but-also-outstanding-david-eckstein-can-eat-it"> <span>We’ve never seen anything like Jose Altuve </span>
 <img src="There's no one like Altuve in today's game.png">
+</a> 
 </div>
 
 <br> - <a href = "https://www.beyondtheboxscore.com/2017/2/23/14672334/bbwaa-mvp-voting-valuable-subjectivity-trout-mantle-mays">Evaluating the BBWAA MVP voting through the years</a> <br>

@@ -44,13 +44,12 @@ li {
 }
 img {
     border-radius: 14px;
+    opacity: 0.5;
+    position: relative;
+
 }
-.image{
-  background-image: url("There's no one like Altuve in today's game.png");
-  opacity: 0.5;
-  position: relative;
-  top: 200;
-  left: 200;
+span{
+  font-size: 10px;
 }
 br {
   position: absolute;

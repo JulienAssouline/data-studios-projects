@@ -49,6 +49,10 @@ img {
     height: 50%;
     width: 50%;
 }
+#clip{
+  position: absolute;
+  clip: rect(0px, 100px, 200px, 0px);
+}
 span{
   font-size: 10px;
 }

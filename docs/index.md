@@ -24,7 +24,7 @@ Beyong the Box Score:
 
 <div class = "image">
 <a href = "https://www.beyondtheboxscore.com/2017/3/28/15084346/jose-altuve-so-short-but-also-outstanding-david-eckstein-can-eat-it"> <span>We’ve never seen anything like Jose Altuve </span>
-<img src="There's no one like Altuve in today's game.png">
+<img id="clip" src="There's no one like Altuve in today's game.png">
 </a> 
 </div>
 

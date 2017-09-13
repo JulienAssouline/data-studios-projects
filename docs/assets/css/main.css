@@ -36,7 +36,7 @@ li {
 
 a {
   text-decoration: none;
-  background: #bdffc5;
+  background: none;
   padding: 3px 6px;
-  color: none;
+  color: #000;
 }

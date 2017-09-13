@@ -18,7 +18,8 @@ These are my projects from The Lede Program
 
 
 <h2>Previous Work<h2>
-<h3>Beyong The Box Score Work <h3>
+
+<h3>Beyong the Box Score:<h3>
 
 <p> - <a href = "https://www.beyondtheboxscore.com/2017/3/28/15084346/jose-altuve-so-short-but-also-outstanding-david-eckstein-can-eat-it">We’ve never seen anything like Jose Altuve</a> <p>
 
@@ -32,7 +33,7 @@ These are my projects from The Lede Program
 
 <p> - <a href = "https://www.sbnation.com/users/Julien%20Assouline/blog"> Author page </a><p>
 
-<h3> Baseball Prospectus & BP Mailwaukee <h3>
+<h3> Baseball Prospectus & BP Mailwaukee: <h3>
 
 <p> - <a href = "http://www.baseballprospectus.com/article.php?articleid=30272"> That Old Story About Teams Never Trading Prospects Anymore </a> <p>
 
@@ -46,6 +47,6 @@ These are my projects from The Lede Program
 
 <p> - <a href = "http://milwaukee.locals.baseballprospectus.com/author/jassouline/"> Author page </a><p>
 
-<h3> The Hardball times <h3>
+<h3> The Hardball times: <h3>
 
 <p> - <a href = "http://www.fangraphs.com/tht/gender-division-in-high-school-baseball-participation-rates/"> Gender Division in High School Baseball Participation Rates </a><p>

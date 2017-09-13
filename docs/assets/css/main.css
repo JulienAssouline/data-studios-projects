@@ -42,29 +42,7 @@ li {
   font-size: 24px;
   line-height: 1.8;
 }
- span{
-  font-size: 16px;
-  position: absolute;
-  top: 70px;
-  left: 30px;
-}
 
-  img {
-    position: relative;
-    height: 30%;
-    width: 30%;
-}
-#clip{
-  position: absolute;
-  border-radius: 200px;
-  opacity: 0.5;
-}
-br {
-  position: absolute;
-  top: 200px;
-  left: 0;
-  width: 100%;
-}
 
 a {
   text-decoration: none;

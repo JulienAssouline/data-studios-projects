@@ -6,7 +6,7 @@
   padding-top: 60px;
   font-family: Georgia, sans-serif;
   position: relative;
-  background-color: #F5F2EB;
+  background-color: white;
 }
 
 #nav {
@@ -41,5 +41,5 @@ a {
   background: none;
   padding: 3px 6px;
   color: #000;
-  font-weight: bold;
-}
+/*  font-weight: bold;
+*/}

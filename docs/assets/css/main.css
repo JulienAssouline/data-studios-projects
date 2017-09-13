@@ -15,7 +15,7 @@
   right: 10px;
   text-align: right;
   width: 100%;
-  background-color: #F5F2EB;
+  background-color: white;
 }
 
 h1 {
@@ -24,6 +24,9 @@ h1 {
 
 h2 {
   font-size: 32px;
+}
+h3{
+  font-size: 28px;
 }
 
 p {
@@ -41,5 +44,5 @@ a {
   background: none;
   padding: 3px 6px;
   color: #000;
-/*  font-weight: bold;
-*/}
+  text-decoration: underline;
+}

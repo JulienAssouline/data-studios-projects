@@ -8,14 +8,17 @@ layout: default
 
 I'm a data/visual/computational journalist, a journalism student at Ryerson University, and a graduate of the 2017 [Lede Program](http://ledeprogram.com). 
 
-[Project 1]({{ site.url }}/BBC): The Lack of Diversity in BBC's List of Best Movies of the 21st Century
-[Project 2]({{ site.url }}/project): New York Pedestrian Fatalities
-[Project 3]({{ site.url }}/Project_2): Cancer Rates
-[Project 4]({{ site.url }}/Friends): Friends
-[Project 5]({{ site.url }}/Syrian_refugees): Syrian Refugee Crisis
+These are my projects from The Lede Program
+
+* [Project 1]({{ site.url }}/BBC): The Lack of Diversity in BBC's List of Best Movies of the 21st Century
+* [Project 2]({{ site.url }}/project): New York Pedestrian Fatalities
+* [Project 3]({{ site.url }}/Project_2): Cancer Rates
+* [Project 4]({{ site.url }}/Friends): Friends
+* [Project 5]({{ site.url }}/Syrian_refugees): Syrian Refugee Crisis
 
 
-<h2>Beyong The Box Score Work <h2>
+<h2>Previous Work<h2>
+<h3>Beyong The Box Score Work <h3>
 
 <p> - <a href = "https://www.beyondtheboxscore.com/2017/3/28/15084346/jose-altuve-so-short-but-also-outstanding-david-eckstein-can-eat-it">We’ve never seen anything like Jose Altuve</a> <p>
 
@@ -29,7 +32,7 @@ I'm a data/visual/computational journalist, a journalism student at Ryerson Univ
 
 <p> - <a href = "https://www.sbnation.com/users/Julien%20Assouline/blog"> Author page </a><p>
 
-<h2> Baseball Prospectus & BP Mailwaukee <h2>
+<h3> Baseball Prospectus & BP Mailwaukee <h3>
 
 <p> - <a href = "http://www.baseballprospectus.com/article.php?articleid=30272"> That Old Story About Teams Never Trading Prospects Anymore </a> <p>
 
@@ -43,6 +46,6 @@ I'm a data/visual/computational journalist, a journalism student at Ryerson Univ
 
 <p> - <a href = "http://milwaukee.locals.baseballprospectus.com/author/jassouline/"> Author page </a><p>
 
-<h2> The Hardball times <h2>
+<h3> The Hardball times <h3>
 
 <p> - <a href = "http://www.fangraphs.com/tht/gender-division-in-high-school-baseball-participation-rates/"> Gender Division in High School Baseball Participation Rates </a><p>

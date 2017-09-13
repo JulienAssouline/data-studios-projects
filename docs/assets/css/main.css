@@ -34,6 +34,9 @@ p {
   line-height: 1.8;
   font-weight: none;
 }
+br{
+  font-size: 15px
+}
 
 li {
   font-size: 24px;

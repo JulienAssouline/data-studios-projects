@@ -42,19 +42,22 @@ li {
   font-size: 24px;
   line-height: 1.8;
 }
-img {
-    border-radius: 14px;
-    opacity: 0.5;
+ span{
+  font-size: 16px;
+  position: absolute;
+  top: 70px;
+  left: 30px;
+}
+
+  img {
     position: relative;
-    height: 50%;
-    width: 50%;
+    height: 30%;
+    width: 30%;
 }
 #clip{
   position: absolute;
-  clip: rect(0px, 100px, 500px, 100px);
-}
-span{
-  font-size: 10px;
+  border-radius: 200px;
+  opacity: 0.5;
 }
 br {
   position: absolute;

@@ -47,6 +47,13 @@ img {
 }
 .image{
   position: relative;
+  top: 200;
+  left: 200;
+}
+div{
+  background-image: url("There's no one like Altuve in today's game.png");
+  opacity: 0.5;
+
 }
 br {
   position: absolute;

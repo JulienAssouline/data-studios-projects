@@ -46,7 +46,8 @@ img {
     border-radius: 14px;
     opacity: 0.5;
     position: relative;
-
+    height: 50%;
+    width: 50%;
 }
 span{
   font-size: 10px;
@@ -63,6 +64,5 @@ a {
   background: none;
   padding: 3px 6px;
   color: #000;
-  text-decoration: underline;
   font-weight: none;
 }

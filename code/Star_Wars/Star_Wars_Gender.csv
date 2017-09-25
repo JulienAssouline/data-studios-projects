@@ -1,0 +1,139 @@
+,Gender,Characters,Word_count,Movie
+0,Female,Rey,1058,The Force Awakens
+1,Female,Maz Kanata,256,The Force Awakens
+2,Female,Leia,238,The Force Awakens
+3,Female,Phasma,72,The Force Awakens
+4,Female,Jess,18,The Force Awakens
+5,Female,Rey / Han,16,The Force Awakens
+6,Female,Woman,9,The Force Awakens
+7,Female,Girl Officer,8,The Force Awakens
+8,Female,Some Guy,8,The Force Awakens
+9,Female,Rey / Finn,4,The Force Awakens
+10,Female,Unknown Lady,2,The Force Awakens
+11,Female,Villager,2,The Force Awakens
+12,Male,Han Solo,1234,The Force Awakens
+13,Male,Kylo Ren,604,The Force Awakens
+14,Male,General Hux,315,The Force Awakens
+15,Male,Snoke,143,The Force Awakens
+16,Male,Bala-Tik,104,The Force Awakens
+17,Male,Lor San Tekka,94,The Force Awakens
+18,Male,Unkar,46,The Force Awakens
+19,Male,Statura,42,The Force Awakens
+20,Male,Captain,31,The Force Awakens
+21,Male,Pilot,24,The Force Awakens
+22,Male,Rey / Han,16,The Force Awakens
+23,Male,Obi Wan,10,The Force Awakens
+24,Male,Medic,8,The Force Awakens
+25,Male,Yoda,7,The Force Awakens
+26,Male,Emmat,4,The Force Awakens
+27,Male,Rey / Finn,4,The Force Awakens
+28,Male,Unknown Man,4,The Force Awakens
+29,Robots,C-3Po,132,The Force Awakens
+0,Female,Leia,364,Return of the Jedi
+1,Female,Mon Mothma,92,Return of the Jedi
+2,Male,Luke,936,Return of the Jedi
+3,Male,Han,830,Return of the Jedi
+4,Male,Emperor,511,Return of the Jedi
+5,Male,Ben,453,Return of the Jedi
+6,Male,Vader,383,Return of the Jedi
+7,Male,Lando,378,Return of the Jedi
+8,Male,Ackbar,179,Return of the Jedi
+9,Male,Yoda,161,Return of the Jedi
+10,Male,Wedge,64,Return of the Jedi
+11,Male,Commander,59,Return of the Jedi
+12,Male,Piett,58,Return of the Jedi
+13,Male,Jerjerrod,51,Return of the Jedi
+14,Male,General Madine,37,Return of the Jedi
+15,Male,Boushh,24,Return of the Jedi
+16,Male,Stormtrooper,21,Return of the Jedi
+17,Male,Bib,18,Return of the Jedi
+18,Male,Controller,15,Return of the Jedi
+19,Male,Rebel Pilot,13,Return of the Jedi
+20,Male,Control Room Commander,9,Return of the Jedi
+21,Male,Jabba,6,Return of the Jedi
+22,Male,Oola,6,Return of the Jedi
+23,Male,Bunker Commander,5,Return of the Jedi
+24,Male,Scout,5,Return of the Jedi
+25,Male,Pilot,3,Return of the Jedi
+26,Male,Han And Luke,1,Return of the Jedi
+27,Robots,Threepio,866,Return of the Jedi
+28,Robots,Ninedenine,71,Return of the Jedi
+0,Female,Leia,775,The Empire Strikes Back
+1,Female,Woman Controller,5,The Empire Strikes Back
+2,Male,Han,1580,The Empire Strikes Back
+3,Male,Luke,989,The Empire Strikes Back
+4,Male,Yoda,762,The Empire Strikes Back
+5,Male,Vader,667,The Empire Strikes Back
+6,Male,Lando,618,The Empire Strikes Back
+7,Male,Piett,185,The Empire Strikes Back
+8,Male,Ben,143,The Empire Strikes Back
+9,Male,Rieekan,128,The Empire Strikes Back
+10,Male,Veers,87,The Empire Strikes Back
+11,Male,Needa,82,The Empire Strikes Back
+12,Male,Zev,70,The Empire Strikes Back
+13,Male,Deck Officer,62,The Empire Strikes Back
+14,Male,Ozzel,57,The Empire Strikes Back
+15,Male,Emperor,51,The Empire Strikes Back
+16,Male,Dack,42,The Empire Strikes Back
+17,Male,Wedge,31,The Empire Strikes Back
+18,Male,Boba Fett,28,The Empire Strikes Back
+19,Male,Controller,28,The Empire Strikes Back
+20,Male,Derlin,27,The Empire Strikes Back
+21,Male,Rebel Captain,27,The Empire Strikes Back
+22,Male,Lieutenant,17,The Empire Strikes Back
+23,Male,Tracking Officer,17,The Empire Strikes Back
+24,Male,Communications Officer,12,The Empire Strikes Back
+25,Male,Senior Controller,12,The Empire Strikes Back
+26,Male,Second Controller,11,The Empire Strikes Back
+27,Male,Trench Officer,11,The Empire Strikes Back
+28,Male,Janson,9,The Empire Strikes Back
+29,Male,Hobbie,6,The Empire Strikes Back
+30,Male,Man'S Voice,3,The Empire Strikes Back
+31,Male,Rebel Fighter,2,The Empire Strikes Back
+32,Robots,Threepio,1201,The Empire Strikes Back
+33,Robots,Medical Droid,15,The Empire Strikes Back
+34,Robots,Second Threepio,3,The Empire Strikes Back
+0,Female,Leia,797,A New Hope
+1,Female,Aunt Beru,18,A New Hope
+2,Female,Camie,14,A New Hope
+3,Female,Woman,8,A New Hope
+4,Male,Luke,3224,A New Hope
+5,Male,Han,2236,A New Hope
+6,Male,Ben,1204,A New Hope
+7,Male,Biggs,643,A New Hope
+8,Male,Vader,613,A New Hope
+9,Male,Tarkin,477,A New Hope
+10,Male,Red Leader,406,A New Hope
+11,Male,Owen,385,A New Hope
+12,Male,Jabba,264,A New Hope
+13,Male,Dodonna,219,A New Hope
+14,Male,Officer,154,A New Hope
+15,Male,Trooper,149,A New Hope
+16,Male,Wedge,140,A New Hope
+17,Male,Gold Leader,119,A New Hope
+18,Male,Motti,119,A New Hope
+19,Male,Greedo,113,A New Hope
+20,Male,Tagge,107,A New Hope
+21,Male,Red Ten,62,A New Hope
+22,Male,Gold Five,60,A New Hope
+23,Male,First Trooper,53,A New Hope
+24,Male,Fixer,46,A New Hope
+25,Male,Officer Cass,37,A New Hope
+26,Male,Commander,34,A New Hope
+27,Male,Human,34,A New Hope
+28,Male,Gantry Officer,33,A New Hope
+29,Male,Willard,32,A New Hope
+30,Male,Man'S Voice,31,A New Hope
+31,Male,Chief,30,A New Hope
+32,Male,Imperial Officer,29,A New Hope
+33,Male,Bartender,25,A New Hope
+34,Male,Rebel Officer,19,A New Hope
+35,Male,Astro-Officer,18,A New Hope
+36,Male,Red Nine,15,A New Hope
+37,Male,Second Trooper,14,A New Hope
+38,Male,Gold Two,11,A New Hope
+39,Male,Technician,9,A New Hope
+40,Male,Chief Pilot,5,A New Hope
+41,Male,Deak,5,A New Hope
+42,Male,Porkins,5,A New Hope
+43,Other,Threepio,1841,A New Hope

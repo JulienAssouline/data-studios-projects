@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Loading TopoJSON data and generating SVG paths</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  #chart{
+    background-color: white;
+    border: 1px solid white;
+  }
+  /*rect{
+    fill: #b0859f;
+  }*/
+  .bar-label{
+    font-size: 14px;
+  }
+
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //Width and height
+
+      // var node_radius = 5,
+      // padding = 1,
+      // cluster_padding = 10,
+      // num_nodes = 200;
+
+      var w = 1050;
+      var h = 900;
+
+      var margin = {
+          top: 20,
+          bottom: 0,
+          left: 0,
+          right: 0
+        }
+
+        var width = w - margin.left - margin.right;
+        var height = h - margin.top - margin.bottom;
+
+
+        var svg = d3.select("body")
+        .append("svg")
+        .attr("id", "chart")
+        .attr("width", w)
+        .attr("height", h)
+        .append("g")
+        .attr("transform", "translate(0,0)");
+
+        var radiusScale = d3.scaleSqrt()
+          .domain([1, 3224])
+          .range([5, 40])
+
+
+        var simulation = d3.forceSimulation()
+          .force("x", d3.forceX(function(d){
+            if(d.Movie == "A New Hope"){
+              if(d.Gender == "Male"){
+                return 100
+              }
+              if(d.Gender == "Female"){
+                return 250
+              } else {
+                return 350
+              }
+            }
+            if(d.Movie == "The Empire Strikes Back"){
+               if(d.Gender == "Male"){
+                return 700
+              }
+              if(d.Gender == "Female"){
+                return 850
+              } else {
+                return 950
+              }
+            }
+            if(d.Movie == "Return of the Jedi"){
+              if(d.Gender == "Male"){
+                return 100
+              }
+              if(d.Gender == "Female"){
+                return 250
+              } else {
+                return 350
+              }
+            }
+            if(d.Movie == "The Force Awakens"){
+              if(d.Gender == "Male"){
+                return 700
+              }
+              if(d.Gender == "Female"){
+                return 850
+              } else {
+                return 950
+              }
+            }
+          }).strength(0.05))
+          .force("y", d3.forceY(function(d){
+            if(d.Movie == "A New Hope"){
+              return 150
+            }
+            if(d.Movie == "The Empire Strikes Back"){
+              return 150
+            }
+            if(d.Movie == "Return of the Jedi"){
+              return 450
+            }
+            if(d.Movie == "The Force Awakens"){
+              return 450
+            }
+          }).strength(0.05))
+          .force("collide", d3.forceCollide(function(d){
+            return radiusScale(d.Word_count);
+          }))
+
+
+          d3.csv("Star_Wars_Gender.csv", function(error, data){
+            data.forEach(function(d){
+              d.Word_count = +d.Word_count;
+              d.Movie = d.Movie;
+              d.Characters = d.Characters;
+              d.Gender = d.Gender;
+            })
+
+            console.log(data)
+
+            var circles = svg.selectAll(".words")
+              .data(data)
+              .enter()
+              .append("circle")
+              .attr("r", function(d){
+                return radiusScale(d.Word_count)
+              })
+              .style("fill", function(d){
+                if(d.Gender == "Male"){
+                  return "#41c5de"
+                } 
+                if(d.Gender == "Female"){
+                  return "#e03f8d"
+                } else {
+                  return "lightgrey"
+                }
+              })
+
+              svg.append("text")
+                .attr("x", 200)
+                .attr("y", 40)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size",17)
+                .text("A New Hope")
+
+
+              svg.append("text")
+                .attr("x", 730)
+                .attr("y", 40)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size", 17)
+                .text("The Empire Strikes Back")
+
+              svg.append("text")
+                .attr("x", 200)
+                .attr("y", 340)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size", 17)
+                .text("Return of the Jedi")
+
+              svg.append("text")
+                .attr("x", 730)
+                .attr("y", 340)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size", 17)
+                .text("The Force Awakens")
+              
+
+              simulation.nodes(data)
+                .on("tick", ticked)
+
+              function ticked(){
+                circles
+                  .attr("cx", function(d){
+                    return d.x
+                  })
+                  .attr("cy", function(d){
+                    return d.y
+                  })
+              }
+
+
+
+          })
+
+
+      
+    </script>
+  </body>
+</html>

@@ -15,6 +15,8 @@ These are my projects from The Lede Program
 * [Project 3]({{ site.url }}/Project_2): Cancer Rates
 * [Project 4]({{ site.url }}/Friends): Friends
 * [Project 5]({{ site.url }}/Syrian_refugees): Syrian Refugee Crisis
+* [Project 6]({{ site.url }}/Star_Wars): Star Wars 
+
 
 
 

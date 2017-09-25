@@ -60,7 +60,7 @@ body,html{
         .attr("transform", "translate(0,0)");
 
         var radiusScale = d3.scaleSqrt()
-          .domain([1, 3224])
+          .domain([1, 9573])
           .range([5, 40])
 
 
@@ -106,7 +106,17 @@ body,html{
                 return 950
               }
             }
-          }).strength(0.05))
+            if(d.Movie == "Revenge of the Sith"){
+              if(d.Gender == "Male"){
+                return 100
+              }
+              if(d.Gender == "Female"){
+                return 250
+              } else {
+                return 370
+              }
+            }
+          }).strength(0.08))
           .force("y", d3.forceY(function(d){
             if(d.Movie == "A New Hope"){
               return 150
@@ -119,6 +129,9 @@ body,html{
             }
             if(d.Movie == "The Force Awakens"){
               return 450
+            }
+            if(d.Movie == "Revenge of the Sith"){
+              return 750
             }
           }).strength(0.05))
           .force("collide", d3.forceCollide(function(d){
@@ -182,6 +195,13 @@ body,html{
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
                 .text("The Force Awakens")
+
+                svg.append("text")
+                .attr("x", 200)
+                .attr("y", 600)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size", 17)
+                .text("Revenge of the Sith")
               
 
               simulation.nodes(data)

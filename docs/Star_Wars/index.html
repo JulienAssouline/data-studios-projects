@@ -38,7 +38,7 @@ body,html{
       // num_nodes = 200;
 
       var w = 1050;
-      var h = 900;
+      var h = 1400;
 
       var margin = {
           top: 20,
@@ -68,70 +68,109 @@ body,html{
           .force("x", d3.forceX(function(d){
             if(d.Movie == "A New Hope"){
               if(d.Gender == "Male"){
-                return 100
+                return 200
               }
               if(d.Gender == "Female"){
-                return 250
-              } else {
                 return 350
+              } else {
+                return 450
               }
             }
             if(d.Movie == "The Empire Strikes Back"){
                if(d.Gender == "Male"){
-                return 700
+                return 650
               }
               if(d.Gender == "Female"){
-                return 850
+                return 800
               } else {
-                return 950
+                return 900
               }
             }
             if(d.Movie == "Return of the Jedi"){
               if(d.Gender == "Male"){
-                return 100
+                return 200
               }
               if(d.Gender == "Female"){
-                return 250
-              } else {
                 return 350
+              } else {
+                return 450
               }
             }
-            if(d.Movie == "The Force Awakens"){
+            if(d.Movie == "The Phantom Menace"){
               if(d.Gender == "Male"){
-                return 700
+                return 650
               }
               if(d.Gender == "Female"){
-                return 850
+                return 800
               } else {
-                return 950
+                return 900
+              }
+            }
+            if(d.Movie == "Attack of the Clones"){
+              if(d.Gender == "Male"){
+                return 200
+              }
+              if(d.Gender == "Female"){
+                return 350
+              } else {
+                return 450
               }
             }
             if(d.Movie == "Revenge of the Sith"){
               if(d.Gender == "Male"){
-                return 100
+                return 650
               }
               if(d.Gender == "Female"){
-                return 250
+                return 800
               } else {
-                return 370
+                return 900
               }
             }
-          }).strength(0.08))
+            if(d.Movie == "The Force Awakens"){
+              if(d.Gender == "Male"){
+                return 200
+              }
+              if(d.Gender == "Female"){
+                return 350
+              } else {
+                return 450
+              }
+            }
+            if(d.Movie == "Rogue One"){
+              if(d.Gender == "Male"){
+                return 650
+              }
+              if(d.Gender == "Female"){
+                return 800
+              } else {
+                return 900
+              }
+            }
+          }).strength(0.07))
           .force("y", d3.forceY(function(d){
             if(d.Movie == "A New Hope"){
-              return 150
+              return 350
             }
             if(d.Movie == "The Empire Strikes Back"){
-              return 150
+              return 350
             }
             if(d.Movie == "Return of the Jedi"){
-              return 450
+              return 650
             }
-            if(d.Movie == "The Force Awakens"){
-              return 450
+            if(d.Movie == "The Phantom Menace"){
+              return 650
+            }
+            if(d.Movie == "Attack of the Clones"){
+              return 950
             }
             if(d.Movie == "Revenge of the Sith"){
-              return 750
+              return 950
+            }
+            if(d.Movie == "The Force Awakens"){
+              return 1250
+            }
+            if(d.Movie == "Rogue One"){
+              return 1250
             }
           }).strength(0.05))
           .force("collide", d3.forceCollide(function(d){
@@ -167,41 +206,237 @@ body,html{
                 }
               })
 
+              // LEGEN SIZE
+
+              svg.append("circle")
+                .attr("r", 30)
+                .attr("cx", 650)
+                .attr("cy", 160)
+                .style("stroke", "#ccc")
+                .style("fill-opacity", 0)
+                .style("stroke-width", 1.5)
+                .style("stroke-dasharray", ("3,3"))
+
+                svg.append("circle")
+                .attr("r", 20)
+                .attr("cx", 650)
+                .attr("cy", 170)
+                .style("stroke", "#ccc")
+                .style("fill-opacity", 0)
+                .style("stroke-width", 1.5)
+                .style("stroke-dasharray", ("3,3"))
+
+                svg.append("circle")
+                .attr("r", 10)
+                .attr("cx", 650)
+                .attr("cy", 180)
+                .style("stroke", "#ccc")
+                .style("fill-opacity", 0)
+                .style("stroke-width", 1.5)
+                .style("stroke-dasharray", ("3,3"))
+
+
+                svg.append("line")
+                  .attr("x1", 5)
+                  .attr("y1", 20)
+                  .attr("x2", 50)
+                  .attr("y2", 20)
+                  .attr("stroke-width", 1)
+                  .attr("transform", "translate(650, 110)")
+                  .attr("stroke", "#ccc")
+                  .style("stroke-dasharray", ("3,3"));
+
+                  svg.append("line")
+                  .attr("x1", 5)
+                  .attr("y1", 20)
+                  .attr("x2", 50)
+                  .attr("y2", 20)
+                  .attr("stroke-width", 1)
+                  .attr("transform", "translate(650, 130)")
+                  .attr("stroke", "#ccc")
+                  .style("stroke-dasharray", ("3,3"));
+
+                  svg.append("line")
+                  .attr("x1", 5)
+                  .attr("y1", 20)
+                  .attr("x2", 50)
+                  .attr("y2", 20)
+                  .attr("stroke-width", 1)
+                  .attr("transform", "translate(650, 150)")
+                  .attr("stroke", "#ccc")
+                  .style("stroke-dasharray", ("3,3"));
+
               svg.append("text")
-                .attr("x", 200)
-                .attr("y", 40)
+                .attr("x", 710)
+                .attr("y", 135)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size",13)
+                .style("fill", "#ccc")
+                .text("1,500 words")
+
+              svg.append("text")
+                .attr("x", 710)
+                .attr("y", 155)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size",13)
+                .style("fill", "#ccc")
+                .text("1,000 words")
+
+              svg.append("text")
+                .attr("x", 710)
+                .attr("y", 175)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size",13)
+                .style("fill", "#ccc")
+                .text("500 words")
+
+                svg.append("text")
+                .attr("x", 630)
+                .attr("y", 105)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size",17)
+                .style("fill", "#6c6c6c")
+                .text("Circle size represents the amount of words spoken")
+
+
+              // LEGEND COLOR
+              // Men 
+              svg.append("circle")
+                .attr("r", 10)
+                .attr("cx", 200)
+                .attr("cy", 150)
+                .style("fill", "#41c5de")
+
+              svg.append("text")
+                .attr("x", 220)
+                .attr("y", 155)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size",17)
+                .style("fill", "#41c5de")
+                .text("Men")
+
+              // Women
+
+              svg.append("circle")
+                .attr("r", 10)
+                .attr("cx", 300)
+                .attr("cy", 150)
+                .style("fill", "#e03f8d")
+
+                svg.append("text")
+                .attr("x", 320)
+                .attr("y", 155)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size",17)
+                .style("fill", "#e03f8d")
+                .text("Women")
+
+              // Robots
+
+              svg.append("circle")
+                .attr("r", 10)
+                .attr("cx", 400)
+                .attr("cy", 150)
+                .style("fill", "lightgrey")
+
+                svg.append("text")
+                .attr("x", 420)
+                .attr("y", 155)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size",17)
+                .style("fill", "lightgrey")
+                .text("Robots")
+
+                svg.append("text")
+                .attr("x", 190)
+                .attr("y", 105)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size",17)
+                .style("fill", "#6c6c6c")
+                .text("Color shows the gender")
+
+
+
+                // title of movies
+              svg.append("text")
+                .attr("x", 300)
+                .attr("y", 240)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size",17)
                 .text("A New Hope")
+                .style("text-align", "center")
+
 
 
               svg.append("text")
-                .attr("x", 730)
-                .attr("y", 40)
+                .attr("x", 720)
+                .attr("y", 240)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
                 .text("The Empire Strikes Back")
+                .style("text-align", "center")
+
 
               svg.append("text")
-                .attr("x", 200)
-                .attr("y", 340)
+                .attr("x", 300)
+                .attr("y", 540)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
                 .text("Return of the Jedi")
+                .style("text-align", "center")
+
 
               svg.append("text")
-                .attr("x", 730)
-                .attr("y", 340)
+                .attr("x", 720)
+                .attr("y", 540)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("The Force Awakens")
+                .text("The Phantom Menace")
+                .style("text-align", "center")
+
 
                 svg.append("text")
-                .attr("x", 200)
-                .attr("y", 600)
+                .attr("x", 300)
+                .attr("y", 800)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size", 17)
+                .text("Attack of the Clones")
+                .style("text-align", "center")
+
+
+               svg.append("text")
+                .attr("x", 720)
+                .attr("y", 800)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
                 .text("Revenge of the Sith")
+                .style("text-align", "center")
+
+
+                svg.append("text")
+                .attr("x", 300)
+                .attr("y", 1100)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size", 17)
+                .text("The Force Awakens")
+                .style("text-align", "center")
+
+
+                svg.append("text")
+                .attr("x", 720)
+                .attr("y", 1100)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size", 17)
+                .text("Rogue One")
+                .style("text-align", "center")
+
+              svg.append("text")
+                .attr("x",200)
+                .attr("y", 30)
+                .attr("font-family", "Bree Serif")
+                .attr("font-size", 30)
+                .text("Dialogue of Men, Women, and Robots in Star Wars")
+                .style("font-weight", "bold")
               
 
               simulation.nodes(data)

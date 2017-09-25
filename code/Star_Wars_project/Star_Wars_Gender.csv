@@ -161,26 +161,140 @@
 24,Fang Zar,Male,Revenge of the Sith,69
 26,Clone Commander Gree,Male,Revenge of the Sith,60
 27,Bana Breemu,Female,Revenge of the Sith,57
-29,Jar Jar,Male,Revenge of the Sith,54
-30,Creature,Male,Revenge of the Sith,54
+29,Creature,Male,Revenge of the Sith,54
+30,Jar Jar,Male,Revenge of the Sith,54
 31,Glddean Danu,Male,Revenge of the Sith,48
-33,Aayla,Female,Revenge of the Sith,42
-34,Younglings,Male,Revenge of the Sith,42
-36,Super Battle Droid G21,Robots,Revenge of the Sith,42
+33,Super Battle Droid G21,Robots,Revenge of the Sith,42
+35,Aayla,Female,Revenge of the Sith,42
+36,Younglings,Male,Revenge of the Sith,42
 38,Bodyguard,Male,Revenge of the Sith,39
 39,Super Battle Droid 1,Robots,Revenge of the Sith,39
-41,Bodyguard I,Male,Revenge of the Sith,27
+42,Bodyguard I,Male,Revenge of the Sith,27
 43,Plo Koon,Male,Revenge of the Sith,24
 44,Clone Commander Bacara,Male,Revenge of the Sith,24
 45,Battle Droid,Robots,Revenge of the Sith,21
 46,Super Battle Droid R77,Robots,Revenge of the Sith,21
-48,Super Battle Droid 2,Robots,Revenge of the Sith,18
-49,Super Battle Droid,Robots,Revenge of the Sith,18
-50,Rune Haako,Male,Revenge of the Sith,18
+47,Rune Haako,Male,Revenge of the Sith,18
+49,Super Battle Droid 2,Robots,Revenge of the Sith,18
+50,Super Battle Droid,Robots,Revenge of the Sith,18
 51,Droid 1,Robots,Revenge of the Sith,15
-54,At-St Clone Sergeant,Male,Revenge of the Sith,12
-55,Terr Taneel,Female,Revenge of the Sith,12
-57,Anakin/Obi-Wan,Male,Revenge of the Sith,12
+53,Terr Taneel,Female,Revenge of the Sith,12
+54,Anakin/Obi-Wan,Male,Revenge of the Sith,12
+55,At-St Clone Sergeant,Male,Revenge of the Sith,12
 58,Motee,Female,Revenge of the Sith,9
 59,Chi Eekway,Female,Revenge of the Sith,6
 60,Droid 2,Robots,Revenge of the Sith,6
+0,K-2SO,Droid,Rogue One,2340
+1,Cassian,Male,Rogue One,2270
+2,Jyn Erso,Female,Rogue One,1928
+3,Bodhi,Male,Rogue One,1180
+4,Galen Erso,Male,Rogue One,1008
+5,Krennic,Male,Rogue One,924
+6,Chirrut,Male,Rogue One,808
+7,Tarkin,Male,Rogue One,458
+8,Saw Gerrera,Male,Rogue One,448
+9,Stormtrooper,Male,Rogue One,378
+10,Baze,Male,Rogue One,258
+11,Raddus,Male,Rogue One,250
+12,Tivik,Male,Rogue One,210
+13,Darth Vader,Male,Rogue One,192
+14,Mon Mothma,Female,Rogue One,178
+15,Rebel,Male,Rogue One,168
+16,Melshi,Male,Rogue One,150
+17,Imperial,Male,Rogue One,124
+18,Senator Senator Organa,Male,Rogue One,122
+19,Blue Leader,Male,Rogue One,110
+20,Pamlo,Female,Rogue One,92
+21,Threepio,Droid,Rogue One,76
+22,Lieutenant,Male,Rogue One,74
+23,Gold Leader,Male,Rogue One,64
+24,Lyra,Female,Rogue One,60
+25,Soldier,Male,Rogue One,58
+26,Jebel,Male,Rogue One,56
+27,Tonc,Male,Rogue One,52
+28,Romodi,Male,Rogue One,50
+29,Captain Antilles,Male,Rogue One,48
+30,Vaspar,Male,Rogue One,48
+31,Officer,Male,Rogue One,26
+32,Red Leader,Male,Rogue One,24
+33,Vanee,Male,Rogue One,12
+34,Dr. Evazan,Male,Rogue One,10
+35,Engineer,Male,Rogue One,10
+36,Dodonna,Male,Rogue One,8
+37,Mother,Female,Rogue One,4
+38,Leia,Female,Rogue One,2
+0,Padme,Female,Attack of the Clones,2343
+1,Anakin,Male,Attack of the Clones,2061
+2,Obi-Wan,Male,Attack of the Clones,1482
+3,Palpatine,Male,Attack of the Clones,590
+4,Count Dooku,Male,Attack of the Clones,584
+5,Yoda,Male,Attack of the Clones,355
+6,Lama Su,Male,Attack of the Clones,350
+7,Jocasta Nu,Female,Attack of the Clones,331
+8,Threepio,Droid,Attack of the Clones,318
+9,Jar Jar,Male,Attack of the Clones,254
+10,Cliegg,Male,Attack of the Clones,152
+11,Dexter Jettster,Male,Attack of the Clones,151
+12,Watto,Male,Attack of the Clones,140
+13,Taun We,Female,Attack of the Clones,139
+14,Queen Jamillia,Female,Attack of the Clones,135
+15,Jango Fett,Male,Attack of the Clones,98
+16,Mas Amedda,Male,Attack of the Clones,95
+17,Sio Bibble,Male,Attack of the Clones,91
+18,Bail Organa,Male,Attack of the Clones,89
+19,Sola,Female,Attack of the Clones,86
+20,Captain Typho,Male,Attack of the Clones,81
+21,Jobal,Female,Attack of the Clones,78
+22,Ruwee,Male,Attack of the Clones,75
+23,Pk-4,Droid,Attack of the Clones,69
+24,Senator Ask Aak,Male,Attack of the Clones,66
+25,Owen,Male,Attack of the Clones,56
+26,Mace Windu,Male,Attack of the Clones,53
+27,Poggle,Male,Attack of the Clones,42
+28,Shmi,Female,Attack of the Clones,39
+29,Sun Rit,Male,Attack of the Clones,38
+30,Nute Gunray,Male,Attack of the Clones,34
+31,Orn Free Taa,Male,Attack of the Clones,33
+32,Amidala,Female,Attack of the Clones,26
+33,Hermione Bagwa,Female,Attack of the Clones,26
+34,Zam Wessel,Female,Attack of the Clones,26
+35,Ki-Adi-Mundi,Male,Attack of the Clones,26
+36,Dorme,Female,Attack of the Clones,20
+37,Ambassador Darsana,Male,Attack of the Clones,17
+38,Elan,Male,Attack of the Clones,17
+39,Boba Fett,Male,Attack of the Clones,14
+40,Clone Captain,Male,Attack of the Clones,11
+41,Cordé,Female,Attack of the Clones,8
+42,Plo Koon,Male,Attack of the Clones,8
+43,Beru,Female,Attack of the Clones,7
+44,Dar Wac,Male,Attack of the Clones,7
+45,Ryoo & Pooja,Female,Attack of the Clones,5
+46,Droid Captain,Droid,Attack of the Clones,2
+0,Qui-Gon,Male,The Phantom Menace,2118
+1,Anakin,Male,The Phantom Menace,1565
+2,Padme,Female,The Phantom Menace,659
+3,Obi-Wan,Male,The Phantom Menace,630
+4,Amidala,Female,The Phantom Menace,611
+5,Nute,Male,The Phantom Menace,598
+6,Jar Jar,Male,The Phantom Menace,583
+7,Watto,Male,The Phantom Menace,482
+8,Fode/Beed,Male,The Phantom Menace,373
+9,Capt. Panaka,Male,The Phantom Menace,364
+10,Palpatine,Male,The Phantom Menace,274
+11,Mace Windu,Male,The Phantom Menace,228
+12,Boss Nass,Male,The Phantom Menace,192
+13,Ric Olie,Male,The Phantom Menace,118
+14,Yoda,Male,The Phantom Menace,74
+15,Threepio,Droid,The Phantom Menace,66
+16,Darth Maul,Male,The Phantom Menace,65
+17,Tc-14,Droid,The Phantom Menace,50
+18,Sebulba,Male,The Phantom Menace,39
+19,Jabba,Male,The Phantom Menace,35
+20,Captain,Male,The Phantom Menace,20
+21,Battle Droid Captain,Droid,The Phantom Menace,20
+22,Pk-4,Droid,The Phantom Menace,17
+23,Eg-9,Droid,The Phantom Menace,7
+24,General Ceel,Male,The Phantom Menace,5
+25,P-59,Droid,The Phantom Menace,5
+26,Owo-1,Droid,The Phantom Menace,4
+27,Guard Droid,Droid,The Phantom Menace,4

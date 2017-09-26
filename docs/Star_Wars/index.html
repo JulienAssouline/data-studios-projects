@@ -18,12 +18,17 @@ body,html{
     background-color: white;
     border: 1px solid white;
   }
-  /*rect{
-    fill: #b0859f;
-  }*/
-  .bar-label{
-    font-size: 14px;
-  }
+  
+  div.tooltip { 
+    position: absolute;
+    text-align: left;
+    color: white;
+    padding: 7px;
+    background-color: darkgrey;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: sans-serif;
+   }
 
 
     </style>
@@ -177,6 +182,11 @@ body,html{
             return radiusScale(d.Word_count);
           }))
 
+          var div = d3.select("body")
+            .append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0)
+
 
           d3.csv("Star_Wars_Gender.csv", function(error, data){
             data.forEach(function(d){
@@ -205,6 +215,26 @@ body,html{
                   return "lightgrey"
                 }
               })
+              .on("mouseover", function(d){
+                div.transition()
+                .duration(200)
+                .style("opacity", 1)
+                div.html(d.Characters + ": " + d.Word_count+" words")
+                div.style("visibility", "visible")
+                .style("left", (d3.event.pageX - 20) + "px")    
+                .style("top", (d3.event.pageY - 35) + "px")
+              })
+              .on("mousemove", function(d){
+            div.style("left", (d3.event.pageX - 20) + "px")    
+            .style("top", (d3.event.pageY - 35) + "px")
+          })
+              .on("mouseout", function(d){
+                // div.transition()
+                // .duration(500)
+                // .style("opacity", 0)
+                div.style("visibility", "hidden")
+
+              })
 
               // LEGEN SIZE
 
@@ -212,28 +242,33 @@ body,html{
                 .attr("r", 30)
                 .attr("cx", 650)
                 .attr("cy", 160)
-                .style("stroke", "#ccc")
+                .style("stroke", "#6c6c6c")
                 .style("fill-opacity", 0)
                 .style("stroke-width", 1.5)
                 .style("stroke-dasharray", ("3,3"))
+                .style("opacity", 0.5)
 
                 svg.append("circle")
                 .attr("r", 20)
                 .attr("cx", 650)
                 .attr("cy", 170)
-                .style("stroke", "#ccc")
+                .style("stroke", "#6c6c6c")
                 .style("fill-opacity", 0)
                 .style("stroke-width", 1.5)
                 .style("stroke-dasharray", ("3,3"))
+                .style("opacity", 0.5)
+
 
                 svg.append("circle")
                 .attr("r", 10)
                 .attr("cx", 650)
                 .attr("cy", 180)
-                .style("stroke", "#ccc")
+                .style("stroke", "#6c6c6c")
                 .style("fill-opacity", 0)
                 .style("stroke-width", 1.5)
                 .style("stroke-dasharray", ("3,3"))
+                .style("opacity", 0.5)
+
 
 
                 svg.append("line")
@@ -243,8 +278,10 @@ body,html{
                   .attr("y2", 20)
                   .attr("stroke-width", 1)
                   .attr("transform", "translate(650, 110)")
-                  .attr("stroke", "#ccc")
-                  .style("stroke-dasharray", ("3,3"));
+                  .attr("stroke", "#6c6c6c")
+                  .style("stroke-dasharray", ("3,3"))
+                  .style("opacity", 0.5)
+
 
                   svg.append("line")
                   .attr("x1", 5)
@@ -253,8 +290,10 @@ body,html{
                   .attr("y2", 20)
                   .attr("stroke-width", 1)
                   .attr("transform", "translate(650, 130)")
-                  .attr("stroke", "#ccc")
-                  .style("stroke-dasharray", ("3,3"));
+                  .attr("stroke", "#6c6c6c")
+                  .style("stroke-dasharray", ("3,3"))
+                  .style("opacity", 0.5)
+
 
                   svg.append("line")
                   .attr("x1", 5)
@@ -263,15 +302,17 @@ body,html{
                   .attr("y2", 20)
                   .attr("stroke-width", 1)
                   .attr("transform", "translate(650, 150)")
-                  .attr("stroke", "#ccc")
-                  .style("stroke-dasharray", ("3,3"));
+                  .attr("stroke", "#6c6c6c")
+                  .style("stroke-dasharray", ("3,3"))
+                  .style("opacity", 0.5)
+
 
               svg.append("text")
                 .attr("x", 710)
                 .attr("y", 135)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size",13)
-                .style("fill", "#ccc")
+                .style("fill", "#6c6c6c")
                 .text("1,500 words")
 
               svg.append("text")
@@ -279,7 +320,7 @@ body,html{
                 .attr("y", 155)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size",13)
-                .style("fill", "#ccc")
+                .style("fill", "#6c6c6c")
                 .text("1,000 words")
 
               svg.append("text")
@@ -287,7 +328,7 @@ body,html{
                 .attr("y", 175)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size",13)
-                .style("fill", "#ccc")
+                .style("fill", "#6c6c6c")
                 .text("500 words")
 
                 svg.append("text")

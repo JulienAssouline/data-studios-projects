@@ -13,7 +13,7 @@ by: Julien Assouline
 
 "Friends" was known for many things. Humor, love, Central Perk, youth, style, but perhaps most notably, the relationship of the six major characters; Rachel, Ross, Monica, Chandler, Joey, and Phoebe. Each with their different personalities and quirks that melded oh so well together. 
 
-But, while each had great chemistry. Some characters, friends, spent more time and interacted more with others. 
+But, while each had great chemistry. Some characters, friends, spent more time and interacted more with each other than others. 
 
 One way of measuring this is to look at how often each character mentioned the other.
 
@@ -31,7 +31,7 @@ Throughout the show, Rachel, and Ross had the most lines, out of the six main ch
 
 In some ways, this helps bring a type of hierarchy to the show. Even though all of these characters were in every single episode, some of them seemed to be a little more important than others. Or, whose roles were more important. 
 
-Ross and Rachel especially. While characters such as Joey and Phoebe certainly played a pivotal part in the show. Their story lines rarely drove the show. Those two characters in particular were more two dimentional than the othe four. 
+Ross and Rachel especially. While characters such as Joey and Phoebe certainly played a pivotal part in the show. Their story lines rarely drove the show. Those two characters in particular were more two dimentional than the other four. 
 
 Usually, the final cliff hanger of the season had to do with some drama between Ross and Rachel. Or, it involved some big romantic moment between Monica and Chandler. 
 

@@ -19,15 +19,20 @@
 }
 
 hr.small {
-  max-width: 1px;
+  max-width: 50px;
   margin: 15px auto;
-  border-width: 4px;
+  border-width: 1px;
   border-color: lightgrey;
 }
 
-div.post-preview{
-  background-image: url("BBC/critics_map_1.png");
-  background-position: left;
+hr {
+  color: lightgrey;
+}
+
+img{
+   position: relative;
+    height: 30%;
+    width: 30%;
 }
 
 h1 {

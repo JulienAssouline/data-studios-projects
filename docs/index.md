@@ -20,7 +20,7 @@ These are my projects from The Lede Program
   <div class="post-preview">
                   <a href="project">
                       <p class="post-title">
-                       The Lack of Diversity in BBC's List of Best Movies of the 21st Century
+                       New York Pedestrian Fatalities
                       </p>
                           </a>
               </div>
@@ -28,14 +28,14 @@ These are my projects from The Lede Program
               <div class="post-preview">
                   <a href="Project_2">
                       <p class="post-title">
-                       The Lack of Diversity in BBC's List of Best Movies of the 21st Century
+                       Cancer Rates
                       </p>
                           </a>
               </div>
       <div class="post-preview">
                   <a href="Friends">
                       <p class="post-title">
-                       The Lack of Diversity in BBC's List of Best Movies of the 21st Century
+                       Friends
                       </p>
                           </a>
               </div>
@@ -43,14 +43,14 @@ These are my projects from The Lede Program
                <div class="post-preview">
                   <a href="Syrian_refugees">
                       <p class="post-title">
-                       The Lack of Diversity in BBC's List of Best Movies of the 21st Century
+                       Syrian Refugee Crisis
                       </p>
                           </a>
               </div>
               <div class="post-preview">
                   <a href="Star_Wars">
                       <p class="post-title">
-                       The Lack of Diversity in BBC's List of Best Movies of the 21st Century
+                       Star Wars 
                       </p>
                           </a>
               </div>

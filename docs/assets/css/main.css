@@ -29,7 +29,7 @@ hr {
   color: lightgrey;
 }
 
-img.clip{
+img.true{
    position: relative;
     width:  100px;
     height: 100px;
@@ -61,7 +61,7 @@ li {
 }
 
 
-a {
+a.text {
   text-decoration: none;
   background: none;
   padding: 3px 6px;

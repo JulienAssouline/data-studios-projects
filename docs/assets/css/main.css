@@ -18,6 +18,13 @@
   background-color: white;
 }
 
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: lightgrey;
+}
+
 h1 {
   font-size: 54px;
 }
@@ -30,12 +37,12 @@ h3{
 }
 
 p {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.8;
   font-weight: none;
 }
-br{
-  font-size: 15px
+span{
+  font-size: 18px;
 }
 
 li {

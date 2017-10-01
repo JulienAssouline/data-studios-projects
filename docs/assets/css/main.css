@@ -29,10 +29,10 @@ hr {
   color: lightgrey;
 }
 
-img{
+img.clip{
    position: relative;
-    height: 30%;
-    width: 30%;
+    width:  100px;
+    height: 100px;
 }
 
 h1 {

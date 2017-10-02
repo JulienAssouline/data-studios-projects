@@ -9,17 +9,12 @@
   background-color: white;
 }
 
-#nav {
-  
-  background-color: white;
-}
-
-.links {
+.nav {
  position: absolute;
   top: 10px;
   right: 10px;
   text-align: right;
-  width: 100%;
+  width:600px;
 /*  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
 }
 

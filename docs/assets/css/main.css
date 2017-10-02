@@ -18,6 +18,9 @@ position: absolute;
   padding-right: 3px;
 /*  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
 }
+.nav a{
+  padding-right: 5px;
+}
 
 hr.small {
   max-width: 50px;

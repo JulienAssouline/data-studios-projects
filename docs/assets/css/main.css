@@ -31,6 +31,7 @@ hr {
 
 .true{
    position: relative;
+   border: 1px solid grey;
 
 }
 
@@ -39,7 +40,7 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 40px;
 }
 h3{
   font-size: 28px;

@@ -10,7 +10,12 @@
 }
 
 .nav {
+  position: absolute;
+  top: 20px;
+  right: 15px;
   text-align: right;
+  width: 100%;
+  padding-right: 3px;
 /*  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
 }
 
@@ -50,11 +55,6 @@ p {
 }
 span{
   font-size: 24px;
-}
-
-li {
-  font-size: 24px;
-  line-height: 1.8;
 }
 
 

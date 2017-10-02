@@ -13,10 +13,7 @@
   text-align: right;
 /*  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
 }
-.nav a{
-  padding-right: 5px;
-  display: inline-block;
-}
+
 
 hr.small {
   max-width: 50px;

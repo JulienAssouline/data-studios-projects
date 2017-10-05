@@ -201,7 +201,7 @@
 
               })
               .style("stroke", function(d){
-                if(d.Characters == "Owen" && d.Movie == "A New Hope"){
+                if(d.Characters == "Fixer" && d.Movie == "A New Hope"){
                   return "#6c6c6c"
                 }
               })

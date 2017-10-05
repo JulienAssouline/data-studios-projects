@@ -1,0 +1,15 @@
+,Movie,gender,count,Year
+0,A New Hope,He,79,1977
+1,A New Hope,She,8,1977
+8,The Empire Strikes Back,He,80,1980
+9,The Empire Strikes Back,She,14,1980
+4,Return of the Jedi,He,59,1983
+5,Return of the Jedi,She,11,1983
+12,The Phantom Menace,He,88,1999
+13,The Phantom Menace,She,19,1999
+2,Attack of the Clones,He,76,2002
+3,Attack of the Clones,She,34,2002
+6,Revenge of the Sith,He,134,2005
+7,Revenge of the Sith,She,19,2005
+10,The Force Awakens,She,83,2015
+11,The Force Awakens,He,79,2015

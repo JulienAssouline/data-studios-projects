@@ -409,7 +409,7 @@
                 .attr("font-size",17)
                 .text("A New Hope")
                 .style("text-align", "center")
-                .style("text-decoration", "underline")
+                .attr("class", "title_wars")
 
 
 
@@ -421,7 +421,7 @@
                 .attr("font-size", 17)
                 .text("The Empire Strikes Back")
                 .style("text-align", "center")
-                .style("text-decoration", "underline")
+                .attr("class", "title_wars")
 
 
 
@@ -432,7 +432,7 @@
                 .attr("font-size", 17)
                 .text("Return of the Jedi")
                 .style("text-align", "center")
-                .style("text-decoration", "underline")
+                .attr("class", "title_wars")
 
 
 
@@ -443,7 +443,7 @@
                 .attr("font-size", 17)
                 .text("The Phantom Menace")
                 .style("text-align", "center")
-                .style("text-decoration", "underline")
+                .attr("class", "title_wars")
 
 
 
@@ -454,7 +454,7 @@
                 .attr("font-size", 17)
                 .text("Attack of the Clones")
                 .style("text-align", "center")
-                .style("text-decoration", "underline")
+                .attr("class", "title_wars")
 
 
 
@@ -465,7 +465,7 @@
                 .attr("font-size", 17)
                 .text("Revenge of the Sith")
                 .style("text-align", "center")
-                .style("text-decoration", "underline")
+                .attr("class", "title_wars")
 
 
 
@@ -476,7 +476,7 @@
                 .attr("font-size", 17)
                 .text("The Force Awakens")
                 .style("text-align", "center")
-                .style("text-decoration", "underline")
+                .attr("class", "title_wars")
 
 
 
@@ -487,7 +487,7 @@
                 .attr("font-size", 17)
                 .text("Rogue One")
                 .style("text-align", "center")
-                .style("text-decoration", "underline")
+                .attr("class", "title_wars")
 
 
               svg.append("text")

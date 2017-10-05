@@ -65,7 +65,7 @@
 
                   svgs.append("g")
                     .attr("class", "yaxis")
-                    .attr("transform", "translate(0,-5)")
+                    .attr("transform", "translate(0,-8)")
                     .call(yAxis)
                     .selectAll("text")
                         .style("fill", "black")
@@ -83,7 +83,7 @@
             .attr("y", function(d, i){
                return yScale(d.gender) 
               })
-            .attr("height",  20)
+            .attr("height",  15)
             .attr("width", function(d) {
               return xScale(d.count);
             })
@@ -104,7 +104,7 @@
               return xScale(d.count) + 5
             })
             .attr("y", function(d){ 
-              return yScale(d.gender) + 15
+              return yScale(d.gender) + 13
             })
             .text(function(d){
               return d.count
@@ -115,7 +115,7 @@
 
             svgs.append("text")
               .attr("x", width - 270)
-              .attr("y", height - 90)
+              .attr("y", height - 100)
               .style("text-anchor", "middle")
               .style("font-size", "17px")
               .text(function(d){ return d.key })

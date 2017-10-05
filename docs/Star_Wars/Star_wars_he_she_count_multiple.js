@@ -121,6 +121,7 @@
               .text(function(d){ return d.key })
               .style("font-family", "Bree Serif")
               .style("font-weight", "normal")
+              .style("text-decoration", "underline")
 
 
 

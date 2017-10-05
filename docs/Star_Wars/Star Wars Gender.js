@@ -218,6 +218,7 @@
                               .attr("font-size",17)
                               .style("fill", "#6c6c6c")
                               .text("Every circle is a character")
+                              .style("font-weight", "normal")
 
                 svg.append("line")
                   .attr("x1", 1)
@@ -308,6 +309,8 @@
                 .attr("font-size",13)
                 .style("fill", "#6c6c6c")
                 .text("1,500 words")
+                .style("font-weight", "normal")
+
 
               svg.append("text")
                 .attr("x", 710)
@@ -316,6 +319,8 @@
                 .attr("font-size",13)
                 .style("fill", "#6c6c6c")
                 .text("1,000 words")
+                .style("font-weight", "normal")
+
 
               svg.append("text")
                 .attr("x", 710)
@@ -324,6 +329,8 @@
                 .attr("font-size",13)
                 .style("fill", "#6c6c6c")
                 .text("500 words")
+                .style("font-weight", "normal")
+
 
                 svg.append("text")
                 .attr("x", 630)
@@ -332,6 +339,8 @@
                 .attr("font-size",17)
                 .style("fill", "#6c6c6c")
                 .text("Circle size represents the amount of words spoken.")
+                .style("font-weight", "normal")
+
 
                 svg.append("text")
                 .attr("x", 630)
@@ -340,6 +349,8 @@
                 .attr("font-size",17)
                 .style("fill", "#6c6c6c")
                 .text("The bigger the circle the more words were said.")
+                .style("font-weight", "normal")
+
 
 
 
@@ -358,6 +369,8 @@
                 .attr("font-size",17)
                 .style("fill", "#41c5de")
                 .text("Men")
+                .style("font-weight", "normal")
+
 
               // Women
 
@@ -374,6 +387,8 @@
                 .attr("font-size",17)
                 .style("fill", "#e03f8d")
                 .text("Women")
+                .style("font-weight", "normal")
+
 
               // Robots
 
@@ -383,6 +398,7 @@
                 .attr("cy", 150)
                 .style("fill", "lightgrey")
 
+
                 svg.append("text")
                 .attr("x", 420)
                 .attr("y", 155)
@@ -390,6 +406,8 @@
                 .attr("font-size",17)
                 .style("fill", "lightgrey")
                 .text("Robots")
+                .style("font-weight", "normal")
+
 
                 svg.append("text")
                 .attr("x", 190)
@@ -398,6 +416,8 @@
                 .attr("font-size",17)
                 .style("fill", "#6c6c6c")
                 .text("Color shows the gender")
+                .style("font-weight", "normal")
+
 
 
 

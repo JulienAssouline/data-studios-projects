@@ -200,11 +200,11 @@
                 div.style("visibility", "hidden")
 
               })
-              .style("stroke", function(d){
-                if(d.Characters == "Fixer" && d.Movie == "A New Hope"){
-                  return "#6c6c6c"
-                }
-              })
+              // .style("stroke", function(d){
+              //   if(d.Characters == "Fixer" && d.Movie == "A New Hope"){
+              //     return "#6c6c6c"
+              //   }
+              // })
 
 
 
@@ -224,9 +224,9 @@
                   .attr("x1", 1)
                   .attr("y1", 5)
                   .attr("x2", 1)
-                  .attr("y2", 30)
+                  .attr("y2", 25)
                   .attr("stroke-width", 0.5)
-                  .attr("transform", "translate(154, 247)")
+                  .attr("transform", "translate(154, 250)")
                   .attr("stroke", "#6c6c6c")
 
 
@@ -427,7 +427,7 @@
                 .attr("y", 240)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size",17)
-                .text("A New Hope, 1977")
+                .text("A New Hope (1977)")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -439,7 +439,7 @@
                 .attr("y", 240)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("The Empire Strikes Back, 1980")
+                .text("The Empire Strikes Back (1980)")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -450,7 +450,7 @@
                 .attr("y", 540)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("Return of the Jedi, 1983")
+                .text("Return of the Jedi (1983)")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -461,7 +461,7 @@
                 .attr("y", 540)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("The Phantom Menace, 1999")
+                .text("The Phantom Menace (1999)")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -472,7 +472,7 @@
                 .attr("y", 800)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("Attack of the Clones, 2002")
+                .text("Attack of the Clones (2002)")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -483,7 +483,7 @@
                 .attr("y", 800)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("Revenge of the Sith, 2005")
+                .text("Revenge of the Sith (2005)")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -494,7 +494,7 @@
                 .attr("y", 1100)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("The Force Awakens, 2015")
+                .text("The Force Awakens (2015)")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -505,7 +505,7 @@
                 .attr("y", 1100)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("Rogue One, 2016")
+                .text("Rogue One (2016)")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 

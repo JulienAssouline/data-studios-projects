@@ -427,7 +427,7 @@
                 .attr("y", 240)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size",17)
-                .text("A New Hope")
+                .text("A New Hope, 1977")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -439,7 +439,7 @@
                 .attr("y", 240)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("The Empire Strikes Back")
+                .text("The Empire Strikes Back, 1980")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -450,7 +450,7 @@
                 .attr("y", 540)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("Return of the Jedi")
+                .text("Return of the Jedi, 1983")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -461,7 +461,7 @@
                 .attr("y", 540)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("The Phantom Menace")
+                .text("The Phantom Menace, 1999")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -472,7 +472,7 @@
                 .attr("y", 800)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("Attack of the Clones")
+                .text("Attack of the Clones, 2002")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -483,7 +483,7 @@
                 .attr("y", 800)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("Revenge of the Sith")
+                .text("Revenge of the Sith, 2005")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -494,7 +494,7 @@
                 .attr("y", 1100)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("The Force Awakens")
+                .text("The Force Awakens, 2015")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 
@@ -505,7 +505,7 @@
                 .attr("y", 1100)
                 .attr("font-family", "Bree Serif")
                 .attr("font-size", 17)
-                .text("Rogue One")
+                .text("Rogue One, 2016")
                 .style("text-align", "center")
                 .attr("class", "title_wars")
 

@@ -111,6 +111,8 @@
             })
             .style("font-weight", "normal")
             .style("font-size", "14px")
+            .style("font-family", "Bree Serif")
+
 
 
             svgs.append("text")

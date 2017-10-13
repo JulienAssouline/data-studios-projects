@@ -185,7 +185,7 @@
                 .duration(200)
                 .style("opacity", 1)
                 var element = d3.select(this);
-                element.style("stroke", "darkgrey")
+                element.style("stroke", "black")
                 element.style("stroke-width", 1)
                 div.html(d.Characters + ": " + d.Word_count+" words")
                 div.style("visibility", "visible")

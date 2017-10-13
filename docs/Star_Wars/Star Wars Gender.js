@@ -184,6 +184,9 @@
                 div.transition()
                 .duration(200)
                 .style("opacity", 1)
+                var element = d3.select(this);
+                element.style("stroke", "black")
+                element.style("stroke-width", 2)
                 div.html(d.Characters + ": " + d.Word_count+" words")
                 div.style("visibility", "visible")
                 .style("left", (d3.event.pageX - 20) + "px")    
@@ -197,6 +200,8 @@
                 // div.transition()
                 // .duration(500)
                 // .style("opacity", 0)
+                var element = d3.select(this)
+                element.style("stroke", "none")
                 div.style("visibility", "hidden")
 
               })

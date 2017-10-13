@@ -1,0 +1,309 @@
+City,State,Location
+New York,New York,?40.6643øN 73.9385øW
+Los Angeles,California,?34.0194øN 118.4108øW
+Chicago,Illinois,41.8376øN 87.6818øW
+Houston,Texas,?29.7805øN 95.3863øW
+Philadelphia,Pennsylvania,40.0094øN 75.1333øW
+Phoenix,Arizona,33.5722øN 112.0880øW
+San Antonio,Texas,29.4724øN 98.5251øW
+San Diego,California,32.8153øN 117.1350øW
+Dallas,Texas,32.7757øN 96.7967øW
+San Jose,California,?37.2969øN 121.8193øW
+Austin,Texas,?30.3072øN 97.7560øW
+Indianapolis,Indiana,39.7767øN 86.1459øW
+Jacksonville,Florida,30.3370øN 81.6613øW
+San Francisco,California,37.7751øN 122.4193øW
+Columbus,Ohio,39.9848øN 82.9850øW
+Charlotte,North Carolina,35.2087øN 80.8307øW
+Fort Worth,Texas,32.7795øN 97.3463øW
+Detroit,Michigan,?42.3830øN 83.1022øW
+El Paso,Texas,31.8484øN 106.4270øW
+Memphis,Tennessee,?35.1035øN 89.9785øW
+Seattle,Washington,?47.6205øN 122.3509øW
+Denver,Colorado,?39.7618øN 104.8806øW
+Washington,District of Columbia,?38.9041øN 77.0171øW
+Boston,Massachusetts,42.3320øN 71.0202øW
+Nashville,Tennessee,36.1718øN 86.7850øW
+Baltimore,Maryland,39.3002øN 76.6105øW
+Oklahoma City,Oklahoma,35.4671øN 97.5137øW
+Louisville,Kentucky,?38.1781øN 85.6667øW
+Portland,Oregon,45.5370øN 122.6500øW
+Las Vegas,Nevada,36.2277øN 115.2640øW
+Milwaukee,Wisconsin,?43.0633øN 87.9667øW
+Albuquerque,New Mexico,35.1056øN 106.6474øW
+Tucson,Arizona,32.1543øN 110.8711øW
+Fresno,California,36.7827øN 119.7945øW
+Sacramento,California,?38.5666øN 121.4686øW
+Long Beach,California,33.8091øN 118.1553øW
+Kansas City,Missouri,?39.1252øN 94.5511øW
+Mesa,Arizona,?33.4019øN 111.7174øW
+Virginia Beach,Virginia,?36.7793øN 76.0240øW
+Atlanta,Georgia,?33.7629øN 84.4227øW
+Colorado Springs,Colorado,38.8673øN 104.7607øW
+Omaha,Nebraska,41.2647øN 96.0419øW
+Raleigh,North Carolina,?35.8302øN 78.6414øW
+Miami,Florida,25.7752øN 80.2086øW
+Oakland,California,37.7699øN 122.2256øW
+Minneapolis,Minnesota,44.9633øN 93.2683øW
+Tulsa,Oklahoma,?36.1279øN 95.9023øW
+Cleveland,Ohio,41.4781øN 81.6795øW
+Wichita,Kansas,?37.6907øN 97.3427øW
+Arlington,Texas,?32.7007øN 97.1247øW
+New Orleans,Louisiana,30.0686øN 89.9390øW
+Bakersfield,California,35.3212øN 119.0183øW
+Tampa,Florida,27.9701øN 82.4797øW
+Honolulu,Hawai'i,21.3259øN 157.8453øW
+Aurora,Colorado,?39.7082øN 104.8235øW
+Anaheim,California,33.8555øN 117.7601øW
+Santa Ana,California,33.7365øN 117.8826øW
+St. Louis,Missouri,?38.6357øN 90.2446øW
+Riverside,California,?33.9381øN 117.3932øW
+Corpus Christi,Texas,?27.7543øN 97.1734øW
+Lexington,Kentucky,?38.0402øN 84.4584øW
+Pittsburgh,Pennsylvania,?40.4398øN 79.9766øW
+Anchorage,Alaska,?61.2176øN 149.8953øW
+Stockton,California,?37.9763øN 121.3133øW
+Cincinnati,Ohio,?39.1399øN 84.5064øW
+Saint Paul,Minnesota,?44.9489øN 93.1039øW
+Toledo,Ohio,?41.6641øN 83.5819øW
+Greensboro,North Carolina,?36.0965øN 79.8271øW
+Newark,New Jersey,?40.7242øN 74.1726øW
+Plano,Texas,?33.0508øN 96.7479øW
+Henderson,Nevada,?36.0122øN 115.0375øW
+Lincoln,Nebraska,?40.8090øN 96.6804øW
+Buffalo,New York,?42.8925øN 78.8597øW
+Jersey City,New Jersey,?40.7114øN 74.0648øW
+Chula Vista,California,?32.6277øN 117.0152øW
+Fort Wayne,Indiana,?41.0882øN 85.1439øW
+Orlando,Florida,?28.4159øN 81.2988øW
+St. Petersburg,Florida,?27.7620øN 82.6441øW
+Chandler,Arizona,?33.2829øN 111.8549øW
+Laredo,Texas,?27.5477øN 99.4869øW
+Norfolk,Virginia,?36.9230øN 76.2446øW
+Durham,North Carolina,?35.9810øN 78.9056øW
+Madison,Wisconsin,?43.0878øN 89.4301øW
+Lubbock,Texas,?33.5665øN 101.8867øW
+Irvine,California,?33.6784øN 117.7713øW
+Winston?Salem,North Carolina,?36.1033øN 80.2606øW
+Glendale,Arizona,?33.5331øN 112.1899øW
+Garland,Texas,?32.9098øN 96.6304øW
+Hialeah,Florida,?25.8699øN 80.3029øW
+Reno,Nevada,?39.4745øN 119.7765øW
+Chesapeake,Virginia,?36.6794øN 76.3018øW
+Gilbert,Arizona,?33.3102øN 111.7422øW
+Baton Rouge,Louisiana,?30.4485øN 91.1259øW
+Irving,Texas,?32.8577øN 96.9700øW
+Scottsdale,Arizona,?33.6687øN 111.8237øW
+North Las Vegas,Nevada,?36.2830øN 115.0893øW
+Fremont,California,?37.4944øN 121.9411øW
+Boise,Idaho,?43.5985øN 116.2311øW
+Richmond,Virginia,?37.5314øN 77.4760øW
+San Bernardino,California,?34.1393øN 117.2953øW
+Birmingham,Alabama,?33.5274øN 86.7990øW
+Spokane,Washington,?47.6736øN 117.4166øW
+Rochester,New York,?43.1699øN 77.6169øW
+Des Moines,Iowa,?41.5739øN 93.6167øW
+Modesto,California,?37.6609øN 120.9891øW
+Fayetteville,North Carolina,?35.0851øN 78.9803øW
+Tacoma,Washington,?47.2522øN 122.4598øW
+Oxnard,California,?34.2023øN 119.2046øW
+Fontana,California,?34.1088øN 117.4627øW
+Columbus,Georgia,?32.5102øN 84.8749øW
+Montgomery,Alabama,?32.3463øN 86.2686øW
+Moreno Valley,California,?33.9233øN 117.2057øW
+Shreveport,Louisiana,?32.4670øN 93.7927øW
+Aurora,Illinois,?41.7635øN 88.2901øW
+Yonkers,New York,?40.9459øN 73.8674øW
+Akron,Ohio,?41.0805øN 81.5214øW
+Huntington Beach,California,?33.6906øN 118.0093øW
+Little Rock,Arkansas,?34.7254øN 92.3586øW
+Augusta,Georgia,?33.3655øN 82.0734øW
+Amarillo,Texas,?35.1978øN 101.8287øW
+Glendale,California,?34.1814øN 118.2458øW
+Mobile,Alabama,?30.6684øN 88.1002øW
+Grand Rapids,Michigan,?42.9612øN 85.6556øW
+Salt Lake City,Utah,?40.7785øN 111.9314øW
+Tallahassee,Florida,?30.4551øN 84.2534øW
+Huntsville,Alabama,?34.7843øN 86.5390øW
+Grand Prairie,Texas,?32.6842øN 97.0210øW
+Knoxville,Tennessee,?35.9709øN 83.9465øW
+Worcester,Massachusetts,?42.2695øN 71.8078øW
+Newport News,Virginia,?37.0760øN 76.5217øW
+Brownsville,Texas,?26.0183øN 97.4538øW
+Overland Park,Kansas,?38.8890øN 94.6906øW
+Santa Clarita,California,?34.4049øN 118.5047øW
+Providence,Rhode Island,?41.8231øN 71.4188øW
+Garden Grove,California,?33.7788øN 117.9605øW
+Chattanooga,Tennessee,?35.0665øN 85.2471øW
+Oceanside,California,?33.2246øN 117.3062øW
+Jackson,Mississippi,?32.3158øN 90.2128øW
+Fort Lauderdale,Florida,?26.1413øN 80.1439øW
+Santa Rosa,California,?38.4468øN 122.7061øW
+Rancho Cucamonga,California,?34.1233øN 117.5642øW
+Port St. Lucie,Florida,?27.2810øN 80.3838øW
+Tempe,Arizona,?33.3884øN 111.9318øW
+Ontario,California,?34.0395øN 117.6088øW
+Vancouver,Washington,?45.6372øN 122.5965øW
+Cape Coral,Florida,?26.6431øN 81.9973øW
+Sioux Falls,South Dakota,?43.5383øN 96.7320øW
+Springfield,Missouri,?37.1942øN 93.2913øW
+Peoria,Arizona,?33.7877øN 112.3111øW
+Pembroke Pines,Florida,?26.0212øN 80.3404øW
+Elk Grove,California,?38.4144øN 121.3849øW
+Salem,Oregon,?44.9237øN 123.0231øW
+Lancaster,California,?34.6936øN 118.1753øW
+Corona,California,?33.8624øN 117.5639øW
+Eugene,Oregon,?44.0567øN 123.1162øW
+Palmdale,California,?34.5913øN 118.1090øW
+Salinas,California,?36.6902øN 121.6337øW
+Springfield,Massachusetts,?42.1155øN 72.5400øW
+Pasadena,Texas,?29.6583øN 95.1505øW
+Fort Collins,Colorado,?40.5482øN 105.0648øW
+Hayward,California,?37.6281øN 122.1063øW
+Pomona,California,?34.0586øN 117.7613øW
+Cary,North Carolina,?35.7821øN 78.8141øW
+Rockford,Illinois,?42.2634øN 89.0628øW
+Alexandria,Virginia,?38.8183øN 77.0820øW
+Escondido,California,?33.1336øN 117.0732øW
+McKinney,Texas,?33.2012øN 96.6680øW
+Kansas City,Kansas,?39.1225øN 94.7418øW
+Joliet,Illinois,?41.5181øN 88.1584øW
+Sunnyvale,California,?37.3858øN 122.0263øW
+Torrance,California,?33.8350øN 118.3414øW
+Bridgeport,Connecticut,?41.1874øN 73.1957øW
+Lakewood,Colorado,?39.6989øN 105.1176øW
+Hollywood,Florida,?26.0311øN 80.1646øW
+Paterson,New Jersey,?40.9147øN 74.1628øW
+Naperville,Illinois,?41.7492øN 88.1620øW
+Syracuse,New York,?43.0410øN 76.1436øW
+Mesquite,Texas,?32.7639øN 96.5924øW
+Dayton,Ohio,?39.7774øN 84.1996øW
+Savannah,Georgia,?32.0025øN 81.1536øW
+Clarksville,Tennessee,?36.5664øN 87.3452øW
+Orange,California,?33.8048øN 117.8249øW
+Pasadena,California,?34.1606øN 118.1396øW
+Fullerton,California,?33.8857øN 117.9280øW
+Killeen,Texas,?31.0777øN 97.7320øW
+Frisco,Texas,?33.1510øN 96.8193øW
+Hampton,Virginia,?37.0480øN 76.2971øW
+McAllen,Texas,?26.2185øN 98.2461øW
+Warren,Michigan,?42.4929øN 83.0250øW
+Bellevue,Washington,?47.5978øN 122.1565øW
+West Valley City,Utah,?40.6885øN 112.0118øW
+Columbia,South Carolina,?34.0298øN 80.8966øW
+Olathe,Kansas,?38.8843øN 94.8188øW
+Sterling Heights,Michigan,?42.5812øN 83.0303øW
+New Haven,Connecticut,?41.3108øN 72.9250øW
+Miramar,Florida,?25.9770øN 80.3358øW
+Waco,Texas,?31.5601øN 97.1860øW
+Thousand Oaks,California,?34.1933øN 118.8742øW
+Cedar Rapids,Iowa,?41.9670øN 91.6778øW
+Charleston,South Carolina,?32.8179øN 79.9589øW
+Visalia,California,?36.3272øN 119.3234øW
+Topeka,Kansas,?39.0362øN 95.6948øW
+Elizabeth,New Jersey,?40.6663øN 74.1935øW
+Gainesville,Florida,?29.6788øN 82.3459øW
+Thornton,Colorado,?39.9180øN 104.9454øW
+Roseville,California,?38.7657øN 121.3032øW
+Carrollton,Texas,?32.9884øN 96.8998øW
+Coral Springs,Florida,?26.2708øN 80.2593øW
+Stamford,Connecticut,?41.0799øN 73.5460øW
+Simi Valley,California,?34.2669øN 118.7485øW
+Concord,California,?37.9722øN 122.0016øW
+Hartford,Connecticut,?41.7660øN 72.6833øW
+Kent,Washington,?47.3853øN 122.2169øW
+Lafayette,Louisiana,?30.2116øN 92.0314øW
+Midland,Texas,?32.0299øN 102.1097øW
+Surprise,Arizona,?33.6706øN 112.4527øW
+Denton,Texas,?33.2151øN 97.1417øW
+Victorville,California,?34.5277øN 117.3536øW
+Evansville,Indiana,?37.9877øN 87.5347øW
+Santa Clara,California,?37.3646øN 121.9679øW
+Abilene,Texas,?32.4545øN 99.7381øW
+Athens,Georgia,?33.9496øN 83.3701øW
+Vallejo,California,?38.1079øN 122.2639øW
+Allentown,Pennsylvania,?40.5940øN 75.4782øW
+Norman,Oklahoma,?35.2406øN 97.3453øW
+Beaumont,Texas,?30.0843øN 94.1458øW
+Independence,Missouri,?39.0853øN 94.3513øW
+Murfreesboro,Tennessee,?35.8522øN 86.4161øW
+Ann Arbor,Michigan,?42.2756øN 83.7313øW
+Springfield,Illinois,?39.7639øN 89.6708øW
+Berkeley,California,?37.8667øN 122.2991øW
+Peoria,Illinois,?40.7523øN 89.6171øW
+Provo,Utah,?40.2453øN 111.6448øW
+El Monte,California,?34.0746øN 118.0291øW
+Columbia,Missouri,?38.9479øN 92.3261øW
+Lansing,Michigan,?42.7098øN 84.5562øW
+Fargo,North Dakota,?46.8652øN 96.8290øW
+Downey,California,?33.9382øN 118.1309øW
+Costa Mesa,California,?33.6659øN 117.9123øW
+Wilmington,North Carolina,?34.2092øN 77.8858øW
+Arvada,Colorado,?39.8097øN 105.1066øW
+Inglewood,California,?33.9561øN 118.3443øW
+Miami Gardens,Florida,?25.9489øN 80.2436øW
+Carlsbad,California,?33.1239øN 117.2828øW
+Westminster,Colorado,?39.8822øN 105.0644øW
+Rochester,Minnesota,?44.0154øN 92.4772øW
+Odessa,Texas,?31.8804øN 102.3434øW
+Manchester,New Hampshire,?42.9847øN 71.4439øW
+Elgin,Illinois,?42.0396øN 88.3217øW
+West Jordan,Utah,?40.6023øN 112.0010øW
+Round Rock,Texas,?30.5237øN 97.6674øW
+Clearwater,Florida,?27.9795øN 82.7663øW
+Waterbury,Connecticut,?41.5585øN 73.0367øW
+Gresham,Oregon,?45.5023øN 122.4416øW
+Fairfield,California,?38.2568øN 122.0397øW
+Billings,Montana,?45.7895øN 108.5499øW
+Lowell,Massachusetts,?42.6389øN 71.3221øW
+Ventura,California,?34.2681øN 119.2550øW
+Pueblo,Colorado,?38.2731øN 104.6124øW
+High Point,North Carolina,?35.9855øN 79.9902øW
+West Covina,California,?34.0559øN 117.9099øW
+Richmond,California,?37.9530øN 122.3594øW
+Murrieta,California,?33.5719øN 117.1907øW
+Cambridge,Massachusetts,?42.3760øN 71.1183øW
+Antioch,California,?37.9775øN 121.7976øW
+Temecula,California,?33.5019øN 117.1246øW
+Norwalk,California,?33.9069øN 118.0834øW
+Centennial,Colorado,?39.5906øN 104.8691øW
+Everett,Washington,?48.0033øN 122.1742øW
+Palm Bay,Florida,?27.9856øN 80.6626øW
+Wichita Falls,Texas,?33.9067øN 98.5259øW
+Green Bay,Wisconsin,?44.5207øN 87.9842øW
+Daly City,California,?37.7009øN 122.4650øW
+Burbank,California,?34.1890øN 118.3249øW
+Richardson,Texas,?32.9723øN 96.7081øW
+Pompano Beach,Florida,?26.2426øN 80.1290øW
+North Charleston,South Carolina,?32.8853øN 80.0169øW
+Broken Arrow,Oklahoma,?36.0365øN 95.7810øW
+Boulder,Colorado,?40.0175øN 105.2797øW
+West Palm Beach,Florida,?26.7483øN 80.1266øW
+Santa Maria,California,?34.9332øN 120.4438øW
+El Cajon,California,?32.8017øN 116.9605øW
+Davenport,Iowa,?41.5541øN 90.6040øW
+Rialto,California,?34.1118øN 117.3883øW
+Edison,New Jersey,?40.5039917øN 74.3494111øW
+Las Cruces,New Mexico,?32.3197øN 106.7653øW
+San Mateo,California,?37.5542øN 122.3131øW
+Lewisville,Texas,?33.0383øN 97.0061øW
+South Bend,Indiana,?41.6769øN 86.2690øW
+Lakeland,Florida,?28.0411øN 81.9589øW
+Erie,Pennsylvania,?42.1166øN 80.0735øW
+Woodbridge,New Jersey,?40.56075øN 74.29262øW
+Tyler,Texas,?32.35øN 95.30øW
+Pearland,Texas,?29.5544øN 95.2958øW
+College Station,Texas,?30.6013øN 96.3144øW
+San Juan,,?18.4064øN 66.0640øW
+Bayam¢n,,?18.3801øN 66.1633øW
+Carolina,,?18.4121øN 65.9798øW
+Ponce,,?17.9874øN 66.6097øW
+Caguas,,?18.2324øN 66.0390øW
+Paradise,Nevada,?36.08073øN 115.1368øW
+Arlington,Virginia,?38.880øN 77.183øW
+Sunrise Manor,Nevada,?36.1785øN 115.0490øW
+Spring Valley,Nevada,?36.0987øN 115.2619øW
+Metairie,Louisiana,?29.9978øN 90.1779øW
+East Los Angeles,California,?34.0315øN 118.1686øW
+Enterprise,Nevada,?36.0182øN 115.2154øW
+Brandon,Florida,?27.9360øN 82.2993øW

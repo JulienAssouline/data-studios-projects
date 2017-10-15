@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Loading TopoJSON data and generating SVG paths</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+#chart{
+    background-color: white;
+    stroke-width: white;
+  } 
+
+.axisx path {
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+
+.axisy path {
+    fill: none;
+    stroke: white;
+  }
+
+.axisy line{
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.7;
+    stroke-dasharray: 3,3;
+  }
+
+
+   .state{
+    fill: #eeedeb;
+    stroke: #ccc;
+    stroke-width: 0.3;
+  }  
+
+div.tooltip { 
+    position: absolute;
+    text-align: left;
+    color: black;
+    padding: 5px;
+    background-color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    border: rgba(0,0,0,0.3) solid 1px;
+   }
+
+  h1{
+    font-family: Bree serif;
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+   #nav {
+  position: absolute;
+  text-align: right;
+  width: 90%;
+  padding-right: 10px;
+  font-size: 15px;
+/*  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+}
+#nav a{
+  padding-right: 5px;
+}
+
+
+    </style>
+  </head>
+  <body>
+
+  <div id="nav">
+                        <a href="https://julienassouline.github.io/data-studios-projects/">Home</a>
+                        <a href="https://julienassouline.github.io/data-studios-projects/assets/CV.pdf">Resume</a>
+                        <a href="https://julienassouline.github.io/data-studios-projects/contact.html">Writing</a>
+            </div>
+            <br><br>
+
+
+  <h1> US Mass Shootings in 2017 <h1>
+
+
+  <div id = "mass_shootings"></div>
+  <script src="US_Mass_shootings_2017_date.js"></script>
+
+ 
+ <h1> 37 states <h1>
+  <div id="US_mass_shootings_map"></div>
+  <script src="US_mass_shootings_map.js"></script>
+
+  <br> 
+
+  
+</div>
+
+    
+  </body>
+</html>

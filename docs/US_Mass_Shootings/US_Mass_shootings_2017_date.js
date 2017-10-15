@@ -7,7 +7,7 @@ var margin = {
   right: 20,
   left: 40,
   top: 0,
-  bottom: 80
+  bottom: 100
 }
 
 var width = w - margin.right - margin.left;

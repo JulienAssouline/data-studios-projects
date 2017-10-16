@@ -125,7 +125,7 @@ var svg = d3.select("#mass_shootings")
             })
             .text(function(d){
               if(d.Killed == 62){
-                return "Las Vegas, 62 killed"
+                return "Las Vegas, 59 killed"
               }
             })
             .style("opacity", 0)

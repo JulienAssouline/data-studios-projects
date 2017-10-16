@@ -77,6 +77,59 @@ div.tooltip {
   padding-right: 5px;
 }
 
+#chart1{
+        width: 800px;
+        margin: 0 auto;
+      }
+      .background {
+        fill: #eee;
+      }
+
+      line {
+        stroke: #fff;
+      }
+
+      text.active {
+        fill: red;
+      }
+
+      .day {
+        fill: #fff;
+        stroke: #ccc;
+      }
+
+      .month {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4px;
+      }
+      .month-title{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .year-title {
+        font-size: 25px;
+      }
+      .line{
+        stroke: grey;
+      }
+      .line1{
+        stroke: grey;
+      }
+
+      /* color ranges */
+      .RdYlGn .q0-11{fill: darkred}
+      .RdYlGn .q1-11{fill:darkred}
+      .RdYlGn .q2-11{fill:darkred}
+      .RdYlGn .q3-11{fill:darkred}
+      .RdYlGn .q4-11{fill:darkred}
+      .RdYlGn .q5-11{fill:darkred}
+      .RdYlGn .q6-11{fill:darkred}
+      .RdYlGn .q7-11{fill:darkred}
+      .RdYlGn .q8-11{fill:darkred}
+      .RdYlGn .q9-11{fill:darkred}
+      .RdYlGn .q10-11{fill: darkred}
+
 
     </style>
   </head>
@@ -96,8 +149,12 @@ div.tooltip {
   <div id = "mass_shootings"></div>
   <script src="US_Mass_shootings_2017_date.js"></script>
 
+<h1> Days With and Without Mass Shootings <h1>
+  <div id="chart1" class="clearfix"></div>
+  <script src="US_mass_shootings_calender.js"></script>
+
  
- <h1> 37 states <h1>
+ <h1> 37 States <h1>
   <div id="US_mass_shootings_map"></div>
   <script src="US_mass_shootings_map.js"></script>
 

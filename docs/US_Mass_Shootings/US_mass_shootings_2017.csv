@@ -1,70 +1,70 @@
 ,Date,State,City,Address,Killed,Injured,Year,Code,Country,Latitude,Longitude,test
 1242,09-Oct-17,Texas,Houston,3352 Old Spanish Trail,0,5,2017,TX,us,29.763055600000005,-95.3630556,False
-1243,07-Oct-17,Arizona,Phoenix,87th Ave and Thomas Rd,0,4,2017,AZ,us,33.4483333,-112.07333329999999,False
+1243,07-Oct-17,Arizona,Phoenix,87th Ave and Thomas Rd,0,4,2017,AZ,us,33.4483333,-112.0733333,False
 1244,06-Oct-17,Illinois,Chicago,8000 block of S Marshfield,0,5,2017,IL,us,41.85,-87.65,False
-1245,05-Oct-17,Arizona,Casa Grande,400 block of W 13th Street,4,0,2017,AZ,us,32.8794444,-111.75666670000001,False
+1245,05-Oct-17,Arizona,Casa Grande,400 block of W 13th Street,4,0,2017,AZ,us,32.8794444,-111.7566667,False
 1246,03-Oct-17,Florida,Miami,2051 NW 65th St,0,4,2017,FL,us,25.7738889,-80.1938889,False
 1247,01-Oct-17,Nevada,Las Vegas,3950 Las Vegas Blvd S,59,241,2017,NV,us,36.175,-115.1363889,False
 1248,01-Oct-17,Kansas,Lawrence,1000 block of Massachusetts St,3,2,2017,KS,us,38.9716667,-95.235,False
-1249,30-Sep-17,Tennessee,Memphis,800 block of Kerr Avenue,1,3,2017,TN,us,35.14944439999999,-90.04888890000001,False
-1250,28-Sep-17,Louisiana,New Orleans,2001 N Rocheblave St,1,3,2017,LA,us,29.954444399999996,-90.075,False
-1251,26-Sep-17,Tennessee,Memphis,2531 Chelsea Ave,0,4,2017,TN,us,35.14944439999999,-90.04888890000001,False
+1249,30-Sep-17,Tennessee,Memphis,800 block of Kerr Avenue,1,3,2017,TN,us,35.14944439999999,-90.04888890000002,False
+1250,28-Sep-17,Louisiana,New Orleans,2001 N Rocheblave St,1,3,2017,LA,us,29.9544444,-90.075,False
+1251,26-Sep-17,Tennessee,Memphis,2531 Chelsea Ave,0,4,2017,TN,us,35.14944439999999,-90.04888890000002,False
 1252,26-Sep-17,Maryland,Baltimore,3200 block of Lyndale Ave,2,2,2017,MD,us,39.2902778,-76.6125,False
 1253,26-Sep-17,Pennsylvania,Philadelphia,100 block of Pastorius St,1,3,2017,PA,us,39.9522222,-75.1641667,False
 1254,24-Sep-17,Maryland,Baltimore,500 block of E. Patapsco Avenue,0,4,2017,MD,us,39.2902778,-76.6125,False
 1255,24-Sep-17,New Jersey,Mays Landing,6000 block of Hoover Dr,1,3,2017,NJ,us,39.4522222,-74.7280556,False
-1256,24-Sep-17,Tennessee,Antioch,3890 Pin Hook Rd,1,8,2017,TN,us,36.06,-86.67222220000001,False
-1257,24-Sep-17,New York,Syracuse,1226 E Fayette St,0,4,2017,NY,us,43.048055600000005,-76.1477778,False
-1258,23-Sep-17,Illinois,Danville,Seminary St and Jackson St,0,5,2017,IL,us,40.124444399999994,-87.63,False
-1259,23-Sep-17,California,Bakersfield,818 Real Rd,1,4,2017,CA,us,35.3733333,-119.01777779999999,False
-1260,20-Sep-17,Indiana,Gary,4300 block of 23rd Ct,0,5,2017,IN,us,41.5933333,-87.34638890000001,False
+1256,24-Sep-17,Tennessee,Antioch,3890 Pin Hook Rd,1,8,2017,TN,us,36.06,-86.67222220000002,False
+1257,24-Sep-17,New York,Syracuse,1226 E Fayette St,0,4,2017,NY,us,43.04805560000001,-76.1477778,False
+1258,23-Sep-17,Illinois,Danville,Seminary St and Jackson St,0,5,2017,IL,us,40.1244444,-87.63,False
+1259,23-Sep-17,California,Bakersfield,818 Real Rd,1,4,2017,CA,us,35.3733333,-119.0177778,False
+1260,20-Sep-17,Indiana,Gary,4300 block of 23rd Ct,0,5,2017,IN,us,41.5933333,-87.34638890000002,False
 1261,17-Sep-17,Michigan,Detroit,5000 block of Stanton Street,1,3,2017,MI,us,42.33138889999999,-83.0458333,False
-1262,17-Sep-17,Virginia,Petersburg,300 Mistletoe St,1,4,2017,VA,us,37.2277778,-77.40222220000001,False
-1263,16-Sep-17,South Carolina,Columbia,920 Lady Street,0,8,2017,SC,us,34.000555600000006,-81.035,False
+1262,17-Sep-17,Virginia,Petersburg,300 Mistletoe St,1,4,2017,VA,us,37.2277778,-77.40222220000003,False
+1263,16-Sep-17,South Carolina,Columbia,920 Lady Street,0,8,2017,SC,us,34.00055560000001,-81.035,False
 1264,13-Sep-17,Washington,Rockford,14626 S Jackson Rd,1,3,2017,WA,us,47.4522222,-117.1297222,False
 1265,13-Sep-17,Pennsylvania,York,400 block of S Duke St,0,4,2017,PA,us,39.9625,-76.7280556,False
 1266,13-Sep-17,Pennsylvania,Philadelphia,3100 block of N 2nd St,0,4,2017,PA,us,39.9522222,-75.1641667,False
-1267,13-Sep-17,Tennessee,Memphis,1000 block of Morehead St,1,5,2017,TN,us,35.14944439999999,-90.04888890000001,False
-1268,10-Sep-17,Louisiana,New Orleans,Elysian Fields Ave and N Claiborne Ave,0,4,2017,LA,us,29.954444399999996,-90.075,False
+1267,13-Sep-17,Tennessee,Memphis,1000 block of Morehead St,1,5,2017,TN,us,35.14944439999999,-90.04888890000002,False
+1268,10-Sep-17,Louisiana,New Orleans,Elysian Fields Ave and N Claiborne Ave,0,4,2017,LA,us,29.9544444,-90.075,False
 1269,10-Sep-17,Texas,Plano,1712 West Spring Creek Parkway,9,1,2017,TX,us,33.019722200000004,-96.6986111,False
 1270,09-Sep-17,Alabama,Selma,Kings Bend Road,0,4,2017,AL,us,32.4072222,-87.02111109999998,False
 1271,06-Sep-17,Illinois,Chicago,2700 block of Madison,0,4,2017,IL,us,41.85,-87.65,False
-1272,04-Sep-17,Illinois,Bellwood,1000 block of Bellwood Ave,0,4,2017,IL,us,41.8813889,-87.88305559999999,False
+1272,04-Sep-17,Illinois,Bellwood,1000 block of Bellwood Ave,0,4,2017,IL,us,41.8813889,-87.88305559999998,False
 1273,03-Sep-17,California,Inglewood,10100 block of S Firmona Ave,2,3,2017,CA,us,33.9616667,-118.3522222,False
 1274,02-Sep-17,Kentucky,Louisville,8008 Watterson Trail,0,4,2017,KY,us,38.2541667,-85.7594444,False
 1275,02-Sep-17,Illinois,Chicago,8300 block of S Hermitage,1,3,2017,IL,us,41.85,-87.65,False
 1276,28-Aug-17,New Mexico,Clovis,701 N Main St,2,4,2017,NM,us,34.4047222,-103.2047222,False
-1277,27-Aug-17,California,Sacramento,7760 24th St,1,4,2017,CA,us,38.5816667,-121.49333329999999,False
+1277,27-Aug-17,California,Sacramento,7760 24th St,1,4,2017,CA,us,38.5816667,-121.4933333,False
 1278,27-Aug-17,Indiana,Evansville,1127 Chestnut St,1,3,2017,IN,us,37.9747222,-87.5558333,False
-1279,25-Aug-17,Florida,Gainesville,1600 NE 8th Ave,0,4,2017,FL,us,29.651388899999997,-82.325,False
+1279,25-Aug-17,Florida,Gainesville,1600 NE 8th Ave,0,4,2017,FL,us,29.6513889,-82.325,False
 1280,24-Aug-17,Missouri,Saint Louis,10400 block of Balmoral Dr,4,0,2017,MO,us,38.6272222,-90.1977778,False
 1281,22-Aug-17,Illinois,Chicago,300 block of N Central Ave,0,4,2017,IL,us,41.85,-87.65,False
-1282,21-Aug-17,New Jersey,Newark,Fabyan Place,0,4,2017,NJ,us,40.735555600000005,-74.17277779999999,False
-1283,21-Aug-17,New Jersey,Newark,700 block of S 19th St,1,3,2017,NJ,us,40.735555600000005,-74.17277779999999,False
+1282,21-Aug-17,New Jersey,Newark,Fabyan Place,0,4,2017,NJ,us,40.73555560000001,-74.17277779999998,False
+1283,21-Aug-17,New Jersey,Newark,700 block of S 19th St,1,3,2017,NJ,us,40.73555560000001,-74.17277779999998,False
 1284,21-Aug-17,Maryland,Baltimore,Cottage Avenue and Park Heights Avenue,1,3,2017,MD,us,39.2902778,-76.6125,False
-1285,21-Aug-17,North Carolina,Whitakers,980 Fishing Creek Rd,4,0,2017,NC,us,36.105277799999996,-77.7130556,False
-1286,21-Aug-17,Tennessee,Memphis,262 Decatur St,0,4,2017,TN,us,35.14944439999999,-90.04888890000001,False
+1285,21-Aug-17,North Carolina,Whitakers,980 Fishing Creek Rd,4,0,2017,NC,us,36.1052778,-77.7130556,False
+1286,21-Aug-17,Tennessee,Memphis,262 Decatur St,0,4,2017,TN,us,35.14944439999999,-90.04888890000002,False
 1287,20-Aug-17,Illinois,Chicago,11901 S Loomis St,2,5,2017,IL,us,41.85,-87.65,False
 1288,20-Aug-17,New York,Brooklyn,100th St and Ave M,0,4,2017,NY,us,40.65,-73.95,False
-1289,19-Aug-17,Ohio,Cleveland,11143 Superior Ave,1,4,2017,OH,us,41.499444399999994,-81.69555559999999,False
+1289,19-Aug-17,Ohio,Cleveland,11143 Superior Ave,1,4,2017,OH,us,41.4994444,-81.69555559999998,False
 1290,16-Aug-17,New York,Wyandanch,Merritt Ave and 15th St,0,4,2017,NY,us,40.7538889,-73.3608333,False
 1291,14-Aug-17,California,North Hollywood,Morrison St and Klump Ave,2,2,2017,CA,us,34.1722222,-118.37805559999998,False
-1292,13-Aug-17,California,Sacramento,4000 Block of Martin Luther King Jr Blvd,0,4,2017,CA,us,38.5816667,-121.49333329999999,False
-1293,13-Aug-17,Virginia,Suffolk,8700 block of Quay Rd,0,4,2017,VA,us,36.728055600000005,-76.5838889,False
+1292,13-Aug-17,California,Sacramento,4000 Block of Martin Luther King Jr Blvd,0,4,2017,CA,us,38.5816667,-121.4933333,False
+1293,13-Aug-17,Virginia,Suffolk,8700 block of Quay Rd,0,4,2017,VA,us,36.72805560000001,-76.5838889,False
 1294,13-Aug-17,Pennsylvania,Philadelphia,39th St and Melon St,0,5,2017,PA,us,39.9522222,-75.1641667,False
 1295,12-Aug-17,Missouri,Saint Louis,12310 Bellefontaine Rd,1,3,2017,MO,us,38.6272222,-90.1977778,False
 1296,08-Aug-17,Illinois,Chicago,1 block of East 37th Street,1,6,2017,IL,us,41.85,-87.65,False
 1297,06-Aug-17,New York,Bronx,Wickham Ave,0,6,2017,NY,us,40.85,-73.8666667,False
 1298,06-Aug-17,New York,Bronx,Unionport Rd,0,4,2017,NY,us,40.85,-73.8666667,False
-1299,06-Aug-17,California,Oakland,1000 block of 106th Avenue,0,7,2017,CA,us,37.804444399999994,-122.2697222,False
-1300,05-Aug-17,New Jersey,Lakewood,900 block of Brook Road,0,4,2017,NJ,us,40.097777799999996,-74.2180556,False
+1299,06-Aug-17,California,Oakland,1000 block of 106th Avenue,0,7,2017,CA,us,37.8044444,-122.2697222,False
+1300,05-Aug-17,New Jersey,Lakewood,900 block of Brook Road,0,4,2017,NJ,us,40.0977778,-74.2180556,False
 1301,05-Aug-17,South Carolina,Allendale,300 block of Ellis St,1,3,2017,SC,us,33.0077778,-81.3086111,False
-1302,05-Aug-17,Florida,Tallahassee,1939 W Tennessee St,1,3,2017,FL,us,30.438055600000006,-84.2808333,False
+1302,05-Aug-17,Florida,Tallahassee,1939 W Tennessee St,1,3,2017,FL,us,30.43805560000001,-84.2808333,False
 1303,04-Aug-17,Montana,Lodge Grass,200 block of North Helen Street,3,2,2017,MT,us,45.3144444,-107.3625,False
 1304,03-Aug-17,District of Columbia,Washington,3426 18th St NE,1,3,2017,,,47.751076,-120.740135,True
 1305,02-Aug-17,Maryland,Baltimore,900 block of N Broadway,0,4,2017,MD,us,39.2902778,-76.6125,False
 1306,01-Aug-17,Washington,Toppenish,8000 Block of Lateral C Rd,0,6,2017,WA,us,46.3775,-120.3075,False
-1307,01-Aug-17,California,Fresno,Mariposa St and A St,0,7,2017,CA,us,36.7477778,-119.77138889999999,False
+1307,01-Aug-17,California,Fresno,Mariposa St and A St,0,7,2017,CA,us,36.7477778,-119.7713889,False
 1308,01-Aug-17,Illinois,Chicago,800 block of N Monticello Ave,0,4,2017,IL,us,41.85,-87.65,False
 1309,31-Jul-17,Illinois,Decatur,Jasper St and Main St,0,4,2017,IL,us,39.8402778,-88.9547222,False
 1310,30-Jul-17,Virginia,Norfolk,1500 block of Azalea Garden Rd,1,5,2017,VA,us,36.8466667,-76.2855556,False
@@ -73,35 +73,35 @@
 1313,29-Jul-17,North Carolina,Salisbury,115 W Fisher St,2,3,2017,NC,us,35.6708333,-80.4744444,False
 1314,28-Jul-17,Delaware,Wilmington,400 block of N Washington St,0,4,2017,DE,us,39.7458333,-75.5469444,False
 1315,27-Jul-17,Illinois,Chicago,2000 block of E 71st St,1,4,2017,IL,us,41.85,-87.65,False
-1316,26-Jul-17,North Carolina,High Point,2111 E. Green Drive,1,6,2017,NC,us,35.955555600000004,-80.0055556,False
+1316,26-Jul-17,North Carolina,High Point,2111 E. Green Drive,1,6,2017,NC,us,35.95555560000001,-80.0055556,False
 1317,23-Jul-17,Illinois,Chicago,1500 block of East 82nd St,1,3,2017,IL,us,41.85,-87.65,False
 1318,23-Jul-17,Louisiana,Baton Rouge,10360 Ave H,0,4,2017,LA,us,30.450555600000005,-91.1544444,False
-1319,22-Jul-17,Ohio,Cincinnati,130 E Clifton Ave,0,5,2017,OH,us,39.161944399999996,-84.4569444,False
-1320,19-Jul-17,Virginia,Richmond,2300 block of Bethel St,0,5,2017,VA,us,37.553611100000005,-77.46055559999999,False
+1319,22-Jul-17,Ohio,Cincinnati,130 E Clifton Ave,0,5,2017,OH,us,39.1619444,-84.4569444,False
+1320,19-Jul-17,Virginia,Richmond,2300 block of Bethel St,0,5,2017,VA,us,37.55361110000001,-77.46055559999998,False
 1321,19-Jul-17,California,Los Angeles,Imperial Hwy and Broadway,1,3,2017,CA,us,34.0522222,-118.2427778,False
-1322,18-Jul-17,New Jersey,Trenton,Hewitt St and Division St,1,3,2017,NJ,us,40.216944399999996,-74.7433333,False
-1323,18-Jul-17,Wisconsin,Milwaukee,3000 Block of N 39th St,0,4,2017,WI,us,43.038888899999996,-87.90638890000001,False
+1322,18-Jul-17,New Jersey,Trenton,Hewitt St and Division St,1,3,2017,NJ,us,40.2169444,-74.7433333,False
+1323,18-Jul-17,Wisconsin,Milwaukee,3000 Block of N 39th St,0,4,2017,WI,us,43.0388889,-87.90638890000002,False
 1324,18-Jul-17,Arizona,El Mirage,NW Grand Ave and W Thunderbird Rd,0,4,2017,AZ,us,33.6130556,-112.3238889,False
 1325,15-Jul-17,Pennsylvania,Philadelphia,21st and Fitzwater,1,3,2017,PA,us,39.9522222,-75.1641667,False
 1326,15-Jul-17,Illinois,Chicago,12200 block of S Throop St,0,4,2017,IL,us,41.85,-87.65,False
 1327,09-Jul-17,Virginia,Lawrenceville,500 block Sturgeon Rd,0,7,2017,VA,us,36.7575,-77.8472222,False
 1328,08-Jul-17,Illinois,Alton,700 block of Oakwood,0,4,2017,IL,us,38.890555600000006,-90.1841667,False
-1329,08-Jul-17,Ohio,Cincinnati,9917 Capstan Dr,1,8,2017,OH,us,39.161944399999996,-84.4569444,False
-1330,06-Jul-17,Mississippi,Meridian,Eighth Ave,0,4,2017,MS,us,32.3641667,-88.70361109999999,False
+1329,08-Jul-17,Ohio,Cincinnati,9917 Capstan Dr,1,8,2017,OH,us,39.1619444,-84.4569444,False
+1330,06-Jul-17,Mississippi,Meridian,Eighth Ave,0,4,2017,MS,us,32.3641667,-88.70361109999997,False
 1331,05-Jul-17,Georgia,Savannah,Jefferson Street and West St. Julian Street,0,4,2017,GA,us,32.0833333,-81.1,False
 1332,05-Jul-17,Illinois,Chicago,11000 block of S Eberhart,2,2,2017,IL,us,41.85,-87.65,False
 1333,05-Jul-17,Maine,Madison,300 block of Russell Rd,4,1,2017,ME,us,44.7975,-69.88027779999999,False
 1334,04-Jul-17,Florida,Orlando,501 W Lancaster Rd,0,4,2017,FL,us,28.538055600000003,-81.3794444,False
 1335,04-Jul-17,Virginia,Hampton,500 block of Patterson Ave,1,4,2017,VA,us,37.0297222,-76.3455556,False
-1336,04-Jul-17,North Carolina,Raleigh,105 E South St,1,3,2017,NC,us,35.771944399999995,-78.63888890000001,False
+1336,04-Jul-17,North Carolina,Raleigh,105 E South St,1,3,2017,NC,us,35.77194439999999,-78.63888890000001,False
 1337,03-Jul-17,Alabama,Prattville,112 US 82,3,1,2017,AL,us,32.46388889999999,-86.4597222,False
 1338,03-Jul-17,Michigan,Pontiac,50 block of Thorpe St,1,3,2017,MI,us,42.6388889,-83.2911111,False
-1339,02-Jul-17,New Jersey,Jersey City,Wilkinson Avenue,0,4,2017,NJ,us,40.728055600000005,-74.0780556,False
+1339,02-Jul-17,New Jersey,Jersey City,Wilkinson Avenue,0,4,2017,NJ,us,40.72805560000001,-74.0780556,False
 1340,02-Jul-17,South Carolina,Greenwood,SC 72 Bypass,0,4,2017,SC,us,34.1952778,-82.1619444,False
 1341,01-Jul-17,Illinois,Momence,2727 S 13000 Rd E,0,4,2017,IL,us,41.1666667,-87.66277779999999,False
-1342,01-Jul-17,New Jersey,Newark,Lincoln Park and Pennsylvania Avenue,2,2,2017,NJ,us,40.735555600000005,-74.17277779999999,False
-1343,01-Jul-17,California,Oakland,3200 Humboldt Ave,0,4,2017,CA,us,37.804444399999994,-122.2697222,False
-1344,01-Jul-17,Arkansas,Little Rock,220 W 6th St,0,25,2017,AR,us,34.7463889,-92.28944440000001,False
+1342,01-Jul-17,New Jersey,Newark,Lincoln Park and Pennsylvania Avenue,2,2,2017,NJ,us,40.73555560000001,-74.17277779999998,False
+1343,01-Jul-17,California,Oakland,3200 Humboldt Ave,0,4,2017,CA,us,37.8044444,-122.2697222,False
+1344,01-Jul-17,Arkansas,Little Rock,220 W 6th St,0,25,2017,AR,us,34.7463889,-92.2894444,False
 1345,30-Jun-17,New York,Bronx,1650 Grand Concourse,2,6,2017,NY,us,40.85,-73.8666667,False
 1346,27-Jun-17,Illinois,Chicago,200 block of S Lotus,0,5,2017,IL,us,41.85,-87.65,False
 1347,25-Jun-17,District of Columbia,Washington,5900 block of Southern Ave SE,0,4,2017,,,47.751076,-120.740135,True
@@ -114,122 +114,122 @@
 1354,18-Jun-17,District of Columbia,Washington,3100 block of Buena Vista Terrace SE,0,4,2017,,,47.751076,-120.740135,True
 1355,18-Jun-17,Illinois,Chicago,3300 block of W Crystal,0,4,2017,IL,us,41.85,-87.65,False
 1356,18-Jun-17,South Carolina,Myrtle Beach,311 N Ocean Blvd,0,7,2017,SC,us,33.688888899999995,-78.8869444,False
-1357,17-Jun-17,Ohio,Columbus,6252 Busch Blvd,1,4,2017,OH,us,39.961111100000004,-82.99888890000001,False
+1357,17-Jun-17,Ohio,Columbus,6252 Busch Blvd,1,4,2017,OH,us,39.9611111,-82.99888890000003,False
 1358,17-Jun-17,Illinois,Chicago,1 block of North Latrobe,0,4,2017,IL,us,41.85,-87.65,False
-1359,15-Jun-17,New Mexico,La Madera,491 NM 111,5,0,2017,NM,us,35.222777799999996,-106.37,False
-1360,15-Jun-17,Virginia,Richmond,4053 Old Brook Road,1,3,2017,VA,us,37.553611100000005,-77.46055559999999,False
-1361,14-Jun-17,Ohio,Canton,14th St. NE and Gibbs Ave. NE,0,4,2017,OH,us,40.798888899999994,-81.37861109999999,False
-1362,14-Jun-17,Virginia,Alexandria,420 E Monroe Ave,1,5,2017,VA,us,38.8047222,-77.04722220000001,False
-1363,14-Jun-17,California,San Francisco,720 San Bruno,4,2,2017,CA,us,37.775,-122.41833329999999,False
+1359,15-Jun-17,New Mexico,La Madera,491 NM 111,5,0,2017,NM,us,35.2227778,-106.37,False
+1360,15-Jun-17,Virginia,Richmond,4053 Old Brook Road,1,3,2017,VA,us,37.55361110000001,-77.46055559999998,False
+1361,14-Jun-17,Ohio,Canton,14th St. NE and Gibbs Ave. NE,0,4,2017,OH,us,40.7988889,-81.37861109999999,False
+1362,14-Jun-17,Virginia,Alexandria,420 E Monroe Ave,1,5,2017,VA,us,38.8047222,-77.04722220000002,False
+1363,14-Jun-17,California,San Francisco,720 San Bruno,4,2,2017,CA,us,37.775,-122.4183333,False
 1364,13-Jun-17,Maryland,Baltimore,3300 block of Ayrdale Avenue,0,4,2017,MD,us,39.2902778,-76.6125,False
 1365,13-Jun-17,Maryland,Baltimore,1200 block of Bonaparte Avenue,2,2,2017,MD,us,39.2902778,-76.6125,False
 1366,13-Jun-17,Missouri,Saint Louis,Ferguson Ave and Plymouth Ave,0,4,2017,MO,us,38.6272222,-90.1977778,False
 1367,11-Jun-17,Illinois,Chicago,3300 block of W Douglas Blvd,0,9,2017,IL,us,41.85,-87.65,False
-1368,11-Jun-17,Tennessee,Chattanooga,4272 Bonny Oaks Drive,0,4,2017,TN,us,35.04555560000001,-85.30972220000001,False
+1368,11-Jun-17,Tennessee,Chattanooga,4272 Bonny Oaks Drive,0,4,2017,TN,us,35.04555560000001,-85.30972220000002,False
 1369,11-Jun-17,Texas,Houston,505 Cypress Station Dr,0,4,2017,TX,us,29.763055600000005,-95.3630556,False
-1370,10-Jun-17,Tennessee,Memphis,571 East Street,0,4,2017,TN,us,35.14944439999999,-90.04888890000001,False
-1371,09-Jun-17,Texas,Fort Worth,East Davis Avenue and New York Avenue,2,5,2017,TX,us,32.7252778,-97.32055559999999,False
-1372,08-Jun-17,Louisiana,New Orleans,3650 Franklin Ave,0,6,2017,LA,us,29.954444399999996,-90.075,False
+1370,10-Jun-17,Tennessee,Memphis,571 East Street,0,4,2017,TN,us,35.14944439999999,-90.04888890000002,False
+1371,09-Jun-17,Texas,Fort Worth,East Davis Avenue and New York Avenue,2,5,2017,TX,us,32.7252778,-97.3205556,False
+1372,08-Jun-17,Louisiana,New Orleans,3650 Franklin Ave,0,6,2017,LA,us,29.9544444,-90.075,False
 1373,06-Jun-17,Utah,Sandy,2232 Alta Canyon Drive,3,2,2017,UT,,40.571563,-111.852286,True
 1374,05-Jun-17,Florida,Orlando,2427 Forsyth Rd,6,0,2017,FL,us,28.538055600000003,-81.3794444,False
 1375,03-Jun-17,Missouri,Saint Louis,1600 Block of Union Blvd,2,2,2017,MO,us,38.6272222,-90.1977778,False
-1376,03-Jun-17,Louisiana,New Orleans,3717 Tulane Ave,3,2,2017,LA,us,29.954444399999996,-90.075,False
-1377,02-Jun-17,Texas,Laredo,5301 McPherson Rd,2,3,2017,TX,us,27.506111100000002,-99.5072222,False
+1376,03-Jun-17,Louisiana,New Orleans,3717 Tulane Ave,3,2,2017,LA,us,29.9544444,-90.075,False
+1377,02-Jun-17,Texas,Laredo,5301 McPherson Rd,2,3,2017,TX,us,27.5061111,-99.5072222,False
 1378,02-Jun-17,California,Los Angeles,89th St and Broadway,1,3,2017,CA,us,34.0522222,-118.2427778,False
 1379,01-Jun-17,Missouri,Saint Louis,Beacon Ave and Lillian Ave,3,1,2017,MO,us,38.6272222,-90.1977778,False
 1380,30-May-17,Ohio,Middletown,1200 Elliott Dr,1,3,2017,OH,us,39.515,-84.3983333,False
 1381,29-May-17,Kentucky,Louisville,231 Witherspoon St,1,3,2017,KY,us,38.2541667,-85.7594444,False
 1382,28-May-17,Alabama,Phenix City,100 block of 6th Street South,0,12,2017,AL,us,32.470833299999995,-85.0008333,False
-1383,28-May-17,New Jersey,Paterson,86 Main Street,1,5,2017,NJ,us,40.9166667,-74.17222220000001,False
+1383,28-May-17,New Jersey,Paterson,86 Main Street,1,5,2017,NJ,us,40.9166667,-74.17222220000002,False
 1384,28-May-17,Mississippi,Moss Point,6103 Hwy. 63,0,5,2017,MS,us,30.411388899999995,-88.5344444,False
 1385,27-May-17,New York,New York,318 W 14th St,0,4,2017,NY,us,40.7141667,-74.0063889,False
 1386,27-May-17,District of Columbia,Washington,100 block of Q Street Northwest,1,7,2017,,,47.751076,-120.740135,True
-1387,27-May-17,Mississippi,Bogue Chitto,2871 Lee Drive,8,1,2017,MS,us,31.438611100000003,-90.45222220000001,False
+1387,27-May-17,Mississippi,Bogue Chitto,2871 Lee Drive,8,1,2017,MS,us,31.438611100000006,-90.4522222,False
 1388,26-May-17,Florida,Miami,2730 NW 167th St,0,4,2017,FL,us,25.7738889,-80.1938889,False
-1389,21-May-17,Iowa,Des Moines,4300 Beaver Dr,1,3,2017,IA,us,41.60055560000001,-93.60888890000001,False
+1389,21-May-17,Iowa,Des Moines,4300 Beaver Dr,1,3,2017,IA,us,41.60055560000001,-93.6088889,False
 1390,21-May-17,Arizona,Mesa,441 N Val Vista Dr,0,4,2017,AZ,us,33.4222222,-111.8219444,False
 1391,20-May-17,Pennsylvania,Philadelphia,2100 block of W Huntingdon St,0,10,2017,PA,us,39.9522222,-75.1641667,False
 1392,16-May-17,South Carolina,Ruffin,21785 Lowcountry Hwy,3,1,2017,SC,us,33.0044444,-80.8158333,False
 1393,14-May-17,Arkansas,Jonesboro,311 S Main St,1,6,2017,AR,us,35.8422222,-90.7041667,False
-1394,14-May-17,Illinois,Dolton,14112 Chicago Road,0,5,2017,IL,us,41.6388889,-87.60722220000001,False
+1394,14-May-17,Illinois,Dolton,14112 Chicago Road,0,5,2017,IL,us,41.6388889,-87.60722220000002,False
 1395,14-May-17,Florida,Avon Park,Hal McRae Blvd and Delaney Ave,0,5,2017,FL,us,27.595555600000004,-81.5063889,False
-1396,14-May-17,Texas,Fort Worth,8600 block of Calmont Ave,0,4,2017,TX,us,32.7252778,-97.32055559999999,False
-1397,10-May-17,New Jersey,Trenton,300 block of Centre St,1,3,2017,NJ,us,40.216944399999996,-74.7433333,False
+1396,14-May-17,Texas,Fort Worth,8600 block of Calmont Ave,0,4,2017,TX,us,32.7252778,-97.3205556,False
+1397,10-May-17,New Jersey,Trenton,300 block of Centre St,1,3,2017,NJ,us,40.2169444,-74.7433333,False
 1398,09-May-17,Kansas,Kansas City,1900 block of S. Boeke,3,1,2017,KS,us,39.1141667,-94.6272222,False
 1399,07-May-17,Illinois,Chicago,2600 block of 46th Pl,2,8,2017,IL,us,41.85,-87.65,False
 1400,04-May-17,Michigan,Flint,600 block of Copeman Boulevard,1,3,2017,MI,us,43.0125,-83.6875,False
-1401,02-May-17,Florida,Jacksonville,1566 West 24th Street,1,3,2017,FL,us,30.331944399999998,-81.6558333,False
+1401,02-May-17,Florida,Jacksonville,1566 West 24th Street,1,3,2017,FL,us,30.3319444,-81.6558333,False
 1402,01-May-17,Texas,Dallas,3200 block of Reynolds Ave,2,3,2017,TX,us,32.783333299999995,-96.8,False
-1403,30-Apr-17,Kansas,Topeka,4104 SW 28th,4,1,2017,KS,us,39.048333299999996,-95.67777779999999,False
-1404,30-Apr-17,Florida,Jacksonville,1200 Ken Knight Dr N,0,5,2017,FL,us,30.331944399999998,-81.6558333,False
+1403,30-Apr-17,Kansas,Topeka,4104 SW 28th,4,1,2017,KS,us,39.0483333,-95.6777778,False
+1404,30-Apr-17,Florida,Jacksonville,1200 Ken Knight Dr N,0,5,2017,FL,us,30.3319444,-81.6558333,False
 1405,30-Apr-17,South Carolina,Loris,268 N Sea Green Rd,1,5,2017,SC,us,34.0561111,-78.8905556,False
 1406,30-Apr-17,California,San Diego,9080 Judicial Dr,2,6,2017,CA,us,32.7152778,-117.1563889,False
-1407,29-Apr-17,Maryland,Germantown,12800 block of Kitchen House Way,1,3,2017,MD,us,39.173055600000005,-77.2719444,False
+1407,29-Apr-17,Maryland,Germantown,12800 block of Kitchen House Way,1,3,2017,MD,us,39.17305560000001,-77.2719444,False
 1408,29-Apr-17,California,Los Angeles,Murchison St and Lancaster Ave,1,3,2017,CA,us,34.0522222,-118.2427778,False
-1409,29-Apr-17,California,Sacramento,3800 block of 26th Avenue,0,5,2017,CA,us,38.5816667,-121.49333329999999,False
-1410,29-Apr-17,California,Whittier,10000 block of Carmentia Rd,1,5,2017,CA,us,33.9791667,-118.03194440000001,False
+1409,29-Apr-17,California,Sacramento,3800 block of 26th Avenue,0,5,2017,CA,us,38.5816667,-121.4933333,False
+1410,29-Apr-17,California,Whittier,10000 block of Carmentia Rd,1,5,2017,CA,us,33.9791667,-118.0319444,False
 1411,29-Apr-17,California,Compton,2000 Block of N Nestor Ave,0,4,2017,CA,us,33.8958333,-118.21916670000002,False
 1412,29-Apr-17,Virginia,Virginia Beach,200 block of 18th St,0,4,2017,VA,us,36.8527778,-75.9783333,False
-1413,28-Apr-17,Pennsylvania,Chester,5 E 21st St,0,4,2017,PA,us,39.849444399999996,-75.35611109999999,False
-1414,27-Apr-17,New Jersey,Newark,1100 block of S Orange Ave,1,3,2017,NJ,us,40.735555600000005,-74.17277779999999,False
+1413,28-Apr-17,Pennsylvania,Chester,5 E 21st St,0,4,2017,PA,us,39.8494444,-75.35611109999998,False
+1414,27-Apr-17,New Jersey,Newark,1100 block of S Orange Ave,1,3,2017,NJ,us,40.73555560000001,-74.17277779999998,False
 1415,26-Apr-17,Florida,Miami,SW 264th St and 139th Ave,0,4,2017,FL,us,25.7738889,-80.1938889,False
 1416,21-Apr-17,Florida,Palm Bay,2500 block of Vernon Dr,2,2,2017,FL,us,28.0341667,-80.58888890000001,False
 1417,20-Apr-17,Kentucky,Louisville,700 block of East Jacob Street,0,4,2017,KY,us,38.2541667,-85.7594444,False
 1418,16-Apr-17,California,Vallejo,110 Calhoun Street,0,4,2017,CA,us,38.1041667,-122.25555559999998,False
-1419,16-Apr-17,North Carolina,Elizabeth City,611 S Martin St,0,4,2017,NC,us,36.294444399999996,-76.25138890000001,False
-1420,16-Apr-17,Ohio,Columbus,1710 Cleveland Av,0,9,2017,OH,us,39.961111100000004,-82.99888890000001,False
-1421,15-Apr-17,Illinois,Rock Falls,311 W 2nd St,0,4,2017,IL,us,41.7797222,-89.68888890000001,False
+1419,16-Apr-17,North Carolina,Elizabeth City,611 S Martin St,0,4,2017,NC,us,36.2944444,-76.25138890000002,False
+1420,16-Apr-17,Ohio,Columbus,1710 Cleveland Av,0,9,2017,OH,us,39.9611111,-82.99888890000003,False
+1421,15-Apr-17,Illinois,Rock Falls,311 W 2nd St,0,4,2017,IL,us,41.7797222,-89.68888890000002,False
 1422,15-Apr-17,Indiana,Indianapolis,300 block of S Meridian St,0,4,2017,IN,us,39.7683333,-86.1580556,False
 1423,15-Apr-17,Alabama,Birmingham,1480 Center Point Pkwy,0,6,2017,AL,us,33.5205556,-86.8025,False
 1424,15-Apr-17,Pennsylvania,Philadelphia,5900 block of Hammond Street,0,4,2017,PA,us,39.9522222,-75.1641667,False
 1425,15-Apr-17,Illinois,Harvey,14600 block of Myrtle Avenue,0,4,2017,IL,us,41.61,-87.6466667,False
 1426,15-Apr-17,California,Banning,900 block of N Allen St,0,4,2017,CA,us,33.9255556,-116.87555559999998,False
 1427,13-Apr-17,Georgia,Atlanta,30 Anderson Ave SW,1,3,2017,GA,us,33.7488889,-84.3880556,False
-1428,09-Apr-17,Texas,San Antonio,3100 block of Fidelia Drive,1,3,2017,TX,us,29.423888899999998,-98.4933333,False
+1428,09-Apr-17,Texas,San Antonio,3100 block of Fidelia Drive,1,3,2017,TX,us,29.4238889,-98.4933333,False
 1429,09-Apr-17,Indiana,Fort Wayne,9439 Lima Rd,1,3,2017,IN,us,41.1305556,-85.1288889,False
 1430,07-Apr-17,North Carolina,Hickory,1423 29th Ave Dr NE,3,1,2017,NC,us,35.73305560000001,-81.34138890000001,False
 1431,07-Apr-17,Texas,Houston,3829 Mount Pleasant St,5,0,2017,TX,us,29.763055600000005,-95.3630556,False
-1432,07-Apr-17,Minnesota,Saint Paul,1600 block of English St,4,1,2017,MN,us,44.944444399999995,-93.0930556,False
+1432,07-Apr-17,Minnesota,Saint Paul,1600 block of English St,4,1,2017,MN,us,44.9444444,-93.0930556,False
 1433,07-Apr-17,Illinois,Chicago,5600 block of W Lake St,1,5,2017,IL,us,41.85,-87.65,False
-1434,06-Apr-17,Louisiana,Lake Charles,2000 block of Tulip St,1,3,2017,LA,us,30.226388899999996,-93.21722220000001,False
+1434,06-Apr-17,Louisiana,Lake Charles,2000 block of Tulip St,1,3,2017,LA,us,30.2263889,-93.2172222,False
 1435,03-Apr-17,Pennsylvania,Philadelphia,1100 block of W Stiles St,3,1,2017,PA,us,39.9522222,-75.1641667,False
-1436,03-Apr-17,Texas,Lubbock,5401 Ave Q,0,7,2017,TX,us,33.5777778,-101.85472220000001,False
+1436,03-Apr-17,Texas,Lubbock,5401 Ave Q,0,7,2017,TX,us,33.5777778,-101.8547222,False
 1437,02-Apr-17,Illinois,Chicago,3500 block of West Van Buren Street,2,4,2017,IL,us,41.85,-87.65,False
-1438,02-Apr-17,Iowa,Des Moines,2500 Martin Luther King Jr. Parkway,0,5,2017,IA,us,41.60055560000001,-93.60888890000001,False
-1439,01-Apr-17,California,Pittsburg,100 block of Madoline Street,0,5,2017,CA,us,38.0280556,-121.88361110000001,False
-1440,01-Apr-17,Florida,Tampa,219 S Howard Ave,1,4,2017,FL,us,27.947222200000002,-82.45861109999998,False
-1441,01-Apr-17,Oklahoma,Oklahoma City,1200 block of N Woodward Avenue,2,3,2017,OK,us,35.4675,-97.51611109999999,False
+1438,02-Apr-17,Iowa,Des Moines,2500 Martin Luther King Jr. Parkway,0,5,2017,IA,us,41.60055560000001,-93.6088889,False
+1439,01-Apr-17,California,Pittsburg,100 block of Madoline Street,0,5,2017,CA,us,38.0280556,-121.8836111,False
+1440,01-Apr-17,Florida,Tampa,219 S Howard Ave,1,4,2017,FL,us,27.9472222,-82.45861109999998,False
+1441,01-Apr-17,Oklahoma,Oklahoma City,1200 block of N Woodward Avenue,2,3,2017,OK,us,35.4675,-97.5161111,False
 1442,30-Mar-17,Illinois,Chicago,2704 E 75th St,4,0,2017,IL,us,41.85,-87.65,False
 1443,27-Mar-17,Florida,Sanford,209 Hays Dr,2,4,2017,FL,us,28.8002778,-81.2733333,False
 1444,26-Mar-17,Texas,Houston,5619 Aldine Bender Rd,2,4,2017,TX,us,29.763055600000005,-95.3630556,False
-1445,26-Mar-17,Ohio,Cincinnati,4601 Kellogg Ave,2,15,2017,OH,us,39.161944399999996,-84.4569444,False
-1446,26-Mar-17,Ohio,Cleveland,E 75th St,2,2,2017,OH,us,41.499444399999994,-81.69555559999999,False
+1445,26-Mar-17,Ohio,Cincinnati,4601 Kellogg Ave,2,15,2017,OH,us,39.1619444,-84.4569444,False
+1446,26-Mar-17,Ohio,Cleveland,E 75th St,2,2,2017,OH,us,41.4994444,-81.69555559999998,False
 1447,25-Mar-17,Michigan,Detroit,8443 Grand River Ave,1,3,2017,MI,us,42.33138889999999,-83.0458333,False
 1448,25-Mar-17,Tennessee,Knoxville,Minnesota Avenue,1,4,2017,TN,us,35.960555600000006,-83.9208333,False
-1449,25-Mar-17,Ohio,Cleveland,E 79th St and Woodland Ave,2,2,2017,OH,us,41.499444399999994,-81.69555559999999,False
-1450,24-Mar-17,California,Fresno,300 block of South Villa Avenue,1,4,2017,CA,us,36.7477778,-119.77138889999999,False
+1449,25-Mar-17,Ohio,Cleveland,E 79th St and Woodland Ave,2,2,2017,OH,us,41.4994444,-81.69555559999998,False
+1450,24-Mar-17,California,Fresno,300 block of South Villa Avenue,1,4,2017,CA,us,36.7477778,-119.7713889,False
 1451,24-Mar-17,Missouri,Saint Louis,5100 block of Palm St,1,6,2017,MO,us,38.6272222,-90.1977778,False
-1452,22-Mar-17,Wisconsin,Rothschild,1133 E Grand Ave,5,0,2017,WI,us,44.887222200000004,-89.62,False
+1452,22-Mar-17,Wisconsin,Rothschild,1133 E Grand Ave,5,0,2017,WI,us,44.8872222,-89.62,False
 1453,19-Mar-17,Kentucky,Louisville,1512 Portland Avenue,1,5,2017,KY,us,38.2541667,-85.7594444,False
 1454,18-Mar-17,Michigan,Detroit,16000 block of Rutherford,3,2,2017,MI,us,42.33138889999999,-83.0458333,False
-1455,15-Mar-17,Louisiana,Metairie,2508 Pasadena Ave,3,1,2017,LA,us,29.983888899999997,-90.1527778,False
+1455,15-Mar-17,Louisiana,Metairie,2508 Pasadena Ave,3,1,2017,LA,us,29.9838889,-90.1527778,False
 1456,10-Mar-17,Illinois,Chicago,123 E 51st St,2,2,2017,IL,us,41.85,-87.65,False
-1457,10-Mar-17,Louisiana,New Orleans,4200 block of Touro St,3,1,2017,LA,us,29.954444399999996,-90.075,False
+1457,10-Mar-17,Louisiana,New Orleans,4200 block of Touro St,3,1,2017,LA,us,29.9544444,-90.075,False
 1458,07-Mar-17,Illinois,Chicago,West 76th Street and South May streets,0,4,2017,IL,us,41.85,-87.65,False
-1459,05-Mar-17,Georgia,Columbus,600 block of 32nd Street,0,4,2017,GA,us,32.4608333,-84.98777779999999,False
-1460,04-Mar-17,Kansas,Topeka,23rd and Bellview,1,4,2017,KS,us,39.048333299999996,-95.67777779999999,False
-1461,04-Mar-17,California,Sacramento,2500 block of 33rd St,0,4,2017,CA,us,38.5816667,-121.49333329999999,False
+1459,05-Mar-17,Georgia,Columbus,600 block of 32nd Street,0,4,2017,GA,us,32.4608333,-84.98777779999998,False
+1460,04-Mar-17,Kansas,Topeka,23rd and Bellview,1,4,2017,KS,us,39.0483333,-95.6777778,False
+1461,04-Mar-17,California,Sacramento,2500 block of 33rd St,0,4,2017,CA,us,38.5816667,-121.4933333,False
 1462,03-Mar-17,Pennsylvania,Philadelphia,7165 Germantown Ave,0,4,2017,PA,us,39.9522222,-75.1641667,False
-1463,03-Mar-17,California,Riverside,8300 block of Trey Ave,0,5,2017,CA,us,33.9533333,-117.39527779999999,False
-1464,28-Feb-17,Ohio,Cincinnati,1700 of Casey Drive,0,6,2017,OH,us,39.161944399999996,-84.4569444,False
-1465,27-Feb-17,Virginia,Newport News,11810 Fountain Way,0,4,2017,VA,us,36.9786111,-76.42833329999999,False
-1466,26-Feb-17,Indiana,Gary,1700 block of Grant St,1,4,2017,IN,us,41.5933333,-87.34638890000001,False
+1463,03-Mar-17,California,Riverside,8300 block of Trey Ave,0,5,2017,CA,us,33.9533333,-117.3952778,False
+1464,28-Feb-17,Ohio,Cincinnati,1700 of Casey Drive,0,6,2017,OH,us,39.1619444,-84.4569444,False
+1465,27-Feb-17,Virginia,Newport News,11810 Fountain Way,0,4,2017,VA,us,36.9786111,-76.42833329999998,False
+1466,26-Feb-17,Indiana,Gary,1700 block of Grant St,1,4,2017,IN,us,41.5933333,-87.34638890000002,False
 1467,25-Feb-17,Ohio,Warren,1564 Niles Cortland Rd SE,2,3,2017,OH,us,41.2375,-80.8186111,False
-1468,25-Feb-17,Florida,Jacksonville,3604 Moncrief Rd,1,4,2017,FL,us,30.331944399999998,-81.6558333,False
-1469,22-Feb-17,New York,Rochester,191 Genesee St,0,4,2017,NY,us,43.1547222,-77.61583329999999,False
-1470,21-Feb-17,Ohio,Cleveland,16700 Lorain Ave,0,4,2017,OH,us,41.499444399999994,-81.69555559999999,False
+1468,25-Feb-17,Florida,Jacksonville,3604 Moncrief Rd,1,4,2017,FL,us,30.3319444,-81.6558333,False
+1469,22-Feb-17,New York,Rochester,191 Genesee St,0,4,2017,NY,us,43.1547222,-77.61583329999998,False
+1470,21-Feb-17,Ohio,Cleveland,16700 Lorain Ave,0,4,2017,OH,us,41.4994444,-81.69555559999998,False
 1471,21-Feb-17,Mississippi,Toomsuba,Butts Road,4,0,2017,MS,us,32.4183333,-88.5069444,False
-1472,20-Feb-17,Ohio,Cleveland,1082 East 105th Street,0,5,2017,OH,us,41.499444399999994,-81.69555559999999,False
+1472,20-Feb-17,Ohio,Cleveland,1082 East 105th Street,0,5,2017,OH,us,41.4994444,-81.69555559999998,False
 1473,19-Feb-17,Virginia,Norfolk,Church Street and East Virginia Beach Blvd,1,3,2017,VA,us,36.8466667,-76.2855556,False
 1474,18-Feb-17,Pennsylvania,Philadelphia,1 block of N Conestoga,0,4,2017,PA,us,39.9522222,-75.1641667,False
 1475,18-Feb-17,Indiana,South Bend,1000 block of Yukon St,1,3,2017,IN,us,41.6833333,-86.25,False
@@ -237,43 +237,43 @@
 1477,15-Feb-17,Illinois,Chicago,3949 South Albany Avenue,3,2,2017,IL,us,41.85,-87.65,False
 1478,12-Feb-17,Missouri,Caruthersville,908 Truman Blvd,1,6,2017,MO,us,36.1930556,-89.6555556,False
 1479,12-Feb-17,New York,Newburgh,253 South William Street,1,3,2017,NY,us,41.5033333,-74.0108333,False
-1480,12-Feb-17,Florida,Greenville,Church Ave and Obadiah St,0,5,2017,FL,us,30.469166700000002,-83.63027779999999,False
+1480,12-Feb-17,Florida,Greenville,Church Ave and Obadiah St,0,5,2017,FL,us,30.4691667,-83.63027779999999,False
 1481,11-Feb-17,Tennessee,Savannah,Clifton Road and Midway Drive,0,4,2017,TN,us,35.2247222,-88.2491667,False
 1482,11-Feb-17,Illinois,Chicago,100 block of North Mayfield,1,3,2017,IL,us,41.85,-87.65,False
-1483,10-Feb-17,Louisiana,New Orleans,2nd St and Dryades St,1,5,2017,LA,us,29.954444399999996,-90.075,False
-1484,09-Feb-17,Mississippi,Jackson,3150 Robinson Road,4,0,2017,MS,us,32.2986111,-90.18472220000001,False
-1485,08-Feb-17,Ohio,Cleveland,16379 Euclid Ave,1,4,2017,OH,us,41.499444399999994,-81.69555559999999,False
-1486,07-Feb-17,South Carolina,Columbia,5500 block of Fairfield Road,0,4,2017,SC,us,34.000555600000006,-81.035,False
-1487,07-Feb-17,Arkansas,Little Rock,25 Par Drive,1,4,2017,AR,us,34.7463889,-92.28944440000001,False
+1483,10-Feb-17,Louisiana,New Orleans,2nd St and Dryades St,1,5,2017,LA,us,29.9544444,-90.075,False
+1484,09-Feb-17,Mississippi,Jackson,3150 Robinson Road,4,0,2017,MS,us,32.2986111,-90.1847222,False
+1485,08-Feb-17,Ohio,Cleveland,16379 Euclid Ave,1,4,2017,OH,us,41.4994444,-81.69555559999998,False
+1486,07-Feb-17,South Carolina,Columbia,5500 block of Fairfield Road,0,4,2017,SC,us,34.00055560000001,-81.035,False
+1487,07-Feb-17,Arkansas,Little Rock,25 Par Drive,1,4,2017,AR,us,34.7463889,-92.2894444,False
 1488,06-Feb-17,Mississippi,Yazoo City,11th Street,4,0,2017,MS,us,32.855,-90.4055556,False
-1489,31-Jan-17,Tennessee,Memphis,1576 S White Station Rd,0,4,2017,TN,us,35.14944439999999,-90.04888890000001,False
+1489,31-Jan-17,Tennessee,Memphis,1576 S White Station Rd,0,4,2017,TN,us,35.14944439999999,-90.04888890000002,False
 1490,31-Jan-17,District of Columbia,Washington,2900 block of Martin Luther King Jr Ave,0,4,2017,,,47.751076,-120.740135,True
-1491,30-Jan-17,Minnesota,Minneapolis,5410 Lakeland Ave N,0,4,2017,MN,us,44.98,-93.26361109999999,False
+1491,30-Jan-17,Minnesota,Minneapolis,5410 Lakeland Ave N,0,4,2017,MN,us,44.98,-93.2636111,False
 1492,29-Jan-17,Louisiana,Shreveport,6363 Hearne Ave,1,4,2017,LA,us,32.525,-93.75,False
-1493,27-Jan-17,Tennessee,Brownsville,221 Morgan St,0,10,2017,TN,us,35.593888899999996,-89.26222220000001,False
-1494,26-Jan-17,Georgia,Albany,1510 Maryland Drive,2,3,2017,GA,us,31.578333299999997,-84.1558333,False
+1493,27-Jan-17,Tennessee,Brownsville,221 Morgan St,0,10,2017,TN,us,35.5938889,-89.26222220000002,False
+1494,26-Jan-17,Georgia,Albany,1510 Maryland Drive,2,3,2017,GA,us,31.5783333,-84.1558333,False
 1495,25-Jan-17,Illinois,Chicago,500 block of E 75th St,0,6,2017,IL,us,41.85,-87.65,False
 1496,22-Jan-17,Illinois,Chicago,1800 block of W 63rd,0,4,2017,IL,us,41.85,-87.65,False
 1497,22-Jan-17,Texas,Manvel,200 block of Oak Shore Dr,3,2,2017,TX,us,29.4625,-95.3577778,False
 1498,22-Jan-17,Georgia,Atlanta,2841 Greenbriar Pkwy SW,3,1,2017,GA,us,33.7488889,-84.3880556,False
 1499,21-Jan-17,Georgia,Jonesboro,6510 Tara Blvd,0,6,2017,GA,us,33.5213889,-84.35388890000002,False
 1500,21-Jan-17,Florida,Boynton Beach,500 NE 2nd St,0,5,2017,FL,us,26.525,-80.0666667,False
-1501,21-Jan-17,Tennessee,Memphis,500 block of Delta Road,2,2,2017,TN,us,35.14944439999999,-90.04888890000001,False
+1501,21-Jan-17,Tennessee,Memphis,500 block of Delta Road,2,2,2017,TN,us,35.14944439999999,-90.04888890000002,False
 1502,20-Jan-17,Mississippi,Como,Smart Road,1,4,2017,MS,us,34.5105556,-89.9397222,False
-1503,20-Jan-17,California,Fresno,4700 block of E Montecito Ave,0,4,2017,CA,us,36.7477778,-119.77138889999999,False
+1503,20-Jan-17,California,Fresno,4700 block of E Montecito Ave,0,4,2017,CA,us,36.7477778,-119.7713889,False
 1504,16-Jan-17,Texas,Houston,8535 Martin Luther King Boulevard,0,4,2017,TX,us,29.763055600000005,-95.3630556,False
 1505,16-Jan-17,Florida,Miami,6011 NW 32nd Ave,0,8,2017,FL,us,25.7738889,-80.1938889,False
-1506,15-Jan-17,Colorado,Capulin,County Road Y,3,1,2017,CO,us,37.283888899999994,-106.11083329999998,False
+1506,15-Jan-17,Colorado,Capulin,County Road Y,3,1,2017,CO,us,37.2838889,-106.11083329999998,False
 1507,15-Jan-17,Mississippi,Magnolia,6000 block of Church Road,1,4,2017,MS,us,31.143055600000004,-90.45861109999998,False
 1508,12-Jan-17,Missouri,Kansas City,8607 E 61st Terrace,3,2,2017,MO,us,39.0997222,-94.5783333,False
 1509,12-Jan-17,California,Salinas,500 block of Sunrise St,2,2,2017,CA,us,36.6777778,-121.65444440000002,False
-1510,11-Jan-17,New Jersey,Newark,Hawkins Street and Christie Street,1,3,2017,NJ,us,40.735555600000005,-74.17277779999999,False
+1510,11-Jan-17,New Jersey,Newark,Hawkins Street and Christie Street,1,3,2017,NJ,us,40.73555560000001,-74.17277779999998,False
 1511,11-Jan-17,Illinois,Chicago,4200 block of S Talman,1,3,2017,IL,us,41.85,-87.65,False
 1512,07-Jan-17,Michigan,Flint,2500 block of Churchill Ave,1,3,2017,MI,us,43.0125,-83.6875,False
 1513,06-Jan-17,California,Pasadena,100 block of W Claremont St,2,2,2017,CA,us,34.1477778,-118.1436111,False
 1514,06-Jan-17,Florida,Fort Lauderdale,100 Terminal Dr,5,6,2017,FL,us,26.1219444,-80.14361109999999,False
 1515,04-Jan-17,California,Fontana,14520 Village Drive,3,1,2017,CA,us,34.0922222,-117.43416670000002,False
 1516,03-Jan-17,Texas,Allen,500 block of Hawthorne Drive,0,4,2017,TX,us,33.103055600000005,-96.6702778,False
-1517,01-Jan-17,Mississippi,Winstonville,114 North Greyer Street,0,5,2017,MS,us,33.91,-90.75138890000001,False
+1517,01-Jan-17,Mississippi,Winstonville,114 North Greyer Street,0,5,2017,MS,us,33.91,-90.7513889,False
 1518,01-Jan-17,Texas,Dallas,9220 Skillman Street,1,3,2017,TX,us,32.783333299999995,-96.8,False
 1519,01-Jan-17,Florida,Miami,8000 block of NW 14th Ave,0,7,2017,FL,us,25.7738889,-80.1938889,False

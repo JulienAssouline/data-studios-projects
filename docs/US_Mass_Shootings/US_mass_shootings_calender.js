@@ -104,7 +104,7 @@
         var text = svg.append("text") 
       .attr("x", 230)
       .attr("y", 730)
-      .text("The Las Vegas mass shooting, 59 dead, 241 injured.")
+      .text("The Las Vegas mass shooting, 62 dead, 243 injured.")
       .style("font-weight", "normal")
       .style("font-size", 14)
 

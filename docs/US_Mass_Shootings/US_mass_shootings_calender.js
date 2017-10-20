@@ -175,7 +175,7 @@
           .attr("y", 10)
           .attr("width", 20)
           .attr("height", 20)
-          .attr("fill", "white")
+          .attr("fill", "#eeedeb")
           .attr("stroke", "#ccc")
 
           svg.append("text") 

@@ -100,6 +100,8 @@
       .text("Oct. 1, 2017")
       .style("font-weight", "bold")
       .style("font-size", 14)
+      .style("font-family", "georgia")
+
 
         var text = svg.append("text") 
       .attr("x", 230)
@@ -107,6 +109,8 @@
       .text("The Las Vegas mass shooting, 59 dead, 241 injured.")
       .style("font-weight", "normal")
       .style("font-size", 14)
+      .style("font-family", "georgia")
+
 
        svg.append("line")
             .attr("x1", 2)
@@ -124,6 +128,8 @@
       .style("font-weight", "normal")
       .style("font-size", 14)
       .style("font-weight", "bold")
+      .style("font-family", "georgia")
+
 
 
     svg.append("text") 
@@ -132,6 +138,8 @@
       .text("Five days is the longest stretch")
       .style("font-weight", "normal")
       .style("font-size", 14)
+      .style("font-family", "georgia")
+
 
      svg.append("text") 
       .attr("x", 520)
@@ -139,6 +147,8 @@
       .text("without a mass shooting in 2017.")
       .style("font-weight", "normal")
       .style("font-size", 14)
+      .style("font-family", "georgia")
+
 
 
 
@@ -166,6 +176,8 @@
       .text("Day with mass shooting")
       .style("font-weight", "normal")
       .style("font-size", 14)
+      .style("font-family", "georgia")
+
 
 
 
@@ -184,6 +196,7 @@
       .text("Day without mass shooting")
       .style("font-weight", "normal")
       .style("font-size", 14)
+      .style("font-family", "georgia")
 
 
 

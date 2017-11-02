@@ -5,7 +5,7 @@
       var h = 700;
 
       var margin = {
-          top: 60,
+          top: 50,
           bottom: 20,
           left: 230,
           right: 70
@@ -100,7 +100,7 @@
 
                 svg.append("g")
                 .attr("class", "xaxis")
-                .attr("transform", "translate(0," + -5 +")")
+                .attr("transform", "translate(0," + -0 +")")
                 .call(xAxis)
                   .selectAll("text")
                   .attr("fill", function(d){
@@ -121,7 +121,7 @@
                   .attr("x2", 1)
                   .attr("y2", 613)
                   .attr("stroke-width", 1)
-                  .attr("transform", "translate(437.5, 2)")
+                  .attr("transform", "translate(437.5, 8)")
                   .attr("stroke", "black")
                   .style("stroke-dasharray", ("3,3"));
 
@@ -131,7 +131,7 @@
                   .attr("x2", 5)
                   .attr("y2", 613)
                   .attr("stroke-width", 1)
-                  .attr("transform", "translate(542.5, 2)")
+                  .attr("transform", "translate(542.5, 8)")
                   .attr("stroke", "black")
                   .style("stroke-dasharray", ("3,3"));
 

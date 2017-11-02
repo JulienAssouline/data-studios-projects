@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Loading TopoJSON data and generating SVG paths</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  #chart{
+    background-color: white;
+    border: 1px solid white;
+  }
+  /*rect{
+    fill: #b0859f;
+  }*/
+  .bar-label{
+    font-size: 14px;
+  }
+
+  .yaxis line,
+  .yaxis path{
+    fill: none;
+    stroke: none;
+  }
+
+  .xaxis path {
+    fill: none;
+    stroke: none;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+  .xaxis line {
+    fill: none;
+    stroke: white;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+    opacity: 0.5;
+  }
+
+  h1{
+    font-family: Bree serif;
+    font-size: 45px;
+    font-weight: normal;
+    position: left;
+  }
+
+  h2{
+    font-family: Bree serif;
+    font-size: 25px;
+    font-weight: normal;
+    position: relative;
+    left: 0px;
+  }
+
+  /*br{
+    font-size: 17px;
+    font-family: Bree serif;
+    font-weight: normal;
+
+  }*/
+
+#nav {
+  position: absolute;
+  text-align: right;
+  width: 90%;
+  padding-right: 10px;
+  font-size: 15px;
+/*  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+}
+#nav a{
+  padding-right: 5px;
+}
+
+/*.gridlines path,
+  .gridlines line {
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.8;
+    stroke-dasharray: 5,3;
+  }*/
+
+    </style>
+  </head>
+  <body>
+
+  <div id="nav">
+                        <a href="https://julienassouline.github.io/data-studios-projects/">Home</a>
+                        <a href="https://julienassouline.github.io/data-studios-projects/assets/CV.pdf">Resume</a>
+                        <a href="https://julienassouline.github.io/data-studios-projects/contact.html">Writing</a>
+            </div>
+            <br><br>
+
+  <h1> Video Games Make Terrible Movies </h1>
+  <div align="center" style="width:600px; margin:0 auto; font-size:17px; font-family: Bree serif;">
+  <p> By: Julien Assouline <p>
+  </div>
+  <br><br>
+  <br><br>
+  <h2> Rotten Tomatoes ratings on movies based from video games </h2>
+
+ <div class="container" id="video_games"></div>
+  <script src="Video_games_movies.js"></script>
+
+  </body>
+</html>

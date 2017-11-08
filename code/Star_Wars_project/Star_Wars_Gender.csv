@@ -1,183 +1,302 @@
 ,Characters,Gender,Movie,Word_count
+30,Leia,Female,Return of the Jedi,364
+31,Mon Mothma,Female,Return of the Jedi,92
+32,Luke,Male,Return of the Jedi,936
+33,Han,Male,Return of the Jedi,830
+34,Emperor,Male,Return of the Jedi,511
+35,Ben,Male,Return of the Jedi,453
+36,Vader,Male,Return of the Jedi,383
+37,Lando,Male,Return of the Jedi,378
+38,Ackbar,Male,Return of the Jedi,179
+39,Yoda,Male,Return of the Jedi,161
+40,Wedge,Male,Return of the Jedi,64
+41,Commander,Male,Return of the Jedi,59
+42,Piett,Male,Return of the Jedi,58
+43,Jerjerrod,Male,Return of the Jedi,51
+44,General Madine,Male,Return of the Jedi,37
+45,Boushh,Male,Return of the Jedi,24
+46,Stormtrooper,Male,Return of the Jedi,21
+47,Bib,Male,Return of the Jedi,18
+48,Controller,Male,Return of the Jedi,15
+49,Rebel Pilot,Male,Return of the Jedi,13
+50,Control Room Commander,Male,Return of the Jedi,9
+51,Jabba,Male,Return of the Jedi,6
+52,Oola,Male,Return of the Jedi,6
+53,Bunker Commander,Male,Return of the Jedi,5
+54,Scout,Male,Return of the Jedi,5
+55,Pilot,Male,Return of the Jedi,3
+56,Han And Luke,Male,Return of the Jedi,1
+57,Threepio,Robots,Return of the Jedi,866
+58,Ninedenine,Robots,Return of the Jedi,71
+59,Leia,Female,The Empire Strikes Back,775
+60,Woman Controller,Female,The Empire Strikes Back,5
+61,Han,Male,The Empire Strikes Back,1580
+62,Luke,Male,The Empire Strikes Back,989
+63,Yoda,Male,The Empire Strikes Back,762
+64,Vader,Male,The Empire Strikes Back,667
+65,Lando,Male,The Empire Strikes Back,618
+66,Piett,Male,The Empire Strikes Back,185
+67,Ben,Male,The Empire Strikes Back,143
+68,Rieekan,Male,The Empire Strikes Back,128
+69,Veers,Male,The Empire Strikes Back,87
+70,Needa,Male,The Empire Strikes Back,82
+71,Zev,Male,The Empire Strikes Back,70
+72,Deck Officer,Male,The Empire Strikes Back,62
+73,Ozzel,Male,The Empire Strikes Back,57
+74,Emperor,Male,The Empire Strikes Back,51
+75,Dack,Male,The Empire Strikes Back,42
+76,Wedge,Male,The Empire Strikes Back,31
+77,Boba Fett,Male,The Empire Strikes Back,28
+78,Controller,Male,The Empire Strikes Back,28
+79,Derlin,Male,The Empire Strikes Back,27
+80,Rebel Captain,Male,The Empire Strikes Back,27
+81,Lieutenant,Male,The Empire Strikes Back,17
+82,Tracking Officer,Male,The Empire Strikes Back,17
+83,Communications Officer,Male,The Empire Strikes Back,12
+84,Senior Controller,Male,The Empire Strikes Back,12
+85,Second Controller,Male,The Empire Strikes Back,11
+86,Trench Officer,Male,The Empire Strikes Back,11
+87,Janson,Male,The Empire Strikes Back,9
+88,Hobbie,Male,The Empire Strikes Back,6
+89,Man'S Voice,Male,The Empire Strikes Back,3
+90,Rebel Fighter,Male,The Empire Strikes Back,2
+91,Threepio,Robots,The Empire Strikes Back,1201
+92,Medical Droid,Robots,The Empire Strikes Back,15
+93,Second Threepio,Robots,The Empire Strikes Back,3
+94,Leia,Female,A New Hope,797
+95,Aunt Beru,Female,A New Hope,18
+96,Camie,Female,A New Hope,14
+97,Woman,Female,A New Hope,8
+98,Luke,Male,A New Hope,3224
+99,Han,Male,A New Hope,2236
+100,Ben,Male,A New Hope,1204
+101,Biggs,Male,A New Hope,643
+102,Vader,Male,A New Hope,613
+103,Tarkin,Male,A New Hope,477
+104,Red Leader,Male,A New Hope,406
+105,Owen,Male,A New Hope,385
+106,Jabba,Male,A New Hope,264
+107,Dodonna,Male,A New Hope,219
+108,Officer,Male,A New Hope,154
+109,Trooper,Male,A New Hope,149
+110,Wedge,Male,A New Hope,140
+111,Gold Leader,Male,A New Hope,119
+112,Motti,Male,A New Hope,119
+113,Greedo,Male,A New Hope,113
+114,Tagge,Male,A New Hope,107
+115,Red Ten,Male,A New Hope,62
+116,Gold Five,Male,A New Hope,60
+117,First Trooper,Male,A New Hope,53
+118,Fixer,Male,A New Hope,46
+119,Officer Cass,Male,A New Hope,37
+120,Commander,Male,A New Hope,34
+121,Human,Male,A New Hope,34
+122,Gantry Officer,Male,A New Hope,33
+123,Willard,Male,A New Hope,32
+124,Man'S Voice,Male,A New Hope,31
+125,Chief,Male,A New Hope,30
+126,Imperial Officer,Male,A New Hope,29
+127,Bartender,Male,A New Hope,25
+128,Rebel Officer,Male,A New Hope,19
+129,Astro-Officer,Male,A New Hope,18
+130,Red Nine,Male,A New Hope,15
+131,Second Trooper,Male,A New Hope,14
+132,Gold Two,Male,A New Hope,11
+133,Technician,Male,A New Hope,9
+134,Chief Pilot,Male,A New Hope,5
+135,Deak,Male,A New Hope,5
+136,Porkins,Male,A New Hope,5
+137,Threepio,Robots,A New Hope,1841
+138,K-2SO,Droid,Rogue One,2340
+139,Cassian,Male,Rogue One,2270
+140,Jyn Erso,Female,Rogue One,1928
+141,Bodhi,Male,Rogue One,1180
+142,Galen Erso,Male,Rogue One,1008
+143,Krennic,Male,Rogue One,924
+144,Chirrut,Male,Rogue One,808
+145,Tarkin,Male,Rogue One,458
+146,Saw Gerrera,Male,Rogue One,448
+147,Stormtrooper,Male,Rogue One,378
+148,Baze,Male,Rogue One,258
+149,Raddus,Male,Rogue One,250
+150,Tivik,Male,Rogue One,210
+151,Darth Vader,Male,Rogue One,192
+152,Mon Mothma,Female,Rogue One,178
+153,Rebel,Male,Rogue One,168
+154,Melshi,Male,Rogue One,150
+155,Imperial,Male,Rogue One,124
+156,Senator Senator Organa,Male,Rogue One,122
+157,Blue Leader,Male,Rogue One,110
+158,Pamlo,Female,Rogue One,92
+159,Threepio,Droid,Rogue One,76
+160,Lieutenant,Male,Rogue One,74
+161,Gold Leader,Male,Rogue One,64
+162,Lyra,Female,Rogue One,60
+163,Soldier,Male,Rogue One,58
+164,Jebel,Male,Rogue One,56
+165,Tonc,Male,Rogue One,52
+166,Romodi,Male,Rogue One,50
+167,Captain Antilles,Male,Rogue One,48
+168,Vaspar,Male,Rogue One,48
+169,Officer,Male,Rogue One,26
+170,Red Leader,Male,Rogue One,24
+171,Vanee,Male,Rogue One,12
+172,Dr. Evazan,Male,Rogue One,10
+173,Engineer,Male,Rogue One,10
+174,Dodonna,Male,Rogue One,8
+175,Mother,Female,Rogue One,4
+176,Leia,Female,Rogue One,2
+177,Padme,Female,Attack of the Clones,2343
+178,Anakin,Male,Attack of the Clones,2061
+179,Obi-Wan,Male,Attack of the Clones,1482
+180,Palpatine,Male,Attack of the Clones,590
+181,Count Dooku,Male,Attack of the Clones,584
+182,Yoda,Male,Attack of the Clones,355
+183,Lama Su,Male,Attack of the Clones,350
+184,Jocasta Nu,Female,Attack of the Clones,331
+185,Threepio,Droid,Attack of the Clones,318
+186,Jar Jar,Male,Attack of the Clones,254
+187,Cliegg,Male,Attack of the Clones,152
+188,Dexter Jettster,Male,Attack of the Clones,151
+189,Watto,Male,Attack of the Clones,140
+190,Taun We,Female,Attack of the Clones,139
+191,Queen Jamillia,Female,Attack of the Clones,135
+192,Jango Fett,Male,Attack of the Clones,98
+193,Mas Amedda,Male,Attack of the Clones,95
+194,Sio Bibble,Male,Attack of the Clones,91
+195,Bail Organa,Male,Attack of the Clones,89
+196,Sola,Female,Attack of the Clones,86
+197,Captain Typho,Male,Attack of the Clones,81
+198,Jobal,Female,Attack of the Clones,78
+199,Ruwee,Male,Attack of the Clones,75
+200,Pk-4,Droid,Attack of the Clones,69
+201,Senator Ask Aak,Male,Attack of the Clones,66
+202,Owen,Male,Attack of the Clones,56
+203,Mace Windu,Male,Attack of the Clones,53
+204,Poggle,Male,Attack of the Clones,42
+205,Shmi,Female,Attack of the Clones,39
+206,Sun Rit,Male,Attack of the Clones,38
+207,Nute Gunray,Male,Attack of the Clones,34
+208,Orn Free Taa,Male,Attack of the Clones,33
+209,Amidala,Female,Attack of the Clones,26
+210,Hermione Bagwa,Female,Attack of the Clones,26
+211,Zam Wessel,Female,Attack of the Clones,26
+212,Ki-Adi-Mundi,Male,Attack of the Clones,26
+213,Dorme,Female,Attack of the Clones,20
+214,Ambassador Darsana,Male,Attack of the Clones,17
+215,Elan,Male,Attack of the Clones,17
+216,Boba Fett,Male,Attack of the Clones,14
+217,Clone Captain,Male,Attack of the Clones,11
+218,Cordé,Female,Attack of the Clones,8
+219,Plo Koon,Male,Attack of the Clones,8
+220,Beru,Female,Attack of the Clones,7
+221,Dar Wac,Male,Attack of the Clones,7
+222,Ryoo & Pooja,Female,Attack of the Clones,5
+223,Droid Captain,Droid,Attack of the Clones,2
+224,Qui-Gon,Male,The Phantom Menace,2118
+225,Anakin,Male,The Phantom Menace,1565
+226,Padme,Female,The Phantom Menace,659
+227,Obi-Wan,Male,The Phantom Menace,630
+228,Amidala,Female,The Phantom Menace,611
+229,Nute,Male,The Phantom Menace,598
+230,Jar Jar,Male,The Phantom Menace,583
+231,Watto,Male,The Phantom Menace,482
+232,Fode/Beed,Male,The Phantom Menace,373
+233,Capt. Panaka,Male,The Phantom Menace,364
+234,Palpatine,Male,The Phantom Menace,274
+235,Mace Windu,Male,The Phantom Menace,228
+236,Boss Nass,Male,The Phantom Menace,192
+237,Ric Olie,Male,The Phantom Menace,118
+238,Yoda,Male,The Phantom Menace,74
+239,Threepio,Droid,The Phantom Menace,66
+240,Darth Maul,Male,The Phantom Menace,65
+241,Tc-14,Droid,The Phantom Menace,50
+242,Sebulba,Male,The Phantom Menace,39
+243,Jabba,Male,The Phantom Menace,35
+244,Captain,Male,The Phantom Menace,20
+245,Battle Droid Captain,Droid,The Phantom Menace,20
+246,Pk-4,Droid,The Phantom Menace,17
+247,Eg-9,Droid,The Phantom Menace,7
+248,General Ceel,Male,The Phantom Menace,5
+249,P-59,Droid,The Phantom Menace,5
+250,Owo-1,Droid,The Phantom Menace,4
+251,Guard Droid,Droid,The Phantom Menace,4
+252,Anakin,Male,Revenge of the Sith,3191
+253,Obi-Wan,Male,Revenge of the Sith,2708
+254,Palpatine,Male,Revenge of the Sith,2422
+255,Padme,Female,Revenge of the Sith,1299
+256,Yoda,Male,Revenge of the Sith,802
+257,Mace Windu,Male,Revenge of the Sith,539
+258,Bail Organa,Male,Revenge of the Sith,409
+259,Threepio,Robots,Revenge of the Sith,271
+260,General Grievous,Robots,Revenge of the Sith,263
+261,Mon Mothma,Female,Revenge of the Sith,115
+262,Qui-Gon,Male,Revenge of the Sith,102
+263,Kl-Adi-Mundi,Male,Revenge of the Sith,91
+264,Clone Commander Cody,Male,Revenge of the Sith,82
+265,Count Dooku,Male,Revenge of the Sith,65
+266,Medical Droid,Robots,Revenge of the Sith,56
+267,Nute Gunray,Male,Revenge of the Sith,55
+268,Clone Sergeant,Male,Revenge of the Sith,43
+269,Mas Amedda,Male,Revenge of the Sith,34
+270,Giddean Danu,Male,Revenge of the Sith,31
+271,Odd Ball,Male,Revenge of the Sith,26
+272,Captain Typho,Male,Revenge of the Sith,23
+273,Fang Zar,Male,Revenge of the Sith,23
+274,Clone Commander Gree,Male,Revenge of the Sith,20
+275,Bana Breemu,Female,Revenge of the Sith,19
+276,Jar Jar,Male,Revenge of the Sith,18
+277,Creature,Male,Revenge of the Sith,18
+278,Glddean Danu,Male,Revenge of the Sith,16
+279,Aayla,Female,Revenge of the Sith,14
+280,Super Battle Droid G21,Robots,Revenge of the Sith,14
+281,Younglings,Male,Revenge of the Sith,14
+282,Super Battle Droid 1,Robots,Revenge of the Sith,13
+283,Bodyguard,Male,Revenge of the Sith,13
+284,Bodyguard I,Male,Revenge of the Sith,9
+285,Clone Commander Bacara,Male,Revenge of the Sith,8
+286,Plo Koon,Male,Revenge of the Sith,8
+287,Battle Droid,Robots,Revenge of the Sith,7
+288,Super Battle Droid R77,Robots,Revenge of the Sith,7
+289,Rune Haako,Male,Revenge of the Sith,6
+290,Super Battle Droid,Robots,Revenge of the Sith,6
+291,Super Battle Droid 2,Robots,Revenge of the Sith,6
+292,Droid 1,Robots,Revenge of the Sith,5
+293,Anakin/Obi-Wan,Male,Revenge of the Sith,4
+294,At-St Clone Sergeant,Male,Revenge of the Sith,4
+295,Terr Taneel,Female,Revenge of the Sith,4
+296,Motee,Female,Revenge of the Sith,3
+297,Droid 2,Robots,Revenge of the Sith,2
+298,Chi Eekway,Female,Revenge of the Sith,2
 0,Rey,Female,The Force Awakens,1059
 1,Maz Kanata,Female,The Force Awakens,256
 2,Leia,Female,The Force Awakens,238
 3,Phasma,Female,The Force Awakens,72
 4,Jess,Female,The Force Awakens,18
 5,Rey / Han,Female,The Force Awakens,16
-6,Some Guy,Female,The Force Awakens,8
-7,Rey / Finn,Female,The Force Awakens,4
-8,Unknown Lady,Female,The Force Awakens,2
-9,Villager,Female,The Force Awakens,2
-10,Han Solo,Male,The Force Awakens,1235
-11,Kylo Ren,Male,The Force Awakens,604
-12,General Hux,Male,The Force Awakens,315
-13,Snoke,Male,The Force Awakens,143
-14,Bala-Tik,Male,The Force Awakens,104
-15,Lor San Tekka,Male,The Force Awakens,94
-16,Unkar,Male,The Force Awakens,46
-17,Statura,Male,The Force Awakens,41
-18,Captain,Male,The Force Awakens,31
-19,Pilot,Male,The Force Awakens,24
-20,Rey / Han,Male,The Force Awakens,16
-21,Obi Wan,Male,The Force Awakens,10
-22,Yoda,Male,The Force Awakens,7
-23,Emmat,Male,The Force Awakens,4
-24,Rey / Finn,Male,The Force Awakens,4
-25,Unknown Man,Male,The Force Awakens,4
-26,C-3Po,Robots,The Force Awakens,209
-0,Leia,Female,Return of the Jedi,364
-1,Mon Mothma,Female,Return of the Jedi,92
-2,Luke,Male,Return of the Jedi,936
-3,Han,Male,Return of the Jedi,830
-4,Emperor,Male,Return of the Jedi,511
-5,Ben,Male,Return of the Jedi,453
-6,Vader,Male,Return of the Jedi,383
-7,Lando,Male,Return of the Jedi,378
-8,Ackbar,Male,Return of the Jedi,179
-9,Yoda,Male,Return of the Jedi,161
-10,Wedge,Male,Return of the Jedi,64
-11,Commander,Male,Return of the Jedi,59
-12,Piett,Male,Return of the Jedi,58
-13,Jerjerrod,Male,Return of the Jedi,51
-14,General Madine,Male,Return of the Jedi,37
-15,Boushh,Male,Return of the Jedi,24
-16,Stormtrooper,Male,Return of the Jedi,21
-17,Bib,Male,Return of the Jedi,18
-18,Controller,Male,Return of the Jedi,15
-19,Rebel Pilot,Male,Return of the Jedi,13
-20,Control Room Commander,Male,Return of the Jedi,9
-21,Jabba,Male,Return of the Jedi,6
-22,Oola,Male,Return of the Jedi,6
-23,Bunker Commander,Male,Return of the Jedi,5
-24,Scout,Male,Return of the Jedi,5
-25,Pilot,Male,Return of the Jedi,3
-26,Han And Luke,Male,Return of the Jedi,1
-27,Threepio,Robots,Return of the Jedi,866
-28,Ninedenine,Robots,Return of the Jedi,71
-0,Leia,Female,The Empire Strikes Back,775
-1,Woman Controller,Female,The Empire Strikes Back,5
-2,Han,Male,The Empire Strikes Back,1580
-3,Luke,Male,The Empire Strikes Back,989
-4,Yoda,Male,The Empire Strikes Back,762
-5,Vader,Male,The Empire Strikes Back,667
-6,Lando,Male,The Empire Strikes Back,618
-7,Piett,Male,The Empire Strikes Back,185
-8,Ben,Male,The Empire Strikes Back,143
-9,Rieekan,Male,The Empire Strikes Back,128
-10,Veers,Male,The Empire Strikes Back,87
-11,Needa,Male,The Empire Strikes Back,82
-12,Zev,Male,The Empire Strikes Back,70
-13,Deck Officer,Male,The Empire Strikes Back,62
-14,Ozzel,Male,The Empire Strikes Back,57
-15,Emperor,Male,The Empire Strikes Back,51
-16,Dack,Male,The Empire Strikes Back,42
-17,Wedge,Male,The Empire Strikes Back,31
-18,Boba Fett,Male,The Empire Strikes Back,28
-19,Controller,Male,The Empire Strikes Back,28
-20,Derlin,Male,The Empire Strikes Back,27
-21,Rebel Captain,Male,The Empire Strikes Back,27
-22,Lieutenant,Male,The Empire Strikes Back,17
-23,Tracking Officer,Male,The Empire Strikes Back,17
-24,Communications Officer,Male,The Empire Strikes Back,12
-25,Senior Controller,Male,The Empire Strikes Back,12
-26,Second Controller,Male,The Empire Strikes Back,11
-27,Trench Officer,Male,The Empire Strikes Back,11
-28,Janson,Male,The Empire Strikes Back,9
-29,Hobbie,Male,The Empire Strikes Back,6
-30,Man'S Voice,Male,The Empire Strikes Back,3
-31,Rebel Fighter,Male,The Empire Strikes Back,2
-32,Threepio,Robots,The Empire Strikes Back,1201
-33,Medical Droid,Robots,The Empire Strikes Back,15
-34,Second Threepio,Robots,The Empire Strikes Back,3
-0,Leia,Female,A New Hope,797
-1,Aunt Beru,Female,A New Hope,18
-2,Camie,Female,A New Hope,14
-3,Woman,Female,A New Hope,8
-4,Luke,Male,A New Hope,3224
-5,Han,Male,A New Hope,2236
-6,Ben,Male,A New Hope,1204
-7,Biggs,Male,A New Hope,643
-8,Vader,Male,A New Hope,613
-9,Tarkin,Male,A New Hope,477
-10,Red Leader,Male,A New Hope,406
-11,Owen,Male,A New Hope,385
-12,Jabba,Male,A New Hope,264
-13,Dodonna,Male,A New Hope,219
-14,Officer,Male,A New Hope,154
-15,Trooper,Male,A New Hope,149
-16,Wedge,Male,A New Hope,140
-17,Gold Leader,Male,A New Hope,119
-18,Motti,Male,A New Hope,119
-19,Greedo,Male,A New Hope,113
-20,Tagge,Male,A New Hope,107
-21,Red Ten,Male,A New Hope,62
-22,Gold Five,Male,A New Hope,60
-23,First Trooper,Male,A New Hope,53
-24,Fixer,Male,A New Hope,46
-25,Officer Cass,Male,A New Hope,37
-26,Commander,Male,A New Hope,34
-27,Human,Male,A New Hope,34
-28,Gantry Officer,Male,A New Hope,33
-29,Willard,Male,A New Hope,32
-30,Man'S Voice,Male,A New Hope,31
-31,Chief,Male,A New Hope,30
-32,Imperial Officer,Male,A New Hope,29
-33,Bartender,Male,A New Hope,25
-34,Rebel Officer,Male,A New Hope,19
-35,Astro-Officer,Male,A New Hope,18
-36,Red Nine,Male,A New Hope,15
-37,Second Trooper,Male,A New Hope,14
-38,Gold Two,Male,A New Hope,11
-39,Technician,Male,A New Hope,9
-40,Chief Pilot,Male,A New Hope,5
-41,Deak,Male,A New Hope,5
-42,Porkins,Male,A New Hope,5
-43,Threepio,Robots,A New Hope,1841
-0,Anakin,Male,Revenge of the Sith,9573
-1,Obi-Wan,Male,Revenge of the Sith,8124
-2,Palpatine,Male,Revenge of the Sith,7266
-3,Padme,Female,Revenge of the Sith,3897
-4,Yoda,Male,Revenge of the Sith,2406
-5,Mace Windu,Male,Revenge of the Sith,1617
-6,Bail Organa,Male,Revenge of the Sith,1227
-7,Threepio,Robots,Revenge of the Sith,813
-8,General Grievous,Robots,Revenge of the Sith,789
-9,Mon Mothma,Female,Revenge of the Sith,345
-10,Qui-Gon,Male,Revenge of the Sith,306
-11,Kl-Adi-Mundi,Male,Revenge of the Sith,273
-12,Clone Commander Cody,Male,Revenge of the Sith,246
-13,Count Dooku,Male,Revenge of the Sith,195
-15,Medical Droid,Robots,Revenge of the Sith,168
-16,Nute Gunray,Male,Revenge of the Sith,165
-17,Clone Sergeant,Male,Revenge of the Sith,129
-19,Mas Amedda,Male,Revenge of the Sith,102
-20,Giddean Danu,Male,Revenge of the Sith,93
-22,Odd Ball,Male,Revenge of the Sith,78
-23,Captain Typho,Male,Revenge of the Sith,69
-24,Fang Zar,Male,Revenge of the Sith,69
-26,Clone Commander Gree,Male,Revenge of the Sith,60
-28,Bana Breemu,Female,Revenge of the Sith,57
-29,Creature,Male,Revenge of the Sith,54
-30,Jar Jar,Male,Revenge of the Sith,54
-31,Glddean Danu,Male,Revenge of the Sith,48
-33,Super Battle Droid G21,Robots,Revenge of the Sith,42
-35,Aayla,Female,Revenge of the Sith,42
-36,Younglings,Male,Revenge of the Sith,42
-37,Super Battle Droid 1,Robots,Revenge of the Sith,39
-38,Bodyguard,Male,Revenge of the Sith,39
-41,Bodyguard I,Male,Revenge of the Sith,27
-43,Clone Commander Bacara,Male,Revenge of the Sith,24
-44,Plo Koon,Male,Revenge of the Sith,24
-45,Super Battle Droid R77,Robots,Revenge of the Sith,21
-46,Battle Droid,Robots,Revenge of the Sith,21
-47,Super Battle Droid 2,Robots,Revenge of the Sith,18
-48,Super Battle Droid,Robots,Revenge of the Sith,18
-49,Rune Haako,Male,Revenge of the Sith,18
-51,Droid 1,Robots,Revenge of the Sith,15
-52,At-St Clone Sergeant,Male,Revenge of the Sith,12
-54,Terr Taneel,Female,Revenge of the Sith,12
-57,Anakin/Obi-Wan,Male,Revenge of the Sith,12
-58,Motee,Female,Revenge of the Sith,9
-59,Droid 2,Robots,Revenge of the Sith,6
-60,Chi Eekway,Female,Revenge of the Sith,6
+6,Woman,Female,The Force Awakens,9
+7,Girl Officer,Female,The Force Awakens,8
+8,Rey / Finn,Female,The Force Awakens,4
+9,Unknown Lady,Female,The Force Awakens,2
+10,Villager,Female,The Force Awakens,2
+11,Finn (FN-2187),Male,The Force Awakens,1417
+12,Han Solo,Male,The Force Awakens,1235
+13,Poe Dameron,Male,The Force Awakens,625
+14,Kylo Ren,Male,The Force Awakens,604
+15,General Hux,Male,The Force Awakens,315
+16,Snoke,Male,The Force Awakens,143
+17,Bala-Tik,Male,The Force Awakens,104
+18,Lor San Tekka,Male,The Force Awakens,94
+19,Unkar,Male,The Force Awakens,46
+20,Statura,Male,The Force Awakens,41
+21,Captain,Male,The Force Awakens,31
+22,Pilot,Male,The Force Awakens,24
+23,Rey / Han,Male,The Force Awakens,16
+24,Obi Wan,Male,The Force Awakens,10
+25,Medic,Male,The Force Awakens,8
+26,Some Guy,Male,The Force Awakens,8
+27,Yoda,Male,The Force Awakens,7
+28,Emmat,Male,The Force Awakens,4
+29,Rey / Finn,Male,The Force Awakens,4
+30,Unknown Man,Male,The Force Awakens,4
+31,Threepio,Robots,The Force Awakens,209

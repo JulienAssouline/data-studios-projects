@@ -106,16 +106,7 @@
                 return 450
               }
             }
-            if(d.Movie == "Rogue One"){
-              if(d.Gender == "Male"){
-                return 650
-              }
-              if(d.Gender == "Female"){
-                return 800
-              } else {
-                return 900
-              }
-            }
+
           }).strength(0.07))
           .force("y", d3.forceY(function(d){
             if(d.Movie == "A New Hope"){
@@ -137,9 +128,6 @@
               return 950
             }
             if(d.Movie == "The Force Awakens"){
-              return 1250
-            }
-            if(d.Movie == "Rogue One"){
               return 1250
             }
           }).strength(0.08))
@@ -505,14 +493,14 @@
 
 
 
-                svg.append("text")
-                .attr("x", 720)
-                .attr("y", 1100)
-                .attr("font-family", "Bree Serif")
-                .attr("font-size", 17)
-                .text("Rogue One (2016)")
-                .style("text-align", "center")
-                .attr("class", "title_wars")
+                // svg.append("text")
+                // .attr("x", 720)
+                // .attr("y", 1100)
+                // .attr("font-family", "Bree Serif")
+                // .attr("font-size", 17)
+                // .text("Rogue One (2016)")
+                // .style("text-align", "center")
+                // .attr("class", "title_wars")
 
 
               svg.append("text")

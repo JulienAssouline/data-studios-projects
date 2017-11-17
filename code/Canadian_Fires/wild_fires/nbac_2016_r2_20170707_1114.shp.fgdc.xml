@@ -1,0 +1,603 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <title>nbac_2016_r2_20170707_1114</title>
+        <geoform>map</geoform>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>The National Burned Area Composite (NBAC) is a product created as a component of the Fire Monitoring, Accounting and Reporting System (FireMARS), jointly developed by the Canada Centre for Mapping and Earth Observation (http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/applications-development/10822) (formerly the Canada Centre for Remote Sensing) of Natural Resources Canadaand the Canadian Forest Service. FireMARS was initially developed with funding support from the Canadian Space Agency Government Related Initiatives Program (http://www4.asc-csa.gc.ca/auot-eoau/eng/grip/about.aspx) through a collaboration of those in fire research (http://www.nrcan.gc.ca/forests/fire/13143), forest carbon accounting (http://www.nrcan.gc.ca/forests/climate-change/13087) and remote sensing.NBAC is a national product compiled annually since 2004 by the FireMARS system which tracks forest fires for annual estimates of carbon emissions and to help identify National Forest Inventory plots that may have been disturbed by fire.See the FireMARS website at http://www.nrcan.gc.ca/forests/fire/13159 and carbon accounting - disturbance monitoring website (http://www.nrcan.gc.ca/forests/climate-change/13109) for additional information.Data from two types of providers is used to generate NBAC: 1) Natural Resources Canada, and 2) Provincial, Territorial, and Parks Canada agencies.A rule-based decision process is used to select the best data source for each fire event based on factors such as how well the burn polygon follows the shape of the fire as observed on post-burn satellite imagery, the data source itself, and what methods were used to delineate the burn. Not all fires are mapped and in areas where there was not a lot of fire activity to warrant satellite image mapping, agency data is used.==================================La Composite nationale des superficies brûlées (CNSB) fait partie du système FireMARS (Fire Monitoring, Accounting and Reporting System) mis au point par le Centre canadien de cartographie et d’observation de la Terre (http://www.rncan.gc.ca/sciences-terre/geomatique/imagerie-satellitaire-photos-aeriennes/developpement-applications/10972) (anciennement le Centre canadien de télédétection)et le Service canadien des forêts. Le système FireMARS a d'abord été rendu possible grâce à un soutien financier du Programme d'initiatives gouvernementales en observation de la Terre (IGOT) de l'Agence spatiale canadienne (http://www4.asc-csa.gc.ca/auot-eoau/fra/igot//About%20Grip.aspx) en collaboration avec les initiatives de recherche sur les feux (http://www.rncan.gc.ca/forets/feux/13144), de comptabilisation du carbone forestier (http://www.rncan.gc.ca/forets/changements-climatiques/13088) et de télédétection.CNSB est un produit national compilé annuellement depuis 2004 par le système FireMARS (Fire Monitoring, Accounting and Reporting System), qui fait le suivi des incendies de forêt afin d'estimer les émissions annuelles de carbone et de déterminer les parcelles de l'Inventaire forestier national (IFN) qui peuvent avoir été perturbées par les incendies.Pour obtenir plus de renseignements, consulter la page Web sur le système FireMARS (http://www.rncan.gc.ca/forets/feux/13160) et la comptabilisation du carbone forestier - surveillance des perturbations (http://www.rncan.gc.ca/forets/changements-climatiques/13110).Pour générer la CNSB, on utilise des données provenant de deux types de sources :1) Ressources naturelles Canada; 2) les organismes provinciaux et territoriaux et Parcs Canada.Un processus de décision basé sur des règles est utilisé dans la sélection desmeilleures sources de données pour chaque incendie, en fonction de divers facteurs : dans quelle mesure le polygone des surfaces brûlées correspond-elle à la forme de l'incendie observée sur l'imagerie satellitaire post-incendie, la source de données elle-même, ainsi que les méthodes qui ont été utilisées pour la délimitation de l'aire brûlée. Tous les incendies ne sont pas cartographiés; dans les régions où il n'y a pas eu beaucoup d'incendies pour justifier le recours à la cartographie par imagerie satellitaire, les données fournies par les organismes ont été utilisées.</abstract>
+      <purpose>The NBAC is a national, geospatial burned area product compiled annually since 2004 for annual estimates of carbon emissions. A rule-based decision process is used to select the best burned area represention from a number of available data sources.  //  La CNSB est un outil de cartographie nationale et géospatiale des superficies brûlées compilé chaque année depuis 2004 afin d'en calculer annuellement les émissions de carbone. Un processus décisionnel axé sur les règles permet de sélectionner les meilleures sources de données disponibles pour représenter une situation de feu donnée. </purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20160101</begdate>
+          <enddate>20161231</enddate>
+          <endtime>235959</endtime>
+        </rngdates>
+      </timeinfo>
+      <current>Unknown</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-145.652018</westbc>
+        <eastbc>-38.229549</eastbc>
+        <northbc>72.471877</northbc>
+        <southbc>40.492735</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>wildland fires</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>wildfires</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>forest fires</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>burned area</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>fire history</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>satellite remote sensing</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>natural disturbance</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>feux de forêt</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>incendies de forêt</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>superficie brûlée</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>historique des feux</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>télédétection satellitaire</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>perturbation naturelle</themekey>
+      </theme>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>boundaries</themekey>
+        <themekey>environment</themekey>
+        <themekey>biota</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Canada</placekey>
+      </place>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst>© Department of Natural Resources Canada. All rights reserved.
+© Le ministère des Ressources naturelles Canada. Tous droits réservés
+</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Government of Canada; Natural Resources Canada; Canadian Forest Service; Northern Forestry Centre; Canadian Wildland Fire Information System (CWFIS) Group</cntorg>
+          <cntper>Rob Skakun</cntper>
+        </cntorgp>
+      </cntinfo>
+    </ptcontac>
+    <browse>
+      <browsen>http://www.nrcan.gc.ca/sites/www.nrcan.gc.ca/files/forest/canada-nbac-800-en.png</browsen>
+      <browsed>Burned areas mapped annually from NBAC</browsed>
+      <browset>PNG</browset>
+    </browse>
+    <native>Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.2.2.3552</native>
+  </idinfo>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>985</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <planar>
+        <mapproj>
+          <mapprojn>Canada Lambert Conformal Conic</mapprojn>
+          <lambertc>
+            <stdparll>49.0</stdparll>
+            <stdparll>77.0</stdparll>
+            <longcm>-95.0</longcm>
+            <latprjo>49.0</latprjo>
+            <feast>0.0</feast>
+            <fnorth>0.0</fnorth>
+          </lambertc>
+        </mapproj>
+        <planci>
+          <plance>coordinate pair</plance>
+          <coordrep>
+            <absres>0.000000007695133419360901</absres>
+            <ordres>0.000000007695133419360901</ordres>
+          </coordrep>
+          <plandu>meter</plandu>
+        </planci>
+      </planar>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>nbac_2016_r2_20170707_1114</enttypl>
+        <enttypd>A homogeneous collection of common features having the same spatial representation, such as points, lines, or polygons, and a common set of attribute columns.</enttypd>
+        <enttypds>Esri</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>FID</attrlabl>
+        <attrdef>Feature IDentifier (generated by ESRI). Internal feature number.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Shape</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>NFIREID</attrlabl>
+        <attrdef>National Fire IDentifier is uniquely assigned to each "fire event" over a spatial region and for a specific year. It is the common ID used to link multi-source fire polygons over the same fire event.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>BASRC</attrlabl>
+        <attrdef>Burned Area SouRCe identifies the data provider
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0</edomv>
+            <edomvd>Data source not defined</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>NRCan - CFS/CCRS fine spatial resolution derived products from SAFiMS or MAFiMS software.</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>NRCan - CCRS coarse spatial resolution derived products from HANDS algorithm.</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>3</edomv>
+            <edomvd>Fire agency (provincial, territorial, Parks Canada)</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>4</edomv>
+            <edomvd>Medium spatial resolution derived products.</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>FIREMAPS</attrlabl>
+        <attrdef>FIRE MAP data Source describes the means used to identify the burn
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0</edomv>
+            <edomvd>Undefined: Source of detection not defined</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>Other: Other sources, could also be field or airborne if information not provided</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>Field survey: Burn delineation from field survey</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>3</edomv>
+            <edomvd>Airborne platform: Airborne platform from helicopter or fixed-wing aircraft</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>4</edomv>
+            <edomvd>Aerial photograph: Digital or analogue aerial photographs</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>5</edomv>
+            <edomvd>Satellite hotspots: Fire mapped from hotspots using Moderate Resolution Imagaing Spectroradiometer (MODIS), Advanced Very High Resolution Radiometer (AVHRR), Along Track Scanning Radiometer (ATS), or other</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>6</edomv>
+            <edomvd>Satellite Imagery - other: Fire mapped from Advanced Wide Field Sensor (AWiFS), Disaster Monitoring Constellation (DMC), or any other imagery not explicity coded to another value</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>7</edomv>
+            <edomvd>Satellite  Imagery - SPOT VGT: Fire mapped from pre and post-burn SPOT VEGETATION (VGT) imagery, at 1000 metre spatial resolution</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>8</edomv>
+            <edomvd>Satellite Imagery - MODIS:  Fire mapped from Moderate Resolution Imaging Spectroradiometer (MODIS) imagery, at 250 or 500m spatial resolution</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>9</edomv>
+            <edomvd>Satellite Imagery - Landsat : Fire mapped from Landsat 5, 7, or 8 imagery, single post-burn or pre and post-burn imagery</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>10</edomv>
+            <edomvd>Satellite Imagery - Sentinel-2: Fire mapped using Sentinel-2 imagery</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>11</edomv>
+            <edomvd>Satellite Imagery - Proba-V: Fire mapped using Proba-V imagery</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>FIREMAPM</attrlabl>
+        <attrdef>FIRE MAPping Method is how the data was captured 
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0</edomv>
+            <edomvd>Undefined: Method of burned area mapping not defined</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>Other: Other methods</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>Sketch mapping or manual (human) interpretation: May be manually delineated onto a map and subsequently digitized or digitized directly using a digital tablet or computer monitor </edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>3</edomv>
+            <edomvd>GPS: Digitized from a Global Positioning System (GPS) unit</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>4</edomv>
+            <edomvd>Processed - other remote sensing methods: Digitized using other automated remote sensing methods (eg. burn severity threshold)</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>5</edomv>
+            <edomvd>Processed - buffered points: Digitized by buffering a fire location</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>6</edomv>
+            <edomvd>Processed - RS HANDS: Digitized using remote sensing Hotspot and NDVI Differencing Synergy (HANDS)</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>7</edomv>
+            <edomvd>Processed - RS SAFiMS or MAFiMS: Digitized using remote sensing Single Acquisition Fire Mapping System (SAFiMS) or Multi Acquisition Fire Mapping System (MAFiMS)</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>FIRECAUS</attrlabl>
+        <attrdef>Agency Fire CAUSE when available. The cause of the fire recorded by the agency.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0</edomv>
+            <edomvd>Undefined: Cause of fire unavailable</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>Other: Other causes</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>Lightning: Lightning </edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>3</edomv>
+            <edomvd>Industry  Eg. forestry, oil and gas, rail, agriculture, prescribed burn, or other</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>4</edomv>
+            <edomvd>Human: Non-industrial human activity, eg. recreational (campfire, ATV, etc), arson, or other</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>BURNCLAS</attrlabl>
+        <attrdef>BURN CLASs provided by agency fire data (to date, only provided by Alberta). Where partial burn is not provided, it is assumed to be full burn.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>Partially burned area: 1% - 25% burned as proportion of polygon estimated to have burned</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>Partially burned area: 26% - 50% burned as proportion of polygon estimated to have burned</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>3</edomv>
+            <edomvd>Partially burned area: 51% - 75% burned as proportion of polygon estimated to have burned</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>4</edomv>
+            <edomvd>Fully burned area: 76% - 100% burned</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>COMM</attrlabl>
+        <attrdef>COMMents during processing. Where the burn area source is agency (ie. BASRC = 3), other agency information is captured under this field as field:value.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>free text</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CDATE</attrlabl>
+        <attrdef>Creation DATE/time of the shapefile (GMT) (YYYY-MM-DD HH:MM:SS)
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>YYYY-MM-DD HH:MM:SS</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SDATE</attrlabl>
+        <attrdef>Start DATE/time according to the first detected hotspots within the spatial extent of the NFIREID region (any satellite sources).  If no hotspots were detected it is January 1 of the fire year, eg. 2004-01-01 00:00:00.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>YYYY-MM-DD HH:MM:SS</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>EDATE</attrlabl>
+        <attrdef>End DATE/time of the last detected hotspots within the spatial extent of the national fire ID region (any satellite sources).  If no hotspots were detected it is January 1 of the fire year, eg. 2004-01-01 00:00:00.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>YYYY-MM-DD HH:MM:SS</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>AFSDATE</attrlabl>
+        <attrdef>Agency Fire Start DATE is the start date reported by the agency. If agency date was not provided it is January 1 of the fire year, eg. 2004-01-01 00:00:00.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>YYYY-MM-DD HH:MM:SS</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>AFEDATE</attrlabl>
+        <attrdef>Agency Fire End DATE is the end date of the fire reported by the agency.  If agency date was not provided it is January 1 of the fire year, eg. 2004-01-01 00:00:00.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>YYYY-MM-DD HH:MM:SS</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CAPDATE</attrlabl>
+        <attrdef>CAPture DATE of source data. Examples include date of GPS acquisition, air photo acquisition, Landsat image for mapping. This field links to the National Forest Inventory INFO_DATE
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>YYYY-MM-DD HH:MM:SS</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>BT_GID</attrlabl>
+        <attrdef>Business Table IDentifier, internal use
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SALVAGE</attrlabl>
+        <attrdef>SALVAGE logging flag based on visual inspection of post-burn Landsat used in MAFiMS.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0</edomv>
+            <edomvd>Not evaluated</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>False</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>True</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>PB_HARV</attrlabl>
+        <attrdef>Pre-Burn HARVesting flag based on visual inspection  of post-burn Landsat used in MAFiMS.  0=Not evaluated, 1=False, and 2=True.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0</edomv>
+            <edomvd>Not evaluated</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>False</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>2</edomv>
+            <edomvd>True</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>UTOTAREA</attrlabl>
+        <attrdef>TOTal AREA that has been adjusted with application of a non-parametric linear Theil Sen regression function when a coarse resolution burned area has been generated (BASRC=2). The field is expressed in hectares and computed using the Canada Albers Equal Area Conic projection. </attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>Positive real numbers.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>NBACVERS</attrlabl>
+        <attrdef>NBAC version. 
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>Format: NNNN_rX_YYYYMMDD_HHMM where NNNN: year of the processed fire season; rX: NBAC rule set used to generate the shapefile; YYYYMMDD_HHMM: the file creation timestamp (year, month, day, hour and minute).</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>TOTAREA</attrlabl>
+        <attrdef>TOTal AREA is calculated in hectares using the Canada Albers Equal Area Conic projection.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>Positive real numbers.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>AREAMODA</attrlabl>
+        <attrdef>AREA MODel "A" is the slope of the non-parametric linear Theil Sen regression function used to calibrate the coarse resolution burned area to a more representative burned area. A value of 1 is used when the BASRC (Burned Area SouRCe) is Landsat or Fire Agency as these burned area data sources do not require calibration. </attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>Positive real numbers.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>AREAMODB</attrlabl>
+        <attrdef>AREA MODel "B" is the y-intercept of the non-parametric linear Theil Sen regression function used to calibrate the coarse resolution burned area to a more representative burned area. A value of 0 is used when the BASRC (Burned Area SouRCe) is Landsat or Fire Agency as these burned area data sources do not require calibration.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>Positive real numbers.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>AREAMODT</attrlabl>
+        <attrdef>AREA MODel Type is a flag field of value 0 or 1 depending on whether the non-parametric linear Theil Sen regression function was applied to calculate UTOTAREA.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0</edomv>
+            <edomvd>no model has been applied to calculate UTOTAREA</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+          <edom>
+            <edomv>1</edomv>
+            <edomvd>a model has been applied to calculate UTOTAREA</edomvd>
+            <edomvds>None</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>AREAMODV</attrlabl>
+        <attrdef>AREA MODel Version is the year of the fire season the model was developed.
+</attrdef>
+        <attrdefs>None</attrdefs>
+        <attrdomv>
+          <udom>Four digit whole numbers: YYYY</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <metainfo>
+    <metd>20170918</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Government of Canada; Natural Resources Canada; Canadian Forest Service; Northern Forestry Centre; Canadian Wildland Fire Information System (CWFIS) Group</cntorg>
+          <cntper>Rob Skakun</cntper>
+        </cntorgp>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+  </metainfo>
+</metadata>

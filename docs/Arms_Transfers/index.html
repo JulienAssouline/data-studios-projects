@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+#maps{
+    background-color: white;
+    stroke-width: 1;
+  } 
+
+  .country{
+    stroke: white;
+    stroke-width: 0.1;
+  }  
+    </style>
+  </head>
+  <body>
+
+  <h1> The US transfers more weapons than any other country </h1>
+
+  <div id="Legend"></div>
+  <script src="circle_legend.js"></script>
+  
+    <div id="arms_transfer"></div>
+  <script src="arms_transfers.js"></script>
+
+  
+    
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  #chart{
+    background-color: white;
+    border: 1px solid white;
+  }
+  
+  div.tooltip { 
+    position: absolute;
+    text-align: left;
+    color: white;
+    padding: 7px;
+    background-color: darkgrey;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: sans-serif;
+   }
+
+
+    .yaxis path{
+    fill: none;
+    stroke: none;
+  }
+
+  .yaxis line{
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.7;
+    stroke-dasharray: 3,3;
+  }
+
+ h1{
+    font-family: Bree serif;
+    font-size: 45px;
+    font-weight: normal;
+    position: left;
+  }
+
+  h2{
+    font-family: Bree serif;
+    font-size: 25px;
+    font-weight: normal;
+    position: relative;
+    left: 0px;
+  }
+
+
+  .xaxis path {
+    fill: none;
+    stroke: none;
+    stroke-width: 0px;
+    shape-rendering: crispEdges;
+  }
+
+.xaxis line {
+    fill: none;
+    stroke: none;
+    stroke-width: 0px;
+    shape-rendering: crispEdges;
+  }
+
+  #nav {
+  position: absolute;
+  text-align: right;
+  width: 90%;
+  padding-right: 10px;
+  font-size: 15px;
+/*  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+}
+#nav a{
+  padding-right: 5px;
+}
+
+    </style>
+  </head>
+  <body>
+
+   <div id="nav">
+                        <a href="https://julienassouline.github.io/data-studios-projects/">Home</a>
+                        <a href="https://julienassouline.github.io/data-studios-projects/assets/CV (5).pdf">Resume</a>
+                        <a href="https://julienassouline.github.io/data-studios-projects/contact.html">Writing</a>
+            </div>
+            <br><br>
+
+<h1> Opioid hospitalizations are up in almost every region of Canada </h1>
+  <div align="center" style="width:600px; margin:0 auto; font-size:17px; font-family: Bree serif;">
+  <p> By: Julien Assouline <p>
+  </div>
+  <br><br>
+  <br><br>
+  <div align="left" style="width:600px; margin:0 auto; font-size:17px; font-family: Bree serif;">
+  <p> Opioids have become a national epidemic, not just for the United States, but for Canada as well. They have claimed the lives of more than <a href="https://www.canada.ca/en/health-canada/services/substance-abuse/prescription-drug-abuse/opioids/national-report-apparent-opioid-related-deaths.html"> 2,800</a> people in Canada alone. 
+ <p>
+
+ <p>From its latest report, the <a href="https://www.cihi.ca/en"> Canadian Institute of Health Information (CIHI)</a> has found that just under 5,000 people were hospitalized in 2014-2015. The highest number of hospitalizations ever recorded and a 41 percent change increase from 2007-2008. It has also estimated that on average, 16 percent of Canadians are hospitalized every day for opioid poisoning. 
+<p>
+
+ <p>The crisis is affecting every region of the country. In fact, only PEI and the Territories have seen declines in opioid-related hospitalization cases. Every other region of the country has seen some sort of increase. 
+ <p>
+  </div>
+  <br><br>
+  <div id = "provinces"></div>
+  <script src="opioid_provinces.js"></script>
+ <br><br>
+   <div align="left" style="width:600px; margin:0 auto; font-size:17px; font-family: Bree serif;">
+
+ <p>Apart from Manitoba, Western Canada has been hit the hardest by the crisis. From 2007-2008 to 2014-2015 Alberta had the highest increase in opioid poisoning hospitalizations, while Saskatchewan and British Columbia have the highest rates of opioid poisoning in the country, and by a wide margin.  
+ <p>
+
+<p> The CIHI’s reports also show this crisis affecting every age group, but mostly the elderly.  <p>
+
+</div>
+  <br><br>
+  <div id="age"></div>
+  <script src="Opioid_age.js"></script>
+    <br><br>
+
+<div align="left" style="width:600px; margin:0 auto; font-size:17px; font-family: Bree serif;">
+
+<p> Age groups of middle-aged and elderly groups had the highest rates of opioid-related poisoning in Canada. This is in large part due to the fact that seniors had the highest rates of opioid prescriptions in Canada between 2012 and 2016, according to the CIHI. The report also shows that 1 in 8 seniors prescribed an opioid was prescribed a strong opioid on a chronic basis. 
+  <p>
+
+<p>
+“Seniors are at greater risk for opioid-related harms due to several factors, including age-related changes in drug absorption and metabolism, and cognitive changes that may increase the risk of accidental drug poisoning,” <a href="https://www.cihi.ca/en/amount-of-opioids-prescribed-dropping-in-canada-prescriptions-on-the-rise"> wrote the CIHI </a>. 
+<p>
+
+<p>
+Decreasing the rate of opioid deaths and hospitalizations will be a difficult task for policymakers because they are affecting the most vulnerable groups. The problem will not just be addressing the deaths, but also the prescriptions, which are a direct cause of the rates of deaths and hospitalizations all over Canada. 
+
+<p>
+
+ </div>  
+
+  
+<br><br>
+<br><br>
+
+    
+  </body>
+</html>

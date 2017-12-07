@@ -1,0 +1,221 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Learning D3 </title>
+<link rel="stylsheet" href="main.css">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<style type = "text/css">
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+  #chart{
+    background-color: #1b1a1b;
+    border: 1px solid #CCC;
+  }
+  .yaxis path{
+    fill: none;
+    stroke: none;
+  }
+  .yaxis line{
+    fill: none;
+    stroke: none;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.7;
+    stroke-dasharray: 3,3;
+  }
+  .xaxis path,
+  .xaxis line{
+    fill: none;
+    stroke: none;
+  }
+  
+  
+</style>
+<body>
+<!-- Place all DOM elements here -->
+
+<script>
+ var w = 700;
+ var h = 400;
+      var margin = {
+          top: 0,
+          bottom: 40,
+          left: 40,
+          right: 40
+        }
+        var width = w - margin.left - margin.right;
+        var height = h - margin.top - margin.bottom;
+      var xScale = d3.scaleLinear() 
+        .range([0, width])
+      var yScale = d3.scaleLinear()
+        .range([height, 0])
+      var radians = d3.scaleLinear()
+        .range([-Math.PI / 2, Math.PI / 2]);
+      var arc = d3.radialLine()
+        .curve(d3.curveBasis)
+        .angle(function(d){ return radians(d); })
+      var xAxis = d3.axisBottom()
+        .scale(xScale)
+      var yAxis = d3.axisLeft()
+        .scale(yScale)
+        var svg = d3.select("body")
+        .append("svg")
+        .attr("id", "chart")
+        .attr("width", w)
+        .attr("height", h)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+  d3.csv("Baseball_careers_1999.csv", function(error, data){
+    data.forEach(function(d){
+      d.To = +d.To;
+      d.From = +d.From;
+      d.names = d.names;
+      d.Age = +d.Age;
+      d.War = +d.War;
+      d.experience = +d.experience
+      d.Zero = +d.Zero
+      d.Year_difference = +d.Year_difference
+    });
+    xScale.domain([0, 14])
+    yScale.domain([0, 1])
+    svg.selectAll(".lines")
+      .data(data)
+      .enter()
+      .append("path")
+      .style("stroke", "none")
+      .attr("d", function(d){
+        var To_scale = xScale(d.experience),
+            From_scale = xScale(0),
+            y = yScale(0),
+            dx = To_scale - From_scale,
+            dy = y,
+            dr = Math.sqrt(dx * dx + dy * dy);
+        return "M" + From_scale + " " + y + " A 43 50 0 0 1 " + To_scale + " " + y;
+      })
+      .style("fill", "none")
+      
+    
+     svg.selectAll(".arcs")
+      .data(data)
+      .enter()
+      .append("path")
+      .style("stroke", "#832129")
+      .attr("class", "arc")
+      .attr("d", function(d){
+        var To_scale = xScale(d.experience),
+            From_scale = xScale(0),
+            y = yScale(0),
+            dx = To_scale - From_scale,
+            dy = y,
+            dr = Math.sqrt(dx * dx + dy * dy);
+        return "M" + From_scale + " " + y + " A 43 50 0 0 1 " + To_scale + " " + y;
+      })
+      .style("fill", "none")
+      .style("opacity", 0)
+      .call(transition)
+      .on("mouseover",  function(d){
+        var thisClass = d3.select(this).attr("class")
+          d3.select(this).style("stroke", "white").style("opacity", 1)
+          d3.selectAll(".arcs").style("opacity", 0.1)
+        })
+        .on("mouseout",  function(d){
+          d3.select(this).style("stroke", "#832129").style("opacity", 1)
+        })
+      function transition(path){
+        path.each(function(PathItem, index){
+         d3.select(this).transition()
+          .delay(index + 200)
+          .duration(index * 5 + 1000)
+          .on("start", function(){
+            d3.select(this).style("opacity", 1)
+          })
+          .attrTween("stroke-dasharray", tweenDash)
+        })
+      }
+      
+      function tweenDash(){
+        var l = this.getTotalLength(),
+            i = d3.interpolateString("0," + l, l + "," + l)
+            return function(t){ return i(t); };
+      }
+      
+      //   myChart.transition()
+      //     .duration(50)
+      //     .attrTween("stroke-dasharray", function(d){
+      //   var To_scale = xScale(d.To),
+      //       From_scale = xScale(d.From),
+      //       y = yScale(0),
+      //       dx = To_scale - From_scale,
+      //       dy = y,
+      //       dr = Math.sqrt(dx * dx + dy * dy);
+      //   return "M" + From_scale + " " + y + " A 43 50 0 0 1 " + To_scale + " " + y;
+      // })
+      
+        
+      
+      // myChart.transition()
+      //   .attr("d", function(d){
+      //   var To_scale = xScale(d.To),
+      //       From_scale = xScale(d.From),
+      //       y = yScale(0),
+      //       dx = To_scale - From_scale,
+      //       dy = y,
+      //       dr = Math.sqrt(dx * dx + dy * dy);
+      //   return "M" + From_scale + " " + y + " A 43 50 0 0 1 " + To_scale + " " + y;
+      // })
+      //   .duration(50)
+      //   .delay(function(d, i){
+      //     return i * 30
+      //   })
+    // svg.selectAll("circle")
+    //   .data(data)
+    //   .enter()
+    //   .append("circle")
+    //   .attr("class", "From")
+    //   .attr("r", 4)
+    //   .attr("cx", function(d){ 
+    //     return xScale(d.From) 
+    //   })
+    //   .attr("cy", function(d){
+    //     return yScale(0)
+    //   })
+    //   .style("fill", "blue")
+    // svg.selectAll(".point")
+    //   .data(data)
+    //   .enter()
+    //   .append("circle")
+    //   .attr("class", "To")
+    //   .attr("r", 4)
+    //   .attr("cx", function(d){
+    //     return xScale(d.To)
+    //   })
+    //   .attr("cy", function(d){
+    //     return yScale(0)
+    //   })
+    //   .style("fill", "red")
+      svg.append("g")
+    .classed("xaxis", true)
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis)
+    .selectAll("text")
+        .style("fill", "#832129")
+    svg.append("g")
+      .classed("yaxis", true)
+      .attr("transform", "translate(0," + -15 + ")")
+      .call(yAxis)
+        .selectAll("text")
+        .style("fill", "none")
+    // function arcs(d, bend){
+    //   bend = bend || 1;
+    // }
+  });
+   </script>
+  </body>
+</html>

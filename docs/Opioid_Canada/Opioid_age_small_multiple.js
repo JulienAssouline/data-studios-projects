@@ -57,6 +57,7 @@
               .attr("transform", "translate(0," + height + ")")
               .call(xAxis)
               .selectAll("text")
+                  .style("font-family", "Arial")
                   .style("fill", "black")
                   .style("font-size", "10px")
                   .style("opacity", 1)
@@ -84,7 +85,7 @@
           .enter()
           .append("text")
           .attr("x", function(d){
-            return xScale(d["Age group (years)"]) + 7
+            return xScale(d["Age group (years)"]) + 9
           })
           .attr("y", function(d){
         return yScale(d.Opioid_Rate) + 9
@@ -94,7 +95,7 @@
           })
           .style("font-weight", "normal")
           .style("font-size", "10px")
-          .style("font-family", "Bree Serif")
+          .style("font-family", "Arial")
           .style("fill", "white")
           .attr("text-anchor", "right")
 
@@ -105,7 +106,7 @@
         .text(function(d){ return d.key})
          .attr("text-decoration", "underline")
           .style("font-size", "15px")
-          .style("font-family", "Bree Serif")
+          .style("font-family", "Arial")
           .style("fill", "black")
 
 

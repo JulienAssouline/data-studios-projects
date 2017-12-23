@@ -3,6 +3,7 @@
  var w = 377;
  var h = 1000;
 
+
       var margin = {
           top: 160,
           bottom: 0,
@@ -14,7 +15,7 @@
         var height = h - margin.top - margin.bottom;
 
 
-        var svg = d3.select("#provinces")
+        var svg = d3.select("#provinces_prescription_d")
         .append("svg")
         .attr("id", "chart")
         .attr("width", w)
@@ -22,7 +23,8 @@
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        var ytickValues = [6, 8, 10, 12, 14, 16, 18, 20]
+
+        var ytickValues = [3000, 4000, 5000, 6000, 7000, 8000]
 
          var format = d3.format("+20")
 
@@ -41,19 +43,19 @@
 
 
 
-  d3.csv("opioid_province.csv", function(error, data){
+  d3.csv("Opioid_prescriptions_provinces.csv", function(error, data){
     data.forEach(function(d){
-      d.provinces = d.provinces;
-      d["2007–2008"] = +d["2007–2008"];
-      d["2014–2015"] = +d["2014–2015"];
+      d.Province = d.Province;
+      d["2012"] = +d["2012"];
+      d["2016"] = +d["2016"];
       d.x_1 = +d.x_1;
-      d.x_2 = +d.x_2 ; 
-      d.difference_2007_2015 = +d.difference_2007_2015; 
+      d.x_2 = +d.x_2; 
+      d.difference = +d.difference
     });
 
    
         xScale.domain([1, 2])
-        yScale.domain([6, 20])
+        yScale.domain([3000, 8300])
 
         svg.append("g")
             .classed("yaxis", true)
@@ -64,13 +66,11 @@
 
       svg.selectAll(".lines")
         .data(data.filter(function(d){
-          return d.difference_2007_2015 > 0
+          return d.difference < 0
         }))
         .enter()
         .append("line")
-        .attr("class", function(d){
-          return "lines " + d.difference_2007_2015
-        })
+        .attr("class", "lines")
         .attr("x1", function(d){
           return xScale(d.x_1)
         })
@@ -78,13 +78,13 @@
           return xScale(d.x_2)
         })
         .attr("y1", function(d){
-          return yScale(d["2007–2008"])
+          return yScale(d["2012"])
         })
         .attr("y2", function(d){
-          return yScale(d["2014–2015"])
+          return yScale(d["2016"])
         })
         .style("stroke", function(d){
-          if(d.difference_2007_2015 > 0){
+          if(d.difference > 0){
             return "darkred"
           } else { 
             return "green" }
@@ -94,7 +94,7 @@
       // 2007-2008
       svg.selectAll(".point")
         .data(data.filter(function(d){
-          return d.difference_2007_2015 > 0
+          return d.difference < 0
         }))
         .enter()
         .append("circle")
@@ -103,10 +103,10 @@
             return xScale(d.x_1)
         })
         .attr("cy", function(d){
-          return yScale(d["2007–2008"])
+          return yScale(d["2012"])
         })
         .style("fill", function(d){
-          if(d.difference_2007_2015 > 0){
+          if(d.difference > 0){
             return "darkred"
           } else { 
             return "green" }
@@ -130,7 +130,7 @@
         // 2014–2015  
       svg.selectAll(".point")
         .data(data.filter(function(d){
-          return d.difference_2007_2015 > 0
+          return d.difference < 0
         }))
         .enter()
         .append("circle")
@@ -139,10 +139,10 @@
             return xScale(d.x_2)
         })
         .attr("cy", function(d){
-          return yScale(d["2014–2015"])
+          return yScale(d["2016"])
         })
         .style("fill", function(d){
-          if(d.difference_2007_2015 > 0){
+          if(d.difference > 0){
             return "darkred"
           } else { 
             return "green" }
@@ -150,7 +150,7 @@
 
           svg.selectAll(".labels")
           .data(data.filter(function(d){
-          return d.difference_2007_2015 > 0
+          return d.difference < 0
         }))
           .enter()
           .append("text")
@@ -158,13 +158,13 @@
             return xScale(d.x_2) + 10
           })
           .attr("y", function(d){
-            return yScale(d["2014–2015"])
+            return yScale(d["2016"])
           })
           .text(function(d){
-            return d.provinces + " " + format(d.difference_2007_2015)
+            return d.Province + " " + format(d.difference)
           })
           .style("fill", function(d){
-          if(d.difference_2007_2015 > 0){
+          if(d.difference > 0){
             return "darkred"
           } else { 
             return "green" }
@@ -180,29 +180,14 @@
           //   d3.selectAll(".lines").style("opacity", 1)
           // })
 
-        //   svg.append("text")
-        //     .attr("x", -40)
-        //     .attr("y", -140)
-        //     .text("PEI and the Territories are the only regions")
-        //     .style("font-size", 20)
-        //     .style("font-family", "Bree Serif")
-        //     .style("font-weight", "bold")
+          svg.append("text")
+            .attr("x", 90)
+            .attr("y", -100)
+            .text("Decrease")
+            .style("font-size", 23)
+            .style("font-family", "Bree Serif")
+            .style("fill", "darkgreen")
 
-        //   svg.append("text")
-        //     .attr("x", -40)
-        //     .attr("y", -115)
-        //     .text("where opioid hospitalization rates decreased")
-        //     .style("font-size", 20)
-        //     .style("font-family", "Bree Serif")
-        //     .style("font-weight", "bold")
-
-        //     svg.append("text")
-        // .attr("x", -40)
-        // .attr("y", -90)
-        // .text("per 100,000 documented cases")
-        // .style("font-size", 16)
-        // .style("font-family", "Bree Serif")
-        // .style("font-weight", "normal")
 
 
          
@@ -210,16 +195,16 @@
           svg.append("text")
             .attr("x", -20)
             .attr("y", -40)
-            .text("2007-2008")
+            .text("2012")
             .style("font-size", 16)
             .style("font-family", "Bree Serif")
             .style("font-weight", "normal")
 
 
           svg.append("text")
-            .attr("x", 210)
+            .attr("x", 240)
             .attr("y", -40)
-            .text("2014–2015")
+            .text("2016")
             .style("font-size", 16)
             .style("font-family", "Bree Serif")
             .style("font-weight", "normal")

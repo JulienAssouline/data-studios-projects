@@ -93,6 +93,7 @@
               .call(yAxis_2)
               .selectAll("text")
                 .style("fill", "grey")
+                .style("font-family", "georgia")
               
 
                svgs.append("g")
@@ -101,6 +102,7 @@
               .call(yAxis)
               .selectAll("text")
                 .style("fill", "grey")
+                .style("font-family", "georgia")
 
               //  svgs.append("g")
               // .attr("class", "yaxis")
@@ -175,6 +177,8 @@
         .style("font-size", "12px")
         .attr("text-decoration", "underline")
         .style("fill", "black")
+        .style("font-family", "georgia")
+
 
 
              

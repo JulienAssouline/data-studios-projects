@@ -121,6 +121,8 @@
                   .attr("font-weight", function(d){
                     return (+d == 50) ? "bold" : "normal";
                   })
+                  .style("font-family", "georgia")
+
 
                 svg.append("g")
                 .attr("class", "yaxis_bar")
@@ -128,6 +130,8 @@
                 .call(yAxis)
                   .selectAll("text")
                     .attr("fill", "grey")
+                    .style("font-family", "georgia")
+
 
             // groups.selectAll(".labels")
             //   .data(function(d){
@@ -183,6 +187,8 @@
               .attr("x", 266)
               .attr("y", -35)
               .text("Domestic Gross")
+              .style("font-family", "georgia")
+
 
 
                svg.append("rect")
@@ -197,6 +203,8 @@
               .attr("x", 388)
               .attr("y", -35)
               .text("International Gross")
+              .style("font-family", "georgia")
+
 
 
 

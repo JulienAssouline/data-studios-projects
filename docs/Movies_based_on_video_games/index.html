@@ -7,17 +7,19 @@
     <style type="text/css">
       /* No style rules here yet */
 body,html{
+body,html{
     margin: 0;
     padding: 0;
     font-family: "Arial", sans-serif;
     font-size: 11px;
     text-align: center;
+    background-color: #F5F2EB;
   }
 
-  #chart{
-    background-color: white;
-    border: 1px solid white;
-  }
+  /*#chart{
+    background-color: #F5F2EB;
+    border: 1px solid #F5F2EB;
+  }*/
   /*rect{
     fill: #b0859f;
   }*/
@@ -27,6 +29,13 @@ body,html{
 
   .yaxis line,
   .yaxis path{
+    fill: none;
+    stroke: grey;
+  }
+
+
+.yaxis_bar line,
+.yaxis_bar path{
     fill: none;
     stroke: none;
   }
@@ -39,45 +48,13 @@ body,html{
   }
   .xaxis line {
     fill: none;
-    stroke: white;
-    stroke-width: 1px;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
     shape-rendering: crispEdges;
     opacity: 0.5;
+/*    stroke-dasharray: 5,3;*/
+
   }
-
-  h1{
-    font-family: Bree serif;
-    font-size: 45px;
-    font-weight: normal;
-    position: left;
-  }
-
-  h2{
-    font-family: Bree serif;
-    font-size: 25px;
-    font-weight: normal;
-    position: relative;
-    left: 0px;
-  }
-
-  /*br{
-    font-size: 17px;
-    font-family: Bree serif;
-    font-weight: normal;
-
-  }*/
-
-#nav {
-  position: absolute;
-  text-align: right;
-  width: 90%;
-  padding-right: 10px;
-  font-size: 15px;
-/*  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
-}
-#nav a{
-  padding-right: 5px;
-}
 
 /*.gridlines path,
   .gridlines line {
@@ -138,11 +115,14 @@ These movies aren’t just outliers though, on average, movies based off of vide
 <p>Most of these movies make their money internationally, rather than domestically. 
 <p>
 
+</div>
+
 <h1 align="middle" style = "font-size: 25px; width:600px; margin:0 auto; font-family: georgia;"> Movies based on video games perform better internationally </h1>
 
    <div id = "World_Domestic"></div>
   <script src="video_games_world_domestic.js"></script>
 
+<div align="left" style="width:600px; margin:0 auto; font-size:17px; font-family: Bree serif;">
   <p>
 Only House of the Dead, BloodRayne, Pokémon: The First Movie, and Doom made more than 50% of their overall income domestically. The rest made more internationally. Of the four that made more domestically, only Pokémon: The First Movie made any significant income. Both BloodRayne and Doom lost money, and House of the Dead made just under 2 million, which was the lowest profit margin of any video game adaptation. 
   <p>
@@ -154,7 +134,7 @@ So, if these movies want to make money, it looks like they need to do it interna
 <p>
 Excluding Tomb Raider and Mario, there are currently four other video game adaptations that are in <a href="https://en.wikipedia.org/wiki/List_of_films_based_on_video_games"> production </a>. These decisions, by studios to keep making movies based on video games isn’t foolish. Many of these movies such as Tomb Raider will probably be greatly profitable, and as long as that keeps happening, it doesn’t really matter how bad the movie reviews are. 
 <p>
-
+</div>
   </div>
 
   </body>

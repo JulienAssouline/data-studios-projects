@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+    background-color: #F5F2EB;
+  }
+
+  /*#chart{
+    background-color: #F5F2EB;
+    border: 1px solid #F5F2EB;
+  }*/
+  /*rect{
+    fill: #b0859f;
+  }*/
+  .bar-label{
+    font-size: 14px;
+  }
+
+  .yaxis line,
+  .yaxis path{
+    fill: none;
+    stroke: grey;
+  }
+
+
+.yaxis_bar line,
+.yaxis_bar path{
+    fill: none;
+    stroke: none;
+  }
+
+  .xaxis path {
+    fill: none;
+    stroke: none;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+  .xaxis line {
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.5;
+    stroke-dasharray: 5,3;
+
+  }
+
+/*.gridlines path,
+  .gridlines line {
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.8;
+    stroke-dasharray: 5,3;
+  }*/
+    </style>
+  </head>
+  <body>
+
+    <h1 align="middle" style = "font-size: 25px; width:600px; margin:0 auto; font-family: georgia;"> Video games make terrible movies, so why are they still being made? </h1>
+
+  <div id = "legend"></div>
+  <script src="triangle_legend.js"></script>
+  
+  <div id = "video_games_movies_world"></div>
+  <script src="video_games_movies_world.js"></script>
+
+   <div id = "World_Gross"></div>
+  <script src="movie_world_gross.js"></script>
+
+  <h1 align="middle" style = "font-size: 25px; width:600px; margin:0 auto; font-family: georgia;"> Movies based on video games perform better internationally </h1>
+
+   <div id = "World_Domestic"></div>
+  <script src="video_games_world_domestic.js"></script>
+
+
+
+  
+</div>
+
+    
+  </body>
+</html>

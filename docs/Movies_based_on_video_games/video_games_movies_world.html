@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+    background-color: #F5F2EB
+  }
+
+  /*#chart{
+    background-color: #F5F2EB;
+    border: 1px solid #F5F2EB;
+  }*/
+  /*rect{
+    fill: #b0859f;
+  }*/
+  .bar-label{
+    font-size: 14px;
+  }
+
+  .yaxis line,
+  .yaxis path{
+    fill: none;
+/*    stroke: none;
+*/  }
+
+  .xaxis path {
+    fill: none;
+    stroke: none;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+  .xaxis line {
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.5;
+    stroke-dasharray: 5,3;
+
+  }
+
+/*.gridlines path,
+  .gridlines line {
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.8;
+    stroke-dasharray: 5,3;
+  }*/
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //Width and height
+      var w = 230;
+      var h = 300;
+
+      var margin = {
+          top: 40,
+          bottom: 40,
+          left: 40,
+          right: 60
+        }
+
+        var width = w - margin.left - margin.right;
+        var height = h - margin.top - margin.bottom;
+
+        var ytickValues_2 = [0, 500000000];
+        var ytickFormat = ["0", "500 million $"];
+
+        var ytickValues = [0, 100];
+
+        var xScale = d3.scaleLinear()
+                  .range([0, width])
+
+        var yScale = d3.scaleLinear()
+          .range([height, 0])
+
+        var yScale_2 = d3.scaleLinear()
+          .range([height, 0])
+
+        var yAxis = d3.axisLeft()
+          .scale(yScale)
+          .tickValues(ytickValues)
+          .tickSize(0)
+          .tickSizeOuter(0)
+
+         var yAxis_2 = d3.axisRight()
+          .scale(yScale_2)
+          .tickValues(ytickValues_2)
+          .tickFormat(function(d,i){ return ytickFormat[i] })         
+          .tickSize(0)
+          .tickSizeOuter(0)
+
+
+
+          d3.csv("video_games_budget_World.csv", function(error, data){
+            data.forEach(function(d){
+              d.Worldwide_Gross = +d.Worldwide_Gross;
+              d.Name = d.Name;
+              d.Production_Budget = +d.Production_Budget;
+              d["Rotten Tomatoes (%)"] = +d["Rotten Tomatoes (%)"];
+              d["Metacritic (%)"] = +d["Metacritic (%)"];
+              d.Genre = d.Genre;
+              d.profit_loss = +d.profit_loss;
+              d.Year = +d.Year;
+              d.x_1 = +d.x_1;
+              d.x_2 = +d.x_2;
+
+            })
+
+            var movies = d3.nest()
+              .key(function(d){
+                return d.Name
+              })
+              .entries(data);
+
+          
+            xScale.domain([1, 2])
+            yScale.domain([0, 100])
+            yScale_2.domain([0, 500000000])
+
+            var svgs = d3.select("body")
+              .selectAll("svg")
+              .data(movies)
+              .enter()
+              .append("svg")
+              .attr("id", "chart")
+              .attr("width", w)
+              .attr("height", h)
+              .append("g")
+              .attr("transform",  "translate(" + margin.left + "," + margin.top + ")")
+
+            svgs.append("g")
+              .attr("class", "yaxis")
+              .attr("transform", "translate(130,0)")
+              .call(yAxis_2)
+              // .selectAll("text")
+              //   .style("fill", "none")
+
+               svgs.append("g")
+              .attr("class", "yaxis")
+              .attr("transform", "translate(0,0)")
+              .call(yAxis)
+
+              svgs.selectAll(".path")
+                .data(function(d){ return d.values; })
+                .enter()
+                .append("path")
+                .attr("class", "triangle")
+                .attr("d", function(d){
+                  var start = xScale(d.x_1),
+                      Tomatoes = yScale(d["Rotten Tomatoes (%)"]),
+                      end = xScale(d.x_2),
+                      Gross = yScale_2(d.Worldwide_Gross),
+                      Budget = yScale_2(d.Production_Budget);
+                  return "M" + start + " " + Tomatoes + "L" + end + " " + Gross + "L" + end +   " " + Budget + " " + "z"
+                })
+                .style("fill", function(d){
+                    if(d.profit_loss > 0){
+                      return "darkgreen"
+                    } 
+                    if(d.profit_loss < 0){
+                      return "darkred"
+                    } 
+                  })
+
+
+              svgs.selectAll("circles")
+                .data(function(d){ return d.values; })
+                .enter()
+                .append("circle")
+                .attr("class", "first")
+                .attr("r", 2.5)
+                .attr("cx", function(d){
+                  return xScale(d.x_1)
+                })
+                .attr("cy", function(d){
+                  return yScale(d["Rotten Tomatoes (%)"])
+                })
+                .style("fill", function(d){
+                    if(d.profit_loss > 0){
+                      return "darkgreen"
+                    } 
+                    if(d.profit_loss < 0){
+                      return "darkred"
+                    } 
+                  })
+              
+             
+
+
+          })
+
+
+      
+    </script>
+  </body>
+</html>

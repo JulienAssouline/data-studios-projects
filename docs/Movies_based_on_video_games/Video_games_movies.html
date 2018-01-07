@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3: Loading TopoJSON data and generating SVG paths</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  #chart{
+    background-color: white;
+    border: 1px solid white;
+  }
+  /*rect{
+    fill: #b0859f;
+  }*/
+  .bar-label{
+    font-size: 14px;
+  }
+
+  .yaxis line,
+  .yaxis path{
+    fill: none;
+    stroke: none;
+  }
+
+  .xaxis path {
+    fill: none;
+    stroke: none;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+  .xaxis line {
+    fill: none;
+    stroke: white;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+    opacity: 0.5;
+  }
+
+  h1{
+    font-family: Bree serif;
+    font-size: 45px;
+    font-weight: normal;
+    position: left;
+  }
+
+  h2{
+    font-family: Bree serif;
+    font-size: 25px;
+    font-weight: normal;
+    position: relative;
+    left: 0px;
+  }
+
+  /*br{
+    font-size: 17px;
+    font-family: Bree serif;
+    font-weight: normal;
+
+  }*/
+
+#nav {
+  position: absolute;
+  text-align: right;
+  width: 90%;
+  padding-right: 10px;
+  font-size: 15px;
+/*  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+}
+#nav a{
+  padding-right: 5px;
+}
+
+/*.gridlines path,
+  .gridlines line {
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+    opacity: 0.8;
+    stroke-dasharray: 5,3;
+  }*/
+
+    </style>
+  </head>
+  <body>
+
+  <div id="nav">
+                        <a href="https://julienassouline.github.io/data-studios-projects/">Home</a>
+                        <a href="https://julienassouline.github.io/data-studios-projects/assets/CV (11).pdf">Resume</a>
+                        <a href="https://julienassouline.github.io/data-studios-projects/contact.html">Writing</a>
+            </div>
+            <br><br>
+
+  <h1> Video Games Make Terrible Movies </h1>
+  <div align="center" style="width:600px; margin:0 auto; font-size:17px; font-family: Bree serif;">
+  <p> By: Julien Assouline <p>
+  </div>
+  <br><br>
+  <br><br>
+<div align="left" style="width:600px; margin:0 auto; font-size:17px; font-family: Bree serif;">
+  <p> <a href="http://www.express.co.uk/showbiz/tv-radio/805954/The-Witcher-Netflix-release-date-latest-news-Geralt-Rivia-Andrzej-Sapkowski-trailer-cast"> Netflix announced </a> that they were going to produce a TV series based on The Witcher. The books, not the game. This bodes well for Netflix, because there haven’t been many successful movies based off of video games. 
+ <p>
+
+ <p>One of the latest attempts was turning the Assassin’s Creed video game series into a movie. They even got renowned actors such as Michael Fassbender and Marion Cotillard to star in the movie, and yet it was still a flub. <a href="https://www.rottentomatoes.com/"> Rotten Tomatoes</a> gave it a rating of 18%.<p>
+
+ <p>Assassin's Creed though wasn’t an aberration. It wasn’t just one bad movie out of a batch of good ones. On average Assassins Creed 18% rating was basically the average rating for movies based on video games which stands at 17.9%. <p>
+  </div>
+  <br><br>
+
+  <h2> Rotten Tomatoes ratings on movies based from video games </h2>
+ <div class="container" id="video_games"></div>
+  <script src="Video_games_movies.js"></script>
+
+  <div align="left" style="width:600px; margin:0 auto; font-size:17px; font-family: Bree serif;">
+  <p> Rotten Tomatoes gives a rating out of 100. Movies with under a rating of 60% are considered “Rotten”. Movies with a rating of 60% or better are considered “Fresh” and movie with a rating of 75 or better are considered “Certified Fresh”. 
+ <p>
+
+<p>No movie based on a video game has ever been considered “Fresh” by Rotten Tomatoes. In fact the best rating ever given to a movie based on a video game was “Final Fantasy: The Spirits Within”. <p>
+
+<p>The move, therefore, by Netflix to base the movie on the books rather than the video games seems to be a good one and next time you get excited about a movie, based on a video game, it might be best to step back and lower your expectations, because there’s never been a quality movie of that type.<p>
+
+  </div>
+
+  </body>
+</html>

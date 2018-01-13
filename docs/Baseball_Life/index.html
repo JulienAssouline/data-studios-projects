@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
     <style type="text/css">
+
       /* No style rules here yet */
 body,html{
     margin: 0;
@@ -13,56 +15,159 @@ body,html{
     text-align: center;
   }
 
-  #scroll {
-  position: relative;
-}
-
-.step {
-        padding-bottom: 200px;
-        margin-bottom: 10px;
-      }
-/*
-  .step, .row {
-        padding-top: 2rem;
-      }*/
-      .step:last-of-type {
-        padding-bottom: 250px;
-      }
-
-
   #chart{
-    background-color: #1b1a1b;
-    border: 1px solid none;
+    background-color: white;
+    border: 1px solid white;
   }
 
-  .yaxis path{
+  .step {
+        padding-bottom: 30px;
+        margin-bottom: 100px;
+      }
+      .step, .row {
+        padding-top: 2rem;
+      }
+      .step:last-of-type {
+        padding-bottom: 140px;
+      }
+
+      .part {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      .sticky {
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        height: fit-content;
+        top: 3%;
+      }
+
+    .yaxis path{
     fill: none;
     stroke: none;
   }
 
   .yaxis line{
     fill: none;
-    stroke: none;
+    stroke: #dcd9d3;
     stroke-width: 2px;
     shape-rendering: crispEdges;
     opacity: 0.7;
     stroke-dasharray: 3,3;
   }
 
-  .xaxis path,
-  .xaxis line{
+
+
+  .xaxis path {
     fill: none;
     stroke: none;
+    stroke-width: 0px;
+    shape-rendering: crispEdges;
   }
+
+.xaxis line {
+    fill: none;
+    stroke: none;
+    stroke-width: 0px;
+    shape-rendering: crispEdges;
+  }
+
+  p{
+    width:600px; 
+    margin:0 
+    auto; 
+    font-size:17px; 
+    font-family: Bree serif;
+  }
+
+
     </style>
   </head>
   <body>
 
-  
-          <div id="baseball_arcs"></div>
-     <script src="baseball_life_arcs.js"></script>
+  <div class = "container">
+    <div class = "part">
+    <div class = "row">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lacus id lacus hendrerit dictum vulputate sagittis lorem. Sed bibendum, nulla eget aliquam mollis, ex ligula varius urna, vitae fermentum tellus quam sed nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus a aliquam quam, sit amet porttitor libero. Nullam pellentesque egestas nulla quis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In posuere odio tincidunt laoreet sollicitudin. Nam at neque vehicula, eleifend sapien et, semper eros. Curabitur ut sem massa. Aenean rhoncus enim leo, eget ullamcorper odio vestibulum vel. Cras in pharetra eros, ac viverra tellus. Nullam porta porta sapien vel interdum. Curabitur imperdiet malesuada velit, mollis efficitur massa rutrum et. Duis tincidunt convallis odio et tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus pulvinar felis eget condimentum pretium. </p>
 
-     <div id = "bars_reversed"></div>
-      <script src="reversed_barchart.js"></script>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lacus id lacus hendrerit dictum vulputate sagittis lorem. Sed bibendum, nulla eget aliquam mollis, ex ligula varius urna, vitae fermentum tellus quam sed nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus a aliquam quam, sit amet porttitor libero. Nullam pellentesque egestas nulla quis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In posuere odio tincidunt laoreet sollicitudin. Nam at neque vehicula, eleifend sapien et, semper eros. Curabitur ut sem massa. Aenean rhoncus enim leo, eget ullamcorper odio vestibulum vel. Cras in pharetra eros, ac viverra tellus. Nullam porta porta sapien vel interdum. Curabitur imperdiet malesuada velit, mollis efficitur massa rutrum et. Duis tincidunt convallis odio et tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus pulvinar felis eget condimentum pretium.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lacus id lacus hendrerit dictum vulputate sagittis lorem. Sed bibendum, nulla eget aliquam mollis, ex ligula varius urna, vitae fermentum tellus quam sed nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus a aliquam quam, sit amet porttitor libero. Nullam pellentesque egestas nulla quis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In posuere odio tincidunt laoreet sollicitudin. Nam at neque vehicula, eleifend sapien et, semper eros. Curabitur ut sem massa. Aenean rhoncus enim leo, eget ullamcorper odio vestibulum vel. Cras in pharetra eros, ac viverra tellus. Nullam porta porta sapien vel interdum. Curabitur imperdiet malesuada velit, mollis efficitur massa rutrum et. Duis tincidunt convallis odio et tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus pulvinar felis eget condimentum pretium. </p>
+
+      
+      <div class="col-sm-5">
+      
+      <div class = "step" id = "first">
+      <p align="left"> Every baseball players career length</p>
+      <div id = "bars_1"></div>
+      </div>
+
+      <div class = "step" id = "second">
+      <p align="left"> Longest career in baseball</p>
+     <div id = "bars_2"></div>
+      </div>
+
+      <div class = "step" id = "third">
+      <p align="left"> Shortest career in baseball </p>
+      <div id = "bars_3"></div>
+      </div>
+
+      <div class = "step" id = "fourth">
+      <p align="left"> Median length of a baseball career </p>
+      <div id = "bars_4"></div>
+      </div>
+
+
+
+      </div>
+     
+         <div class="col-sm-7 graphic sticky">
+      <div id = "baseball_arcs"></div>
+<!--  -->
+      </div>
+
+      </div>
+      </div>
+      </div>
+
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src='https://unpkg.com/scrollama'></script>
+    <script src='stickyfill.min.js'></script>
+
+<script type="text/javascript">
+    var elements = document.querySelectorAll('.sticky');
+    Stickyfill.add(elements);
+    // instantiate the scrollama
+    var scroller = scrollama();
+    scroller
+      .setup({
+        offset: 0.50, 
+        step: '.step', 
+        debug: false, 
+        container: 'container'
+      })
+      .onStepEnter(function(response) {
+        // trigger the stepin event
+        d3.select(response.element).dispatch('stepin')
+      })
+      .onStepExit(function(response) {
+        // trigger the stepout event
+        d3.select(response.element).dispatch('stepout')
+      })
+
+</script>
+            
+      <script src="baseball_life_bars_4.js"></script>
+      <script src="baseball_life_bars_3.js"></script>
+      <script src="baseball_life_bars_2.js"></script>
+      <script src="baseball_life_bars.js"></script>
+      <script src="scrollybarcharts.js"></script>
+ 
+
+    
   </body>
 </html>

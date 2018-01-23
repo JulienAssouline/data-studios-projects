@@ -1,0 +1,88 @@
+ne_10m_populated_places.zip: 
+  curl -o ne_10m_populated_places.zip "http://naciscdn.org/naturalearth/10m/cultural/ne_10m_populated_places.zip"
+
+ne_10m_populated_places.shp: ne_10m_populated_places.zip
+    unzip ne_10m_populated_places.zip
+    touch ne_10m_populated_places.shp
+
+
+cb_2014_06_tract_500k.shp: cb_2014_06_tract_500k.zip
+  unzip cb_2014_06_tract_500k.zip
+
+
+Afghanprovinces.shp: district398.shp
+  ogr2ogr \
+    -f 'ESRI Shapefile' \
+    $@ $< \
+    -dialect sqlite \
+    -sql "SELECT ST_Union(ST_buffer(Geometry, 0.001)), PROVID \
+      FROM district398 \
+      GROUP BY PROVID"
+
+
+
+    shp2json Afghanistan.shp -o Afghanistan.json
+
+geo2topo Afghanistan.json > Afghanistan_topojson.json
+
+Afghanprovinces.shp: district398.shp
+  @mkdir -p $(dir $@)
+  @ogr2ogr \
+    -f 'ESRI Shapefile' \
+    $@ $< \
+    -dialect sqlite \
+    -sql "SELECT ST_Union(ST_buffer(Geometry, 0.001)), PROVID \
+      FROM district398 \
+      GROUP BY PROVID"
+
+
+
+### COMMAND-LINE Cartography
+
+### I manually installed and unziped the dat, because for some reason it wasn't working on the command line. 
+
+npm install -g shapefile
+
+shp2json cb_2015_06_tract_500k.shp -o ca.json
+
+ndjson-map 'd.id = d.properties.GEOID.slice(2), d' \
+  < ca-albers.ndjson \
+  > ca-albers-id.ndjson
+
+curl 'https://api.census.gov/data/2014/acs5?get=B01003_001E&for=tract:*&in=state:06' -o cb_2014_06_tract_B01003.json
+
+
+ndjson-cat cb_2014_06_tract_B01003.json \
+  | ndjson-split 'd.slice(1)' \
+  | ndjson-map '{id: d[2] + d[3], B01003: +d[0]}' \
+  > cb_2014_06_tract_B01003.ndjson
+
+ndjson-join 'd.id' \ 
+  ca-albers-id.ndjson \
+  cb_2014_06_tract_B01003.ndjson \
+  > ca-albers-join.ndjson
+
+ndjson-map 'd[0].properties = {density: Math.floor(d[1].B01003 / d[0].properties.ALAND * 2589975.2356)}, d[0]' \
+  < ca-albers-join.ndjson \
+  > ca-albers-density.ndjson
+
+CONVERT BACK TO GEOJSON
+
+ndjson-reduce \
+  < ca-albers-density.ndjson \
+  | ndjson-map '{type: "FeatureCollection", features: d}' \
+  > ca-albers-density.json
+
+DEFINING A COLOR SCHEME
+
+ndjson-map -r d3 \
+  '(d.properties.fill = d3.scaleSequential(d3.interpolateViridis).domain([0, 4000])(d.properties.density), d)' \
+  < ca-albers-density.ndjson \
+  > ca-albers-color.ndjson
+
+CONVERTING GEOJSON TO SVG
+geo2svg -n --stroke none -p 1 -w 960 -h 960 \
+  < ca-albers-color.ndjson \
+  > ca-albers-color.svg
+
+

@@ -22,14 +22,14 @@ body,html{
 
   .step {
         padding-bottom: 30px;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
       }
       .step, .row {
         padding-top: 2rem;
       }
-      .step:last-of-type {
-        padding-bottom: 140px;
-      }
+      /*.step_1 {
+        padding-bottom: 0px;
+      }*/
 
       .part {
         padding-top: 30px;
@@ -60,7 +60,11 @@ body,html{
     stroke-dasharray: 3,3;
   }
 
-
+.y_axis path,
+        line{
+    fill: none;
+    stroke: none;
+  }
 
   .xaxis path {
     fill: none;
@@ -84,50 +88,94 @@ body,html{
     font-family: Bree serif;
   }
 
+  p.margin{
+     width:300px; 
+    margin:0 
+    auto; 
+    font-size:17px; 
+    font-family: Bree serif;
+  }
+
+  span.background{
+    background-color: #012e6c;
+    color: white;
+    font-size:20px;
+  }
+
+  #nav {
+  position: absolute;
+  text-align: right;
+  width: 90%;
+  padding-right: 10px;
+  font-size: 16px;
+  font-family: Bree serif;
+}
 
     </style>
   </head>
   <body>
 
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lacus id lacus hendrerit dictum vulputate sagittis lorem. Sed bibendum, nulla eget aliquam mollis, ex ligula varius urna, vitae fermentum tellus quam sed nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus a aliquam quam, sit amet porttitor libero. Nullam pellentesque egestas nulla quis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In posuere odio tincidunt laoreet sollicitudin. Nam at neque vehicula, eleifend sapien et, semper eros. Curabitur ut sem massa. Aenean rhoncus enim leo, eget ullamcorper odio vestibulum vel. Cras in pharetra eros, ac viverra tellus. Nullam porta porta sapien vel interdum. Curabitur imperdiet malesuada velit, mollis efficitur massa rutrum et. Duis tincidunt convallis odio et tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus pulvinar felis eget condimentum pretium. </p>
+   <div id="nav">
+                        <a href="https://julienassouline.github.io/data-studios-projects/">Home</a>
+                        <a href="https://julienassouline.github.io/data-studios-projects/assets/CV.pdf">Resume</a>
+                        <a href="https://julienassouline.github.io/data-studios-projects/contact.html">Writing</a>
+            </div>
+            <br><br>
+            <br><br>
+
+            <h1 align="middle" style="font-family: Bree serif; font-size: 40px"> A Baseball Life </h1>
+            <br></br>
+
+<p align="left">Every year, hundreds of minor league baseball players try to make the big leads. Every year, hundreds of baseball players leave the game. The vast majority leave because they can’t find a team that will sign them. 
+ </p>
+
+ <br><br>
+
+    <p align="left">Yet, we often think about the ones who stick around. We think of the David Ortiz and Derek Jeter's of the world. The ones who had long illustrious careers. The ones who, for the most part, left the game on their own terms. But, these players are the one percent of the one percent. The vast majority of players only get one shot, often just a few games in the big leagues and then it’s over. 
+ </p>
 
   <div class = "container">
     <div class = "part">
     <div class = "row">
-   
-
-<!--     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lacus id lacus hendrerit dictum vulputate sagittis lorem. Sed bibendum, nulla eget aliquam mollis, ex ligula varius urna, vitae fermentum tellus quam sed nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus a aliquam quam, sit amet porttitor libero. Nullam pellentesque egestas nulla quis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In posuere odio tincidunt laoreet sollicitudin. Nam at neque vehicula, eleifend sapien et, semper eros. Curabitur ut sem massa. Aenean rhoncus enim leo, eget ullamcorper odio vestibulum vel. Cras in pharetra eros, ac viverra tellus. Nullam porta porta sapien vel interdum. Curabitur imperdiet malesuada velit, mollis efficitur massa rutrum et. Duis tincidunt convallis odio et tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus pulvinar felis eget condimentum pretium.</p>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id lacus id lacus hendrerit dictum vulputate sagittis lorem. Sed bibendum, nulla eget aliquam mollis, ex ligula varius urna, vitae fermentum tellus quam sed nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus a aliquam quam, sit amet porttitor libero. Nullam pellentesque egestas nulla quis fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In posuere odio tincidunt laoreet sollicitudin. Nam at neque vehicula, eleifend sapien et, semper eros. Curabitur ut sem massa. Aenean rhoncus enim leo, eget ullamcorper odio vestibulum vel. Cras in pharetra eros, ac viverra tellus. Nullam porta porta sapien vel interdum. Curabitur imperdiet malesuada velit, mollis efficitur massa rutrum et. Duis tincidunt convallis odio et tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus pulvinar felis eget condimentum pretium. </p>
- -->
+    
       
       <div class="col-sm-5">
       
       <div class = "step" id = "first">
-      <p align="left"> Every baseball players career length</p>
+      <p class = "margin" align="left" > This is the career length of every baseball player, from 1950 to 2013.
+</p>
       <div id = "bars_1"></div>
       </div>
 
       <div class = "step" id = "second">
-      <p align="left"> Longest career in baseball</p>
+      <p class = "margin" align="left"> Only one player had a career length of 27 years, the longest career in baseball history. That belongs to Nolan Ryan. 
+</p>
      <div id = "bars_2"></div>
       </div>
 
       <div class = "step" id = "third">
-      <p align="left"> Shortest career in baseball </p>
-      <div id = "bars_3"></div>
+      <p class = "margin" align="left"> Tommy John had the second longest career in baseball history, with 26 years played in the majors. 
+ </p>
+      <div id = "bars_5"></div>
       </div>
 
-      <div class = "step" id = "fourth">
-      <p align="left"> Median length of a baseball career </p>
+       <div class = "step" id = "fifth">
+      <p class = "margin" align="left"> On a median basis, a baseball players career spans four years.  </p>
       <div id = "bars_4"></div>
       </div>
 
-
-
+      <div class = "step" id = "fourth">
+      <p class = "margin" align="left"> <span class = "background">1,751</span> players had a one year career. This is the most common experience when entering the big leagues. 
+ </p>
+      <div id = "bars_3"></div>
       </div>
+
+
+      
+      </div>
+      
      
-         <div class="col-sm-7 graphic sticky">
+      <div class="col-sm-7 graphic sticky">
       <div id = "baseball_arcs"></div>
 <!--  -->
       </div>
@@ -135,6 +183,26 @@ body,html{
       </div>
       </div>
       </div>
+
+      <!-- <div id = "HOF"></div> -->
+      <p align="left"> We often think about players who had a long career, but the majority of baseball players career is quite short. Even the median can be misleading, or not show the full story. The majority of players enter the league for one or two years. 
+</p>
+<br><br>
+<p align="left"> Players such as Nolan Ryan and Tommy John are complete outliers. They are both the only players who achieved their career length, from 1950 to 2013. Tommy John’s is particularly impressive, though, considering that he suffered from the first ever Tommy John Surgery which was later named after him. 
+</p>
+<br><br>
+<p align="left"> Many players who were categorized as having a one year career also didn’t always play that many games. Some, in fact, didn’t play any games at all. Teams will call up players at times because they don’t have enough players on the bench or in the bullpen. So, they will call a player up for one game and then send them back down to the minors. 
+</p>
+<br><br>
+<div id = "G"></div>
+<br><br>
+<p align="left"> This, unfortunately, is the sad reality. Even some players who get called up don’t always get much of a shot at the big leagues. There can be a number of reasons for this, but most prominent, is that they simply didn’t perform well in the minor leagues, or weren’t a top prospect.
+</p>
+<br><br>
+<p align="left"> It can be difficult to realize that the role or the career of a baseball player is temporary. It is also hard to maintain. The second a baseball player starts to underperform his career can be in jeopardy, which is why players such as Nolan Ryan or even David Ortiz are a dime a dozen.  
+</p>
+ <br><br>
+  <br><br>
 
       <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src='https://unpkg.com/scrollama'></script>
@@ -162,12 +230,14 @@ body,html{
       })
 
 </script>
-            
+       
+      <script src="baseball_life_bars_5.js"></script>    
       <script src="baseball_life_bars_4.js"></script>
       <script src="baseball_life_bars_3.js"></script>
       <script src="baseball_life_bars_2.js"></script>
       <script src="baseball_life_bars.js"></script>
       <script src="scrollybarcharts.js"></script>
+      <script src="baseball_life_games.js"></script>
  
 
     

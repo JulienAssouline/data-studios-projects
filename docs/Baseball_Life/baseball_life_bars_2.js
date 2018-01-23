@@ -70,7 +70,7 @@
       .attr("width", 5)
       .style("fill", "#012e6c")
       .style("opacity", function(d){
-        if( (d.index == 27) || (d.index == 26)){
+        if(d.index == 27){
           return 1
         } else {
           return 0.1
@@ -104,8 +104,8 @@
       .attr("x", width/2 - 30)
       .attr("y", 310)
       .text("Years played")
-      .style("font-family", "Helvetica")
-      .style("font-size", "12px")
+      .style("font-family", "Bree serif")
+      .style("font-size", "13px")
 
 
 

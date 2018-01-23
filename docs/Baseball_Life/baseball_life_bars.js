@@ -63,8 +63,12 @@
       .attr("x", function(d){
         return xScale(d.index)
       })
-      .attr("y", height)
-      .attr("height", 0)
+      .attr("y", function(d){ 
+                return yScale(d.experience)
+              })
+      .attr("height", function(d){
+              return height - yScale(d.experience)
+           })
       .attr("width", 5)
       .style("fill", "#012e6c")
     
@@ -84,8 +88,8 @@
       .attr("x", width/2 - 30)
       .attr("y", 310)
       .text("Years played")
-      .style("font-family", "Helvetica")
-      .style("font-size", "12px")
+      .style("font-family", "Bree serif")
+      .style("font-size", "13px")
 
 
 

@@ -121,7 +121,7 @@
     svg.append("text")
       .attr("x", 0)
       .attr("y", -20)
-      .text("Distribution of games played by players who only had a one year career, 1950-2013")
+      .text("Distribution of games played by players who had a one year career, 1950-2013")
       .style("font-family", "Bree serif")
       .style("font-size", "18px")
       .style("font-weight", "bold")

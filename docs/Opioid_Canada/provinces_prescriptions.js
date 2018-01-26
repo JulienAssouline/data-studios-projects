@@ -66,7 +66,7 @@ svg.append("svg:defs")
         .data(data)
         .enter()
       .append("svg:marker") 
-      .attr("id", function(d){ return "triangle_" + d.Province})
+      .attr("id", function(d){ return "arrow_" + d.Province})
       .attr("class", "triangle")
       .attr('viewBox', '0 -5 10 10')
       .attr('refX', 6)
@@ -104,7 +104,7 @@ svg.append("svg:defs")
         .attr("y2", function(d){
           return yScale(d.Province)
         })
-        .attr("marker-end", function(d){ return "url(#triangle_" + d.Province +')'}) //add the marker
+        .attr("marker-end", function(d){ return "url(#arrow_" + d.Province +')'}) //add the marker
         .style("stroke", function(d){
           if(d.difference > 0){
             return "brown"

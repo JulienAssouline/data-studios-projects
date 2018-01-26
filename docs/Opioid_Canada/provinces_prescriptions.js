@@ -32,8 +32,6 @@
         var yScale = d3.scaleBand()
           .range([height, 0])
 
-          provinces_fill = ["red"];
-
       var yAxis = d3.axisLeft()
         .scale(yScale)
         .tickSize(-width,0,0)
@@ -64,17 +62,28 @@
         // make arrows!!
 
 svg.append("svg:defs")
-        .selectAll(".arrows")
+        .selectAll("marker")
         .data(data)
         .enter()
       .append("svg:marker") 
-      .attr("id", "triangle")
+      .attr("id", function(d){ return "triangle_" + d.Province})
+      .attr("class", "triangle")
       .attr('viewBox', '0 -5 10 10')
       .attr('refX', 6)
       .attr('markerWidth', 4)
       .attr('markerHeight', 4)
-      .style("stroke", "brown")
-      .style("fill", "brown")                    // colour the line // colour the line
+      .style("stroke", function(d){
+          if(d.difference > 0){
+            return "brown"
+          } else { 
+            return "green" }
+        })
+      .style("fill", function(d){
+          if(d.difference > 0){
+            return "brown"
+          } else { 
+            return "green" }
+        })                  // colour the line // colour the line
       .attr('orient', 'auto')
       .append('svg:path')
         .attr('d', 'M0,-5L10,0L0,5')
@@ -95,12 +104,12 @@ svg.append("svg:defs")
         .attr("y2", function(d){
           return yScale(d.Province)
         })
-        .attr("marker-end", "url(#triangle)") //add the marker
+        .attr("marker-end", function(d){ return "url(#triangle_" + d.Province +')'}) //add the marker
         .style("stroke", function(d){
           if(d.difference > 0){
             return "brown"
           } else { 
-            return "brown" }
+            return "green" }
         })
         .style("stroke-width", 2.5)
 

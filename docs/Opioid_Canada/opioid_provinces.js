@@ -14,7 +14,7 @@
         var height = h - margin.top - margin.bottom;
 
 
-        var svg = d3.select("#provinces")
+        var svg = d3.select("body")
         .append("svg")
         .attr("id", "chart")
         .attr("width", w)
@@ -67,13 +67,24 @@ svg.append("svg:defs")
         .data(data)
         .enter()
       .append("svg:marker") 
-      .attr("id", "triangle")
+      .attr("id", function(d){ return "triangle_" + d.provinces})
+      .attr("class", "triangle")
       .attr('viewBox', '0 -5 10 10')
       .attr('refX', 6)
       .attr('markerWidth', 4)
       .attr('markerHeight', 4)
-      .style("stroke", "brown")
-      .style("fill", "brown")                    // colour the line // colour the line
+      .style("stroke", function(d){
+          if(d.difference_2007_2015 > 0){
+            return "brown"
+          } else { 
+            return "green" }
+        })
+      .style("fill", function(d){
+          if(d.difference_2007_2015 > 0){
+            return "brown"
+          } else { 
+            return "green" }
+        })                    // colour the line // colour the line
       .attr('orient', 'auto')
       .append('svg:path')
         .attr('d', 'M0,-5L10,0L0,5')
@@ -94,12 +105,12 @@ svg.append("svg:defs")
         .attr("y2", function(d){
           return yScale(d.provinces)
         })
-        .attr("marker-end", "url(#triangle)") //add the marker
+        .attr("marker-end", function(d){ return "url(#triangle_" + d.provinces +')'}) //add the marker
         .style("stroke", function(d){
           if(d.difference_2007_2015 > 0){
             return "brown"
           } else { 
-            return "brown" }
+            return "green" }
         })
         .style("stroke-width", 2.5)
 
@@ -202,7 +213,6 @@ svg.append("svg:defs")
   
 
                 });
-
   
 
 })()

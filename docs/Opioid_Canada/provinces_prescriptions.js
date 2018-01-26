@@ -1,13 +1,13 @@
 (function () {
 
- var w = 387;
- var h = 1000;
+ var w = 640;
+ var h = 700;
 
       var margin = {
-          top: 160,
+          top: 55,
           bottom: 0,
-          left: 40,
-          right: 80
+          left: 60,
+          right: 100
         }
 
         var width = w - margin.left - margin.right;
@@ -23,21 +23,19 @@
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-        var ytickValues = [3000, 4000, 5000, 6000, 7000, 8000]
 
          var format = d3.format("+20")
 
         var xScale = d3.scaleLinear()
           .range([0, width])
 
-        var yScale = d3.scaleLinear()
+        var yScale = d3.scaleBand()
           .range([height, 0])
 
           provinces_fill = ["red"];
 
       var yAxis = d3.axisLeft()
         .scale(yScale)
-        .tickValues(ytickValues)
         .tickSize(-width,0,0)
 
 
@@ -53,161 +51,148 @@
     });
 
    
-        xScale.domain([1, 2])
-        yScale.domain([3000, 8300])
+         xScale.domain([3000, 9000])
+        yScale.domain(data.map(function(d){ return d.Province }))
 
         svg.append("g")
             .classed("yaxis", true)
-            .attr("transform", "translate(0," + -15 + ")")
+            .attr("transform", "translate(0," + -30 + ")")
             .call(yAxis)
             .selectAll("text")
                   .attr("transform", "translate("+ -10 + ",0)")
 
-      svg.selectAll(".lines")
-        .data(data.filter(function(d){
-          return d.difference > 0
-        }))
+        // make arrows!!
+
+svg.append("svg:defs")
+        .selectAll(".arrows")
+        .data(data)
         .enter()
-        .append("line")
-        .attr("class", "lines")
+      .append("svg:marker") 
+      .attr("id", "triangle")
+      .attr('viewBox', '0 -5 10 10')
+      .attr('refX', 6)
+      .attr('markerWidth', 4)
+      .attr('markerHeight', 4)
+      .style("stroke", "brown")
+      .style("fill", "brown")                    // colour the line // colour the line
+      .attr('orient', 'auto')
+      .append('svg:path')
+        .attr('d', 'M0,-5L10,0L0,5')
+
+      svg.selectAll(".lines")
+        .data(data)
+        .enter()
+        .append("svg:line")
         .attr("x1", function(d){
-          return xScale(d.x_1)
+          return xScale(d["2012"])
         })
         .attr("x2", function(d){
-          return xScale(d.x_2)
+          return xScale(d["2016"])
         })
         .attr("y1", function(d){
-          return yScale(d["2012"])
+          return yScale(d.Province)
         })
         .attr("y2", function(d){
-          return yScale(d["2016"])
+          return yScale(d.Province)
         })
+        .attr("marker-end", "url(#triangle)") //add the marker
         .style("stroke", function(d){
           if(d.difference > 0){
-            return "darkred"
+            return "brown"
           } else { 
-            return "green" }
+            return "brown" }
         })
+        .style("stroke-width", 2.5)
 
-      
-      // 2007-2008
-      svg.selectAll(".point")
-        .data(data.filter(function(d){
-          return d.difference > 0
-        }))
+        
+
+      svg.selectAll(".labels")
+        .data(data)
         .enter()
-        .append("circle")
-        .attr("r", 2)
-        .attr("cx", function(d){
-            return xScale(d.x_1)
-        })
-        .attr("cy", function(d){
-          return yScale(d["2012"])
-        })
-        .style("fill", function(d){
+        .append("text")
+        .attr("x", function(d){
           if(d.difference > 0){
-            return "darkred"
-          } else { 
-            return "green" }
+            return xScale(d["2016"]) + 10
+          } else{
+            return xScale(d["2016"]) - 35
+          }
         })
+        .attr("y", function(d){
+          return yScale(d.Province)
+        })
+        .text(function(d){
+          return d["2016"]
+        })
+        .style("fill", "black")
+        .style("font-family", "Bree Serif")
+        .style("font-size", "12px")
 
-         // svg.selectAll(".labels")
-         //  .data(data)
-         //  .enter()
-         //  .append("text")
-         //  .attr("x", function(d){
-         //    return xScale(d.x_1) - 40
-         //  })
-         //  .attr("y", function(d){
-         //    return yScale(d["2007–2008"])
-         //  })
-         //  .text(function(d){
-         //    return d.provinces
-         //  })
-
-
-        // 2014–2015  
-      svg.selectAll(".point")
-        .data(data.filter(function(d){
-          return d.difference > 0
-        }))
+        svg.selectAll(".labels")
+        .data(data)
         .enter()
-        .append("circle")
-        .attr("r", 2)
-        .attr("cx", function(d){
-            return xScale(d.x_2)
-        })
-        .attr("cy", function(d){
-          return yScale(d["2016"])
-        })
-        .style("fill", function(d){
+        .append("text")
+        .attr("x", function(d){
           if(d.difference > 0){
-            return "darkred"
-          } else { 
-            return "green" }
+            return xScale(d["2012"])  - 35
+          } else{
+            return xScale(d["2012"]) + 10
+          }
+
         })
-
-          svg.selectAll(".labels")
-          .data(data.filter(function(d){
-          return d.difference > 0
-        }))
-          .enter()
-          .append("text")
-          .attr("x", function(d){
-            return xScale(d.x_2) + 10
-          })
-          .attr("y", function(d){
-            return yScale(d["2016"])
-          })
-          .text(function(d){
-            return d.Province + " " + format(d.difference)
-          })
-          .style("fill", function(d){
-          if(d.difference > 0){
-            return "darkred"
-          } else { 
-            return "green" }
+        .attr("y", function(d){
+          return yScale(d.Province)
         })
-          .style("font-family", "Bree Serif")
-          .style("font-size", 12)
-          .style("font-weight", "normal")
-          // .on("mouseover", function(d){
-          //   d3.selectAll(".lines").style("opacity", 0.4)
-          //   d3.select("" + d.difference_2007_2015).style("opacity", 1)
-          // })
-          // .on("mouseout", function(d){
-          //   d3.selectAll(".lines").style("opacity", 1)
-          // })
-
-          svg.append("text")
-            .attr("x", 90)
-            .attr("y", -100)
-            .text("Increase")
-            .style("font-size", 23)
-            .style("font-family", "Bree Serif")
-            .style("fill", "darkred")
-
+        .text(function(d){
+          return d["2012"]
+        })
+        .style("fill", "black")
+        .style("font-family", "Bree Serif")
+        .style("font-size", "12px")
 
 
          
 
           svg.append("text")
-            .attr("x", -20)
-            .attr("y", -40)
+            .attr("x", 305)
+            .attr("y", -30)
             .text("2012")
-            .style("font-size", 16)
+            .style("font-size", 14)
             .style("font-family", "Bree Serif")
             .style("font-weight", "normal")
 
-
-          svg.append("text")
-            .attr("x", 240)
-            .attr("y", -40)
+            svg.append("text")
+            .attr("x", 400)
+            .attr("y", -30)
             .text("2016")
-            .style("font-size", 16)
+            .style("font-size", 14)
             .style("font-family", "Bree Serif")
             .style("font-weight", "normal")
 
+            svg.append("line")
+              .attr("x1", 0.5)
+              .attr("x2", 0.5)
+              .attr("y1", 1)
+              .attr("y2", 15)
+              .attr("transform", "translate(320,-25)")
+              .attr("stroke", "black")
+
+              svg.append("line")
+              .attr("x1", 0.5)
+              .attr("x2", 0.5)
+              .attr("y1", 1)
+              .attr("y2", 15)
+              .attr("transform", "translate(415,-25)")
+              .attr("stroke", "black")
+
+
+
+          // svg.append("text")
+          //   .attr("x", -30)
+          //   .attr("y", -100)
+          //   .text("P.E.I and the Territories are the only regions where opioid hospitalization rates decreased")
+          //   .style("font-size", 20)
+          //   .style("font-family", "Bree Serif")
+          //   .style("font-weight", "normal")
 
           
   

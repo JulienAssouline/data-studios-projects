@@ -54,7 +54,7 @@
 
         function ready(error, json, data){
 
-          var countries = topojson.object(json, json.objects.countries).geometries,
+          var countries = topojson.feature(json, json.objects.countries).features
       i = -1,
       n = countries.length;
 

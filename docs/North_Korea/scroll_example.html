@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .country{
+/*    fill: #E8E8E8;
+*/    stroke: white;
+  }  
+
+  </style>
+  </head>
+  <body>
+  <script>
+
+  var w = 500;
+    var h = 430;
+
+
+      var margin = {
+          top: 10,
+          bottom: 40,
+          left: 0,
+          right: 30
+        };
+
+        var width = w - margin.left - margin.right;
+        var height = h - margin.top - margin.bottom;
+
+  var svg = d3.select("body")
+        .append("svg")
+        .attr("id", "chart")
+        .attr("width", w)
+        .attr("height", h)
+        .append("g")
+        .attr("transform", "translate(0" + margin.left + "," + margin.top + ")");
+
+        var data1 = [{x:1, y:2}, {x:4, y:4}, {x:3, y:1}]
+        var data2 = [{x:3, y:2}, {x:4, y:4}]
+        var xScale = d3.scaleLinear().range([100,200]).domain([0,5])
+        var yScale = d3.scaleLinear().range([100,200]).domain([0,5])
+
+        //circle positioning function
+      var circleFunc = function(circle){
+        circle.attr("r", 15)
+              .attr("fill", "blue")
+              .attr('cx', function(d) { return xScale(d.x)})
+              .attr('cy', function(d) { return yScale(d.y)})
+      }
+
+      // Reusable drawing function
+      var draw = function(data){
+        var circles = svg.selectAll("circle")
+          .data(data)
+
+          //enter new elements
+          circles.enter()
+                 .append("circle")
+                 .call(circleFunc)
+
+          // exit elements       
+          circles.exit().remove()
+
+          //transition all circles to a new setting
+          svg.selectAll('circle').transition().duration(1500).call(circleFunc) 
+
+      }
+
+  // svg.selectAll("circle")
+  //   .data([1,2,3])
+  //   .enter()
+  //   .append("circle")
+  //   .attr("r", 15)
+  //   .attr("cx", 50)
+  //   .attr("cy", function(d){ return d*30})
+
+  draw(data1)
+
+
+
+</script>
+
+
+  </body>
+</html>

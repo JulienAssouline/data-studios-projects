@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .country{
+/*    fill: #E8E8E8;
+*/    stroke: white;
+  }  
+
+  </style>
+  </head>
+  <body>
+  <script>
+
+     var w = 960;
+    var h = 600;
+var lowColor = '#f9f9f9'
+var highColor = '#bc2a66'
+
+      var margin = {
+          top: 10,
+          bottom: 40,
+          left: 0,
+          right: 30
+        };
+
+        var width = w - margin.left - margin.right;
+        var height = h - margin.top - margin.bottom;
+
+
+      var rectScale = d3.scaleLinear()
+        .range([5, 70])
+
+      
+      // define map projection
+      var projection = d3.geoRobinson()
+        .scale(150)
+        .translate([w/2, h/2])
+
+      //Define default path generator
+      var path = d3.geoPath()
+        .projection(projection);
+
+      var svg = d3.select("#countries")
+        .append("svg")
+        .attr("id", "chart")
+        .attr("width", w)
+        .attr("height", h)
+        .append("g")
+        .attr("transform", "translate(0" + margin.left + "," + margin.top + ")");
+
+        var purple = ["#f2f0f7", "#dadaeb", "#bcbddc", "#9e9ac8", "#756bb1", "#54278f"]
+
+        var color = d3.scaleThreshold()
+            .domain([0, 1688, 206684, 747204.800, 3652593.657, 1000000000, 2338271127])
+            .range(["#ede9f3", "#cbbedd", "#a993c7", "#8767b0", "#653c9a", "#54278f", "#431f72"]);
+
+            var countryMap = d3.map();
+
+        d3.queue()
+          .defer(d3.json, "readme-world-110m.json")
+          .defer(d3.csv, "North_Korea_imports_2015.csv", function(d){
+            d.import_val = +d.import_val
+
+            countryMap.set(d.name, d)
+
+            return d
+          })
+          .await(ready)
+
+        function ready(error, json, data){
+
+        
+          var countries = topojson.feature(json, json.objects.countries).features
+
+          console.log(countries)
+
+        svg.selectAll("path")
+          .data(countries)
+          .enter()
+          .append("path")
+          .attr("class", "country")
+          .attr("d", path)
+          .style("stroke", "white")
+          .style("fill", function(d){
+            var countryData = countryMap.get(d.id)
+            if(countryData){
+              return color(countryData.import_val)
+            } else {
+              return "#ccc"
+            }
+          })
+
+
+
+ }
+
+
+
+</script>
+
+
+  </body>
+</html>

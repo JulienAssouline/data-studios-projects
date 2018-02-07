@@ -16,7 +16,7 @@
         var height = h - margin.top - margin.bottom;
 
 
-    var svg = d3.select("#Asia")
+    var svg = d3.select("#Asia_exp")
         .append("svg")
         .attr("id", "chart")
         .attr("width", w)
@@ -27,7 +27,7 @@
        // var data = [95.59, 1.682, 1.471, 0.743, 0.503, 0.011];
 
            var colors = d3.scaleOrdinal()
-          .range(["#431f72", "#b8b8b8"])
+          .range(["darkgreen", "#b8b8b8"])
 
  
 
@@ -38,15 +38,15 @@
     
 
           var stack = d3.stack()
-          .keys(["Asia", "Other"])
+          .keys(["pert_exp", "diff_perc"])
 
 
 
 
-       d3.csv("Asia.csv", function(error, data){
+       d3.csv("Asia_exp.csv", function(error, data){
             data.forEach(function(d){
-              d.Asia = +d.Asia;
-              d.Other = +d.Other;
+              d.pert_exp = +d.pert_exp;
+              d.diff_perc = +d.diff_perc;
             })
 
          var series = stack(data)
@@ -78,7 +78,7 @@
           .attr("y", -25)
           .attr("width", 15)
           .attr("height", 15)
-          .attr("fill", "#431f72")
+          .attr("fill", "darkgreen")
 
            svg.append("rect")
           .attr("class", "bar1")
@@ -105,18 +105,18 @@
               svg.append("text")
                 .attr("x", -30)
                 .attr("y", 20)
-                .text("95%")
+                .text("91%")
                 .style("fill", "black")
                 .style("font-size", 13)
 
             svg.append("text")
                 .attr("x", 203)
                 .attr("y", 20)
-                .text("5%")
+                .text("9%")
                 .style("fill", "black")
                 .style("font-size", 13)
 
-             var text = svg.append("svg:text")
+              var text = svg.append("svg:text")
 
 
             text.append("svg:tspan")
@@ -127,8 +127,8 @@
 
              text.append("svg:tspan")
             .attr("y", -40)
-            .attr("fill", "#431f72")
-            .text("Imports")
+            .attr("fill", "darkgreen")
+            .text("Exports")
             .style("text-decoration", "underline")  
             .style("font-size", 18)
 

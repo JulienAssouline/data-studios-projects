@@ -110,12 +110,28 @@
                 .style("fill", "black")
                 .style("font-size", 13)
 
-             svg.append("text")
-                .attr("x", 0)
-                .attr("y", -40)
-                .text("North Korea Imports, 2015")
-                .style("fill", "black")
-                .style("font-size", 18)
+           
+           var text = svg.append("svg:text")
+
+
+            text.append("svg:tspan")
+            .attr("y", -40)
+            .style("fill", "black")
+            .text("North Korea ")
+            .style("font-size", 18)
+
+             text.append("svg:tspan")
+            .attr("y", -40)
+            .attr("fill", "#431f72")
+            .text("Imports")
+            .style("text-decoration", "underline")  
+            .style("font-size", 18)
+
+            text.append("svg:tspan")
+            .attr("y", -40)
+            .style("fill", "black")
+            .text(", 2015")
+            .style("font-size", 18)
 })
       
      })()

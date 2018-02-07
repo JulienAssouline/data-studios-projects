@@ -140,7 +140,28 @@
             i = China
 
             country.transition()
-              .style("fill", function(d, j){ return j === i ? "#431f72" : "#b8b8b8"})
+              .style("fill", function(d, j){ return j === i ? "#cc8347" : "#b8b8b8"})
+
+            d3.transition()
+              .delay(250)
+              .duration(1250)
+              .tween("rotate", function(){
+                var point = d3.geoCentroid(countries[i]),
+                    rotate = d3.interpolate(projection.rotate(), [-point[0], -point[1]]);
+                return function(t){
+                  projection.rotate(rotate(t))
+                  country.attr("d", path)
+                }
+              })
+
+             })
+
+          d3.select("#first_1").on("stepin", function(){
+
+            i = China
+
+            country.transition()
+              .style("fill", function(d, j){ return j === i ? "#cc8347" : "#b8b8b8"})
 
             d3.transition()
               .delay(250)
@@ -161,7 +182,7 @@
             i = India
 
             country.transition()
-              .style("fill", function(d, j){ return j === i ? "#431f72" : "#b8b8b8"})
+              .style("fill", function(d, j){ return j === i ? "#cc8347" : "#b8b8b8"})
 
             d3.transition()
               .delay(250)
@@ -182,7 +203,7 @@
             i = Russia
 
             country.transition()
-              .style("fill", function(d, j){ return j === i ? "#431f72" : "#b8b8b8"})
+              .style("fill", function(d, j){ return j === i ? "#cc8347" : "#b8b8b8"})
 
             d3.transition()
               .delay(250)
@@ -203,7 +224,7 @@
             i = Mexico
 
             country.transition()
-              .style("fill", function(d, j){ return j === i ? "#431f72" : "#b8b8b8"})
+              .style("fill", function(d, j){ return j === i ? "#cc8347" : "#b8b8b8"})
 
             d3.transition()
               .delay(250)
@@ -226,47 +247,57 @@
             country.transition()
               .style("fill", function(d, j){ 
                 if(j === Thailand){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Russia){
-                  return "#431f72"
+                  return "#cc8347"
                 }
                 if(j === Philippines){
-                  return "#431f72"
+                  return "#cc8347"
                 }
                 if(j === China){
-                  return "#431f72"
+                  return "#cc8347"
                 }
                  if(j === India){
-                  return "#431f72"
+                  return "#cc8347"
+                }
+                if(j === Armenia){
+                  return "#cc8347"
+                } 
+                if(j === Bahrain){
+                  return "#cc8347"
                 }
                if(j === Brunei){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Cambodia){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Cyprus){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Israel){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Kazakhstan){
-                  return "#431f72"
+                  return "#cc8347"
+                } if(j === Kyrgyzstan){
+                  return "#cc8347"
                 } if(j === Kuwait){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Malaysia){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Mongolia){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Pakistan){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Qatar){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Saudi_Arabia){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Singapore){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Sri_Lanka){
-                  return "#431f72"
+                  return "#cc8347"
                 } if(j === Turkey){
-                  return "#431f72"
+                  return "#cc8347"
+                } if(j === Yemen){
+                  return "#cc8347"
                 }
                  else {
                   "#b8b8b8"

@@ -92,7 +92,7 @@
             .style("font-size", 20)
             .style("font-weight", "bold")
             .transition()
-            .delay(500)
+            .delay(100)
             .duration(500)
             .on("start", function repeat(){
               d3.active(this)
@@ -133,7 +133,7 @@
             }
           })
           .transition()
-            .delay(500)
+            .delay(100)
             .duration(500)
             .on("start", function repeat(){
               d3.active(this)

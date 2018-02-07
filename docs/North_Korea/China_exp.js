@@ -11,12 +11,11 @@
           right: 30
         }
 
-
         var width = w - margin.left - margin.right;
         var height = h - margin.top - margin.bottom;
 
 
-    var svg = d3.select("#Asia")
+    var svg = d3.select("#China_exp")
         .append("svg")
         .attr("id", "chart")
         .attr("width", w)
@@ -24,29 +23,24 @@
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-       // var data = [95.59, 1.682, 1.471, 0.743, 0.503, 0.011];
+       var data = [85, 15];
 
-           var colors = d3.scaleOrdinal()
-          .range(["#431f72", "#b8b8b8"])
-
- 
+       var colors = d3.scaleOrdinal()
+          .range(["darkgreen", "#b8b8b8"])
 
       var xScale = d3.scaleLinear()
         .domain([0, 100])
         .range([0, width])
 
-    
-
-          var stack = d3.stack()
-          .keys(["Asia", "Other"])
+     var stack = d3.stack()
+          .keys(["perct_exp", "diff_exp"])
 
 
 
-
-       d3.csv("Asia.csv", function(error, data){
+       d3.csv("China_exp.csv", function(error, data){
             data.forEach(function(d){
-              d.Asia = +d.Asia;
-              d.Other = +d.Other;
+              d.perct_exp = +d.perct_exp
+              d.diff_exp = +d.diff_exp
             })
 
          var series = stack(data)
@@ -78,7 +72,7 @@
           .attr("y", -25)
           .attr("width", 15)
           .attr("height", 15)
-          .attr("fill", "#431f72")
+          .attr("fill", "darkgreen")
 
            svg.append("rect")
           .attr("class", "bar1")
@@ -91,34 +85,33 @@
           svg.append("text")
                 .attr("x", 80)
                 .attr("y", -13)
-                .text("Other Continents")
+                .text("Other Countries")
                 .style("fill", "black")
                 .style("font-size", 13)
 
           svg.append("text")
                 .attr("x", 20)
                 .attr("y", -13)
-                .text("Asia")
+                .text("China")
                 .style("fill", "black")
                 .style("font-size", 13)
 
               svg.append("text")
                 .attr("x", -30)
                 .attr("y", 20)
-                .text("95%")
+                .text("83%")
                 .style("fill", "black")
                 .style("font-size", 13)
 
             svg.append("text")
-                .attr("x", 203)
+                .attr("x", 200)
                 .attr("y", 20)
-                .text("5%")
+                .text("17%")
                 .style("fill", "black")
                 .style("font-size", 13)
 
-             var text = svg.append("svg:text")
-
-
+                 var text = svg.append("svg:text")
+           
             text.append("svg:tspan")
             .attr("y", -40)
             .style("fill", "black")
@@ -127,8 +120,8 @@
 
              text.append("svg:tspan")
             .attr("y", -40)
-            .attr("fill", "#431f72")
-            .text("Imports")
+            .attr("fill", "darkgreen")
+            .text("Exports")
             .style("text-decoration", "underline")  
             .style("font-size", 18)
 

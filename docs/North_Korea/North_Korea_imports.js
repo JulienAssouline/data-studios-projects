@@ -92,8 +92,8 @@
             .style("font-size", 20)
             .style("font-weight", "bold")
             .transition()
-            .delay(100)
-            .duration(500)
+            .delay(0)
+            .duration(0)
             .on("start", function repeat(){
               d3.active(this)
               .transition()

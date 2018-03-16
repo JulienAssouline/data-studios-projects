@@ -1,0 +1,570 @@
+,Age,Athlete,Country,Medal,NOC,Rank,Time
+0,23,Franck Piccard,France,Gold,FRA,1,1:39.66
+1,21,Helmut Mayer,Austria,Silver,AUT,2,1:40.96
+2,21,Lars-BÃ¶rje Eriksson,Sweden,Bronze,SWE,3,1:41.08
+3,25,Hubert Strolz,Austria,,AUT,4,1:41.11
+4,25,Pirmin Zurbriggen,Switzerland,,SUI,5T,1:41.96
+5,23,GÃ¼nther Mader,Austria,,AUT,5T,1:41.96
+6,22,Luc Alphand,France,,FRA,7,1:42.27
+7,29,Leonhard Stock,Austria,,AUT,8,1:42.36
+8,32,TomaÅ¾ ÄiÅ¾man,Yugoslavia,,YUG,9,1:42.47
+9,25,Ivano Camozzi,Italy,,ITA,10,1:42.66
+10,23,Heinz Holzer,Italy,,ITA,11,1:42.88
+11,29,Andi Wenzel,Liechtenstein,,LIE,12,1:43.00
+12,25,Jim Read,Canada,,CAN,13,1:43.01
+13,26,Shinya Chiba,Japan,,JPN,14,1:43.03
+14,25,Franz Heinzer,Switzerland,,SUI,15,1:43.32
+15,21,Klemen Bergant,Yugoslavia,,YUG,16,1:43.41
+16,23,GÃ¼nther Marxer,Liechtenstein,,LIE,17,1:44.16
+17,26,Tiger Shaw,United States,,USA,18,1:44.26
+18,26,Felix Belczyk,Canada,,CAN,19,1:44.31
+19,23,Niklas Lindqvist,Sweden,,SWE,20T,1:44.88
+20,26,Yves Tavernier,France,,FRA,20T,1:44.88
+21,21,Rob Boyd,Canada,,CAN,22,1:45.04
+22,18,AdriÃ¡n BÃ­reÅ¡,Czechoslovakia,,TCH,23,1:45.33
+23,21,Matthias Hubrich,New Zealand,,NZL,24T,1:45.46
+24,22,Jeff Olson,United States,,USA,24T,1:45.46
+25,23,Carlo Gerosa,Italy,,ITA,26,1:45.82
+26,20,Peter Jurko,Czechoslovakia,,TCH,27,1:46.03
+27,21,Silvio Wille,Liechtenstein,,LIE,28,1:46.08
+28,24,Nigel Smith,Great Britain,,GBR,29,1:47.15
+29,21,Bill Hudson,United States,,USA,30,1:47.29
+30,20,Richard Biggins,Australia,,AUS,31,1:47.38
+31,21,Elias Majdalani,Lebanon,,LIB,32,1:47.58
+32,19,Juan Pablo Santiagos,Chile,,CHI,33,1:48.74
+33,23,Martin Bell,Great Britain,,GBR,34,1:48.82
+34,22,Graham Bell,Great Britain,,GBR,35,1:48.98
+35,20,Jorge Pujol,Spain,,ESP,36,1:49.33
+36,16,Paulo Oppliger,Chile,,CHI,37,1:49.71
+37,16,Nahum Orobitg,Andorra,,AND,38,1:53.22
+38,23,Jorge Birkner,Argentina,,ARG,39,1:53.79
+39,24,Park Jae-Hyuk,South Korea,,KOR,40,1:53.89
+40,15,Hur Seung-Wook,South Korea,,KOR,41,1:55.13
+41,29,Hubertus von FÃ¼rstenberg-von Hohenlohe,Mexico,,MEX,42,1:56.03
+42,17,Resul Sare,Turkey,,TUR,43,1:57.65
+43,20,Yakup Kadri Birinci,Turkey,,TUR,44,1:59.32
+44,18,Nicola Ercolani,San Marino,,SMR,45,1:59.70
+45,20,Ioannis Kapraras,Greece,,GRE,46,2:02.06
+46,18,GÃ¶ksay Demirhan,Turkey,,TUR,47,2:02.22
+47,17,Sokratis Aristodimou,Cyprus,,CYP,48,2:03.10
+48,23,Alex Christian Benoit,Mexico,,MEX,49,2:05.80
+49,19,Christian Bruderer,Guatemala,,GUA,50,2:05.99
+50,19,Fabio Guardigli,San Marino,,SMR,51,2:06.59
+51,17,Jason Edelmann,Puerto Rico,,PUR,52,2:09.93
+52,27,Patrice Martell,Mexico,,MEX,53,2:10.69
+53,29,Fabrice Notari,Monaco,,MON,54,2:11.73
+54,19,Ong Ching-Ming,Chinese Taipei,,TPE,55,2:17.22
+55,31,Walter Sandza,Puerto Rico,,PUR,56,2:25.95
+56,28,Lin Chi-Liang,Chinese Taipei,,TPE,57,2:30.81
+57,21,Carlos AndrÃ©s Bruderer,Guatemala,,GUA,AC,
+58,25,Nam Won-Gi,South Korea,,KOR,AC,
+59,24,DanÃ­el Hilmarsson,Iceland,,ISL,AC,
+60,17,Javier Rivara,Argentina,,ARG,AC,
+61,18,Federico van Ditmar,Argentina,,ARG,AC,
+62,33,FÃ©lix Flechas,Puerto Rico,,PUR,AC,
+63,28,Kevin Wilson,Puerto Rico,,PUR,AC,
+64,20,Kang Nak-Youn,South Korea,,KOR,AC,
+65,20,Alekhis Fotiadis,Cyprus,,CYP,AC,
+66,17,Gerard Escoda,Andorra,,AND,AC,
+67,21,Delfin Campo,Spain,,ESP,AC,
+68,20,Nils Linneberg,Chile,,CHI,AC,
+69,17,Konstantin Chistyakov,Soviet Union,,URS,AC,
+70,22,Alain Villiard,Canada,,CAN,AC,
+71,28,Frank WÃ¶rndl,West Germany,,FRG,AC,
+72,20,Sergey Petrik,Soviet Union,,URS,AC,
+73,21,Simon Wi Rutene,New Zealand,,NZL,AC,
+74,21,Finn Christian Jagge,Norway,,NOR,AC,
+75,23,Niklas Henning,Sweden,,SWE,AC,
+76,19,Robert BÃ¼chel,Liechtenstein,,LIE,AC,
+77,23,Katsuhito Kumagai,Japan,,JPN,AC,
+78,23,Luis FernÃ¡ndez Ochoa,Spain,,ESP,AC,
+79,25,Philippe Verneret,France,,FRA,AC,
+80,25,Steven Lee,Australia,,AUS,AC,
+81,21,Atle SkÃ¥rdal,Norway,,NOR,AC,
+82,21,Jan Einar Thorsen,Norway,,NOR,AC,
+83,26,Daniel Mahrer,Switzerland,,SUI,AC,
+84,25,Martin Hangl,Switzerland,,SUI,AC,
+85,21,Alberto Tomba,Italy,,ITA,AC,
+86,27,Peter Roth,West Germany,,FRG,AC,
+87,24,Markus Wasmeier,West Germany,,FRG,AC,
+88,24,Marc Girardelli,Luxembourg,,LUX,AC,
+89,26,Michael Eder,West Germany,,FRG,AC,
+90,23,Tang Wei-Tsu,Chinese Taipei,,TPE,AC,
+91,16,Ignacio Birkner,Argentina,,ARG,AC,
+92,22,Riccardo Stacchini,San Marino,,SMR,AC,
+93,19,A J Kitt,United States,,USA,AC,
+94,20,Kjetil AndrÃ© Aamodt,Norway,Gold,NOR,1,1:13.04
+95,28,Marc Girardelli,Luxembourg,Silver,LUX,2,1:13.77
+96,25,Jan Einar Thorsen,Norway,Bronze,NOR,3,1:13.83
+97,25,Ole Kristian Furuseth,Norway,,NOR,4,1:13.87
+98,23,Josef Polig,Italy,,ITA,5,1:13.88
+99,24,Marco Hangl,Switzerland,,SUI,6,1:13.90
+100,27,GÃ¼nther Mader,Austria,,AUT,7,1:14.08
+101,21,Tom Stiansen,Norway,,NOR,8,1:14.51
+102,28,Markus Wasmeier,Germany,,GER,9,1:14.58
+103,24,Paul Accola,Switzerland,,SUI,10,1:14.60
+104,22,Fredrik Nyberg,Sweden,,SWE,11,1:14.61
+105,21,Gianfranco Martin,Italy,,ITA,12,1:14.81
+106,26,Jeff Olson,United States,,USA,13,1:15.06
+107,25,Urs KÃ¤lin,Switzerland,,SUI,14,1:15.22
+108,24,Rainer Salzgeber,Austria,,AUT,15,1:15.31
+109,26,Luc Alphand,France,,FRA,16,1:15.39
+110,23,Kyle Rasmussen,United States,,USA,17,1:15.58
+111,24,Patrick Ortlieb,Austria,,AUT,18,1:15.66
+112,21,Alberto Senigagliesi,Italy,,ITA,19,1:15.70
+113,21,Gregor Grilc,Slovenia,,SLO,20,1:15.71
+114,24,HansjÃ¶rg Tauscher,Germany,,GER,21,1:15.98
+115,21,Konstantin Chistyakov,Unified Team,,EUN,22,1:16.14
+116,23,A J Kitt,United States,,USA,23,1:16.31
+117,29,Hubert Strolz,Austria,,AUT,24T,1:16.36
+118,25,Jean-Luc CrÃ©tier,France,,FRA,24T,1:16.36
+119,27,GÃ¼nther Marxer,Liechtenstein,,LIE,26,1:16.48
+120,20,Mitja Kunc,Slovenia,,SLO,27,1:16.49
+121,21,Tommy Moe,United States,,USA,28,1:16.54
+122,19,Jure KoÅ¡ir,Slovenia,,SLO,29,1:16.56
+123,29,Steven Lee,Australia,,AUS,30,1:16.58
+124,24,Berni Huber,Germany,,GER,31,1:16.78
+125,20,Paulo Oppliger,Chile,,CHI,32,1:16.81
+126,21,Kiminobu Kimura,Japan,,JPN,33,1:17.06
+127,22,Ricardo Campo,Spain,,ESP,34,1:17.11
+128,24,Jorge Pujol,Spain,,ESP,35,1:17.15
+129,20,Marco BÃ¼chel,Liechtenstein,,LIE,36,1:17.25
+130,27,MariÃ¡n BÃ­reÅ¡,Czechoslovakia,,TCH,37,1:17.47
+131,22,Vicente Tomas,Spain,,ESP,38,1:17.54
+132,24,Peter Jurko,Czechoslovakia,,TCH,39,1:17.68
+133,29,Boris Duncan,Great Britain,,GBR,40,1:17.76
+134,20,Takuya Ishioka,Japan,,JPN,41,1:17.81
+135,25,Simon Wi Rutene,New Zealand,,NZL,42,1:17.86
+136,19,Kristinn BjÃ¶rnsson,Iceland,,ISL,43,1:17.89
+137,22,Gavin Forsyth,Great Britain,,GBR,44,1:17.91
+138,22,Petar Dichev,Bulgaria,,BUL,45,1:18.87
+139,22,Federico van Ditmar,Argentina,,ARG,46,1:19.07
+140,20,Ramon Rossell,Andorra,,AND,47,1:19.10
+141,22,Willy Raine,Canada,,CAN,48,1:19.12
+142,26,Aleksey Maslov,Unified Team,,EUN,49,1:19.71
+143,27,Martin Bell,Great Britain,,GBR,50,1:19.74
+144,27,ÃrnÃ³lfur Valdimarsson,Iceland,,ISL,51,1:20.64
+145,23,Borislav Dimitrachkov,Bulgaria,,BUL,52,1:20.67
+146,26,Graham Bell,Great Britain,,GBR,53,1:20.87
+147,19,Hur Seung-Wook,South Korea,,KOR,54,1:20.96
+148,29,Lothar Christian Munder,Brazil,,BRA,55,1:21.07
+149,20,Attila BÃ³nis,Hungary,,HUN,56,1:21.10
+150,21,Pierre KÅszÃ¡li,Hungary,,HUN,57,1:21.45
+151,25,Elias Majdalani,Lebanon,,LIB,58,1:22.13
+152,21,Mauricio Rotella,Chile,,CHI,59,1:22.30
+153,20,AgustÃ­n Neiman,Argentina,,ARG,60,1:22.47
+154,19,GÃ¡ston Begue,Argentina,,ARG,61,1:22.52
+155,19,Carlos Espiasse,Argentina,,ARG,62,1:22.68
+156,20,Choi Yong-Hee,South Korea,,KOR,63,1:22.75
+157,25,Alexis Racloz,Chile,,CHI,64,1:23.26
+158,24,PÃ©ter KristÃ¡ly,Hungary,,HUN,65,1:23.47
+159,22,Nicola Ercolani,San Marino,,SMR,66,1:23.72
+160,15,Enis BeÄirbegoviÄ,Yugoslavia,,YUG,67,1:24.15
+161,24,Aurel Foiciuc,Romania,,ROU,68,1:24.62
+162,22,Edin TerziÄ,Yugoslavia,,YUG,69,1:24.70
+163,33,Hubertus von FÃ¼rstenberg-von Hohenlohe,Mexico,,MEX,70,1:24.79
+164,19,Thomas Lefousi,Greece,,GRE,71,1:25.01
+165,21,Zoran PeruÅ¡ina,Yugoslavia,,YUG,72,1:25.23
+166,23,Ioannis Kapraras,Greece,,GRE,73,1:26.47
+167,29,John Campbell,United States Virgin Islands,,ISV,74,1:26.83
+168,19,SÃ©rgio Schuler,Brazil,,BRA,75,1:27.41
+169,19,Marcelo Apovian,Brazil,,BRA,76,1:27.87
+170,20,Taner ÃstÃ¼ndaÄ,Turkey,,TUR,77,1:28.24
+171,31,Lamine GuÃ¨ye,Senegal,,SEN,78,1:29.18
+172,24,Keith Fraser,Swaziland,,SWZ,79,1:29.39
+173,21,Sokratis Aristodimou,Cyprus,,CYP,80,1:30.13
+174,24,Alekhis Fotiadis,Cyprus,,CYP,81,1:30.31
+175,24,Yakup Kadri Birinci,Turkey,,TUR,82,1:30.40
+176,17,Mourad Guerri,Algeria,,ALG,83,1:32.76
+177,20,Andreas Vasili,Cyprus,,CYP,84,1:32.78
+178,18,ÃÃ±igo Domenech,Mexico,,MEX,85,1:35.29
+179,29,Hans Egger,Brazil,,BRA,86,1:35.88
+180,20,Eduardo Ampudia,Mexico,,MEX,87,1:36.86
+181,22,Cevdet Can,Turkey,,TUR,88,1:37.97
+182,25,Brahim Ait Sibrahim,Morocco,,MAR,89,1:38.60
+183,23,Kamel Guerri,Algeria,,ALG,90,1:38.94
+184,26,El-Hassan Mahta,Morocco,,MAR,91,1:41.06
+185,24,Brahim Id Abdellah,Morocco,,MAR,92,1:49.65
+186,25,Brahim Izdag,Morocco,,MAR,93,2:08.31
+187,29,Franz Heinzer,Switzerland,,SUI,AC,
+188,27,Franck Piccard,France,,FRA,AC,
+189,21,Patrick Holzer,Italy,,ITA,AC,
+190,24,Armand Schiele,France,,FRA,AC,
+191,23,Rob Crossan,Canada,,CAN,AC,
+192,21,Achim Vogt,Liechtenstein,,LIE,AC,
+193,19,Daniel Vogt,Liechtenstein,,LIE,AC,
+194,20,Tsuyoshi Tomii,Japan,,JPN,AC,
+195,22,Vitaly Andreyev,Unified Team,,EUN,AC,
+196,18,Vedran Pavlek,Croatia,,CRO,AC,
+197,20,Marcin SzafraÅski,Poland,,POL,AC,
+198,26,Alphonse Gomis,Senegal,,SEN,AC,
+199,18,Carlos Mier y TerÃ¡n,Mexico,,MEX,AC,
+200,26,Emilian FocÈeneanu,Romania,,ROU,AC,
+201,18,Jason Gasperoni,San Marino,,SMR,AC,
+202,22,BalÃ¡zs Tornay,Hungary,,HUN,AC,
+203,27,Tang Wei-Tsu,Chinese Taipei,,TPE,AC,
+204,24,Ahmet Demir,Turkey,,TUR,AC,
+205,20,Igor LatinoviÄ,Yugoslavia,,YUG,AC,
+206,17,Jakub Malczewski,Poland,,POL,AC,
+207,21,Xavier Ubeira,Spain,,ESP,AC,
+208,21,Gerard Escoda,Andorra,,AND,AC,
+209,20,Nahum Orobitg,Andorra,,AND,AC,
+210,24,Lyubomir Popov,Bulgaria,,BUL,AC,
+211,17,Victor GÃ³mez,Andorra,,AND,AC,
+212,30,Markus Wasmeier,Germany,Gold,GER,1,1:32.53
+213,23,Tommy Moe,United States,Silver,USA,2,1:32.61
+214,22,Kjetil AndrÃ© Aamodt,Norway,Bronze,NOR,3,1:32.93
+215,30,Marc Girardelli,Luxembourg,,LUX,4,1:33.07
+216,26,Werner Perathoner,Italy,,ITA,5,1:33.10
+217,27,Atle SkÃ¥rdal,Norway,,NOR,6,1:33.31
+218,27,Jan Einar Thorsen,Norway,,NOR,7,1:33.37
+219,28,Luc Alphand,France,,FRA,8,1:33.39
+220,29,GÃ¼nther Mader,Austria,,AUT,9,1:33.50
+221,26,Marco Hangl,Switzerland,,SUI,10,1:33.75
+222,29,Armin Assinger,Austria,,AUT,11,1:33.84
+223,23,Lasse Kjus,Norway,,NOR,12,1:34.02
+224,22,Janne Leskinen,Finland,,FIN,13,1:34.09
+225,26,Paul Accola,Switzerland,,SUI,14,1:34.37
+226,25,Peter Runggaldier,Italy,,ITA,15,1:34.44
+227,26,Pietro Vitalini,Italy,,ITA,16,1:34.46
+228,27,Christophe PlÃ©,France,,FRA,17,1:34.50
+229,24,Patrik JÃ¤rbyn,Sweden,,SWE,18,1:34.51
+230,21,Tobias Hellman,Sweden,,SWE,19,1:34.59
+231,23,Hans KnauÃ,Austria,,AUT,20,1:34.65
+232,26,HansjÃ¶rg Tauscher,Germany,,GER,21,1:34.71
+233,21,Miran Ravter,Slovenia,,SLO,22,1:34.73
+234,29,Franck Piccard,France,,FRA,23,1:34.75
+235,24,Cary Mullen,Canada,,CAN,24,1:34.84
+236,24,Fredrik Nyberg,Sweden,,SWE,25,1:34.96
+237,27,Brian Stemmle,Canada,,CAN,26,1:34.99
+238,21,Daniel Vogt,Liechtenstein,,LIE,27,1:35.08
+239,22,Mitja Kunc,Slovenia,,SLO,28,1:35.15
+240,22,Jernej Koblar,Slovenia,,SLO,29,1:35.16
+241,19,Andrey Filichkin,Russia,,RUS,30,1:35.26
+242,22,Nicolas Burtin,France,,FRA,31,1:35.28
+243,22,Marco BÃ¼chel,Liechtenstein,,LIE,32,1:35.78
+244,23,Kiminobu Kimura,Japan,,JPN,33,1:36.38
+245,19,Vasily Bezsmelnitsyn,Russia,,RUS,34,1:36.50
+246,26,Lyubomir Popov,Bulgaria,,BUL,35,1:37.01
+247,23,Luis Cristobal,Spain,,ESP,36,1:37.31
+248,21,Anthony Huguet,Australia,,AUS,37,1:37.44
+249,23,Xavier Ubeira,Spain,,ESP,38,1:37.60
+250,24,Vicente Tomas,Spain,,ESP,39,1:38.02
+251,21,Mika Marila,Finland,,FIN,40,1:38.14
+252,20,Vedran Pavlek,Croatia,,CRO,41,1:38.51
+253,22,Marcin SzafraÅski,Poland,,POL,42,1:38.54
+254,20,Victor GÃ³mez,Andorra,,AND,43,1:38.64
+255,23,Gerard Escoda,Andorra,,AND,44,1:38.77
+256,22,Attila BÃ³nis,Hungary,,HUN,45,1:38.83
+257,22,Ramon Rossell,Andorra,,AND,46,1:40.25
+258,27,Alexis Racloz,Chile,,CHI,47,1:41.12
+259,21,GÃ¡ston Begue,Argentina,,ARG,48,1:41.21
+260,32,Daniel Mahrer,Switzerland,,SUI,AC,
+261,26,Hannes Trinkl,Austria,,AUT,AC,
+262,25,William Besse,Switzerland,,SUI,AC,
+263,24,Tobias Barnerssoi,Germany,,GER,AC,
+264,20,Alessandro Fattori,Italy,,ITA,AC,
+265,23,Achim Vogt,Liechtenstein,,LIE,AC,
+266,20,JÃ¼rgen Hasler,Liechtenstein,,LIE,AC,
+267,22,Chad Fleischer,United States,,USA,AC,
+268,26,Ralf Socher,Canada,,CAN,AC,
+269,28,Graham Bell,Great Britain,,GBR,AC,
+270,23,Ed Podivinsky,Canada,,CAN,AC,
+271,19,Georges Mendes,Portugal,,POR,AC,
+272,26,Nils Linneberg,Chile,,CHI,AC,
+273,27,Simon Wi Rutene,New Zealand,,NZL,AC,
+274,24,Federico van Ditmar,Argentina,,ARG,AC,
+275,18,Santi LÃ³pez,Andorra,,AND,AC,
+276,22,Spencer Pession,Great Britain,,GBR,AC,
+277,19,Carlos Manuel Bustos,Argentina,,ARG,AC,
+278,18,Julien Castellini,Monaco,,MON,AC,
+279,25,Kyle Rasmussen,United States,,USA,AC,[1:34.25]
+280,25,A J Kitt,United States,,USA,AC,
+281,23,Didier Cuche,Switzerland,Silver,SUI,2T,1:35.43
+282,26,Hans KnauÃ,Austria,Silver,AUT,2T,1:35.43
+283,24,Alessandro Fattori,Italy,,ITA,4,1:35.61
+284,26,Kjetil AndrÃ© Aamodt,Norway,,NOR,5,1:35.67
+285,28,Patrik JÃ¤rbyn,Sweden,,SWE,6,1:35.72
+286,24,Daron Rahlves,United States,,USA,7,1:35.96
+287,27,Tommy Moe,United States,,USA,8,1:35.97
+288,27,Lasse Kjus,Norway,,NOR,9,1:36.25
+289,28,Fredrik Nyberg,Sweden,,SWE,10,1:36.31
+290,25,Bruno Kernen,Switzerland,,SUI,11,1:36.37
+291,31,Brian Stemmle,Canada,,CAN,12,1:36.40
+292,29,Kyle Rasmussen,United States,,USA,13,1:36.52
+293,30,Steve Locher,Switzerland,,SUI,14,1:36.62
+294,30,Werner Perathoner,Italy,,ITA,15,1:36.64
+295,28,Kristian Ghedina,Italy,,ITA,16,1:36.70
+296,26,Jernej Koblar,Slovenia,,SLO,17,1:36.84
+297,30,Paul Accola,Switzerland,,SUI,18,1:36.87
+298,23,Andreas Schifferer,Austria,,AUT,19T,1:37.00
+299,29,Peter Runggaldier,Italy,,ITA,19T,1:37.00
+300,23,Andrey Filichkin,Russia,,RUS,21,1:37.29
+301,21,Enis BeÄirbegoviÄ,Bosnia and Herzegovina,,BIH,22,1:37.58
+302,25,Peter Pen,Slovenia,,SLO,23,1:37.81
+303,26,Tsuyoshi Tomii,Japan,,JPN,24,1:37.86
+304,31,Jean-Luc CrÃ©tier,France,,FRA,25,1:37.95
+305,24,JÃ¼rgen Hasler,Liechtenstein,,LIE,26,1:38.32
+306,22,Yasuyuki Takishita,Japan,,JPN,27,1:38.39
+307,25,AleÅ¡ BrezavÅ¡Äek,Slovenia,,SLO,28,1:38.54
+308,23,Vasily Bezsmelnitsyn,Russia,,RUS,29,1:39.39
+309,24,Vedran Pavlek,Croatia,,CRO,30,1:39.63
+310,32,Graham Bell,Great Britain,,GBR,31,1:39.80
+311,20,Renato GaÅ¡par,Croatia,,CRO,32,1:39.85
+312,24,Andrew Freshwater,Great Britain,,GBR,33,1:39.89
+313,26,Chad Fleischer,United States,,USA,34,1:40.19
+314,21,Tejs Broberg,Denmark,,DEN,35,1:41.09
+315,40,Igor Yudin,Belarus,,BLR,36,1:45.92
+316,25,Marcelo Apovian,Brazil,,BRA,37,1:49.43
+317,24,FrÃ©dÃ©ric Marin-Cudraz,France,,FRA,AC,
+318,21,ThomÃ¡s Grob,Chile,,CHI,AC,
+319,24,Zurab Dzhidzhishvili,Georgia,,GEO,AC,
+320,23,Victor GÃ³mez,Andorra,,AND,AC,
+321,19,Alex Heath,South Africa,,RSA,AC,
+322,28,Stephan Eberharter,Austria,,AUT,AC,[1:35.72]
+323,26,Nicolas Burtin,France,,FRA,AC,
+324,27,Ed Podivinsky,Canada,,CAN,AC,
+325,30,Kjetil AndrÃ© Aamodt,Norway,Gold,NOR,1,1:21.58
+326,32,Stephan Eberharter,Austria,Silver,AUT,2,1:21.68
+327,27,Andreas Schifferer,Austria,Bronze,AUT,3,1:21.83
+328,29,Fritz Strobl,Austria,,AUT,4,1:21.92
+329,24,Bjarne Solbakken,Norway,,NOR,5,1:22.10
+330,24,Didier DÃ©fago,Switzerland,,SUI,6,1:22.27
+331,25,Christoph Gruber,Austria,,AUT,7,1:22.35
+332,28,Daron Rahlves,United States,,USA,8,1:22.48
+333,26,Thomas Vonn,United States,,USA,9,1:23.22
+334,34,Paul Accola,Switzerland,,SUI,10,1:23.33
+335,32,Patrik JÃ¤rbyn,Sweden,,SWE,11,1:23.40
+336,24,Tobias GrÃ¼nenfelder,Switzerland,,SUI,12,1:23.43
+337,24,Gregor Å parovec,Slovenia,,SLO,13T,1:23.52
+338,30,Marco BÃ¼chel,Liechtenstein,,LIE,13T,1:23.52
+339,30,Jernej Koblar,Slovenia,,SLO,15T,1:23.82
+340,25,SÃ©bastien Fournier-Bidoz,France,,FRA,15T,1:23.82
+341,26,Roland Fischnaller,Italy,,ITA,17,1:23.87
+342,21,Patrick Staudacher,Italy,,ITA,18,1:23.95
+343,28,Kenneth Sivertsen,Norway,,NOR,19,1:24.16
+344,33,Christophe Saioni,France,,FRA,20,1:24.28
+345,23,Andrej Jerman,Slovenia,,SLO,21,1:24.35
+346,29,Max Rauffer,Germany,,GER,22,1:24.54
+347,21,Pavel Shestakov,Russia,,RUS,23,1:25.16
+348,21,Petr ZÃ¡hrobskÃ½,Czech Republic,,CZE,24,1:25.67
+349,24,Scott Macartney,United States,,USA,25,1:25.80
+350,25,Kurt Sulzenbacher,Italy,,ITA,26,1:26.44
+351,24,Craig Branch,Australia,,AUS,27,1:27.15
+352,21,Ivan Heimschild,Slovakia,,SVK,28,1:27.74
+353,23,Mykola Skriabin,Ukraine,,UKR,29,1:27.84
+354,19,NicolÃ¡s Arsel,Argentina,,ARG,30,1:28.55
+355,21,Duncan Grob,Chile,,CHI,31,1:30.35
+356,21,AgustÃ­n GarcÃ­a,Argentina,,ARG,32,1:30.59
+357,29,Patrick-Paul Schwarzacher-Joyce,Ireland,,IRL,33,1:31.30
+358,26,PÃ©ter Vincze,Hungary,,HUN,34,1:50.40
+359,32,Fredrik Nyberg,Sweden,,SWE,AC,
+360,31,Lasse Kjus,Norway,,NOR,AC,
+361,28,Alessandro Fattori,Italy,,ITA,AC,
+362,24,Claude CrÃ©tier,France,,FRA,AC,
+363,25,Darin McBeath,Canada,,CAN,AC,
+364,28,JÃ¼rgen Hasler,Liechtenstein,,LIE,AC,
+365,21,Marco Sullivan,United States,,USA,AC,
+366,29,Thomas Grandi,Canada,,CAN,AC,
+367,22,Michael Riegler,Liechtenstein,,LIE,AC,
+368,25,Borek ZakouÅil,Czech Republic,,CZE,AC,
+369,31,Ed Podivinsky,Canada,,CAN,AC,
+370,27,Andrey Filichkin,Russia,,RUS,AC,
+371,26,Yasuyuki Takishita,Japan,,JPN,AC,
+372,22,Mikael Gayme,Chile,,CHI,AC,
+373,18,Sergey Komarov,Russia,,RUS,AC,
+374,18,Maui Gayme,Chile,,CHI,AC,
+375,23,Vasilios Dimitriadis,Greece,,GRE,AC,
+376,24,Andrey Drygin,Tajikistan,,TJK,AC,
+377,27,Didier Cuche,Switzerland,,SUI,AC,[1:20.82]
+378,29,Peter Pen,Slovenia,,SLO,AC,[1:25.76]
+379,25,AJ Bear,Australia,,AUS,AC,[1:25.81]
+380,34,Kjetil AndrÃ© Aamodt,Norway,Gold,NOR,1,1:30.65
+381,33,Hermann Maier,Austria,Silver,AUT,2,1:30.78
+382,28,Ambrosi Hoffmann,Switzerland,Bronze,SUI,3,1:30.98
+383,24,Erik Guay,Canada,,CAN,4,1:31.08
+384,23,Aksel Lund Svindal,Norway,,NOR,5,1:31.10
+385,34,Marco BÃ¼chel,Liechtenstein,,LIE,6,1:31.22
+386,28,Scott Macartney,United States,,USA,7,1:31.23
+387,21,FranÃ§ois Bourque,Canada,,CAN,8,1:31.27
+388,32,Daron Rahlves,United States,,USA,9,1:31.37
+389,25,Hannes Reichelt,Austria,,AUT,10,1:31.39
+390,29,Antoine DÃ©nÃ©riaz,France,,FRA,11,1:31.49
+391,31,Didier Cuche,Switzerland,,SUI,12,1:31.50
+392,23,Peter Fill,Italy,,ITA,13,1:31.54
+393,35,Lasse Kjus,Norway,,NOR,14,1:31.79
+394,24,Andrej Å porn,Slovenia,,SLO,15,1:31.84
+395,28,Didier DÃ©fago,Switzerland,,SUI,16,1:31.90
+396,25,Patrick Staudacher,Italy,,ITA,17,1:31.91
+397,33,Bruno Kernen,Switzerland,,SUI,18,1:31.95
+398,29,Christoph Gruber,Austria,,AUT,19,1:32.00
+399,22,Manuel Osborne-Paradis,Canada,,CAN,20,1:32.02
+400,27,Benjamin Raich,Austria,,AUT,21,1:32.05
+401,21,John Kucera,Canada,,CAN,22T,1:32.10
+402,28,Finlay Mickel,Great Britain,,GBR,22T,1:32.10
+403,36,Patrik JÃ¤rbyn,Sweden,,SWE,24T,1:32.21
+404,25,Yannick Bertrand,France,,FRA,24T,1:32.21
+405,28,Bjarne Solbakken,Norway,,NOR,26,1:32.90
+406,23,Konstantin Sats,Russia,,RUS,27,1:33.14
+407,27,Andrej Jerman,Slovenia,,SLO,28,1:33.20
+408,25,Pavel Shestakov,Russia,,RUS,29T,1:33.48
+409,26,Massimiliano Blardone,Italy,,ITA,29T,1:33.48
+410,26,Ivica KosteliÄ,Croatia,,CRO,31,1:33.53
+411,25,Petr ZÃ¡hrobskÃ½,Czech Republic,,CZE,32,1:33.70
+412,25,AleÅ¡ Gorza,Slovenia,,SLO,33,1:33.77
+413,19,KryÅ¡tof KrÃ½zl,Czech Republic,,CZE,34,1:34.20
+414,19,Natko ZrnÄiÄ-Dim,Croatia,,CRO,35,1:34.49
+415,19,Ivan RatkiÄ,Croatia,,CRO,36,1:34.77
+416,23,Roger Cruickshank,Great Britain,,GBR,37,1:34.87
+417,23,Martin VrÃ¡blÃ­k,Czech Republic,,CZE,38,1:34.90
+418,24,Gauthier de TessiÃ¨res,France,,FRA,39,1:34.94
+419,21,Jaroslav BabuÅ¡iak,Slovakia,,SVK,40,1:35.41
+420,21,Aleksandr Khoroshilov,Russia,,RUS,41,1:35.51
+421,21,Anton Konovalov,Russia,,RUS,42,1:35.72
+422,23,Steve Nyman,United States,,USA,43,1:36.22
+423,25,Duncan Grob,Chile,,CHI,44,1:36.24
+424,27,MichaÅ KaÅwa,Poland,,POL,45,1:36.25
+425,25,Ivan Heimschild,Slovakia,,SVK,46,1:36.58
+426,22,Maui Gayme,Chile,,CHI,47,1:36.85
+427,17,Olivier Jenot,Monaco,,MON,48,1:37.03
+428,19,Ivan Olivari,Croatia,,CRO,49,1:37.43
+429,27,Alex Heath,South Africa,,RSA,50,1:37.77
+430,28,Andrey Drygin,Tajikistan,,TJK,51,1:37.85
+431,28,Ivars Ciaguns,Latvia,,LAT,52,1:38.18
+432,27,Mykola Skriabin,Ukraine,,UKR,53,1:38.86
+433,26,Mikael Gayme,Chile,,CHI,54,1:39.68
+434,24,Leyti Seck,Senegal,,SEN,55,1:42.87
+435,19,Erjon Tola,Albania,,ALB,56,1:44.27
+436,29,AJ Bear,Australia,,AUS,AC,
+437,28,Pierre-Emmanuel Dalcin,France,,FRA,AC,
+438,28,Bode Miller,United States,,USA,AC,
+439,25,Claudio Sprecher,Liechtenstein,,LIE,AC,
+440,25,OndÅej Bank,Czech Republic,,CZE,AC,
+441,26,Alex Antor,Andorra,,AND,AC,
+442,22,Nikolai Hentsch,Brazil,,BRA,AC,
+443,27,Aksel Lund Svindal,Norway,Gold,NOR,1,1:30.34
+444,32,Bode Miller,United States,Silver,USA,2,1:30.62
+445,24,Andrew Weibrecht,United States,Bronze,USA,3,1:30.65
+446,27,Werner Heel,Italy,,ITA,4,1:30.67
+447,28,Erik Guay,Canada,,CAN,5,1:30.68
+448,25,Christof Innerhofer,Italy,,ITA,6,1:30.73
+449,29,Patrick Staudacher,Italy,,ITA,7,1:30.74
+450,23,Carlo Janka,Switzerland,,SUI,8,1:30.83
+451,32,Tobias GrÃ¼nenfelder,Switzerland,,SUI,9,1:30.90
+452,35,Didier Cuche,Switzerland,,SUI,10,1:31.06
+453,29,AleÅ¡ Gorza,Slovenia,,SLO,11,1:31.07
+454,24,Kjetil Jansrud,Norway,,NOR,12,1:31.21
+455,25,Adrien ThÃ©aux,France,,FRA,13,1:31.24
+456,31,Benjamin Raich,Austria,,AUT,14,1:31.35
+457,32,Didier DÃ©fago,Switzerland,,SUI,15,1:31.43
+458,30,Ivica KosteliÄ,Croatia,,CRO,16,1:31.47
+459,28,Georg Streitberger,Austria,,AUT,17,1:31.49
+460,28,Andrej Å porn,Slovenia,,SLO,18,1:31.58
+461,25,Ted Ligety,United States,,USA,19,1:31.70
+462,26,Mario Scheiber,Austria,,AUT,20,1:31.93
+463,34,Michael Walchhofer,Austria,,AUT,21,1:32.00
+464,24,Guillermo Fayed,France,,FRA,22,1:32.03
+465,29,Marco Sullivan,United States,,USA,23,1:32.09
+466,28,Jan Hudec,Canada,,CAN,24,1:32.09
+467,25,Lars Myhre,Norway,,NOR,25,1:32.36
+468,23,Ivan RatkiÄ,Croatia,,CRO,26,1:32.67
+469,22,FerrÃ¡n Terra,Spain,,ESP,27,1:32.75
+470,25,Aleksandr Khoroshilov,Russia,,RUS,28,1:32.84
+471,33,Craig Branch,Australia,,AUS,29,1:32.89
+472,28,Jono Brauer,Australia,,AUS,30,1:32.92
+473,28,Gauthier de TessiÃ¨res,France,,FRA,31,1:33.17
+474,24,Ed Drake,Great Britain,,GBR,32,1:33.20
+475,25,Roger Vidosa,Andorra,,AND,33,1:33.65
+476,29,Petr ZÃ¡hrobskÃ½,Czech Republic,,CZE,34,1:33.83
+477,21,Paul de la Cuesta,Spain,,ESP,35,1:34.03
+478,21,Stepan Zuyev,Russia,,RUS,36,1:34.13
+479,25,Jaroslav BabuÅ¡iak,Slovakia,,SVK,37,1:35.25
+480,22,Tim Cafe,New Zealand,,NZL,38,1:35.55
+481,20,Kevin Esteve Rigail,Andorra,,AND,39,1:35.67
+482,32,Johnny Albertsen,Denmark,,DEN,40,1:35.69
+483,32,Stefan Georgiev,Bulgaria,,BUL,41,1:36.32
+484,26,Maui Gayme,Chile,,CHI,42,1:36.56
+485,23,Igor Zakurdayev,Kazakhstan,,KAZ,43,1:36.97
+486,32,Andrey Drygin,Tajikistan,,TJK,44,1:38.03
+487,20,StefÃ¡n JÃ³n Sigurgeirsson,Iceland,,ISL,45,1:39.12
+488,40,Patrik JÃ¤rbyn,Sweden,,SWE,AC,
+489,27,Stephan Keppler,Germany,,GER,AC,
+490,27,David Poisson,France,,FRA,AC,
+491,38,Marco BÃ¼chel,Liechtenstein,,LIE,AC,
+492,23,Natko ZrnÄiÄ-Dim,Croatia,,CRO,AC,
+493,23,Ben Griffin,New Zealand,,NZL,AC,
+494,25,Robbie Dixon,Canada,,CAN,AC,
+495,20,Andreas Romar,Finland,,FIN,AC,
+496,25,Ãrni Ãorvaldsson,Iceland,,ISL,AC,
+497,23,Jorge MandrÃº,Chile,,CHI,AC,
+498,26,Manuel Osborne-Paradis,Canada,,CAN,AC,
+499,34,Truls Ove Karlsen,Norway,,NOR,AC,
+500,20,Sergey Maytakov,Russia,,RUS,AC,
+501,31,Andrej Jerman,Slovenia,,SLO,AC,
+502,25,Hans Olsson,Sweden,,SWE,AC,
+503,27,Peter Fill,Italy,,ITA,AC,
+504,23,Andrej KriÅ¾aj,Slovenia,,SLO,AC,[1:33.16]
+505,27,Martin VrÃ¡blÃ­k,Czech Republic,,CZE,AC,
+506,28,Kjetil Jansrud,Norway,Gold,NOR,1,1:18.14
+507,27,Andrew Weibrecht,United States,Silver,USA,2,1:18.44
+508,32,Jan Hudec,Canada,Bronze,CAN,3T,1:18.67
+509,36,Bode Miller,United States,Bronze,USA,3T,1:18.67
+510,22,Otmar Striedinger,Austria,,AUT,5,1:18.69
+511,24,Max Franz,Austria,,AUT,6,1:18.74
+512,31,Aksel Lund Svindal,Norway,,NOR,7,1:18.76
+513,31,Peter Fill,Italy,,ITA,8,1:18.85
+514,33,OndÅej Bank,Czech Republic,,CZE,9,1:19.11
+515,23,Morgan Pridy,Canada,,CAN,10,1:19.19
+516,29,Adrien ThÃ©aux,France,,FRA,11,1:19.35
+517,30,Patrick KÃ¼ng,Switzerland,,SUI,12,1:19.38
+518,21,Aleksander Aamodt Kilde,Norway,,NOR,13,1:19.44
+519,29,Ted Ligety,United States,,USA,14,1:19.48
+520,28,Thomas Mermillod-Blondin,France,,FRA,15,1:19.53
+521,24,Dominik Paris,Italy,,ITA,16,1:19.70
+522,31,David Poisson,France,,FRA,17T,1:19.74
+523,31,Werner Heel,Italy,,ITA,17T,1:19.74
+524,33,Johan Clarey,France,,FRA,19T,1:19.75
+525,27,Natko ZrnÄiÄ-Dim,Croatia,,CRO,19T,1:19.75
+526,32,Georg Streitberger,Austria,,AUT,21,1:19.77
+527,27,Carlo Janka,Switzerland,,SUI,22,1:20.01
+528,25,Travis Ganong,United States,,USA,23,1:20.02
+529,29,Manuel Osborne-Paradis,Canada,,CAN,24T,1:20.19
+530,34,Ivica KosteliÄ,Croatia,,CRO,24T,1:20.19
+531,21,Pavel Trikhichev,Russia,,RUS,26,1:20.62
+532,26,Beat Feuz,Switzerland,,SUI,27,1:20.65
+533,23,Adam Å½ampa,Slovakia,,SVK,28,1:20.95
+534,22,Klemen Kosi,Slovenia,,SLO,29,1:21.27
+535,27,Dmitry Koshkin,Kazakhstan,,KAZ,30,1:21.50
+536,25,Stepan Zuyev,Russia,,RUS,31,1:21.54
+537,19,Henrik von Appen,Chile,,CHI,32,1:21.88
+538,31,Martin VrÃ¡blÃ­k,Czech Republic,,CZE,33,1:22.01
+539,22,Marc Oliveras,Andorra,,AND,34,1:22.02
+540,25,Olivier Jenot,Monaco,,MON,35,1:22.20
+541,20,Andreas Å½ampa,Slovakia,,SVK,36,1:22.42
+542,22,Yury Danilochkin,Belarus,,BLR,37,1:22.45
+543,25,Maciej BydliÅski,Poland,,POL,38,1:22.51
+544,24,Nikola Chongarov,Bulgaria,,BUL,39,1:22.59
+545,22,Martin Khuber,Kazakhstan,,KAZ,40,1:22.60
+546,26,Georgi Georgiev,Bulgaria,,BUL,41,1:22.72
+547,20,Matej Falat,Slovakia,,SVK,42,1:22.81
+548,20,Martin BendÃ­k,Slovakia,,SVK,43,1:23.06
+549,27,Igor Zakurdayev,Kazakhstan,,KAZ,44,1:23.13
+550,30,Eugenio Claro,Chile,,CHI,45,1:23.31
+551,21,Christoffer Faarup,Denmark,,DEN,46,1:23.34
+552,33,Cristian Simari Birkner,Argentina,,ARG,47,1:23.36
+553,21,Marko VukiÄeviÄ,Serbia,,SRB,48,1:23.88
+554,23,Jorge Birkner,Argentina,,ARG,49,1:23.89
+555,22,Igor Laikert,Bosnia and Herzegovina,,BIH,50,1:24.20
+556,29,Kostas Sykaras,Greece,,GRE,51,1:26.32
+557,18,Dmytro Mytsak,Ukraine,,UKR,52,1:28.51
+558,30,Alek Glebov,Russia,,RUS,AC,
+559,36,Didier DÃ©fago,Switzerland,,SUI,AC,
+560,29,Christof Innerhofer,Italy,,ITA,AC,
+561,23,Matthias Mayer,Austria,,AUT,AC,
+562,25,Paul de la Cuesta,Spain,,ESP,AC,
+563,31,Georg Lindner,Moldova,,MDA,AC,
+564,20,Arnaud Alessandria,Monaco,,MON,AC,
+565,26,Roberts Rode,Latvia,,LAT,AC,
+566,32,Erik Guay,Canada,,CAN,AC,
+567,26,FerrÃ¡n Terra,Spain,,ESP,AC,[1:20.96]
+568,18,Massimiliano Valcareggi,Greece,,GRE,AC,

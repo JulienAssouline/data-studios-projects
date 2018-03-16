@@ -6,10 +6,6 @@
     <style type="text/css">
       /* No style rules here yet */
 
-body {
-    font-family: Bree serif;
-    font-size: 12px;
-}
 
 #charts {
     position: relative;
@@ -18,38 +14,17 @@ body {
     padding-left: 100px;
 }
 
-.chartholder { 
-/*    margin: 0 0 20px 0;*/
 
-    float: left;
-}
-.chartholder h3 {
-    height: 1em;
-    width: 100%;
-    display: block;
-}
-h3{
-  font-family: Helvetica;
-  font-size: 18px;
-  padding-left: 35px;
-}
   p{
      width:800px; 
     margin:0 
     auto; 
     font-size:17px; 
-    font-family: Bree serif;
+    font-family: Helvetica;
     padding-left: 130px;
   }
 
-  p.author{
-    
-    margin:0 
-    auto; 
-    font-size:17px; 
-    font-family: Bree serif;
-    padding-right: 120px;
-  }
+
 
   #nav {
   position: absolute;
@@ -57,7 +32,7 @@ h3{
   width: 90%;
   padding-right: 10px;
   font-size: 16px;
-  font-family: Bree serif;
+  font-family: Helvetica;
 }
 
 h2{
@@ -65,67 +40,29 @@ h2{
     margin:0 
     auto; 
     font-size:30px; 
-    font-family: Bree serif;
+    font-family: Helvetica;
     padding-right: 120px;
+}
+
+div.tooltip { 
+    position: absolute;     
+    text-align: left; 
+    width: 190px;          
+    height: 45px;  
+    padding: 5px;       
+    font: 14px Helvetica;    
+    background: white; 
+    border: rgba(0,0,0,0.3) solid 1px;
+    pointer-events: none;  
+    opacity: 0.5;   
 }
 
 
   </style>
   <body>
-  <script id="grid" type="text/plain">
-01 02 03 04 05 
-06 07 08 09 10
-11 12 13 14 15 
-16 17 18 19 20
-21 22 23 24 25 
-26 27 28 29 30
-31 32 33 34 35 
-36 37 38 39 40
-41 42 43 44 45 
-46 47 48 49 50
-51 52 53 54 55 
-56 57 58 59 60
-61 62 63 64 65 
-66 67 68 69 70
-71 72 73 74 75 
-76 77 78 79 80
-81 82 83 84 85 
-86 87 88 89 90
-</script>
 
-<script id="grid_2" type="text/plain">
-01 02 03 04 05 
-06 07 08 09 10
-11 12 13 14 15 
-16 17 18 19 20
-21 22 23 24 25 
-26 27 28 29 30
-31 32 33 34 35 
-36 37 38 39 40
-41 42 43 44 45 
-46 47 48 49 50
-51 52 53 54 55 
-56 57 58 59 60
-61 62 63 64 65 
-66 67 68 69 70
-71 72 73 74 75 
-76 77 78 79 80
-81 82 83 84 85
-</script>
 
-<script id="field_details">
-
-var field_details = {
-    "White": { desc: "White", color: "#e2c642" },
-    "Black": { desc: "Black", color: "#e2c642" },
-    "Hispanic or Latino": { desc: "Hispanic or Latino", color: "#e2c642", color_2:"black" },
-    "Mixed": { desc: "Mixed", color: "#e2c642" },
-    "Asian": { desc: "Asian", color: "#e2c642" },
-};
-
-</script>
-
-       <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
   <div id="nav">
                         <a href="https://julienassouline.github.io/data-studios-projects/">Home</a>
                         <a href="https://julienassouline.github.io/data-studios-projects/assets/CV.pdf">Resume</a>
@@ -133,54 +70,117 @@ var field_details = {
             </div>
             <br><br>
             <br><br>
-  <h1 align="middle" style="font-family: Bree serif; font-size: 40px"> The Race of Oscar Winners</h1>
+  <h1 align="middle" style="font-family: Helvetica; font-size: 40px"> In Acting Categories 92 Percent of Oscar Winners are White</h1>
             <br></br>
             <p class = "author" align="middle"> By: Julien Assouline<p>
             <br></br>
             <br></br>
 
-            <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget magna lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam feugiat neque ut eros porta, volutpat scelerisque quam viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
+            <p align="left"> With more attention being paid to diversity, this year's Oscars were <a href="https://www.vox.com/2018/3/1/17065160/oscars-diversity-2018"> generally praised </a> as more diverse than in the past with nominations of Jordan Pelee, Greta Gerwig for best director, and Rachel Morrison for best cinematography. 
 
+  </p>
+
+              <br>
+
+
+   <p align="left"> Pelee went on to become the first black director to win an Oscar, and Morrison was the first female nominee, for best cinematography. And, while those are good signs, as both the cinematography and director category, are stripe with winners of white males. The 2017 Oscars fell down an all well too familiar path, especially in the acting category. 
+
+  </p>
+              <br>
+
+
+   <p align="left"> Every winner this year for acting was white, with very few minority groups being represented and nominated. 
+
+
+  </p>
+              <br>
+
+
+ <p align="left"> Some categories continue to underrepresented minority groups at an alarming rate. The Best Actress in a leading role category being by far the worst, and giving no chance to underrepresented groups this year as only white women were nominated. 
+
+  </p>
+
+              <br>
+
+  <p align="left" style="font-style: italic;"> Mixed is defined as an actor or actress who had background of two or more different racial groups.
   </p>
 
             <br><br>
 
-            <h2> Actor in a leading role winner </h2>
+            <h2> Best Actress in a leading role</h2>
 
-             <div id="Male_Lead"></div>
-             <script src="Lead_actors_waffle_chart.js"></script>
+             <div id="actress_lead"></div>
+             <script src="actress_lead.js"></script>
 
-             <p align="left">posuere cubilia Curae; Nulla arcu sem, tristique sit amet suscipit eget, sodales vel neque. Ut suscipit quam et ligula consequat ultricies at ac turpis. Integer condimentum faucibus euismod. Phasellus dictum malesuada lorem sed scelerisque. Vivamus molestie leo eu sapien porttitor gravida.  </p>
+                         <br><br>
+
+
+             <p align="left"> Out of the 91 women who have won an Oscar for Best Actress only one of them was not white. The only minority group winner was Halle Berry for her performance in Monster’s Ball back in 2001. Since then only white women have won Oscars for best actresses. 
+
+
+ </p>
+                                      <br><br>
+
+
+            <h2> Best Actor in a leading role </h2>
+
+             <div id="actor_lead"></div>
+             <script src="actor_lead.js"></script>
+
+             <p align="left">The Best Actor in a leading role is also heavily underrepresented by racial minorities as 92% of winners are white. Along with only having four black men win the award, no Hispanic or Latino has won the award since José Ferrer in 1950. 
+
+
+  </p>
+  <br>
+
+  <p align="left">
+
+              Asians are also severely underrepresented in both the Best Actor and Best Actress categories. No Asian actress has ever won an Oscar for Best Actress. No actor whose parents were both Asian has won an Oscar for Best Actor. 
+
+  </p>
 
              <br><br>
 
-            <h2> Actress in a leading role winner </h2>
-
-             <div id="Female_Lead"></div>
-             <script src="Lead_actress_waffle_chart.js"></script>
-
-             <p align="left">posuere cubilia Curae; Nulla arcu sem, tristique sit amet suscipit eget, sodales vel neque. Ut suscipit quam et ligula consequat ultricies at ac turpis. Integer condimentum faucibus euismod. Phasellus dictum malesuada lorem sed scelerisque. Vivamus molestie leo eu sapien porttitor gravida. </p>
-
-                          <br><br>
+            
 
 
-             <h2> Actor in a supporting role winner </h2>
 
-             <div id="Male_support"></div>
-             <script src="support_actor_waffle_chart.js"></script>
+             <h2> Best Actor in a supporting role </h2>
 
-             <p align="left">posuere cubilia Curae; Nulla arcu sem, tristique sit amet suscipit eget, sodales vel neque. Ut suscipit quam et ligula consequat ultricies at ac turpis. Integer condimentum faucibus euismod. Phasellus dictum malesuada lorem sed scelerisque. Vivamus molestie leo eu sapien porttitor gravida.  </p>
+             <div id="actor_supporting"></div>
+             <script src="actor_supporting.js"></script>
+
+             <p align="left">The Best Actor in a supporting role category is the most diverse, but by a small amount, and shouldn’t feel too good about its racial diversity with 88% of winners being white. 
+
+ </p>
 
                           <br><br>
 
 
-            <h2> Actress in a supporting role winner </h2>
+            <h2> Best Actress in a supporting role </h2>
 
 
-             <div id="Female_support"></div>
-             <script src="support_actress_waffle_chart.js"></script>
+             <div id="actress_supporting"></div>
+             <script src="actress_supporting.js"></script>
+
+              <p align="left">The Best Actress in a supporting role had the biggest representation of black actresses with seven winning an Oscar. That said, black actresses are still underrepresented in this category, and other racial groups are barely represented. 
+ </p>
+ <br>
 
 
+ <p align="left">Miyoshi Umeki is the only Asian actress to win an Oscar for acting, and she won her award back in 1954. Since then there hasn’t been a single Asian actress to win an Oscar for acting. In general, the Asian community is dramatically underrepresented by the Academy Awards.  
+
+ </p>
+<br>
+ <p align="left">While there are more efforts being made for inclusion in Hollywood, with the <a href ="https://twitter.com/search?q=%23metoo&src=tyah"> #MeToo</a>, <a href="https://twitter.com/search?q=%23OscarsSoWhite&src=typd"> #OscarsSoWhite </a>, and increased diversity in the <a href="https://www.washingtonpost.com/news/arts-and-entertainment/wp/2017/06/28/the-academy-invites-774-new-members-from-justin-timberlake-to-gal-gadot/?utm_term=.3b14a9042701"> Academy of Motion Picture Arts and Science</a>, there is still a lot of work to be done. The culture is still being dominated by white male actors and even white actresses at the Academy Awards.
+
+
+ </p>
+
+<br>
+<br>
+<br>
+<br>
 
 
   </body>

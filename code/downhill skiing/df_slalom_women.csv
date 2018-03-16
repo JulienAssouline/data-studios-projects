@@ -1,0 +1,967 @@
+,Age,Athlete,Country,Medal,NOC,Rank,Time
+0,28,Gretchen Fraser,United States,Gold,USA,1,1:57.2
+1,27,Antoinette Meyer,Switzerland,Silver,SUI,2,1:57.7
+2,23,Erika Mahringer,Austria,Bronze,AUT,3,1:58.0
+3,27,Georgette Miller-ThiolliÃ¨re,France,,FRA,4,1:58.8
+4,21,RenÃ©e Clerc,Switzerland,,SUI,5,2:05.8
+5,25,Anneliese Schuh-Proxauf,Austria,,AUT,6,2:06.7
+6,22,Resi Hammerer,Austria,,AUT,7,2:08.6
+7,15,Andrea Mead-Lawrence,United States,,USA,8,2:08.8
+8,19,Brynhild Grasmoen,United States,,USA,9,2:09.6
+9,26,May Nilsson,Sweden,,SWE,10,2:09.7
+10,25,Paula Kann,United States,,USA,11,2:09.8
+11,24,FranÃ§oise Gignoux,France,,FRA,12,2:10.3
+12,21,Rosmarie Bleuer,Switzerland,,SUI,13,2:10.6
+13,28,Laila Schou Nilsen,Norway,,NOR,14,2:11.5
+14,27,Celina Seghi,Italy,,ITA,14,2:11.5
+15,28,Alexandra NekvapilovÃ¡,Czechoslovakia,,TCH,16,2:12.0
+16,24,Olivia Ausoni,Switzerland,,SUI,17,2:18.6
+17,24,Renata Carraretto,Italy,,ITA,18,2:19.9
+18,21,BoÅ¾ena MoserovÃ¡,Czechoslovakia,,TCH,19,2:20.1
+19,21,Lucienne Schmidt-Couttet,France,,FRA,20,2:20.6
+20,19,Sheena Mackintosh,Great Britain,,GBR,21,2:30.9
+21,39,AnikÃ³ IglÃ³i,Hungary,,HUN,22,2:48.9
+22,31,Isobel Roe,Great Britain,,GBR,23,2:49.6
+23,32,Biddy Duke-Woolley,Great Britain,,GBR,24,2:53.7
+24,23,Suzanne ThiolliÃ¨re,France,,FRA,,
+25,35,Bunty Greenland,Great Britain,,GBR,,
+26,23,Borghild Niskin,Norway,,NOR,,
+27,22,Annelore ZÃ¼ckert,Austria,,AUT,,
+28,19,Andrea Mead-Lawrence,United States,Gold,USA,1,2:10.6
+29,26,Ossi Reichert,Germany,Silver,GER,2,2:11.4
+30,27,Mirl Buchner,Germany,Bronze,GER,3,2:13.3
+31,31,Celina Seghi,Italy,,ITA,4,2:13.8
+32,19,Imogene Opton,United States,,USA,5,2:14.1
+33,21,Madeleine Chamot-Berthod,Switzerland,,SUI,6,2:14.9
+34,25,Marysette Agnel,France,,FRA,7,2:15.6
+35,24,Trude Jochum-Beiser,Austria,,AUT,8,2:15.9
+36,20,Giuliana Chenal-Minuzzo,Italy,,ITA,8,2:15.9
+37,28,Olivia Ausoni,Switzerland,,SUI,10,2:17.0
+38,27,Borghild Niskin,Norway,,NOR,11,2:17.7
+39,26,Sarah Thomasson,Sweden,,SWE,12,2:18.3
+40,21,Joanne Hewson,Canada,,CAN,13,2:19.9
+41,24,Barbara Grocholska,Poland,,POL,14,2:20.3
+42,24,Jannette Burr,United States,,USA,15,2:20.5
+43,22,Margareta Jacobsson,Sweden,,SWE,16,2:20.6
+44,20,Rosi Sailer,Austria,,AUT,17,2:20.9
+45,19,Margit Hvammen,Norway,,NOR,18,2:21.2
+46,30,Rhoda Wurtele-Eaves,Canada,,CAN,19,2:21.9
+47,24,Kerstin Ahlqvist,Sweden,,SWE,20,2:23.3
+48,21,Katy Rodolph,United States,,USA,21,2:24.0
+49,27,Erika Mahringer,Austria,,AUT,22,2:26.6
+50,21,Karen-Sofie Styrmoe,Norway,,NOR,23,2:27.6
+51,24,Hilary Laing,Great Britain,,GBR,24,2:27.9
+52,29,EdmÃ©e Abetel,Switzerland,,SUI,25,2:28.3
+53,17,Lucile Wheeler,Canada,,CAN,26,2:28.4
+54,25,Ingrid Englund,Sweden,,SWE,27,2:28.7
+55,23,Sheena Mackintosh,Great Britain,,GBR,28,2:29.4
+56,22,Ana MarÃ­a Dellai,Argentina,,ARG,29,2:29.7
+57,21,IldikÃ³ SzendrÅdi-KÅvÃ¡ri,Hungary,,HUN,30,2:30.3
+58,19,Hannelore Glaser-Franke,Germany,,GER,31,2:30.8
+59,23,Teresa Kodelska,Poland,,POL,32,2:33.7
+60,24,Tull Gasmann,Norway,,NOR,33,2:36.9
+61,22,Maria Kowalska,Poland,,POL,34,2:55.6
+62,19,Marianne Seltsam,Germany,,GER,35,3:05.8
+63,23,Dagmar Rom,Austria,,AUT,36,3:07.9
+64,21,Rosemarie Schutz,Canada,,CAN,37,3:08.9
+65,22,Ida SchÃ¶pfer,Switzerland,,SUI,,
+66,22,AndrÃ©e Bermond,France,,FRA,,
+67,23,Annette Johnson,New Zealand,,NZL,,
+68,22,RenÃ©e Colliard,Switzerland,Gold,SUI,1,1:52.3
+69,20,Regina SchÃ¶pf,Austria,Silver,AUT,2,1:55.4
+70,25,Yevgeniya Kabina-Sidorova,Soviet Union,Bronze,URS,3,1:56.7
+71,24,Giuliana Chenal-Minuzzo,Italy,,ITA,4,1:56.8
+72,25,Putzi Frandl,Austria,,AUT,5,1:57.9
+73,22,Inger BjÃ¸rnbakken,Norway,,NOR,6,1:58.0
+74,16,Astrid Sandvik,Norway,,NOR,6,1:58.0
+75,22,Josette NeviÃ¨re,France,,FRA,8,1:58.3
+76,29,Marysette Agnel,France,,FRA,9,1:58.8
+77,25,Frieda DÃ¤nzer,Switzerland,,SUI,10,1:58.9
+78,31,Borghild Niskin,Norway,,NOR,11,1:59.0
+79,30,Thea Hochleitner,Austria,,AUT,12,2:01.0
+80,25,Inger JÃ¸rgensen,Norway,,NOR,13,2:02.3
+81,23,Hannelore Glaser-Franke,Germany,,GER,14,2:04.7
+82,24,Hedi Beeler,Switzerland,,SUI,15,2:05.1
+83,28,Anna Pellissier,Italy,,ITA,16,2:06.5
+84,24,Madeleine Chamot-Berthod,Switzerland,,SUI,17,2:08.3
+85,23,Paule Moris,France,,FRA,18,2:15.6
+86,21,Ginette Seguin,Canada,,CAN,18,2:15.6
+87,24,Dorothy Surgenor,United States,,USA,20,2:17.3
+88,31,Mirl Buchner,Germany,,GER,21,2:18.5
+89,26,Maria Kowalska,Poland,,POL,22,2:21.7
+90,19,Carlyn Kruger,Canada,,CAN,23,2:22.3
+91,25,Hilde Hofherr,Austria,,AUT,24,2:23.5
+92,23,Andrea Mead-Lawrence,United States,,USA,25,2:25.8
+93,19,Zandra Nowell,Great Britain,,GBR,25,2:25.8
+94,22,Gladys Werner,United States,,USA,27,2:30.1
+95,23,Vivi-Anne Wassdahl,Sweden,,SWE,28,2:30.8
+96,15,Vera Schenone,Italy,,ITA,29,2:37.2
+97,17,Anne Heggtveit,Canada,,CAN,30,1:07.2
+98,17,Penny Pitou,United States,,USA,31,2:42.5
+99,24,Slava ZupanÄiÄ,Yugoslavia,,YUG,32,2:43.5
+100,21,Christine Davy,Australia,,AUS,33,2:47.6
+101,26,Renate Holmes,Great Britain,,GBR,34,2:55.9
+102,23,Jocelyn Wardrop-Moore,Great Britain,,GBR,35,3:20.4
+103,23,JakobÃ­na JakobsdÃ³ttir,Iceland,,ISL,,[1:18.4]
+104,21,Lucile Wheeler,Canada,,CAN,,[1:02.3]
+105,30,Ossi Reichert,Germany,,GER,,
+106,26,Addie Pryor,Great Britain,,GBR,,
+107,22,Muriel Lip,France,,FRA,,
+108,23,Marianne Seltsam,Germany,,GER,,
+109,29,Ingrid Englund,Sweden,,SWE,,
+110,20,Eivor Berglund,Sweden,,SWE,,
+111,19,Maria GÄsienica Daniel-Szatkowska,Poland,,POL,,
+112,17,Cristina Ebner,Italy,,ITA,,
+113,28,Aleksandra Artyomenko,Soviet Union,,URS,,
+114,24,Magdalena Marotineanu,Romania,,ROU,,
+115,24,Elena Epuran,Romania,,ROU,,
+116,21,Anne Heggtveit,Canada,Gold,CAN,1,1:49.6
+117,21,Betsy Snite,United States,Silver,USA,2,1:52.9
+118,19,Barbi Henneberger,Germany,Bronze,GER,3,1:56.6
+119,26,ThÃ©rÃ¨se Leduc,France,,FRA,4,1:57.4
+120,20,Liselotte Michel,Switzerland,,SUI,5,1:58.0
+121,29,Hilde Hofherr,Austria,,AUT,5,1:58.0
+122,22,Stalina Demidova-Korzukhina,Soviet Union,,URS,7,1:58.4
+123,23,Sonja Sperl,Germany,,GER,8,1:58.8
+124,21,Renie Cox,United States,,USA,9,1:59.2
+125,28,Giuliana Chenal-Minuzzo,Italy,,ITA,10,1:59.3
+126,20,Marit Haraldsen,Norway,,NOR,11,1:59.8
+127,18,Nancy Holland,Canada,,CAN,12,2:01.1
+128,21,Anneliese Meggl,Germany,,GER,13,2:02.4
+129,26,Inger BjÃ¸rnbakken,Norway,,NOR,14,2:02.5
+130,24,Carla Marchelli,Italy,,ITA,15,2:02.9
+131,29,Putzi Frandl,Austria,,AUT,16,2:03.0
+132,22,Anne-Marie Leduc,France,,FRA,17,2:03.5
+133,29,Yevgeniya Kabina-Sidorova,Soviet Union,,URS,18,2:04.3
+134,24,Marguerite Leduc,France,,FRA,19,2:04.6
+135,21,Jerta Schir,Italy,,ITA,20,2:06.2
+136,19,Heidi Biebl,Germany,,GER,21,2:06.5
+137,22,Arlette Grosso,France,,FRA,22,2:06.8
+138,18,MarÃ­an Navarro,Spain,,ESP,23,2:08.0
+139,19,Elizabeth Greene,Canada,,CAN,24,2:10.4
+140,19,MarÃ­a Cristina Schweizer,Argentina,,ARG,25,2:11.9
+141,21,Beverly Anderson,United States,,USA,26,2:13.1
+142,21,Josephine Gibbs,Great Britain,,GBR,27,2:13.2
+143,29,Madeleine Chamot-Berthod,Switzerland,,SUI,28,2:15.4
+144,25,Christine Davy,Australia,,AUS,29,2:17.2
+145,27,Lyubov Volkova,Soviet Union,,URS,30,2:17.3
+146,16,Nancy Greene,Canada,,CAN,31,2:18.0
+147,20,Tish Prain,New Zealand,,NZL,32,2:18.4
+148,21,Penny Pitou,United States,,USA,33,2:19.8
+149,30,Renate Holmes,Great Britain,,GBR,34,2:23.5
+150,17,Jolanda Schir,Italy,,ITA,35,2:28.1
+151,20,Astrid Sandvik,Norway,,NOR,36,2:29.4
+152,18,Wendy Farrington,Great Britain,,GBR,37,2:39.2
+153,16,Cecilia Womersley,New Zealand,,NZL,38,3:43.1
+154,20,Annemarie Waser,Switzerland,,SUI,,
+155,28,Yvonne RÃ¼egg,Switzerland,,SUI,,
+156,16,Liv Jagge-Christiansen,Norway,,NOR,,
+157,17,Marianne Jahn-Nutt,Austria,,AUT,,
+158,16,Traudl Hecher,Austria,,AUT,,
+159,19,Christine Goitschel,France,Gold,FRA,1,1:29.86
+160,18,Marielle Goitschel,France,Silver,FRA,2,1:30.77
+161,21,Jean Saubert,United States,Bronze,USA,3,1:31.36
+162,22,Heidi Biebl,Germany,,GER,4,1:34.04
+163,22,Edith Zimmermann,Austria,,AUT,5,1:34.27
+164,20,Christl Haas,Austria,,AUT,6,1:35.11
+165,20,Liv Jagge-Christiansen,Norway,,NOR,7,1:36.38
+166,20,Patricia du Roy de Blicquy,Belgium,,BEL,8,1:37.01
+167,28,Pia Riva,Italy,,ITA,9,1:37.20
+168,23,Barbi Henneberger,Germany,,GER,10,1:37.55
+169,22,Heidi Mittermaier,Germany,,GER,10,1:37.55
+170,26,Linda Meyers,United States,,USA,12,1:37.93
+171,19,FranÃ§oise Gay,Switzerland,,SUI,13,1:39.00
+172,21,Heidi Obrecht,Switzerland,,SUI,14,1:39.33
+173,20,Nancy Greene,Canada,,CAN,15,1:41.42
+174,21,Linda Crutchfield-Bocock,Canada,,CAN,16,1:43.15
+175,20,Jane Gissing,Great Britain,,GBR,17,1:44.18
+176,25,Stalina Demidova-Korzukhina,Soviet Union,,URS,18,1:44.97
+177,24,Joan Hannah,United States,,USA,19,1:47.39
+178,18,Galina Sidorova,Soviet Union,,URS,20,1:48.26
+179,20,Tania Heald,Great Britain,,GBR,21,1:48.43
+180,19,Lidia Barbieri Sacconaghi,Italy,,ITA,22,1:49.23
+181,23,Majda Ankele,Yugoslavia,,YUG,23,1:50.98
+182,23,MarÃ­a Cristina Schweizer,Argentina,,ARG,24,1:51.88
+183,20,Theres Obrecht,Switzerland,,SUI,25,1:54.09
+184,33,IldikÃ³ SzendrÅdi-KÅvÃ¡ri,Hungary,,HUN,26,1:54.91
+185,33,Yevgeniya Kabina-Sidorova,Soviet Union,,URS,27,1:59.48
+186,17,Christine Smith,Australia,,AUS,28,2:03.67
+187,20,Traudl Hecher,Austria,,AUT,,
+188,20,Dikke Eger-Bergman,Norway,,NOR,,
+189,26,CÃ©cile Prince,France,,FRA,,
+190,19,Annie Famose,France,,FRA,,
+191,23,Inge Senoner,Italy,,ITA,,
+192,21,Marianne Jahn-Nutt,Austria,,AUT,,
+193,18,Fernande Bochatay,Switzerland,,SUI,,
+194,24,Astrid Sandvik,Norway,,NOR,,
+195,19,Barbara Ferries,United States,,USA,,
+196,27,Maria GÄsienica Daniel-Szatkowska,Poland,,POL,,
+197,22,Giustina Demetz,Italy,,ITA,,
+198,22,Krista Fanedl,Yugoslavia,,YUG,,
+199,17,Gina Hathorn,Great Britain,,GBR,,
+200,18,Burgl FÃ¤rbinger,Germany,,GER,,
+201,21,Nancy Holland,Canada,,CAN,,
+202,19,Divina Galica,Great Britain,,GBR,,
+203,31,Judy Forras,Australia,,AUS,,
+204,17,Karen Dokka,Canada,,CAN,,
+205,22,Marielle Goitschel,France,Gold,FRA,1,1:25.86
+206,24,Nancy Greene,Canada,Silver,CAN,2,1:26.15
+207,23,Annie Famose,France,Bronze,FRA,3,1:27.89
+208,21,Gina Hathorn,Great Britain,,GBR,4,1:27.92
+209,18,Isabelle Mir,France,,FRA,5,1:28.22
+210,22,Burgl FÃ¤rbinger,West Germany,,FRG,6,1:28.90
+211,21,Glorianda Cipolla,Italy,,ITA,7,1:29.74
+212,18,Bernadette Rauter,Austria,,AUT,8,1:30.44
+213,20,Olga Pall,Austria,,AUT,9,1:31.11
+214,17,Christine Laprell,West Germany,,FRG,10,1:31.25
+215,18,AnnerÃ¶sli Zryd,Switzerland,,SUI,11,1:31.41
+216,27,Majda Ankele,Yugoslavia,,YUG,12,1:31.60
+217,22,Madeleine Wuilloud,Switzerland,,SUI,13,1:33.27
+218,21,Felicity Field,Great Britain,,GBR,14,1:33.38
+219,21,Karen Dokka,Canada,,CAN,15,1:34.51
+220,22,Christl Hintermaier,West Germany,,FRG,16,1:34.62
+221,19,Vreni InÃ¤bnit,Switzerland,,SUI,17,1:35.18
+222,23,Anna MohrovÃ¡,Czechoslovakia,,TCH,18,1:35.96
+223,21,Irina Turundayevskaya,Soviet Union,,URS,19,1:38.26
+224,20,Lotte Nogler,Italy,,ITA,20,1:38.33
+225,19,Ingrid Sundberg,Sweden,,SWE,21,1:39.56
+226,16,Clotilde Fasolis,Italy,,ITA,22,1:40.72
+227,24,Diana Tomkinson,Great Britain,,GBR,23,1:40.93
+228,22,Brigitte Seiwald,Austria,,AUT,24,1:41.29
+229,24,Alfina Sukhanova,Soviet Union,,URS,25,1:41.58
+230,22,Galina Sidorova,Soviet Union,,URS,26,1:42.89
+231,20,Helga MarÃ­a Sista,Argentina,,ARG,27,1:49.16
+232,16,Marta BÃ¼hler,Liechtenstein,,LIE,28,1:49.44
+233,20,Ana Sabine Naumann,Argentina,,ARG,29,1:50.17
+234,22,Anne Reid,New Zealand,,NZL,30,1:50.58
+235,21,Mihoko Otsue,Japan,,JPN,31,1:51.37
+236,19,Gertrud Gabl,Austria,,AUT,,
+237,23,Divina Galica,Great Britain,,GBR,,
+238,14,Betsy Clifford,Canada,,CAN,,
+239,26,Giustina Demetz,Italy,,ITA,,
+240,24,Dikke Eger-Bergman,Norway,,NOR,,
+241,15,Verena Vogt,Chile,,CHI,,
+242,18,Kiki Cutter,United States,,USA,,
+243,22,Fernande Bochatay,Switzerland,,SUI,,
+244,21,Rosie Fortna,United States,,USA,,
+245,23,Wendy Allen,United States,,USA,,
+246,18,Florence Steurer,France,,FRA,,
+247,17,Judi Leinweber,Canada,,CAN,,
+248,24,Aud Hvammen,Norway,,NOR,,
+249,18,Irene Viaene,Argentina,,ARG,,
+250,17,Margot Blakely,New Zealand,,NZL,,
+251,16,Judy Nagel,United States,,USA,,
+252,17,Rosi Mittermaier,West Germany,,FRG,,
+253,22,Nina Merkulova,Soviet Union,,URS,,
+254,21,Barbara Cochran,United States,Gold,USA,1,1:31.24
+255,17,DaniÃ¨le Debernard,France,Silver,FRA,2,1:31.26
+256,22,Florence Steurer,France,Bronze,FRA,3,1:32.69
+257,20,Judy Crawford,Canada,,CAN,4,1:33.95
+258,18,Annemarie Moser-PrÃ¶ll,Austria,,AUT,5,1:34.03
+259,15,Pamela Behr,West Germany,,FRG,6,1:34.27
+260,19,Monika Kaserer,Austria,,AUT,7,1:34.36
+261,20,Patty Boydstun,United States,,USA,8,1:35.59
+262,20,Susie Corrock,United States,,USA,9,1:35.76
+263,17,Toril FÃ¸rland,Norway,,NOR,9,1:35.76
+264,25,Gina Hathorn,Great Britain,,GBR,11,1:36.18
+265,17,Laurie Kreiner,Canada,,CAN,12,1:37.30
+266,22,Emiko Okazaki,Japan,,JPN,13,1:39.53
+267,14,Kathy Kreiner,Canada,,CAN,14,1:40.27
+268,27,Divina Galica,Great Britain,,GBR,15,1:40.50
+269,22,Harue Okitsu,Japan,,JPN,16,1:40.67
+270,21,Rosi Mittermaier,West Germany,,FRG,17,1:41.17
+271,20,Marta BÃ¼hler,Liechtenstein,,LIE,18,1:41.69
+272,31,Galina Shikhova,Soviet Union,,URS,19,1:45.81
+273,21,Wiltrud Drexel,Austria,,AUT,,
+274,19,Conchita Puig,Spain,,ESP,,
+275,23,Gertrud Gabl,Austria,,AUT,,
+276,17,Marie-Theres Nadig,Switzerland,,SUI,,
+277,18,Diane Pratte,Canada,,CAN,,
+278,18,Silvia Stump,Switzerland,,SUI,,
+279,21,Traudl Treichl,West Germany,,FRG,,
+280,22,Karianne Christiansen,Norway,,NOR,,
+281,21,Anne Brusletto,Norway,,NOR,,
+282,20,Rosi Speiser,West Germany,,FRG,,
+283,15,Bernadette Zurbriggen,Switzerland,,SUI,,
+284,18,Lotta Sollander,Sweden,,SWE,,
+285,20,Rita Good,Switzerland,,SUI,,
+286,15,Valentina Iliffe,Great Britain,,GBR,,
+287,18,Carol Blackwood,Great Britain,,GBR,,
+288,20,Mitsuyo Nagumo,Japan,,JPN,,
+289,19,Svetlana Isakova,Soviet Union,,URS,,
+290,23,Miyuki Katagiri,Japan,,JPN,,
+291,23,Britt Lafforgue,France,,FRA,,
+292,20,MichÃ¨le Jacot,France,,FRA,,
+293,21,Marilyn Cochran,United States,,USA,,
+294,20,Gyri SÃ¸rensen,Norway,,NOR,,
+295,26,Nina Merkulova,Soviet Union,,URS,,
+296,25,Rosi Mittermaier,West Germany,Gold,FRG,1,1:30.54
+297,20,Claudia Giordani,Italy,Silver,ITA,2,1:30.87
+298,19,Hanni Wenzel,Liechtenstein,Bronze,LIE,3,1:32.20
+299,21,DaniÃ¨le Debernard,France,,FRA,4,1:32.24
+300,19,Pamela Behr,West Germany,,FRG,5,1:32.31
+301,22,Lindy Cochran,United States,,USA,6,1:33.24
+302,18,Christa Zechmeister,West Germany,,FRG,7,1:33.72
+303,16,Wanda Bieler,Italy,,ITA,8,1:35.66
+304,19,Dagmar KuzmanovÃ¡,Czechoslovakia,,TCH,9,1:35.70
+305,19,Mary Seaton,United States,,USA,10,1:35.87
+306,16,Ursula Konzett,Liechtenstein,,LIE,11,1:36.35
+307,19,Bernadette Zurbriggen,Switzerland,,SUI,12,1:37.18
+308,20,Cindy Nelson,United States,,USA,13,1:37.33
+309,21,Laurie Kreiner,Canada,,CAN,14,1:39.38
+310,19,Valentina Iliffe,Great Britain,,GBR,15,1:40.14
+311,15,Steinunn SÃ¦mundsdÃ³ttir,Iceland,,ISL,16,1:44.72
+312,19,Riitta Ollikka,Finland,,FIN,17,1:45.62
+313,16,Fiona Easdale,Great Britain,,GBR,18,1:47.00
+314,20,Sue Gibson,New Zealand,,NZL,19,2:03.53
+315,19,Patricia Emonet,France,,FRA,,
+316,22,Betsy Clifford,Canada,,CAN,,
+317,21,Brigitte Totschnig,Austria,,AUT,,
+318,18,Monika Berwein,West Germany,,FRG,,
+319,24,MichÃ¨le Jacot,France,,FRA,,
+320,17,Torill Fjeldstad,Norway,,NOR,,
+321,16,Jana GantnerovÃ¡-Å oltÃ½sovÃ¡,Czechoslovakia,,TCH,,
+322,15,Hazel Hutcheon,Great Britain,,GBR,,
+323,18,Abbi Fisher,United States,,USA,,
+324,17,Nicola SpieÃ,Austria,,AUT,,
+325,17,Joanne Henke,Australia,,AUS,,
+326,18,JÃ³runn ViggÃ³sdÃ³ttir,Iceland,,ISL,,
+327,22,Paola Hofer,Italy,,ITA,,
+328,21,Alla Askarova,Soviet Union,,URS,,
+329,19,Sally Rodd,Australia,,AUS,,
+330,16,Regina Sackl,Austria,,AUT,,
+331,19,Wilma Gatta,Italy,,ITA,,
+332,19,Lise-Marie Morerod,Switzerland,,SUI,,
+333,21,Marie-Theres Nadig,Switzerland,,SUI,,
+334,23,Monika Kaserer,Austria,,AUT,,
+335,19,Fabienne Serrat,France,,FRA,,
+336,18,Kathy Kreiner,Canada,,CAN,,
+337,16,Anne Robb,Great Britain,,GBR,,
+338,23,Hanni Wenzel,Liechtenstein,Gold,LIE,1,1:25.09
+339,19,Christa Kinshofer-GÃ¼thlein,West Germany,Silver,FRG,2,1:26.50
+340,17,Erika Hess,Switzerland,Bronze,SUI,3,1:27.89
+341,18,Maria Rosa Quario,Italy,,ITA,4,1:27.92
+342,24,Claudia Giordani,Italy,,ITA,5,1:29.12
+343,21,Nadezhda Andreyeva-Patrikeyeva,Soviet Union,,URS,6,1:29.20
+344,20,Daniela Zini,Italy,,ITA,7,1:29.22
+345,20,Christin Cooper,United States,,USA,8,1:29.28
+346,18,Ann Melander,Sweden,,SWE,9,1:29.82
+347,23,Wilma Gatta,Italy,,ITA,10,1:29.94
+348,24,Cindy Nelson,United States,,USA,11,1:30.85
+349,18,Ãsa Svedmark,Sweden,,SWE,12,1:31.51
+350,22,Ingrid Eberle,Austria,,AUT,13,1:31.71
+351,18,Petra Wenzel,Liechtenstein,,LIE,14,1:33.34
+352,22,Kathy Kreiner,Canada,,CAN,15,1:34.78
+353,23,Valentina Iliffe,Great Britain,,GBR,16,1:38.56
+354,18,Jacqui Cowderoy,Australia,,AUS,17,1:39.69
+355,19,Wang Guizhen,China,,CHN,18,1:59.01
+356,26,Farida Rahmeh,Lebanon,,LIB,19,2:28.48
+357,19,Fiona Johnson,New Zealand,,NZL,,
+358,19,Steinunn SÃ¦mundsdÃ³ttir,Iceland,,ISL,,
+359,17,Brigitte Nansoz,Switzerland,,SUI,,
+360,22,Irene Epple,West Germany,,FRG,,
+361,22,Abbi Fisher,United States,,USA,,
+362,23,Fabienne Serrat,France,,FRA,,
+363,19,Perrine Pelen,France,,FRA,,
+364,14,Lina Aristodimou,Cyprus,,CYP,,
+365,19,Jenny Altermatt,Australia,,AUS,,
+366,20,Anne Robb,Great Britain,,GBR,,
+367,17,Kirstin Cairns,Great Britain,,GBR,,
+368,17,Ana MarÃ­a RodrÃ­guez,Spain,,ESP,,
+369,20,Jana GantnerovÃ¡-Å oltÃ½sovÃ¡,Czechoslovakia,,TCH,,
+370,19,NuÅ¡a Tome,Yugoslavia,,YUG,,
+371,17,Metka Jerman,Yugoslavia,,YUG,,
+372,25,Marie-Theres Nadig,Switzerland,,SUI,,
+373,21,Torill Fjeldstad,Norway,,NOR,,
+374,19,Anja Zavadlav,Yugoslavia,,YUG,,
+375,18,Anne-Flore Rey,France,,FRA,,
+376,18,Anna-Karin Hesse,Sweden,,SWE,,
+377,20,Ursula Konzett,Liechtenstein,,LIE,,
+378,19,Marina Laurencon,France,,FRA,,
+379,23,Pamela Behr,West Germany,,FRG,,
+380,20,Regina Sackl,Austria,,AUT,,
+381,18,Regine MÃ¶senlechner,West Germany,,FRG,,
+382,17,Tamara McKinney,United States,,USA,,
+383,26,Annemarie Moser-PrÃ¶ll,Austria,,AUT,,
+384,21,Lea SÃ¶lkner,Austria,,AUT,,
+385,19,Paola Magoni-Sforza,Italy,Gold,ITA,1,1:36.47
+386,23,Perrine Pelen,France,Silver,FRA,2,1:37.38
+387,24,Ursula Konzett,Liechtenstein,Bronze,LIE,3,1:37.50
+388,20,Roswitha Steiner,Austria,,AUT,4,1:37.84
+389,21,Erika Hess,Switzerland,,SUI,5,1:37.91
+390,20,MaÅgorzata TlaÅka-Mogore,Poland,,POL,6,1:37.97
+391,22,Maria Rosa Quario,Italy,,ITA,7,1:37.99
+392,20,Anni Kronbichler,Austria,,AUT,8,1:38.05
+393,24,Daniela Zini,Italy,,ITA,9,1:38.15
+394,21,Olga CharvÃ¡tovÃ¡,Czechoslovakia,,TCH,10,1:38.66
+395,19,Monika Hess,Switzerland,,SUI,11,1:38.67
+396,24,Maria Epple,West Germany,,FRG,12,1:38.77
+397,21,Ewa Grabowska,Poland,,POL,13,1:39.62
+398,25,Nadezhda Andreyeva-Patrikeyeva,Soviet Union,,URS,14,1:40.22
+399,15,Mateja Svet,Yugoslavia,,YUG,15,1:40.85
+400,20,Carole Merle,France,,FRA,16,1:44.30
+401,18,Jolanda Kindle,Liechtenstein,,LIE,17,1:46.43
+402,18,Magdalena Birkner,Argentina,,ARG,18,1:54.75
+403,19,Jin Xuefei,China,,CHN,19,2:06.04
+404,23,Wang Guizhen,China,,CHN,20,2:06.74
+405,18,Lina Aristodimou,Cyprus,,CYP,21,2:19.64
+406,21,Christelle Guignard,France,,FRA,,
+407,22,Petra Wenzel,Liechtenstein,,LIE,,
+408,20,Blanca FernÃ¡ndez Ochoa,Spain,,ESP,,
+409,23,NuÅ¡a Tome,Yugoslavia,,YUG,,
+410,21,Tamara McKinney,United States,,USA,,
+411,24,Christin Cooper,United States,,USA,,
+412,20,Dorota TlaÅka-Mogore,Poland,,POL,,
+413,21,Brigitte Oertli,Switzerland,,SUI,,
+414,23,Anja Zavadlav,Yugoslavia,,YUG,,
+415,25,Lea SÃ¶lkner,Austria,,AUT,,
+416,18,Alexandra MaÅasovÃ¡,Czechoslovakia,,TCH,,
+417,20,Ivana ValeÅ¡ovÃ¡,Czechoslovakia,,TCH,,
+418,18,Fulvia Stevenin,Italy,,ITA,,
+419,21,Andrea BÃ©dard,Canada,,CAN,,
+420,17,Dolores FernÃ¡ndez Ochoa,Spain,,ESP,,
+421,17,Veronika Wallinger-Stallmaier,Austria,,AUT,,
+422,19,Lesley Beck,Great Britain,,GBR,,
+423,16,Liliana Ichim,Romania,,ROU,,
+424,21,Teresa Bustamante,Argentina,,ARG,,
+425,20,Nanna LeifsdÃ³ttir,Iceland,,ISL,,
+426,18,Magdalena Saint Antonin,Argentina,,ARG,,
+427,19,Andreja LeskovÅ¡ek,Yugoslavia,,YUG,,
+428,22,Anne-Flore Rey,France,,FRA,,
+429,20,Gabriela Angaut,Argentina,,ARG,,
+430,23,Vreni Schneider,Switzerland,Gold,SUI,1,1:36.69
+431,19,Mateja Svet,Yugoslavia,Silver,YUG,2,1:38.37
+432,27,Christa Kinshofer-GÃ¼thlein,West Germany,Bronze,FRG,3,1:38.40
+433,24,Roswitha Steiner,Austria,,AUT,4,1:38.77
+434,24,Blanca FernÃ¡ndez Ochoa,Spain,,ESP,5,1:39.44
+435,23,Ida LadstÃ¤tter,Austria,,AUT,6,1:39.59
+436,23,Paola Magoni-Sforza,Italy,,ITA,7,1:39.76
+437,24,Dorota TlaÅka-Mogore,France,,FRA,8,1:39.86
+438,20,Mojca DeÅ¾man,Yugoslavia,,YUG,9,1:40.21
+439,20,Ulrike Maier,Austria,,AUT,10,1:40.54
+440,23,Beth Madsen,United States,,USA,11,1:41.18
+441,21,Lenka KebrlovÃ¡,Czechoslovakia,,TCH,12,1:42.12
+442,19,Lucia MedzihradskÃ¡,Czechoslovakia,,TCH,13,1:42.18
+443,20,Patricia Chauvet-Blanc,France,,FRA,14,1:42.79
+444,20,Diann Roffe-Steinrotter,United States,,USA,15,1:42.88
+445,22,JosÃ©e Lacasse,Canada,,CAN,16,1:43.14
+446,22,Katarzyna SzafraÅska,Poland,,POL,17,1:44.21
+447,20,Michelle McKendry-Ruthven,Canada,,CAN,18,1:45.79
+448,18,Emi Kawabata,Japan,,JPN,19,1:49.35
+449,18,Carolina Eiras,Argentina,,ARG,20,1:52.73
+450,25,Kate Rattray,New Zealand,,NZL,21,1:52.94
+451,16,Carolina Birkner,Argentina,,ARG,22,1:57.72
+452,17,Sandra Grau,Andorra,,AND,23,1:58.44
+453,19,Astrid Steverlynck,Argentina,,ARG,24,2:05.02
+454,16,Thomai Lefousi,Greece,,GRE,25,2:07.01
+455,17,Karolina Fotiadou,Cyprus,,CYP,26,2:14.92
+456,25,Fiamma Smith,Guatemala,,GUA,27,2:45.50
+457,21,Shailaja Kumar,India,,IND,28,2:52.27
+458,17,Mihaela Fera,Romania,,ROU,,
+459,18,Jacqueline Vogt,Liechtenstein,,LIE,,
+460,20,Ä½udmila MilanovÃ¡,Czechoslovakia,,TCH,,
+461,19,Eva Moga,Spain,,ESP,,
+462,23,Nadia Bonfini,Italy,,ITA,,
+463,23,Lesley Beck,Great Britain,,GBR,,
+464,22,Pascaline Freiher,France,,FRA,,
+465,20,Camilla Nilsson,Sweden,,SWE,,
+466,25,Brigitte Oertli,Switzerland,,SUI,,
+467,23,Catharina GlassÃ©r-Bjerner,Sweden,,SWE,,
+468,21,Katra Zajc,Yugoslavia,,YUG,,
+469,25,Tamara McKinney,United States,,USA,,
+470,21,Anita Wachter,Austria,,AUT,,
+471,25,Christelle Guignard,France,,FRA,,
+472,23,Corinne Schmidhauser,Switzerland,,SUI,,
+473,19,Veronika Å arec,Yugoslavia,,YUG,,
+474,24,Monika ÃijÃ¤,Sweden,,SWE,,
+475,22,Kristina Andersson,Sweden,,SWE,,
+476,21,Anette Gersch,West Germany,,FRG,,
+477,18,Heidi Voelker,United States,,USA,,
+478,21,Karen Percy,Canada,,CAN,,
+479,25,Nina Ehrnrooth,Finland,,FIN,,
+480,23,Sarah Lewis,Great Britain,,GBR,,
+481,25,Kirstin Cairns,Great Britain,,GBR,,
+482,17,Sachiko Yamamoto,Japan,,JPN,,
+483,24,Mary Pat Wilson,Puerto Rico,,PUR,,
+484,22,Jolanda Kindle,Liechtenstein,,LIE,,
+485,21,Kerrin Lee-Gartner,Canada,,CAN,,
+486,22,Magdalena Birkner,Argentina,,ARG,,
+487,22,Petra Kronberger,Austria,Gold,AUT,1,1:32.68
+488,20,Annelise Coberger,New Zealand,Silver,NZL,2,1:33.10
+489,28,Blanca FernÃ¡ndez Ochoa,Spain,Bronze,ESP,3,1:33.35
+490,20,Julie Parisien,United States,,USA,4,1:33.40
+491,27,Karin Buder,Austria,,AUT,5,1:33.68
+492,24,Patricia Chauvet-Blanc,France,,FRA,6,1:33.72
+493,27,Vreni Schneider,Switzerland,,SUI,7,1:33.96
+494,26,Anne Berge,Norway,,NOR,8,1:34.22
+495,20,Katrin Neuenschwander,Switzerland,,SUI,9,1:34.28
+496,17,UrÅ¡ka Hrovat,Slovenia,,SLO,10,1:34.50
+497,26,Kristina Andersson,Sweden,,SWE,11,1:34.95
+498,23,Lara Magoni,Italy,,ITA,12,1:35.00
+499,27,Christine von GrÃ¼nigen,Switzerland,,SUI,13,1:35.73
+500,29,Christelle Guignard,France,,FRA,14,1:36.31
+501,18,Martina Ertl-Renz,Germany,,GER,15,1:36.41
+502,23,Lucia MedzihradskÃ¡,Czechoslovakia,,TCH,16,1:36.45
+503,23,KatjuÅ¡a PuÅ¡nik,Slovenia,,SLO,16,1:36.45
+504,22,Monique Pelletier,United States,,USA,18,1:36.63
+505,16,Emma Carrick-Anderson,Great Britain,,GBR,19,1:37.58
+506,22,Heidi Voelker,United States,,USA,20,1:37.69
+507,22,Ylva NowÃ©n,Sweden,,SWE,21,1:37.84
+508,23,Merete Fjeldavlie,Norway,,NOR,22,1:38.67
+509,20,Silvia del Rincon,Spain,,ESP,23,1:39.22
+510,24,Ä½udmila MilanovÃ¡,Czechoslovakia,,TCH,24,1:39.78
+511,23,Annie Laurendeau,Canada,,CAN,25,1:40.03
+512,23,Ainhoa Ibarra,Spain,,ESP,26,1:41.19
+513,21,Ãsta HalldÃ³rsdÃ³ttir,Iceland,,ISL,27,1:42.74
+514,22,Tine Kongsholm,Denmark,,DEN,28,1:44.03
+515,21,Mihaela Fera,Romania,,ROU,29,1:44.85
+516,23,Astrid Steverlynck,Argentina,,ARG,30,1:45.53
+517,18,Marina VidoviÄ,Yugoslavia,,YUG,31,1:51.46
+518,22,Vera GÃ¶nczi,Hungary,,HUN,32,1:55.33
+519,23,Liu Yali,China,,CHN,33,2:01.44
+520,15,Vesna Dunimagloska,Yugoslavia,,YUG,34,2:03.78
+521,21,Karolina Fotiadou,Cyprus,,CYP,35,2:04.19
+522,17,Chus Cortina,Mexico,,MEX,36,2:07.13
+523,18,Seba Johnson,United States Virgin Islands,,ISV,37,2:09.76
+524,20,Choi Mi-Ok,North Korea,,PRK,38,2:11.05
+525,16,Li Xueqin,China,,CHN,39,2:12.55
+526,19,Sammantha Teuscher,Mexico,,MEX,40,2:14.87
+527,25,Nawal Slaoui,Morocco,,MAR,41,2:17.07
+528,18,Veronica Ampudia,Mexico,,MEX,42,2:24.85
+529,24,NataÅ¡a Bokal,Slovenia,,SLO,,
+530,25,Monika Maierhofer,Austria,,AUT,,
+531,26,Claudia Strobl,Austria,,AUT,,
+532,20,Annick Bonzon,Switzerland,,SUI,,
+533,22,Claire de Pourtales,Great Britain,,GBR,,
+534,24,Valerie Scott,Great Britain,,GBR,,
+535,20,Thomai Lefousi,Greece,,GRE,,
+536,23,Veronika Å arec,Slovenia,,SLO,,
+537,23,Florence Masnada,France,,FRA,,
+538,21,Pernilla Wiberg,Sweden,,SWE,,
+539,26,Eva Twardokens,United States,,USA,,
+540,21,Bibiana Perez,Italy,,ITA,,
+541,20,Astrid Plank,Italy,,ITA,,
+542,22,BÃ©atrice Filliol,France,,FRA,,
+543,21,Sachiko Yamamoto,Japan,,JPN,,
+544,17,Zali Steggall,Australia,,AUS,,
+545,16,Vicky Grau,Andorra,,AND,,
+546,21,Ewa Zagata,Poland,,POL,,
+547,22,Carolina Eiras,Argentina,,ARG,,
+548,18,AnnamÃ¡ria BÃ³nis,Hungary,,HUN,,
+549,23,Ghalia Sebti,Morocco,,MAR,,
+550,29,Vreni Schneider,Switzerland,Gold,SUI,1,1:56.01
+551,24,Elfi Eder,Austria,Silver,AUT,2,1:56.35
+552,18,Katja Koren,Slovenia,Bronze,SLO,3,1:56.61
+553,23,Pernilla Wiberg,Sweden,,SWE,4,1:56.68
+554,23,Gabi Zingre,Switzerland,,SUI,5,1:57.80
+555,29,Christine von GrÃ¼nigen,Switzerland,,SUI,6,1:57.86
+556,23,Roberta Serra,Italy,,ITA,7,1:57.88
+557,19,UrÅ¡ka Hrovat,Slovenia,,SLO,8,1:58.07
+558,20,Morena Gallizio,Italy,,ITA,9,1:58.19
+559,23,Deborah Compagnoni,Italy,,ITA,10,1:58.26
+560,20,Å pela Pretnar,Slovenia,,SLO,11,1:58.65
+561,27,Monika Maierhofer,Austria,,AUT,12,1:58.74
+562,23,Christina Rodling,Sweden,,SWE,13,1:59.07
+563,20,Martina Ertl-Renz,Germany,,GER,14,1:59.65
+564,19,Trude Gimle,Norway,,NOR,15,1:59.87
+565,25,Lara Magoni,Italy,,ITA,16,2:00.01
+566,24,Martina Accola,Switzerland,,SUI,17,2:00.03
+567,21,Carrie Sheinberg,United States,,USA,18,2:00.16
+568,28,Kristina Andersson,Sweden,,SWE,19,2:00.75
+569,23,Ãsta HalldÃ³rsdÃ³ttir,Iceland,,ISL,20,2:01.55
+570,25,Lucia MedzihradskÃ¡,Slovakia,,SVK,20,2:01.55
+571,19,Zali Steggall,Australia,,AUS,22,2:03.04
+572,21,MÃ³nica Bosch,Spain,,ESP,23,2:06.11
+573,17,Caroline Poussier,Andorra,,AND,24,2:06.82
+574,22,Szvetlana Keszthelyi,Hungary,,HUN,25,2:09.00
+575,18,Gabriela Quijano,Argentina,,ARG,26,2:17.26
+576,17,Arijana Boras,Bosnia and Herzegovina,,BIH,27,2:18.72
+577,18,Ãgnes Litter,Hungary,,HUN,28,2:35.61
+578,23,LeÃ¯la Piccard,France,,FRA,,
+579,28,Eva Twardokens,United States,,USA,,
+580,17,Claudia Riegler,New Zealand,,NZL,,
+581,18,Hilde Gerg,Germany,,GER,,
+582,22,Thomai Lefousi,Greece,,GRE,,
+583,26,Patricia Chauvet-Blanc,France,,FRA,,
+584,23,Marianne KjÃ¸rstad,Norway,,NOR,,
+585,22,Annelise Coberger,New Zealand,,NZL,,
+586,27,Anita Wachter,Austria,,AUT,,
+587,26,Miriam Vogt,Germany,,GER,,
+588,18,Alenka DovÅ¾an,Slovenia,,SLO,,
+589,24,BÃ©atrice Filliol,France,,FRA,,
+590,23,Edda Mutter,Germany,,GER,,
+591,25,Florence Masnada,France,,FRA,,
+592,18,Emma Carrick-Anderson,Great Britain,,GBR,,
+593,17,MÃ©lanie Turgeon,Canada,,CAN,,
+594,20,Erika Hansson,Sweden,,SWE,,
+595,24,Claire de Pourtales,Great Britain,,GBR,,
+596,25,Ainhoa Ibarra,Spain,,ESP,,
+597,18,Vicky Grau,Andorra,,AND,,
+598,17,OphÃ©lie David,Hungary,,HUN,,
+599,18,MarÃ­a JosÃ© Rienda,Spain,,ESP,,
+600,22,Julie Parisien,United States,,USA,,
+601,24,Monique Pelletier,United States,,USA,,
+602,28,Olha Lohinova,Ukraine,,UKR,,
+603,19,Trine Bakke-Rognmo,Norway,,NOR,,
+604,20,Caroline Gedde-Dahl,Norway,,NOR,,
+605,22,Hilde Gerg,Germany,Gold,GER,1,1:32.40
+606,27,Deborah Compagnoni,Italy,Silver,ITA,2,1:32.46
+607,23,Zali Steggall,Australia,Bronze,AUS,3,1:32.67
+608,24,Martina Ertl-Renz,Germany,,GER,4,1:32.91
+609,20,Sabine Egger,Austria,,AUT,5,1:33.22
+610,30,Ingrid Salvenmoser,Austria,,AUT,6,1:33.39
+611,28,Martina Accola,Switzerland,,SUI,7,1:34.12
+612,24,Morena Gallizio,Italy,,ITA,8,1:34.87
+613,19,Monika Bergmann-Schmuderer,Germany,,GER,9,1:34.99
+614,21,Anna Ottosson,Sweden,,SWE,10,1:35.24
+615,30,NataÅ¡a Bokal,Slovenia,,SLO,11,1:35.59
+616,28,Ylva NowÃ©n,Sweden,,SWE,12,1:36.33
+617,26,Julie Parisien,United States,,USA,13,1:36.35
+618,22,MarÃ­a JosÃ© Rienda,Spain,,ESP,14,1:36.46
+619,29,Lara Magoni,Italy,,ITA,15,1:36.63
+620,21,Alenka DovÅ¾an,Slovenia,,SLO,16,1:36.66
+621,23,Kazuko Ikeda,Japan,,JPN,17,1:37.29
+622,17,Tanja Poutiainen,Finland,,FIN,18,1:37.51
+623,22,Vicky Grau,Andorra,,AND,19,1:37.69
+624,22,Junko Yamakawa,Japan,,JPN,20,1:38.10
+625,23,Diana Fehr,Liechtenstein,,LIE,21,1:38.76
+626,18,Sarah Schleper,United States,,USA,22,1:39.42
+627,20,Tamara SchÃ¤dler,Liechtenstein,,LIE,23,1:40.01
+628,19,Kumiko Kashiwagi,Japan,,JPN,24,1:40.46
+629,20,Carola Calello,Argentina,,ARG,25,1:41.56
+630,19,Nadezhda Vasileva,Bulgaria,,BUL,26,1:45.44
+631,18,Mirjana Granzov,Serbia and Montenegro,,SCG,27,1:46.65
+632,27,LeÃ¯la Piccard,France,,FRA,,
+633,22,Karin Roten,Switzerland,,SUI,,
+634,22,Kristina Koznick,United States,,USA,,
+635,23,UrÅ¡ka Hrovat,Slovenia,,SLO,,
+636,24,Å pela Pretnar,Slovenia,,SLO,,
+637,23,Trine Bakke-Rognmo,Norway,,NOR,,
+638,23,Henna Raita,Finland,,FIN,,
+639,25,MÃ³nica Bosch,Spain,,ESP,,
+640,23,Katerina Tichy,Canada,,CAN,,
+641,20,Katrine Hvidsteen,Denmark,,DEN,,
+642,24,Martina Fortkord,Sweden,,SWE,,
+643,27,Pernilla Wiberg,Sweden,,SWE,,
+644,21,Claudia Riegler,New Zealand,,NZL,,
+645,25,Sonja Nef,Switzerland,,SUI,,
+646,22,Laure Pequegnot,France,,FRA,,
+647,30,Patricia Chauvet-Blanc,France,,FRA,,
+648,24,Elisabetta Biavaschi,Italy,,ITA,,
+649,23,Andrine Flemmen,Norway,,NOR,,
+650,22,Emma Carrick-Anderson,Great Britain,,GBR,,
+651,23,Trude Gimle,Norway,,NOR,,
+652,16,Janica KosteliÄ,Croatia,,CRO,,
+653,20,Brynja ÃorsteinsdÃ³ttir,Iceland,,ISL,,
+654,20,SigrÃ­Ã°ur ÃorlÃ¡ksdÃ³ttir,Iceland,,ISL,,
+655,22,TheÃ³dÃ³ra Mathiesen,Iceland,,ISL,,
+656,16,Lucie HrstkovÃ¡,Czech Republic,,CZE,,
+657,21,Kinga Barsi,Hungary,,HUN,,
+658,19,Marika Labancz,Hungary,,HUN,,
+659,23,Tasha Nelson,United States,,USA,,
+660,21,Noriyo Hiroi,Japan,,JPN,,
+661,16,Sofia Akhmeteli,Georgia,,GEO,,
+662,20,Janica KosteliÄ,Croatia,Gold,CRO,1,1:46.10
+663,26,Laure Pequegnot,France,Silver,FRA,2,1:46.17
+664,20,Anja PÃ¤rson,Sweden,Bronze,SWE,3,1:47.09
+665,32,Ylva NowÃ©n,Sweden,,SWE,4,1:47.18
+666,28,Martina Ertl-Renz,Germany,,GER,5,1:47.82
+667,23,Monika Bergmann-Schmuderer,Germany,,GER,6,1:47.98
+668,27,Vanessa Vidal,France,,FRA,7,1:48.11
+669,27,Henna Raita,Finland,,FIN,8,1:48.40
+670,34,NataÅ¡a Bokal,Slovenia,,SLO,9,1:49.94
+671,21,Nicole Gius,Italy,,ITA,10,1:51.01
+672,25,Claudia Riegler,New Zealand,,NZL,11,1:51.19
+673,17,Nika Fleiss,Croatia,,CRO,12,1:51.27
+674,25,Anna Ottosson,Sweden,,SWE,13,1:51.77
+675,25,Noriyo Hiroi,Japan,,JPN,14,1:51.98
+676,26,MarÃ­a JosÃ© Rienda,Spain,,ESP,15,1:52.11
+677,23,Kumiko Kashiwagi,Japan,,JPN,16,1:52.41
+678,25,Alenka DovÅ¾an,Slovenia,,SLO,17,1:52.65
+679,24,Silke Bachmann,Italy,,ITA,18,1:52.94
+680,26,Emma Carrick-Anderson,Great Britain,,GBR,19,1:53.79
+681,28,Å pela Pretnar,Slovenia,,SLO,20,1:54.09
+682,24,Eva KurfÃ¼rstovÃ¡,Czech Republic,,CZE,21,1:54.19
+683,23,Susanne Ekman,Sweden,,SWE,22,1:54.32
+684,15,Ana JeluÅ¡iÄ,Croatia,,CRO,23,1:55.01
+685,26,Vicky Grau,Andorra,,AND,24,1:55.16
+686,26,Jeannette Korten,Australia,,AUS,25,1:56.10
+687,20,Carolina Ruiz,Spain,,ESP,26,1:56.22
+688,21,Emily Brydon,Canada,,CAN,27,1:58.19
+689,23,Nadezhda Vasileva,Bulgaria,,BUL,28,1:59.04
+690,25,Vanesa Rakedzhyan,Armenia,,ARM,29,1:59.12
+691,21,Yuliya Siparenko,Ukraine,,UKR,30,2:00.50
+692,19,MarÃ­a BelÃ©n Simari Birkner,Argentina,,ARG,31,2:00.58
+693,17,Lindsey Kildow-Vonn,United States,,USA,32,2:00.73
+694,20,Emma Furuvik,Iceland,,ISL,33,2:01.92
+695,23,Olesya Persidskaya,Kazakhstan,,KAZ,34,2:09.97
+696,19,Tamsen McGarry,Ireland,,IRL,35,2:11.00
+697,17,Chirine Njeim,Lebanon,,LIB,36,2:13.48
+698,22,Konstantina Koutra,Greece,,GRE,37,2:18.60
+699,28,Elmira Urumbayeva,Uzbekistan,,UZB,38,2:24.90
+700,23,Allison Forsyth,Canada,,CAN,,
+701,26,Annemarie Gerg,Germany,,GER,,
+702,19,Chemmy Alcott,Great Britain,,GBR,,
+703,28,Christel Pascal-Saioni,France,,FRA,,
+704,21,Denise Karbon,Italy,,ITA,,
+705,25,Hedda Berntsen,Norway,,NOR,,
+706,23,Kathrin Nikolussi,Australia,,AUS,,
+707,26,Kristina Koznick,United States,,USA,,
+708,20,Lea DabiÄ,Slovenia,,SLO,,
+709,20,Lucie HrstkovÃ¡,Czech Republic,,CZE,,
+710,17,Macarena Simari Birkner,Argentina,,ARG,,
+711,20,Marlies Schild,Austria,,AUT,,
+712,22,Sarah Schleper,United States,,USA,,
+713,20,Sofia Akhmeteli,Georgia,,GEO,,
+714,24,Sonia Vierin,Italy,,ITA,,
+715,27,Tasha Nelson,United States,,USA,,
+716,27,Trine Bakke-Rognmo,Norway,,NOR,,
+717,17,Veronika ZuzulovÃ¡,Slovakia,,SVK,,
+718,27,Zali Steggall,Australia,,AUS,,
+719,22,Carina Raich,Austria,,AUT,,
+720,18,Christine Sponring,Austria,,AUT,,
+721,26,Corina GrÃ¼nenfelder,Switzerland,,SUI,,
+722,20,Jelena LoloviÄ,Serbia and Montenegro,,SCG,,
+723,25,Marlies Oester,Switzerland,,SUI,,
+724,20,MÃ¡rta Vastagh RegÅs,Hungary,,HUN,,
+725,23,Petra ZakouÅilovÃ¡,Czech Republic,,CZE,,
+726,26,Renate GÃ¶tschl,Austria,,AUT,,
+727,21,Rowena Bright,Australia,,AUS,,
+728,29,Sonja Nef,Switzerland,,SUI,,
+729,21,Tanja Poutiainen,Finland,,FIN,,
+730,24,Anja PÃ¤rson,Sweden,Gold,SWE,1,1:29.04
+731,22,Nicole Hosp,Austria,Silver,AUT,2,1:29.33
+732,24,Marlies Schild,Austria,Bronze,AUT,3,1:29.79
+733,24,Janica KosteliÄ,Croatia,,CRO,4,1:29.94
+734,20,Michaela Kirchgasser,Austria,,AUT,5,1:30.28
+735,25,Tanja Poutiainen,Finland,,FIN,6,1:30.79
+736,30,Annemarie Gerg,Germany,,GER,7,1:30.89
+737,21,Chiara Costazza,Italy,,ITA,8,1:31.08
+738,21,Therese BorssÃ©n,Sweden,,SWE,8,1:31.08
+739,26,Sarah Schleper,United States,,USA,10,1:31.38
+740,24,Florine de Leymarie,France,,FRA,11,1:31.39
+741,20,Resi Stiegler,United States,,USA,12,1:31.48
+742,21,Å Ã¡rka ZÃ¡hrobskÃ¡-StrachovÃ¡,Czech Republic,,CZE,13,1:31.55
+743,21,Lindsey Kildow-Vonn,United States,,USA,14,1:31.58
+744,19,Ana JeluÅ¡iÄ,Croatia,,CRO,15,1:31.78
+745,27,Monika Bergmann-Schmuderer,Germany,,GER,16,1:31.84
+746,20,Brigitte Acton,Canada,,CAN,17,1:31.90
+747,29,Anna Ottosson,Sweden,,SWE,18,1:32.08
+748,22,Manuela MÃ¶lgg,Italy,,ITA,19,1:32.17
+749,31,Henna Raita,Finland,,FIN,20,1:32.33
+750,19,Maria PietilÃ¤-Holmner,Sweden,,SWE,21,1:32.47
+751,21,Veronika ZuzulovÃ¡,Slovakia,,SVK,22,1:32.53
+752,21,Nika Fleiss,Croatia,,CRO,23,1:32.61
+753,27,Annalisa Ceresa,Italy,,ITA,24,1:32.77
+754,22,Ana Kobal,Slovenia,,SLO,25,1:32.89
+755,31,Vanessa Vidal,France,,FRA,26,1:32.97
+756,20,Mizue Hoshi,Japan,,JPN,27,1:33.38
+757,28,Eva KurfÃ¼rstovÃ¡,Czech Republic,,CZE,28,1:33.47
+758,29,Noriyo Hiroi,Japan,,JPN,29,1:33.59
+759,23,Katarzyna KarasiÅska,Poland,,POL,30,1:34.30
+760,26,Mojca Rataj,Bosnia and Herzegovina,,BIH,31,1:34.37
+761,21,Jessica Walter,Liechtenstein,,LIE,32,1:35.10
+762,22,Alexandra Coletti,Monaco,,MON,33,1:35.96
+763,17,Anne-Sophie Barthet,France,,FRA,34,1:36.66
+764,20,Nicola Campbell,New Zealand,,NZL,35,1:36.82
+765,21,Macarena Simari Birkner,Argentina,,ARG,36,1:37.07
+766,23,MarÃ­a BelÃ©n Simari Birkner,Argentina,,ARG,37,1:37.61
+767,20,Mami Sekizuka,Japan,,JPN,38,1:37.72
+768,21,Chirine Njeim,Lebanon,,LIB,39,1:39.14
+769,24,Erika McLeod,New Zealand,,NZL,40,1:40.57
+770,22,O Jae-Eun,South Korea,,KOR,41,1:41.84
+771,20,Kirsty McGarry,Ireland,,IRL,42,1:42.43
+772,24,Jelena LoloviÄ,Serbia and Montenegro,,SCG,43,1:42.80
+773,24,Tiiu Nurmberg,Estonia,,EST,44,1:42.98
+774,25,Yuliya Siparenko,Ukraine,,UKR,45,1:43.26
+775,19,Marija TrmÄiÄ,Serbia and Montenegro,,SCG,46,1:43.46
+776,22,Vera Yeremenko,Kazakhstan,,KAZ,47,1:46.00
+777,17,Ivana Ivchevska,Macedonia,,MKD,48,1:50.13
+778,28,RÃ©ka Tuss,Hungary,,HUN,49,1:51.59
+779,28,Dong Jinzhi,China,,CHN,50,1:54.06
+780,24,Neha Ahuja,India,,IND,51,1:56.16
+781,24,Lucie HrstkovÃ¡,Czech Republic,,CZE,,
+782,20,Mariya Kirkova,Bulgaria,,BUL,,
+783,32,Martina Ertl-Renz,Germany,,GER,,
+784,24,Daniela Merighetti,Italy,,ITA,,
+785,27,Petra ZakouÅilovÃ¡,Czech Republic,,CZE,,
+786,18,SoÅa MaculovÃ¡,Slovakia,,SVK,,
+787,18,Matea Ferk,Croatia,,CRO,,
+788,17,Eva HuÄkovÃ¡,Slovakia,,SVK,,
+789,18,Duygu Ulusoy,Turkey,,TUR,,
+790,30,Kristina Koznick,United States,,USA,,
+791,19,Kathrin Zettel,Austria,,AUT,,
+792,30,Laure Pequegnot,France,,FRA,,
+793,26,Magda Kalomoirou,Greece,,GRE,,
+794,25,Maria HÃ¶fl-Riesch,Germany,Gold,GER,1,1:42.89
+795,28,Marlies Schild,Austria,Silver,AUT,2,1:43.32
+796,25,Å Ã¡rka ZÃ¡hrobskÃ¡-StrachovÃ¡,Czech Republic,Bronze,CZE,3,1:43.90
+797,23,Maria PietilÃ¤-Holmner,Sweden,,SWE,4,1:44.22
+798,27,Sandrine Aubert,France,,FRA,5,1:44.46
+799,29,Tanja Poutiainen,Finland,,FIN,6,1:44.93
+800,28,Elisabeth GÃ¶rgl,Austria,,AUT,7,1:44.97
+801,29,Nicole Gius,Italy,,ITA,8,1:45.01
+802,26,Tina Maze,Slovenia,,SLO,9,1:45.09
+803,25,Veronika ZuzulovÃ¡,Slovakia,,SVK,10,1:45.14
+804,26,Manuela MÃ¶lgg,Italy,,ITA,11,1:45.31
+805,23,Ana JeluÅ¡iÄ,Croatia,,CRO,12,1:45.43
+806,23,Kathrin Zettel,Austria,,AUT,13,1:45.59
+807,20,Christina Geiger,Germany,,GER,14,1:45.62
+808,24,Frida Hansdotter,Sweden,,SWE,15,1:45.67
+809,30,Sarah Schleper,United States,,USA,16,1:45.88
+810,24,Brigitte Acton,Canada,,CAN,17,1:45.93
+811,29,Denise Karbon,Italy,,ITA,18,1:45.94
+812,24,Anna Goodman,Canada,,CAN,19,1:46.04
+813,19,Erin Mielzynski,Canada,,CAN,20,1:46.09
+814,25,Therese BorssÃ©n,Sweden,,SWE,21,1:46.71
+815,25,Marina Nigg,Liechtenstein,,LIE,22,1:46.83
+816,21,MaruÅ¡a Ferk,Slovenia,,SLO,23,1:47.03
+817,20,Jana GantnerovÃ¡,Slovakia,,SVK,24,1:47.46
+818,25,Nika Fleiss,Croatia,,CRO,25,1:47.59
+819,21,Anne-Sophie Barthet,France,,FRA,26,1:47.83
+820,26,Karen Persyn,Belgium,,BEL,27,1:47.96
+821,19,Yelena Prosteva,Russia,,RUS,28,1:48.34
+822,21,Nastasia Noens,France,,FRA,29,1:48.57
+823,24,Hailey Duke,United States,,USA,30,1:48.69
+824,20,Marie-MichÃ¨le Gagnon,Canada,,CAN,31,1:49.51
+825,19,Nevena IgnjatoviÄ,Serbia,,SRB,32,1:50.48
+826,21,Lyaysan Rayanova,Russia,,RUS,33,1:50.82
+827,22,Matea Ferk,Croatia,,CRO,34,1:50.93
+828,22,Agnieszka GÄsienica-Daniel,Poland,,POL,35,1:52.19
+829,25,Macarena Simari Birkner,Argentina,,ARG,36,1:52.35
+830,20,Bohdana Matsotska,Ukraine,,UKR,37,1:53.00
+831,20,Mariya Shkanova,Belarus,,BLR,38,1:54.50
+832,20,Sofija NovoseliÄ,Croatia,,CRO,39,1:54.91
+833,24,Å½ana NovakoviÄ,Bosnia and Herzegovina,,BIH,40,1:55.95
+834,19,Noelle Barahona,Chile,,CHI,41,1:57.82
+835,28,Tiiu Nurmberg,Estonia,,EST,42,1:57.99
+836,25,Chirine Njeim,Lebanon,,LIB,43,1:58.20
+837,17,ZsÃ³fia DÃ¶me,Hungary,,HUN,44,1:58.32
+838,21,Anna Berecz,Hungary,,HUN,45,1:59.63
+839,24,Kim Seon-Ju,South Korea,,KOR,46,2:00.03
+840,21,Sophia Ralli,Greece,,GRE,47,2:00.41
+841,17,Maya Harrisson,Brazil,,BRA,48,2:01.67
+842,21,Liene Fimbauere,Latvia,,LAT,49,2:02.11
+843,16,Nino Tsiklauri,Georgia,,GEO,50,2:02.32
+844,26,Cynthia Denzler,Colombia,,COL,51,2:02.39
+845,16,Yina Moe-Lange,Denmark,,DEN,52,2:04.70
+846,19,Sophia Papamichalopoulou,Cyprus,,CYP,53,2:05.18
+847,18,Jacky Chamoun,Lebanon,,LIB,54,2:18.03
+848,21,Marjan Kalhor,Iran,,IRI,55,2:18.60
+849,22,Susanne Riesch,Germany,,GER,,
+850,24,Fanny Chmelar,Germany,,GER,,
+851,24,Michaela Kirchgasser,Austria,,AUT,,
+852,28,Anja PÃ¤rson,Sweden,,SWE,,
+853,25,Chiara Costazza,Italy,,ITA,,
+854,22,Megan McJames,United States,,USA,,
+855,18,Mona LÃ¸seth,Norway,,NOR,,
+856,21,Mireia GutiÃ©rrez,Andorra,,AND,,
+857,24,Anastasiya Skriabina,Ukraine,,UKR,,
+858,27,MarÃ­a BelÃ©n Simari Birkner,Argentina,,ARG,,
+859,21,Maja KlepiÄ,Bosnia and Herzegovina,,BIH,,
+860,18,Ornella Oettl,Peru,,PER,,
+861,22,Yelizaveta Kuzmenko,Belarus,,BLR,,
+862,28,Jelena LoloviÄ,Serbia,,SRB,,
+863,22,Xia Lina,China,,CHN,,
+864,20,Sanni Leinonen,Finland,,FIN,,
+865,27,Claire Dautherives,France,,FRA,,
+866,19,Andrea Jardi,Spain,,ESP,,
+867,23,Marija TrmÄiÄ,Serbia,,SRB,,
+868,27,Chemmy Alcott,Great Britain,,GBR,,
+869,25,Lindsey Kildow-Vonn,United States,,USA,,
+870,24,Mariya Kirkova,Bulgaria,,BUL,,
+871,19,Ãris GuÃ°mundsdÃ³ttir,Iceland,,ISL,,
+872,18,Sofie JuÃ¡rez,Andorra,,AND,,
+873,24,Ana Drev,Slovenia,,SLO,,
+874,31,Petra ZakouÅilovÃ¡,Czech Republic,,CZE,,
+875,24,TuÄba DaÅdemir-KocaaÄa,Turkey,,TUR,,
+876,31,Gaia Bassani Antivari,Azerbaijan,,AZE,,
+877,19,Nicol Gastaldi,Argentina,,ARG,,
+878,22,Kseniya Grigoryeva,Uzbekistan,,UZB,,
+879,21,Ani-Matilda Serebrakyan,Armenia,,ARM,,
+880,24,Kirsty McGarry,Ireland,,IRL,,
+881,18,Mikaela Shiffrin,United States,Gold,USA,1,1:44.54
+882,32,Marlies Schild,Austria,Silver,AUT,2,1:45.07
+883,27,Kathrin Zettel,Austria,Bronze,AUT,3,1:45.35
+884,29,Maria HÃ¶fl-Riesch,Germany,,GER,4,1:45.73
+885,28,Frida Hansdotter,Sweden,,SWE,5,1:45.90
+886,21,Emelie WikstrÃ¶m,Sweden,,SWE,6,1:46.11
+887,25,Nastasia Noens,France,,FRA,7,1:46.12
+888,30,Tina Maze,Slovenia,,SLO,8,1:46.25
+889,24,Marie-MichÃ¨le Gagnon,Canada,,CAN,9,1:47.37
+890,28,Å Ã¡rka ZÃ¡hrobskÃ¡-StrachovÃ¡,Czech Republic,,CZE,10,1:47.39
+891,22,Anna Swenn-Larsson,Sweden,,SWE,11,1:47.91
+892,33,Tanja Poutiainen,Finland,,FIN,12,1:48.01
+893,25,AnÃ©mone Marmottan,France,,FRA,13,1:48.96
+894,24,Barbara Wirth,Germany,,GER,14,1:49.00
+895,22,Brittany Phelan,Canada,,CAN,15,1:49.11
+896,22,Mona LÃ¸seth,Norway,,NOR,16,1:49.44
+897,24,Denise Feierabend,Switzerland,,SUI,17,1:49.47
+898,25,Anne-Sophie Barthet,France,,FRA,18,1:50.11
+899,25,MaruÅ¡a Ferk,Slovenia,,SLO,19,1:50.16
+900,18,Petra VlhovÃ¡,Slovakia,,SVK,19,1:50.16
+901,29,Marina Nigg,Liechtenstein,,LIE,21,1:50.64
+902,21,Martina DubovskÃ¡,Czech Republic,,CZE,22,1:51.42
+903,21,Kseniya Alopina,Russia,,RUS,23,1:51.74
+904,23,Julia Ford,United States,,USA,24,1:52.87
+905,20,SalomÃ© BÃ¡ncora,Argentina,,ARG,25,1:55.52
+906,28,Å½ana NovakoviÄ,Bosnia and Herzegovina,,BIH,26,1:55.99
+907,29,Macarena Simari Birkner,Argentina,,ARG,27,1:56.51
+908,20,Michelle Gisin,Switzerland,,SUI,28,1:57.12
+909,24,Mariya Shkanova,Belarus,,BLR,29,1:57.23
+910,23,Lelde GasÅ«na,Latvia,,LAT,30,1:57.29
+911,18,Greta Small,Australia,,AUS,31,1:57.60
+912,24,Lavinia Chrystal,Australia,,AUS,32,1:57.90
+913,17,Andrea KomÅ¡iÄ,Croatia,,CRO,33,1:58.60
+914,18,Helga MarÃ­a VilhjÃ¡lmsdÃ³ttir,Iceland,,ISL,34,2:03.22
+915,25,Anna Berecz,Hungary,,HUN,35,2:04.92
+916,20,Erla ÃsgeirsdÃ³ttir,Iceland,,ISL,36,2:05.08
+917,17,Agnese ÄboltiÅa,Latvia,,LAT,37,2:06.62
+918,25,Sophia Ralli,Greece,,GRE,38,2:06.77
+919,21,Maya Harrisson,Brazil,,BRA,39,2:08.33
+920,17,Camile Dias,Portugal,,POR,40,2:08.50
+921,28,TuÄba DaÅdemir-KocaaÄa,Turkey,,TUR,41,2:08.96
+922,22,Ãlise Pellegrin,Malta,,MLT,42,2:09.83
+923,22,Jasmine Campbell,United States Virgin Islands,,ISV,43,2:10.37
+924,19,Ivana BulatoviÄ,Montenegro,,MNE,44,2:12.80
+925,18,Kenza Tazi,Morocco,,MAR,45,2:17.15
+926,18,Triin Tobi,Estonia,,EST,46,2:20.45
+927,22,Jacky Chamoun,Lebanon,,LIB,47,2:28.74
+928,20,Forough Abbasi,Iran,,IRI,48,2:35.69
+929,16,Gang Yeong-Seo,South Korea,,KOR,49,2:36.45
+930,24,Bernadette Schild,Austria,,AUT,,
+931,28,Michaela Kirchgasser,Austria,,AUT,,
+932,21,Adeline Baud,France,,FRA,,
+933,28,Resi Stiegler,United States,,USA,,
+934,23,Federica Brignone,Italy,,ITA,,
+935,29,Chiara Costazza,Italy,,ITA,,
+936,24,Jana GantnerovÃ¡,Slovakia,,SVK,,
+937,21,Emily Bamford,Australia,,AUS,,
+938,28,Mariya Kirkova,Bulgaria,,BUL,,
+939,26,Kseniya Grigoryeva,Uzbekistan,,UZB,,
+940,17,Florence Bell,Ireland,,IRL,,
+941,27,Maria PietilÃ¤-Holmner,Sweden,,SWE,,
+942,20,Wendy Holdener,Switzerland,,SUI,,
+943,24,Nina LÃ¸seth,Norway,,NOR,,
+944,23,Erin Mielzynski,Canada,,CAN,,
+945,24,Elli Terwiel,Canada,,CAN,,
+946,23,Nevena IgnjatoviÄ,Serbia,,SRB,,
+947,27,Aleksandra KluÅ,Poland,,POL,,
+948,26,Megan McJames,United States,,USA,,
+949,20,KateÅina PaulÃ¡thovÃ¡,Czech Republic,,CZE,,
+950,24,Sofija NovoseliÄ,Croatia,,CRO,,
+951,21,Barbara KantorovÃ¡,Slovakia,,SVK,,
+952,23,Barbara LukÃ¡ÄovÃ¡,Slovakia,,SVK,,
+953,25,Mireia GutiÃ©rrez,Andorra,,AND,,
+954,17,Kim So-Hui,South Korea,,KOR,,
+955,25,Julietta Quiroga,Argentina,,ARG,,
+956,23,Noelle Barahona,Chile,,CHI,,
+957,19,Maryna GÄsienica-Daniel,Poland,,POL,,
+958,24,Karolina Chrapek,Poland,,POL,,
+959,20,Nino Tsiklauri,Georgia,,GEO,,
+960,26,Xia Lina,China,,CHN,,
+961,19,Ieva JanuÅ¡keviÄiÅ«tÄ,Lithuania,,LTU,,
+962,22,Ornella Oettl,Peru,,PER,,
+963,18,Alessia Afi Dipol,Togo,,TOG,,
+964,24,Christina Geiger,Germany,,GER,,
+965,20,Suela MÃ«hilli,Albania,,ALB,,

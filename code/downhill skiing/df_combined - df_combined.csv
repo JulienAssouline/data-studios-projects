@@ -1,0 +1,570 @@
+Age,Athlete,Country,Medal,NOC,Rank,Time,Year
+27,Franz PfnÃ¼r,Germany,Gold,GER,1,99.25,1936
+25,Gustav Lantschner,Germany,Silver,GER,2,96.26,1936
+23,Ãmile Allais,France,Bronze,FRA,3,94.69,1936
+24,Birger Ruud,Norway,,NOR,4,93.38,1936
+22,Roman WÃ¶rndle,Germany,,GER,5,91.16,1936
+17,Rudi Cranz,Germany,,GER,6,91.03,1936
+22,Cinto Sertorelli,Italy,,ITA,7,90.39,1936
+34,Alf Konningen,Norway,,NOR,8,90.06,1936
+25,Per Fossum,Norway,,NOR,9,88.12,1936
+21,"Dick Durrance, Jr.",United States,,USA,10,87.74,1936
+20,Maurice Lafforgue,France,,FRA,11,85.83,1936
+21,Peter Lunn,Great Britain,,GBR,12,83.82,1936
+25,George Page,United States,,USA,13,82.85,1936
+20,James Palmer-Tomkinson,Great Britain,,GBR,14,82.52,1936
+22,Ciril PraÄek,Yugoslavia,,YUG,15,81.54,1936
+20,Walter Hollmann,Czechoslovakia,,TCH,16,81.01,1936
+21,Adriano Guarnieri,Italy,,ITA,17,80.94,1936
+18,Vittorio Chierroni,Italy,,ITA,18,80.8,1936
+21,LÃ¡szlÃ³ Szalay,Hungary,,HUN,19,79.68,1936
+27,BronisÅaw Czech,Poland,,POL,20,79.41,1936
+21,Johann Knahl,Czechoslovakia,,TCH,21,78.41,1936
+24,Roland Allard,France,,FRA,22,77.86,1936
+26,"Robert Livermore, Jr.",United States,,USA,23,77.18,1936
+23,Horst Scheeser,Romania,,ROU,24,76.55,1936
+21,Franci Äop,Yugoslavia,,YUG,25,75.88,1936
+19,Walter Pick,Czechoslovakia,,TCH,26,75.3,1936
+23,KÃ¡roly KÅvÃ¡ri,Hungary,,HUN,27,75.05,1936
+22,Karol ZajÄc,Poland,,POL,28,74.87,1936
+35,Christopher Hudson,Great Britain,,GBR,29,73.92,1936
+23,Imre CsÃ­k,Hungary,,HUN,30,72.24,1936
+21,Bertil Persson,Sweden,,SWE,31,70.95,1936
+20,Fedor Weinschenk,Poland,,POL,32,65.67,1936
+21,Emil Å½nidar,Yugoslavia,,YUG,33,61.84,1936
+26,Eduard HromÃ¡dka,Czechoslovakia,,TCH,,,1936
+25,Karl Johan Baadsvik,Canada,,CAN,,,1936
+27,Borislav Yordanov,Bulgaria,,BUL,,,1936
+21,Willi Zacharias,Romania,,ROU,,,1936
+24,Link Washburn,United States,,USA,,,1936
+27,William Ball,Canada,,CAN,,,1936
+25,Isamu Sekiguchi,Japan,,JPN,,,1936
+18,Raymond de Braconnier,Belgium,,BEL,,,1936
+20,Dimitrios Negrepontis,Greece,,GRE,,,1936
+34,Werner De Spoelberch,Belgium,,BEL,,,1936
+18,Rudolf Kloeckner,Romania,,ROU,,,1936
+20,Tsutomu Sekido,Japan,,JPN,,,1936
+25,Bud Clark,Canada,,CAN,,,1936
+23,Iosif Covaci,Romania,,ROU,,,1936
+22,Hiroshi Tadano,Japan,,JPN,,,1936
+17,Hubert Negele,Liechtenstein,,LIE,,,1936
+23,Jacques Peten,Belgium,,BEL,,,1936
+24,Asen Tsankov,Bulgaria,,BUL,,,1936
+18,Franz SchÃ¤dler,Liechtenstein,,LIE,,,1936
+32,Herberts BÄrtulsons,Latvia,,LAT,,,1936
+23,Askolds Hermanovskis,Latvia,,LAT,,,1936
+25,NazÄ±m Aslangil,Turkey,,TUR,,,1936
+22,Ãlker Pamir,Turkey,,TUR,,,1936
+28,Sigmund Ruud,Norway,,NOR,,,1936
+26,Levente Balatoni,Hungary,,HUN,,,1936
+23,Mehmut Åevket Karman,Turkey,,TUR,,,1936
+17,ReÅat ErceÅ,Turkey,,TUR,,,1936
+19,Boyan Dimitrov,Bulgaria,,BUL,,,1936
+37,Raoul Weckbecker,Luxembourg,,LUX,,,1936
+21,Rolando Zanni,Italy,,ITA,,,1936
+21,Charles Bracht,Belgium,,BEL,,,1936
+21,Hubert Hajm,Yugoslavia,,YUG,,,1936
+26,James Riddell,Great Britain,,GBR,,,1936
+22,Henri Oreiller,France,Gold,FRA,1,3.27,1948
+27,Karl Molitor,Switzerland,Silver,SUI,2,6.44,1948
+26,James Couttet,France,Bronze,FRA,3,6.95,1948
+23,Edi Mall,Austria,,AUT,4,8.54,1948
+26,Silvio AlverÃ,Italy,,ITA,5,8.71,1948
+28,Hans Hansson,Sweden,,SWE,6,9.31,1948
+30,Vittorio Chierroni,Italy,,ITA,7,9.69,1948
+28,Hans Nogler,Austria,,AUT,8,9.96,1948
+27,AntonÃ­n Å ponar,Czechoslovakia,,TCH,9,11.19,1948
+27,Edy Reinalter,Switzerland,,SUI,10,12.01,1948
+31,Eberhard Kneisl,Austria,,AUT,11,12.36,1948
+21,Jack Reddish,United States,,USA,12,13.24,1948
+25,Engelbert Haider,Austria,,AUT,13,13.26,1948
+27,LuboÅ¡ Brchel,Czechoslovakia,,TCH,14,14.85,1948
+23,Adolf Odermatt,Switzerland,,SUI,15,15.64,1948
+23,Fernand Grosjean,Switzerland,,SUI,16,16.61,1948
+19,Bjarne Arentz,Norway,,NOR,17,17.17,1948
+18,Georges Panisset,France,,FRA,18,18.38,1948
+20,Ãke Nilsson,Sweden,,SWE,19,19.43,1948
+25,Marius Eriksen,Norway,,NOR,20,19.68,1948
+21,Harvey Clifford,Canada,,CAN,21,20.34,1948
+26,Sverre Johannessen,Norway,,NOR,22,21,1948
+20,Hector Sutherland,Canada,,CAN,23,21.72,1948
+23,Claude Penz,France,,FRA,24,22.98,1948
+25,Steve Knowlton,United States,,USA,25,23.75,1948
+30,Barney McLean,United States,,USA,26,25.15,1948
+22,JÃ³zef Marusarz,Poland,,POL,27,25.96,1948
+22,Pentti Alonen,Finland,,FIN,28,26.38,1948
+26,"Bob Blatt, Jr.",United States,,USA,29,27.83,1948
+24,PÃ©ter Szikla,Hungary,,HUN,30,29.14,1948
+25,Jan GÄsienica Ciaptak,Poland,,POL,31,31.12,1948
+20,Stein Eriksen,Norway,,NOR,32,32.5,1948
+24,Daniel Å lachta,Czechoslovakia,,TCH,33,34.41,1948
+26,Slavko Lukanc,Yugoslavia,,YUG,34,35.45,1948
+24,TamÃ¡s SzÃ©kely,Hungary,,HUN,35,37.79,1948
+27,Bill Irwin,Canada,,CAN,36,39.25,1948
+21,MatevÅ¾ Lukanc,Yugoslavia,,YUG,37,42.81,1948
+22,HernÃ¡n Oelckers,Chile,,CHI,38,42.83,1948
+27,"Philippe, Count d'Ursel",Belgium,,BEL,39,45.14,1948
+21,Dumitru FrÄÈilÄ,Romania,,ROU,40,45.88,1948
+22,Ion Coliban,Romania,,ROU,41,46.12,1948
+24,Michel Feron,Belgium,,BEL,42,46.52,1948
+26,Dumitru SulicÄ,Romania,,ROU,42,46.52,1948
+27,David Madzhar,Bulgaria,,BUL,44,46.67,1948
+30,Donald Garrow,Great Britain,,GBR,45,46.98,1948
+35,KÃ¡roly KÅvÃ¡ri,Hungary,,HUN,46,48.35,1948
+17,Franz Beck,Liechtenstein,,LIE,47,48.37,1948
+24,MagnÃºs BrynjÃ³lfsson,Iceland,,ISL,48,52.76,1948
+30,Bert Irwin,Canada,,CAN,49,53.51,1948
+21,Leopold SchÃ¤dler,Liechtenstein,,LIE,50,54.48,1948
+25,JoÅ¾e Bertoncelj,Yugoslavia,,YUG,51,55.14,1948
+24,Jaime ErrÃ¡zuriz,Chile,,CHI,52,60.91,1948
+26,Vasile Ionescu,Romania,,ROU,53,61.48,1948
+25,JosÃ© Arias,Spain,,ESP,54,65.4,1948
+23,Dimitar Drazhev,Bulgaria,,BUL,55,65.77,1948
+17,Otto Jung,Argentina,,ARG,56,66.05,1948
+25,Arturo Hammersley,Chile,,CHI,57,69.32,1948
+16,Theodor Sele,Liechtenstein,,LIE,58,72.78,1948
+25,Thomas de Morawitz,Spain,,ESP,59,73.06,1948
+21,Gino de PellegrÃ­n,Argentina,,ARG,60,73.29,1948
+23,Harry Taylor,Great Britain,,GBR,61,75.99,1948
+21,Max Gassner,Liechtenstein,,LIE,62,76.56,1948
+19,Luis de Ridder,Argentina,,ARG,63,80.11,1948
+17,Pablo Rosenkjer,Argentina,,ARG,64,84.62,1948
+21,ÃÃ³rir JÃ³nsson,Iceland,,ISL,65,89.4,1948
+19,Lajos MÃ¡tÃ©,Hungary,,HUN,66,89.62,1948
+27,GuÃ°mundur GuÃ°mundsson,Iceland,,ISL,67,105.11,1948
+21,Stig Sollander,Sweden,,SWE,,,1948
+25,Olle Dalman,Sweden,,SWE,,,1948
+24,Jerzy Schindler,Poland,,POL,,,1948
+32,James Palmer-Tomkinson,Great Britain,,GBR,,,1948
+22,Gonzalo DomÃ­nguez,Chile,,CHI,,,1948
+22,Dursun Bozkurt,Turkey,,TUR,,,1948
+18,Osman YÃ¼ce,Turkey,,TUR,,,1948
+21,JosÃ© VilÃ,Spain,,ESP,,,1948
+27,Fotis Mavriplis,Greece,,GRE,,,1948
+20,Fernando ArmiÃ±Ã¡n,Spain,,ESP,,,1948
+,Munir Itani,Lebanon,,LIB,,,1948
+20,Aimo Vartiainen,Finland,,FIN,,,1948
+25,Hubert Strolz,Austria,Gold,AUT,1,36.55,1988
+22,Bernhard Gstrein,Austria,Silver,AUT,2,43.45,1988
+20,Paul Accola,Switzerland,Bronze,SUI,3,48.24,1988
+22,Luc Alphand,France,,FRA,4,57.73,1988
+20,Peter Jurko,Czechoslovakia,,TCH,5,58.56,1988
+21,Jean-Luc CrÃ©tier,France,,FRA,6,62.98,1988
+24,Markus Wasmeier,West Germany,,FRG,7,65.44,1988
+18,AdriÃ¡n BÃ­reÅ¡,Czechoslovakia,,TCH,8,68.5,1988
+21,Finn Christian Jagge,Norway,,NOR,9,95.21,1988
+23,Niklas Henning,Sweden,,SWE,10,96.25,1988
+23,Armin Bittner,West Germany,,FRG,11,99.65,1988
+21,Christophe PlÃ©,France,,FRA,12,103.12,1988
+22,Thomas Stangassinger,Austria,,AUT,13,107.87,1988
+23,Gregor Hoop,Liechtenstein,,LIE,14,114.62,1988
+24,Bernhard Fahner,Switzerland,,SUI,15,120.45,1988
+30,Paul Frommelt,Liechtenstein,,LIE,16,122.12,1988
+28,Peter DÃ¼rr,West Germany,,FRG,17,123.92,1988
+24,Oswald TÃ¶tsch,Italy,,ITA,18,134.14,1988
+24,Don Stevens,Canada,,CAN,19,135.81,1988
+19,Robert BÃ¼chel,Liechtenstein,,LIE,20,136.7,1988
+23,Katsuhito Kumagai,Japan,,JPN,21,144.65,1988
+22,Hannes Zehentner,West Germany,,FRG,22,197.87,1988
+19,Juan Pablo Santiagos,Chile,,CHI,23,224.2,1988
+23,Jorge Birkner,Argentina,,ARG,24,243.99,1988
+25,Giannis Stamatiou,Greece,,GRE,25,347.41,1988
+23,Martin Bell,Great Britain,,GBR,26,422.79,1988
+25,Pirmin Zurbriggen,Switzerland,,SUI,,,1988
+23,Niklas Lindqvist,Sweden,,SWE,,,1988
+19,A J Kitt,United States,,USA,,,1988
+16,Paulo Oppliger,Chile,,CHI,,,1988
+23,Franck Piccard,France,,FRA,,,1988
+26,Felix Belczyk,Canada,,CAN,,,1988
+21,Lars-BÃ¶rje Eriksson,Sweden,,SWE,,,1988
+23,GÃ¼nther Mader,Austria,,AUT,,,1988
+22,Graham Bell,Great Britain,,GBR,,,1988
+25,Martin Hangl,Switzerland,,SUI,,,1988
+24,Felix McGrath,United States,,USA,,,1988
+20,Sergey Petrik,Soviet Union,,URS,,,1988
+17,Konstantin Chistyakov,Soviet Union,,URS,,,1988
+29,Hubertus von FÃ¼rstenberg-von Hohenlohe,Mexico,,MEX,,,1988
+17,Javier Rivara,Argentina,,ARG,,,1988
+21,Silvio Wille,Liechtenstein,,LIE,,,1988
+21,Simon Wi Rutene,New Zealand,,NZL,,,1988
+20,Nils Linneberg,Chile,,CHI,,,1988
+21,Mike Carney,Canada,,CAN,,,1988
+21,Bill Hudson,United States,,USA,,,1988
+22,Jeff Olson,United States,,USA,,,1988
+21,Rob Boyd,Canada,,CAN,,,1988
+24,Peter Forras,Australia,,AUS,,,1988
+25,Steven Lee,Australia,,AUS,,,1988
+27,Danilo Sbardellotto,Italy,,ITA,,,1988
+21,Atle SkÃ¥rdal,Norway,,NOR,,,1988
+24,Igor Cigolla,Italy,,ITA,,,1988
+21,Jan Einar Thorsen,Norway,,NOR,,,1988
+25,Boris Duncan,Great Britain,,GBR,,,1988
+22,Dieter Linneberg,Chile,,CHI,,,1988
+23,Josef Polig,Italy,Gold,ITA,1,14.58,1992
+21,Gianfranco Martin,Italy,Silver,ITA,2,14.9,1992
+24,Steve Locher,Switzerland,Bronze,SUI,3,18.16,1992
+25,Jean-Luc CrÃ©tier,France,,FRA,4,18.97,1992
+28,Markus Wasmeier,Germany,,GER,5,32.77,1992
+22,Kristian Ghedina,Italy,,ITA,6,38.96,1992
+25,Ole Kristian Furuseth,Norway,,NOR,7,40.47,1992
+25,Xavier Gigandet,Switzerland,,SUI,8,41.21,1992
+20,Takuya Ishioka,Japan,,JPN,9,51.83,1992
+27,Lasse Arnesen,Norway,,NOR,10,51.93,1992
+25,Jan Einar Thorsen,Norway,,NOR,11,52.75,1992
+23,Rob Crossan,Canada,,CAN,12,57.27,1992
+19,Jure KoÅ¡ir,Slovenia,,SLO,13,59.78,1992
+22,Cary Mullen,Canada,,CAN,14,62.37,1992
+21,Kiminobu Kimura,Japan,,JPN,15,64.14,1992
+23,Kyle Rasmussen,United States,,USA,16,66.7,1992
+24,Jorge Pujol,Spain,,ESP,17,72.07,1992
+21,Tommy Moe,United States,,USA,18,82.15,1992
+29,Steven Lee,Australia,,AUS,19,85.05,1992
+22,Vitaly Andreyev,Unified Team,,EUN,20,85.07,1992
+24,Paul Accola,Switzerland,,SUI,21,90.96,1992
+22,Petar Dichev,Bulgaria,,BUL,22,101.59,1992
+22,Ricardo Campo,Spain,,ESP,23,104.61,1992
+19,Daniel Vogt,Liechtenstein,,LIE,24,112.92,1992
+27,Martin Bell,Great Britain,,GBR,25,121.83,1992
+20,Marcin SzafraÅski,Poland,,POL,26,133.04,1992
+26,Graham Bell,Great Britain,,GBR,27,134.03,1992
+24,Sean Langmuir,Great Britain,,GBR,28,142.32,1992
+24,Markus Foser,Liechtenstein,,LIE,29,146.89,1992
+21,Achim Vogt,Liechtenstein,,LIE,30,172.91,1992
+22,Franco Colturi,Italy,,ITA,31,176.69,1992
+20,Choi Yong-Hee,South Korea,,KOR,32,221.6,1992
+21,Pierre KÅszÃ¡li,Hungary,,HUN,33,226.57,1992
+25,Alexis Racloz,Chile,,CHI,34,235.31,1992
+26,Emilian FocÈeneanu,Romania,,ROU,35,249.41,1992
+33,Hubertus von FÃ¼rstenberg-von Hohenlohe,Mexico,,MEX,36,259.1,1992
+24,PÃ©ter KristÃ¡ly,Hungary,,HUN,37,265.18,1992
+24,Lyubomir Popov,Bulgaria,,BUL,,,1992
+29,Lothar Christian Munder,Brazil,,BRA,,,1992
+23,A J Kitt,United States,,USA,,,1992
+23,William Besse,Switzerland,,SUI,,,1992
+22,Stephan Eberharter,Austria,,AUT,,,1992
+24,Rainer Salzgeber,Austria,,AUT,,,1992
+21,Konstantin Chistyakov,Unified Team,,EUN,,,1992
+26,Jeff Olson,United States,,USA,,,1992
+26,Aleksey Maslov,Unified Team,,EUN,,,1992
+27,MariÃ¡n BÃ­reÅ¡,Czechoslovakia,,TCH,,,1992
+21,Mauricio Rotella,Chile,,CHI,,,1992
+19,Hur Seung-Wook,South Korea,,KOR,,,1992
+24,Peter Jurko,Czechoslovakia,,TCH,,,1992
+20,Igor LatinoviÄ,Yugoslavia,,YUG,,,1992
+22,Edin TerziÄ,Yugoslavia,,YUG,,,1992
+26,Alphonse Gomis,Senegal,,SEN,,,1992
+31,Lamine GuÃ¨ye,Senegal,,SEN,,,1992
+21,Zoran PeruÅ¡ina,Yugoslavia,,YUG,,,1992
+28,Marc Girardelli,Luxembourg,,LUX,,,1992
+27,GÃ¼nther Mader,Austria,,AUT,,,1992
+29,Boris Duncan,Great Britain,,GBR,,,1992
+21,Tom Stiansen,Norway,,NOR,,,1992
+24,Abraham FernÃ¡ndez,Spain,,ESP,,,1992
+30,Felix Belczyk,Canada,,CAN,,,1992
+29,Hubert Strolz,Austria,,AUT,,,1992
+20,Paulo Oppliger,Chile,,CHI,,,1992
+24,Aurel Foiciuc,Romania,,ROU,,,1992
+25,Denis Rey,France,,FRA,,,1992
+23,Adrien Duvillard,France,,FRA,,,1992
+23,Lasse Kjus,Norway,Gold,NOR,1,3:17.53,1994
+22,Kjetil AndrÃ© Aamodt,Norway,Silver,NOR,2,3:18.55,1994
+22,Harald Christian Strand Nilsen,Norway,Bronze,NOR,3,3:19.14,1994
+29,GÃ¼nther Mader,Austria,,AUT,4,3:19.23,1994
+23,Tommy Moe,United States,,USA,5,3:19.41,1994
+26,Paul Accola,Switzerland,,SUI,6,3:19.44,1994
+22,Mitja Kunc,Slovenia,,SLO,7,3:19.55,1994
+24,Fredrik Nyberg,Sweden,,SWE,8,3:20.30,1994
+30,Marc Girardelli,Luxembourg,,LUX,9,3:20.47,1994
+21,Jure KoÅ¡ir,Slovenia,,SLO,10,3:20.58,1994
+21,Miran Ravter,Slovenia,,SLO,11,3:20.68,1994
+26,Steve Locher,Switzerland,,SUI,12,3:21.21,1994
+21,Tobias Hellman,Sweden,,SWE,13,3:21.74,1994
+24,Tobias Barnerssoi,Germany,,GER,14,3:22.49,1994
+23,Gianfranco Martin,Italy,,ITA,15,3:22.69,1994
+24,Kristian Ghedina,Italy,,ITA,16,3:23.17,1994
+26,Marcel Sulliger,Switzerland,,SUI,17,3:24.00,1994
+27,Atle SkÃ¥rdal,Norway,,NOR,18,3:24.28,1994
+26,Lyubomir Popov,Bulgaria,,BUL,19,3:25.04,1994
+27,Simon Wi Rutene,New Zealand,,NZL,20,3:25.48,1994
+21,Mika Marila,Finland,,FIN,21,3:25.52,1994
+22,Janne Leskinen,Finland,,FIN,22,3:25.53,1994
+23,Gregor Grilc,Slovenia,,SLO,23,3:26.03,1994
+23,Achim Vogt,Liechtenstein,,LIE,24,3:26.23,1994
+23,Xavier Ubeira,Spain,,ESP,25,3:26.92,1994
+24,Petar Dichev,Bulgaria,,BUL,26,3:28.61,1994
+22,Marcin SzafraÅski,Poland,,POL,27,3:31.27,1994
+24,Vicente Tomas,Spain,,ESP,28,3:31.61,1994
+22,Andrey Kolotvin,Kazakhstan,,KAZ,29,3:34.59,1994
+22,Attila BÃ³nis,Hungary,,HUN,30,3:34.76,1994
+25,Kyle Rasmussen,United States,,USA,31,3:37.54,1994
+23,Diego Margozzini,Chile,,CHI,32,3:42.39,1994
+22,Marco BÃ¼chel,Liechtenstein,,LIE,33,3:47.85,1994
+20,Alessandro Fattori,Italy,,ITA,,,1994
+23,Kiminobu Kimura,Japan,,JPN,,,1994
+23,Gerard Escoda,Andorra,,AND,,,1994
+24,Cary Mullen,Canada,,CAN,,,1994
+23,Ed Podivinsky,Canada,,CAN,,,1994
+19,Andrey Filichkin,Russia,,RUS,,,1994
+19,Vasily Bezsmelnitsyn,Russia,,RUS,,,1994
+22,Takuya Ishioka,Japan,,JPN,,,1994
+20,Zurab Dzhidzhishvili,Georgia,,GEO,,,1994
+27,Alexis Racloz,Chile,,CHI,,,1994
+19,MarÃ­ano Puricelli,Argentina,,ARG,,,1994
+22,Christian Mayer,Austria,,AUT,,,1994
+23,Hans KnauÃ,Austria,,AUT,,,1994
+26,Bill Gaylord,Great Britain,,GBR,,,1994
+28,Graham Bell,Great Britain,,GBR,,,1994
+30,Markus Wasmeier,Germany,,GER,,,1994
+22,Chad Fleischer,United States,,USA,,,1994
+19,Georges Mendes,Portugal,,POR,,,1994
+23,Craig Thrasher,United States,,USA,,,1994
+26,Nils Linneberg,Chile,,CHI,,,1994
+27,Jean-Luc CrÃ©tier,France,,FRA,,,1994
+24,Patrik JÃ¤rbyn,Sweden,,SWE,,,1994
+25,Ovidio GarcÃ­a,Spain,,ESP,,,1994
+27,Mario Reiter,Austria,Gold,AUT,1,3:08.06,1998
+27,Lasse Kjus,Norway,Silver,NOR,2,3:08.65,1998
+26,Christian Mayer,Austria,Bronze,AUT,3,3:10.11,1998
+33,GÃ¼nther Mader,Austria,,AUT,4,3:10.19,1998
+23,Andrzej Bachleda-CuruÅ,Poland,,POL,5,3:11.53,1998
+24,Alessandro Fattori,Italy,,ITA,6,3:17.00,1998
+25,AleÅ¡ BrezavÅ¡Äek,Slovenia,,SLO,7,3:20.09,1998
+25,Peter Pen,Slovenia,,SLO,8,3:20.81,1998
+24,JÃ¼rgen Hasler,Liechtenstein,,LIE,9,3:23.15,1998
+22,Erik Seletto,Italy,,ITA,10,3:23.23,1998
+21,ThomÃ¡s Grob,Chile,,CHI,11,3:28.60,1998
+19,Mykola Skriabin,Ukraine,,UKR,12,3:30.25,1998
+24,Rainer Grob,Chile,,CHI,13,3:34.49,1998
+24,Zurab Dzhidzhishvili,Georgia,,GEO,14,3:35.65,1998
+25,Patrick-Paul Schwarzacher-Joyce,Ireland,,IRL,15,3:39.03,1998
+26,Kjetil AndrÃ© Aamodt,Norway,,NOR,,,1998
+31,Finn Christian Jagge,Norway,,NOR,,,1998
+25,Hermann Maier,Austria,,AUT,,,1998
+28,Kristian Ghedina,Italy,,ITA,,,1998
+25,Luca Cattaneo,Italy,,ITA,,,1998
+27,Matt Grosjean,United States,,USA,,,1998
+30,Paul Accola,Switzerland,,SUI,,,1998
+28,Petar Dichev,Bulgaria,,BUL,,,1998
+27,Ed Podivinsky,Canada,,CAN,,,1998
+24,Linas Vaitkus,Lithuania,,LTU,,,1998
+26,Jernej Koblar,Slovenia,,SLO,,,1998
+20,Kalle Palander,Finland,,FIN,,,1998
+25,Bruno Kernen,Switzerland,,SUI,,,1998
+24,James Ormond,Great Britain,,GBR,,,1998
+24,JÃ¼rg GrÃ¼nenfelder,Switzerland,,SUI,,,1998
+24,Arne Hardenberg,Denmark,,DEN,,,1998
+28,Patrik JÃ¤rbyn,Sweden,,SWE,,,1998
+21,Tejs Broberg,Denmark,,DEN,,,1998
+22,Jason Rosener,United States,,USA,,,1998
+22,Yasuyuki Takishita,Japan,,JPN,,,1998
+24,Andrew Freshwater,Great Britain,,GBR,,,1998
+26,Chad Fleischer,United States,,USA,,,1998
+23,Marcel Maxa,Czech Republic,,CZE,,,1998
+30,Kjetil AndrÃ© Aamodt,Norway,Gold,NOR,1,3:17.56,2002
+24,Bode Miller,United States,Silver,USA,2,3:17.84,2002
+23,Benjamin Raich,Austria,Bronze,AUT,3,3:18.26,2002
+24,Rainer SchÃ¶nfelder,Austria,,AUT,4,3:18.67,2002
+31,Lasse Kjus,Norway,,NOR,5,3:19.80,2002
+34,Paul Accola,Switzerland,,SUI,6,3:22.26,2002
+21,Patrick Staudacher,Italy,,ITA,7,3:22.47,2002
+22,Jean-Philippe Roy,Canada,,CAN,8,3:22.68,2002
+30,Jernej Koblar,Slovenia,,SLO,9,3:23.47,2002
+28,Stanley Hayer,Czech Republic,,CZE,10,3:24.44,2002
+28,Kilian Albrecht,Austria,,AUT,11,3:24.95,2002
+25,Borek ZakouÅil,Czech Republic,,CZE,12,3:25.20,2002
+28,Alessandro Fattori,Italy,,ITA,13,3:25.57,2002
+27,Andrey Filichkin,Russia,,RUS,14,3:28.14,2002
+24,Ross Green,Great Britain,,GBR,15,3:29.11,2002
+24,Stefan Georgiev,Bulgaria,,BUL,16,3:29.39,2002
+25,Darin McBeath,Canada,,CAN,17,3:29.57,2002
+21,Pavel Shestakov,Russia,,RUS,18,3:30.18,2002
+26,Jakub Fiala,United States,,USA,19,3:30.43,2002
+28,Jan HolickÃ½,Czech Republic,,CZE,20,3:31.15,2002
+25,Antoine DÃ©nÃ©riaz,France,,FRA,21,3:31.97,2002
+18,Sergey Komarov,Russia,,RUS,22,3:32.03,2002
+19,NicolÃ¡s Arsel,Argentina,,ARG,23,3:36.58,2002
+21,Ivan Heimschild,Slovakia,,SVK,24,3:36.78,2002
+23,Mykola Skriabin,Ukraine,,UKR,25,3:41.06,2002
+21,OndÅej Bank,Czech Republic,,CZE,,,2002
+26,Michael Walchhofer,Austria,,AUT,,,2002
+24,Didier DÃ©fago,Switzerland,,SUI,,,2002
+29,Bruno Kernen,Switzerland,,SUI,,,2002
+24,Gregor Å parovec,Slovenia,,SLO,,,2002
+28,GaÃ«tan Llorach,France,,FRA,,,2002
+31,Ed Podivinsky,Canada,,CAN,,,2002
+29,Casey Puckett,United States,,USA,,,2002
+26,Truls Ove Karlsen,Norway,,NOR,,,2002
+23,Andrej Jerman,Slovenia,,SLO,,,2002
+23,Alex Heath,South Africa,,RSA,,,2002
+20,Tahir BisiÄ,Bosnia and Herzegovina,,BIH,,,2002
+25,AJ Bear,Australia,,AUS,,,2002
+25,Kurt Sulzenbacher,Italy,,ITA,,,2002
+19,Maksim Kedrin,Russia,,RUS,,,2002
+21,AgustÃ­n GarcÃ­a,Argentina,,ARG,,,2002
+29,Patrick-Paul Schwarzacher-Joyce,Ireland,,IRL,,,2002
+22,Mitja DragÅ¡iÄ,Slovenia,,SLO,,,2002
+21,Cristian Simari Birkner,Argentina,,ARG,,,2002
+24,Craig Branch,Australia,,AUS,,,2002
+21,Michal RajÄan,Slovakia,,SVK,,,2002
+23,Angel Pumpalov,Bulgaria,,BUL,,,2002
+21,Ted Ligety,United States,Gold,USA,1,3:09.35,2006
+26,Ivica KosteliÄ,Croatia,Silver,CRO,2,3:09.88,2006
+28,Rainer SchÃ¶nfelder,Austria,Bronze,AUT,3,3:10.67,2006
+22,Daniel Albrecht,Switzerland,,SUI,4,3:10.73,2006
+30,Giorgio Rocca,Italy,,ITA,5,3:10.74,2006
+25,OndÅej Bank,Czech Republic,,CZE,6,3:11.00,2006
+22,Marc Berthod,Switzerland,,SUI,7,3:11.22,2006
+30,Pierrick Bourgeat,France,,FRA,8,3:11.29,2006
+23,Peter Fill,Italy,,ITA,9,3:12.21,2006
+20,Kjetil Jansrud,Norway,,NOR,10,3:12.32,2006
+27,Markus Larsson,Sweden,,SWE,11,3:12.34,2006
+23,Martin VrÃ¡blÃ­k,Czech Republic,,CZE,12,3:12.41,2006
+21,Jean-Baptiste Grange,France,,FRA,13,3:12.51,2006
+24,Noel Baxter,Great Britain,,GBR,14,3:12.79,2006
+25,AleÅ¡ Gorza,Slovenia,,SLO,15,3:12.91,2006
+28,Scott Macartney,United States,,USA,16,3:13.05,2006
+21,John Kucera,Canada,,CAN,17,3:13.26,2006
+28,Johan Brolenius,Sweden,,SWE,18,3:13.27,2006
+27,Andrej Jerman,Slovenia,,SLO,19,3:13.80,2006
+19,KryÅ¡tof KrÃ½zl,Czech Republic,,CZE,20,3:14.18,2006
+21,FranÃ§ois Bourque,Canada,,CAN,21,3:14.25,2006
+21,Aleksandr Khoroshilov,Russia,,RUS,22,3:15.46,2006
+25,Cristian Simari Birkner,Argentina,,ARG,23,3:16.54,2006
+25,Pavel Shestakov,Russia,,RUS,24,3:16.84,2006
+25,Ivan Heimschild,Slovakia,,SVK,25,3:18.41,2006
+18,Tin Å iroki,Croatia,,CRO,26,3:20.16,2006
+21,Jaroslav BabuÅ¡iak,Slovakia,,SVK,27,3:20.78,2006
+21,Roger Vidosa,Andorra,,AND,28,3:21.37,2006
+23,Steve Nyman,United States,,USA,29,3:22.68,2006
+24,Andrej Å porn,Slovenia,,SLO,30,3:23.53,2006
+23,Mikhail Sedyankov,Bulgaria,,BUL,31,3:23.90,2006
+25,Claudio Sprecher,Liechtenstein,,LIE,32,3:24.08,2006
+19,Natko ZrnÄiÄ-Dim,Croatia,,CRO,33,3:24.15,2006
+26,Mario Matt,Austria,,AUT,34,3:28.78,2006
+24,Florentin Nicolae,Romania,,ROU,35,3:31.89,2006
+27,Benjamin Raich,Austria,,AUT,,,2006
+19,Ivan RatkiÄ,Croatia,,CRO,,,2006
+20,RenÄrs DorÅ¡s,Latvia,,LAT,,,2006
+27,Mykola Skriabin,Ukraine,,UKR,,,2006
+21,Anton Konovalov,Russia,,RUS,,,2006
+22,Manuel Osborne-Paradis,Canada,,CAN,,,2006
+23,Aksel Lund Svindal,Norway,,NOR,,,2006
+24,Silvan Zurbriggen,Switzerland,,SUI,,,2006
+30,Michael Walchhofer,Austria,,AUT,,,2006
+23,Ryan Semple,Canada,,CAN,,,2006
+35,Lasse Kjus,Norway,,NOR,,,2006
+27,MichaÅ KaÅwa,Poland,,POL,,,2006
+28,Stefan Georgiev,Bulgaria,,BUL,,,2006
+28,Didier DÃ©fago,Switzerland,,SUI,,,2006
+26,Alex Antor,Andorra,,AND,,,2006
+23,Sindri MÃ¡r PÃ¡lsson,Iceland,,ISL,,,2006
+27,Alex Heath,South Africa,,RSA,,,2006
+25,Patrick Staudacher,Italy,,ITA,,,2006
+19,Jorge MandrÃº,Chile,,CHI,,,2006
+28,Bode Miller,United States,,USA,,,2006
+22,Nikolai Hentsch,Brazil,,BRA,,,2006
+23,Konstantin Sats,Russia,,RUS,,,2006
+21,Filip Trejbal,Czech Republic,,CZE,,,2006
+24,Jono Brauer,Australia,,AUS,,,2006
+32,Bode Miller,United States,Gold,USA,1,2:44.92,2010
+30,Ivica KosteliÄ,Croatia,Silver,CRO,2,2:45.25,2010
+28,Silvan Zurbriggen,Switzerland,Bronze,SUI,3,2:45.32,2010
+23,Carlo Janka,Switzerland,,SUI,4,2:45.54,2010
+25,Ted Ligety,United States,,USA,5,2:45.82,2010
+31,Benjamin Raich,Austria,,AUT,6,2:46.13,2010
+29,OndÅej Bank,Czech Republic,,CZE,7,2:46.19,2010
+25,Christof Innerhofer,Italy,,ITA,8,2:46.45,2010
+24,Kjetil Jansrud,Norway,,NOR,9,2:46.50,2010
+23,Will Brandenburg,United States,,USA,10,2:47.06,2010
+24,Andrew Weibrecht,United States,,USA,11,2:47.58,2010
+25,Adrien ThÃ©aux,France,,FRA,12,2:47.97,2010
+20,Dominik Paris,Italy,,ITA,13,2:47.99,2010
+24,Sandro Viletta,Switzerland,,SUI,14,2:48.19,2010
+27,Ryan Semple,Canada,,CAN,15,2:48.26,2010
+31,Markus Larsson,Sweden,,SWE,16,2:48.30,2010
+23,KryÅ¡tof KrÃ½zl,Czech Republic,,CZE,17,2:48.31,2010
+30,Julien Lizeroux,France,,FRA,18,2:48.36,2010
+24,Thomas Mermillod-Blondin,France,,FRA,19,2:48.62,2010
+23,Natko ZrnÄiÄ-Dim,Croatia,,CRO,20,2:48.86,2010
+25,Aleksandr Khoroshilov,Russia,,RUS,21,2:49.28,2010
+34,Truls Ove Karlsen,Norway,,NOR,22,2:49.31,2010
+21,Stepan Zuyev,Russia,,RUS,23,2:49.75,2010
+27,Stephan Keppler,Germany,,GER,24,2:49.79,2010
+25,Roger Vidosa,Andorra,,AND,25,2:50.33,2010
+27,Mike Janyk,Canada,,CAN,26,2:50.77,2010
+31,Andrej Jerman,Slovenia,,SLO,27,2:50.84,2010
+25,Filip Trejbal,Czech Republic,,CZE,28,2:50.85,2010
+24,Ed Drake,Great Britain,,GBR,29,2:50.91,2010
+24,Louis-Pierre HÃ©lie,Canada,,CAN,30,2:51.58,2010
+27,Martin VrÃ¡blÃ­k,Czech Republic,,CZE,31,2:52.46,2010
+21,Tyler Nella,Canada,,CAN,32,2:52.65,2010
+23,Igor Zakurdayev,Kazakhstan,,KAZ,33,2:56.20,2010
+32,Stefan Georgiev,Bulgaria,,BUL,34,2:57.41,2010
+27,Aksel Lund Svindal,Norway,,NOR,,,2010
+32,Didier DÃ©fago,Switzerland,,SUI,,,2010
+25,Hans Olsson,Sweden,,SWE,,,2010
+27,Peter Fill,Italy,,ITA,,,2010
+28,Andrej Å porn,Slovenia,,SLO,,,2010
+25,Lars Myhre,Norway,,NOR,,,2010
+22,FerrÃ¡n Terra,Spain,,ESP,,,2010
+23,Andrej KriÅ¾aj,Slovenia,,SLO,,,2010
+27,Manfred MÃ¶lgg,Italy,,ITA,,,2010
+29,Cristian Simari Birkner,Argentina,,ARG,,,2010
+20,Andreas Romar,Finland,,FIN,,,2010
+28,Georg Streitberger,Austria,,AUT,,,2010
+20,Kevin Esteve Rigail,Andorra,,AND,,,2010
+24,Romed Baumann,Austria,,AUT,,,2010
+23,Ivan RatkiÄ,Croatia,,CRO,,,2010
+29,Johan Clarey,France,,FRA,,,2010
+22,Roberts Rode,Latvia,,LAT,,,2010
+25,Jaroslav BabuÅ¡iak,Slovakia,,SVK,,,2010
+28,Sandro Viletta,Switzerland,Gold,SUI,1,2:45.20,2014
+34,Ivica KosteliÄ,Croatia,Silver,CRO,2,2:45.54,2014
+29,Christof Innerhofer,Italy,Bronze,ITA,3,2:45.67,2014
+28,Kjetil Jansrud,Norway,,NOR,4,2:46.26,2014
+23,Adam Å½ampa,Slovakia,,SVK,5,2:46.34,2014
+36,Bode Miller,United States,,USA,6,2:46.60,2014
+33,OndÅej Bank,Czech Republic,,CZE,7,2:46.84,2014
+27,Carlo Janka,Switzerland,,SUI,8,2:46.88,2014
+31,Aksel Lund Svindal,Norway,,NOR,8,2:46.88,2014
+27,Natko ZrnÄiÄ-Dim,Croatia,,CRO,10,2:47.06,2014
+22,Jared Goldberg,United States,,USA,11,2:47.29,2014
+29,Ted Ligety,United States,,USA,12,2:47.39,2014
+23,Matthias Mayer,Austria,,AUT,13,2:47.46,2014
+28,Romed Baumann,Austria,,AUT,14,2:47.59,2014
+26,Beat Feuz,Switzerland,,SUI,15,2:47.75,2014
+31,Martin VrÃ¡blÃ­k,Czech Republic,,CZE,16,2:47.92,2014
+29,Adrien ThÃ©aux,France,,FRA,17,2:48.66,2014
+24,Dominik Paris,Italy,,ITA,18,2:49.45,2014
+27,KryÅ¡tof KrÃ½zl,Czech Republic,,CZE,19,2:49.89,2014
+23,Morgan Pridy,Canada,,CAN,20,2:50.03,2014
+22,Otmar Striedinger,Austria,,AUT,21,2:50.46,2014
+25,Paul de la Cuesta,Spain,,ESP,22,2:52.06,2014
+24,Nikola Chongarov,Bulgaria,,BUL,23,2:52.41,2014
+21,Pavel Trikhichev,Russia,,RUS,24,2:53.29,2014
+26,FerrÃ¡n Terra,Spain,,ESP,25,2:53.54,2014
+27,Igor Zakurdayev,Kazakhstan,,KAZ,26,2:54.64,2014
+22,Igor Laikert,Bosnia and Herzegovina,,BIH,27,2:55.70,2014
+25,Olivier Jenot,Monaco,,MON,28,2:55.82,2014
+33,Cristian Simari Birkner,Argentina,,ARG,29,2:56.09,2014
+29,Aleksandr Khoroshilov,Russia,,RUS,30,2:58.46,2014
+22,Marc Oliveras,Andorra,,AND,31,2:58.54,2014
+19,Henrik von Appen,Chile,,CHI,32,2:58.91,2014
+22,Martin Khuber,Kazakhstan,,KAZ,33,2:59.86,2014
+21,Christoffer Faarup,Denmark,,DEN,34,3:08.32,2014
+22,Klemen Kosi,Slovenia,,SLO,,[2:50.63],2014
+20,Matej Falat,Slovakia,,SVK,,,2014
+22,Yury Danilochkin,Belarus,,BLR,,,2014
+20,Martin BendÃ­k,Slovakia,,SVK,,,2014
+23,Ioan Achiriloaie,Romania,,ROU,,,2014
+21,Aleksander Aamodt Kilde,Norway,,NOR,,,2014
+24,Max Franz,Austria,,AUT,,,2014
+25,Maciej BydliÅski,Poland,,POL,,,2014
+25,Mauro Caviezel,Switzerland,,SUI,,,2014
+31,Peter Fill,Italy,,ITA,,,2014
+22,Alexis Pinturault,France,,FRA,,,2014
+28,Thomas Mermillod-Blondin,France,,FRA,,,2014
+27,Andrew Weibrecht,United States,,USA,,,2014
+23,Jorge Birkner,Argentina,,ARG,,,2014
+26,Georgi Georgiev,Bulgaria,,BUL,,,2014
+20,Arnaud Alessandria,Monaco,,MON,,,2014

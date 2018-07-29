@@ -1,0 +1,3713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-timer.v1.min.js"></script>
+    <style type="text/css">
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  #chart{
+    background-color: white;
+    border: 1px solid #CCC;
+  }
+
+  .option button{
+    border: white;
+    text-decoration: underline;
+    border-color: white;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 13px;
+    color: black;
+    border-radius: 0px;
+  }
+
+  #action{
+    border: grey;
+    background-color: grey;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    }
+
+
+
+
+    </style>
+  </head>
+  <body>
+<div id = "content">
+<div class= "option">
+<button id = "sports"> Sports</button>
+<button id = "health"> Health </button>
+<button id = "education"> Education </button>
+<button id = "arts"> Arts </button>
+<button id = "transportation">Transportation</button>
+<button id = "environment">Environment</button>
+<button id = "science">Science</button>
+<button id = "homelessness">Homelessness</button>
+<button id = "veterans">Veterans</button>
+</div>
+<br></br>
+<button id = "action"> Play </button>
+<input id="menu" type="range" min="2004" max="2018"  step="1" value="2003">
+<div id = "pack"></div>
+</div>
+<script>
+
+
+
+var h = 1050;
+var w = 1000;
+
+
+
+var margin = {
+  right: 40,
+  left: 40,
+  top: 40,
+  bottom: 40
+}
+
+var width = w - margin.right - margin.left;
+var height = h - margin.top - margin.bottom;
+
+var svg = d3.select("#pack")
+  .append("svg")
+  .attr("id", "chart")
+  .attr("width", w)
+  .attr("height", h)
+
+
+
+  var colorCircle = d3.scaleOrdinal()
+          .domain([0,1,2])
+          .range(['#8b0000','#b96666']);
+
+      var colorCircleHealth = d3.scaleOrdinal()
+      .domain([0,1,2])
+      .range(['#75ddcd','#52c2cb']);
+
+     var colorCircleEducation = d3.scaleOrdinal()
+      .domain([0,1,2])
+      .range(['#bcc0ae','#9b9f83']);
+
+    var colorCircleArts = d3.scaleOrdinal()
+      .domain([0,1,2])
+      .range(['lightgrey','grey']);
+
+    var colorCircleTransportation = d3.scaleOrdinal()
+      .domain([0,1,2])
+      .range(['#c68c53','#996633']);
+
+    var colorCircleEnvironment = d3.scaleOrdinal()
+      .domain([0,1,2])
+      .range(['#5ca85c','#178317']);
+
+    var colorCircleScience = d3.scaleOrdinal()
+      .domain([0,1,2])
+      .range(['#9975b9','#551a8b']);
+
+    var colorCircleHomelessness = d3.scaleOrdinal()
+      .domain([0,1,2])
+      .range(['#b26666','#800000']);
+
+    var colorCircleVeterans = d3.scaleOrdinal()
+      .domain([0,1,2])
+      .range(['#000080','#6666b2']);
+
+      var timer;
+
+
+           d3.csv("df_grants_theme_grouped_top10.csv", function(error, data){
+            data.forEach(function(d){
+              d["Amount Awarded"] = +d["Amount Awarded"]
+              d["Award Year"] = +d["Award Year"]
+            })
+
+            for(var i = 0; i < data.length; i++) {
+              delete data[i][""];
+            }
+
+           var sizeScale = d3.scaleSqrt()
+              .range([20,50]);
+
+            var packLayout = d3.pack()
+              .padding(2)
+              .size([900, 700])
+
+              // packLayout.radius(function(){ return 3;  })
+
+          var years;
+
+
+          var g = d3.select("svg")
+                .append("g")
+                // .attr("transform", "translate(100, 20)")
+
+        function drawInitialPackSports(){
+          years = d3.range(2004, 2019)
+
+          var filter_data = data.filter(function(d) {
+            return (d["Award Year"] == years[0]) && (d["Theme"] == "Sports")
+          })
+
+          var nested_grants = d3.nest()
+            .key(function(d) { return d["Funding Org:Name"]})
+            .key(function(d) { return d["Recipient Org:Name"] })
+            .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+            .entries(filter_data)
+
+            var packableGrants = {key: "All Grants", values: nested_grants}
+
+            var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                            .sum(function(d) { return d.value })
+                            .sort(function(a, b) { return b.value - a.value; })
+
+              var sizeScale = d3.scaleSqrt()
+              .range([0.0001,0.01]);
+
+              packLayout.radius(d=>sizeScale(d.value));
+
+
+              var data_nodes = packLayout(rootNode).descendants()
+              pack.radius
+              g.selectAll("circle")
+              .data(data_nodes)
+              .enter()
+              .append("circle")
+              .attr("class", "circle_packs")
+              .attr("r", function(d) { return 0 })
+              .attr("cx", function(d) { return d.x })
+              .attr("cy", function(d) { return  d.y })
+              .style("fill", function(d) { return d.children ? colorCircle(d.depth) : "white"; })
+              .transition()
+              .duration(1000)
+              .attr("r", function(d) { return d.r });
+
+
+
+              g.selectAll(".text")
+                .data(data_nodes.filter(function(d) { return !!d.children }))
+                .enter()
+                .append("text")
+                .attr("x", function(d) { return d.x })
+                .attr("y", function(d) { return d.y })
+                .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                .text(function(d){ return d.data.key })
+                .style("fill", "none")
+                .attr("text-anchor", "middle")
+                .attr("class", "labels_background")
+                .style("font-size", 15)
+                .style("stroke-width", 15*0.2)
+                .style("stroke", function(d) {
+                  if(d.r < 30) return "none";
+                  else return "#ffffff";
+                })
+                .style("opacity", 0)
+                .transition()
+                .duration(1000)
+                .style("opacity", 1);
+
+                g.append("text")
+                .attr("class", "years")
+                .attr("x", 100)
+                .attr("y", 100)
+                .text(years[0])
+
+
+              g.selectAll(".labels")
+                .data(data_nodes.filter(function(d) { return !!d.children }))
+                .enter()
+                .append("text")
+                .attr("x", function(d) { return d.x })
+                .attr("y", function(d) { return d.y })
+                .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                .text(function(d){ return d.data.key })
+                .style("fill", function(d) {
+                  if(d.r < 30) return "none";
+                  else return "black";
+                })
+                .attr("class", "labels_text")
+                .attr("text-anchor", "middle")
+                .style("font-size", 15)
+                .style("opacity", 0)
+                .transition()
+                .duration(1000)
+                .style("opacity", 1)
+
+
+                /// button play
+
+
+        } // drawInitialPack
+
+        drawInitialPackSports();
+
+
+
+        d3.select("#sports").on("click", function() {
+          d3.selectAll("circle")
+          .remove()
+          d3.selectAll("text")
+          .remove()
+          console.log(timer)
+          if(timer == undefined) {
+          }
+          else {
+            timer.stop()
+          }
+
+          d3.select("#sports").style("background-color", "#b96666").style("color", "white")
+          d3.select("#health").style("background-color", "white").style("color", "black")
+          d3.select("#education").style("background-color", "white").style("color", "black")
+          d3.select("#arts").style("background-color", "white").style("color", "black")
+          d3.select("#transportation").style("background-color", "white").style("color", "black")
+          d3.select("#environment").style("background-color", "white").style("color", "black")
+          d3.select("#science").style("background-color", "white").style("color", "black")
+          d3.select("#homelessness").style("background-color", "white").style("color", "black")
+          d3.select("#veterans").style("background-color", "white").style("color", "black")
+
+
+          function drawInitialPack(){
+            years = d3.range(2004, 2019)
+
+            var filter_data = data.filter(function(d) {
+              return (d["Award Year"] == years[0]) && (d["Theme"] == "Sports")
+            })
+
+            var nested_grants = d3.nest()
+              .key(function(d) { return d["Funding Org:Name"]})
+              .key(function(d) { return d["Recipient Org:Name"] })
+              .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+              .entries(filter_data)
+
+              var packableGrants = {key: "All Grants", values: nested_grants}
+
+              var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                              .sum(function(d) { return d.value })
+                              .sort(function(a, b) { return b.value - a.value; })
+
+                var sizeScale = d3.scaleSqrt()
+                .range([0.0001,0.01]);
+
+                packLayout.radius(d=>sizeScale(d.value));
+
+
+                var data_nodes = packLayout(rootNode).descendants()
+                pack.radius
+                g.selectAll("circle")
+                .data(data_nodes)
+                .enter()
+                .append("circle")
+                .attr("class", "circle_packs")
+                .attr("r", function(d) { return d.r })
+                .attr("cx", function(d) { return d.x })
+                .attr("cy", function(d) { return  d.y })
+                .style("fill", function(d) { return d.children ? colorCircle(d.depth) : "white"; })
+
+                g.selectAll(".text")
+                  .data(data_nodes.filter(function(d) { return !!d.children }))
+                  .enter()
+                  .append("text")
+                  .attr("x", function(d) { return d.x })
+                  .attr("y", function(d) { return d.y })
+                  .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                  .text(function(d){ return d.data.key })
+                  .style("fill", "none")
+                  .attr("text-anchor", "middle")
+                  .attr("class", "labels_background")
+                  .style("font-size", 15)
+                  .style("stroke-width", 15*0.2)
+                  .style("stroke", function(d) {
+                    if(d.r < 30) return "none";
+                    else return "#ffffff";
+                  })
+
+                  g.append("text")
+                  .attr("class", "years")
+                  .attr("x", 100)
+                  .attr("y", 100)
+                  .text(years[0])
+
+
+                g.selectAll(".labels")
+                  .data(data_nodes.filter(function(d) { return !!d.children }))
+                  .enter()
+                  .append("text")
+                  .attr("x", function(d) { return d.x })
+                  .attr("y", function(d) { return d.y })
+                  .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                  .text(function(d){ return d.data.key })
+                  .style("fill", function(d) {
+                    if(d.r < 30) return "none";
+                    else return "black";
+                  })
+                  .attr("class", "labels_text")
+                  .attr("text-anchor", "middle")
+                  .style("font-size", 15)
+                  .raise();
+
+                  /// button play
+
+
+          } // drawInitialPack
+
+          drawInitialPack();
+
+          var playButton = d3.select("#action")
+
+          playButton.on("click", function() {
+            var button = d3.select(this)
+             // if(timer == undefined) {
+                var counter = 1;
+              timer = d3.interval(transitionSports, 4000)
+
+              console.log(timer)
+
+
+
+                function transitionSports() {
+                   var new_filtered_data = data.filter(function(d) {
+                         return (d["Award Year"] == years[counter]) && (d["Theme"] == "Sports")
+                        })
+
+                  var something = document.getElementById("menu").value = years[counter]
+                   console.log(something)
+
+
+                  var new_nested_grants = d3.nest()
+                    .key(function(d) { return d["Funding Org:Name"]})
+                    .key(function(d) { return d["Recipient Org:Name"] })
+                    .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                    .entries(new_filtered_data)
+
+                    var newPackableGrants = {key: "All Grants", values: new_nested_grants}
+
+                    var newRootNode = d3.hierarchy(newPackableGrants, function(d) { return d.values })
+                                    .sum(function(d) { return d.value })
+                                    .sort(function(a, b) { return b.value - a.value; })
+
+                      var new_data_nodes = packLayout(newRootNode).descendants()
+
+                    var circle = g.selectAll("circle")
+                       .data(new_data_nodes)
+
+                     var text_background = g.selectAll(".text")
+                         .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                     var text = g.selectAll(".labels")
+                         .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                          if(g.select(".years")._groups[0][0]) {
+                            g.select(".years")
+                              .attr("x", 100)
+                              .attr("y", 100)
+                              .text(years[counter])
+                          }
+                          else {
+                            g.append("text")
+                              .attr("class", "years")
+                              .attr("x", 100)
+                              .attr("y", 100)
+                              .text(years[counter])
+                          }
+
+                  var circleTransition =  d3.transition()
+                       .duration(1000)
+
+                   var textTransition = d3.transition()
+                       .duration(1000)
+
+                   // exit
+                   circle.exit()
+                       .style("fill", function(d) { return d.children ? colorCircle(d.depth) : "white"; })
+                       .transition(circleTransition)
+                       .attr("r", function(d) { return 0 })
+                       .remove()
+
+                     d3.selectAll(".labels_text")
+                     .remove();
+
+                     d3.selectAll(".labels_background")
+                     .remove();
+
+                     d3.selectAll(".slider_years")
+                     .remove()
+
+                     // d3.selectAll(".years")
+                     // .remove()
+
+                   // update
+                   circle.transition(circleTransition)
+                       .style("fill", function(d) { return d.children ? colorCircle(d.depth) : "white"; })
+                       .attr("class", "circle_packs")
+                       .attr("r", function(d) { return d.r })
+                       .attr("cx", function(d) { return d.x })
+                       .attr("cy", function(d) { return  d.y })
+                       .style("opacity", 1)
+
+                   text_background.transition(textTransition)
+                       .attr("x", function(d){ return d.x; })
+                       .attr("y", function(d){ return d.y; });
+
+                     text.transition(textTransition)
+                       .attr("x", function(d){ return d.x; })
+                       .attr("y", function(d){ return d.y; });
+
+                     //enter
+                     circle.enter()
+                     .append("circle")
+                     .attr("r", function(d) { return 0 })
+                     .attr("cx", function(d) { return d.x })
+                     .attr("cy", function(d) { return  d.y })
+                     .style("fill", function(d) { return d.children ? colorCircle(d.depth) : "white"; })
+                     .transition(circleTransition)
+                     .attr("r", function(d) { return d.r })
+                     .style("fill", function(d) { return d.children ? colorCircle(d.depth) : "white"; })
+
+                     text_background.enter()
+                       .append("text")
+                       .attr("opacity", 0)
+                       .attr("class", "labels_background")
+                       .attr("x", function(d) { return d.x })
+                       .attr("y", function(d) { return d.y })
+                       .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                       .text(function(d){ return d.data.key })
+                       .style("fill", "none")
+                       .style("font-size", 15)
+                       .style("stroke-width", 15*0.2)
+                       .style("stroke", function(d) {
+                         if(d.r < 30) return "none";
+                         else return "#ffffff";
+                       })
+                       .attr("text-anchor", "middle")
+                       .transition(textTransition)
+                       .style("opacity", 1)
+
+                       text.enter()
+                         .append("text")
+                         .attr("opacity", 0)
+                         .attr("class", "labels_text")
+                         .attr("x", function(d) { return d.x })
+                         .attr("y", function(d) { return d.y })
+                         .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                         .text(function(d){ return d.data.key })
+                         .style("fill", function(d) {
+                           if(d.r < 30) return "none";
+                           else return "black";
+                         })
+                         .attr("text-anchor", "middle")
+                         .style("font-size", 15)
+                         .transition(textTransition)
+                         .style("opacity", 1)
+
+                       counter += 1
+                       if (counter === years.length - 1) {
+                        timer.stop()
+                       }
+               }// transition
+              // }
+              // else {
+              //   timer.stop()
+              // }
+              d3.select("#action")
+                .on("click", function() {
+                  timer.stop()
+                })
+
+
+
+          }) // action
+
+
+
+            function drawFilteredPack(){
+              d3.selectAll("circle")
+              .remove()
+
+              d3.selectAll("text")
+              .remove()
+
+              if(timer == undefined) {
+              }
+              else {
+                timer.stop()
+              }
+
+              var selectedYear = document.getElementById("menu").value;
+              console.log(selectedYear)
+
+              var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Sports") })
+
+
+              g.append("text")
+                        .attr("class", "slider_years")
+                        .attr("x", 100)
+                        .attr("y", 100)
+                        .text(selectedYear)
+
+              var nested_grants = d3.nest()
+                .key(function(d) { return d["Funding Org:Name"]})
+                .key(function(d) { return d["Recipient Org:Name"] })
+                .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                .entries(filteredDataYear)
+
+                var packableGrants = {key: "All Grants", values: nested_grants}
+
+                var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                .sum(function(d) { return d.value })
+                                .sort(function(a, b) { return b.value - a.value; })
+
+                 var data_nodes = packLayout(rootNode).descendants()
+
+
+
+
+                g.selectAll("circle")
+                .data(data_nodes)
+                .enter()
+                .append("circle")
+                .attr("r", function(d) {
+                   return 0;
+                 })
+                .attr("cx", function(d) { return d.x })
+                .attr("cy", function(d) { return  d.y })
+                .style("fill", function(d) { return d.children ? colorCircle(d.depth) : "white"; })
+                .style("opacity", 0)
+                .transition()
+                .duration(1000)
+                .attr("r", function(d) { return d.r })
+                .style("opacity", 1)
+
+
+
+
+                g.selectAll(".text")
+                  .data(data_nodes.filter(function(d) { return !!d.children }))
+                  .enter()
+                  .append("text")
+                  .attr("x", function(d) { return d.x  })
+                  .attr("y", function(d) { return d.y })
+                  .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                  .text(function(d){ return d.data.key })
+                  .style("fill", "none")
+                  .attr("class", "labels_background")
+                  .style("font-size", 15)
+                  .style("stroke-width", 15*0.2)
+                  .style("stroke", function(d) {
+                    if(d.r < 30) return "none";
+                    else return "#ffffff";
+                  })
+                  .attr("text-anchor", "middle")
+                  .style("opacity", 0)
+                  .transition()
+                  .duration(1000)
+                  .style("opacity", 1)
+
+
+                g.selectAll(".labels")
+                  .data(data_nodes.filter(function(d) { return !!d.children }))
+                  .enter()
+                  .append("text")
+                  .attr("x", function(d) { return d.x })
+                  .attr("y", function(d) { return d.y })
+                  .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                  .text(function(d){ return d.data.key })
+                  .style("fill", function(d) {
+                    if(d.r < 30) return "none";
+                    else return "black";
+                  })
+                  .attr("class", "labels_text")
+                  .attr("text-anchor", "middle")
+                  .style("font-size", 15)
+                  .raise()
+                  .style("opacity", 0)
+                  .transition()
+                  .duration(1000)
+                  .style("opacity", 1);
+
+
+
+
+            }
+
+            d3.select("#menu")
+              .on("input", function() {
+                drawFilteredPack();
+              })
+
+        }) // Sports
+
+/// HEALTH ////
+
+d3.select("#health").on("click", function() {
+  d3.selectAll("circle")
+            .remove()
+            d3.selectAll("text")
+            .remove()
+            if(timer) {
+           timer.stop()
+          }
+
+          d3.select("#sports").style("background-color", "white").style("color", "black")
+          d3.select("#health").style("background-color", "#52c2cb").style("color", "white")
+          d3.select("#education").style("background-color", "white").style("color", "black")
+          d3.select("#arts").style("background-color", "white").style("color", "black")
+          d3.select("#transportation").style("background-color", "white").style("color", "black")
+          d3.select("#environment").style("background-color", "white").style("color", "black")
+          d3.select("#science").style("background-color", "white").style("color", "black")
+          d3.select("#homelessness").style("background-color", "white").style("color", "black")
+          d3.select("#veterans").style("background-color", "white").style("color", "black")
+
+            function drawInitialPack(){
+              years = d3.range(2004, 2019)
+
+              var filter_data = data.filter(function(d) {
+                return (d["Award Year"] == years[0]) && (d["Theme"] == "Health")
+              })
+
+              var nested_grants = d3.nest()
+                .key(function(d) { return d["Funding Org:Name"]})
+                .key(function(d) { return d["Recipient Org:Name"] })
+                .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                .entries(filter_data)
+
+                var packableGrants = {key: "All Grants", values: nested_grants}
+
+                var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                .sum(function(d) { return d.value })
+                                .sort(function(a, b) { return b.value - a.value; })
+
+                  var sizeScale = d3.scaleSqrt()
+                  .range([0.0001,0.01]);
+
+                  packLayout.radius(d=>sizeScale(d.value));
+
+
+                  var data_nodes = packLayout(rootNode).descendants()
+                  pack.radius
+                  g.selectAll("circle")
+                  .data(data_nodes)
+                  .enter()
+                  .append("circle")
+                  .attr("class", "circle_packs")
+                  .attr("r", function(d) { return d.r })
+                  .attr("cx", function(d) { return d.x })
+                  .attr("cy", function(d) { return  d.y })
+                  .style("fill", function(d) { return d.children ? colorCircleHealth(d.depth) : "white"; })
+
+                  g.selectAll(".text")
+                    .data(data_nodes.filter(function(d) { return !!d.children }))
+                    .enter()
+                    .append("text")
+                    .attr("x", function(d) { return d.x })
+                    .attr("y", function(d) { return d.y })
+                    .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                    .text(function(d){ return d.data.key })
+                    .style("fill", "none")
+                    .attr("text-anchor", "middle")
+                    .style("font-size", 15)
+                    .attr("class", "labels_background")
+                    .style("stroke-width", 15*0.2)
+                    .style("stroke", function(d) {
+                      if(d.r < 30) return "none";
+                      else return "#ffffff";
+                    })
+
+                    g.append("text")
+                    .attr("class", "years")
+                    .attr("x", 100)
+                    .attr("y", 100)
+                    .text(years[0])
+
+
+                  g.selectAll(".labels")
+                    .data(data_nodes.filter(function(d) { return !!d.children }))
+                    .enter()
+                    .append("text")
+                    .attr("x", function(d) { return d.x })
+                    .attr("y", function(d) { return d.y })
+                    .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                    .text(function(d){ return d.data.key })
+                    .style("fill", function(d) {
+                      if(d.r < 30) return "none";
+                      else return "black";
+                    })
+                    .attr("class", "labels_text")
+                    .attr("text-anchor", "middle")
+                    .style("font-size", 15)
+                    .raise();
+
+                    /// button play
+
+
+            } // drawInitialPack
+
+            drawInitialPack();
+
+            var playButton = d3.select("#action")
+
+            playButton.on("click", function() {
+              var button = d3.select(this)
+
+                var counter = 1;
+               timer = d3.interval(transitionSports, 4000)
+
+                function transitionSports() {
+                   var new_filtered_data = data.filter(function(d) {
+                         return (d["Award Year"] == years[counter]) && (d["Theme"] == "Health")
+                        })
+
+                  var something = document.getElementById("menu").value = years[counter]
+                   console.log(something)
+
+
+                  var new_nested_grants = d3.nest()
+                    .key(function(d) { return d["Funding Org:Name"]})
+                    .key(function(d) { return d["Recipient Org:Name"] })
+                    .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                    .entries(new_filtered_data)
+
+                    var newPackableGrants = {key: "All Grants", values: new_nested_grants}
+
+                    var newRootNode = d3.hierarchy(newPackableGrants, function(d) { return d.values })
+                                    .sum(function(d) { return d.value })
+                                    .sort(function(a, b) { return b.value - a.value; })
+
+                      var new_data_nodes = packLayout(newRootNode).descendants()
+
+                    var circle = g.selectAll("circle")
+                       .data(new_data_nodes)
+
+                     var text_background = g.selectAll(".text")
+                         .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                     var text = g.selectAll(".labels")
+                         .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                          if(g.select(".years")._groups[0][0]) {
+                            g.select(".years")
+                              .attr("x", 100)
+                              .attr("y", 100)
+                              .text(years[counter])
+                          }
+                          else {
+                            g.append("text")
+                              .attr("class", "years")
+                              .attr("x", 100)
+                              .attr("y", 100)
+                              .text(years[counter])
+                          }
+
+                  var circleTransition =  d3.transition()
+                       .duration(1000)
+
+                   var textTransition = d3.transition()
+                       .duration(1000)
+
+                   // exit
+                   circle.exit()
+                       .style("fill", function(d) { return d.children ? colorCircleHealth(d.depth) : "white"; })
+                       .transition(circleTransition)
+                       .attr("r", function(d) { return 0 })
+                       .remove()
+
+                     d3.selectAll(".labels_text")
+                     .remove();
+
+                     d3.selectAll(".labels_background")
+                     .remove();
+
+                     d3.selectAll(".slider_years")
+                     .remove()
+
+                     // d3.selectAll(".years")
+                     // .remove()
+
+                   // update
+                   circle.transition(circleTransition)
+                       .style("fill", function(d) { return d.children ? colorCircleHealth(d.depth) : "white"; })
+                       .attr("class", "circle_packs")
+                       .attr("r", function(d) { return d.r })
+                       .attr("cx", function(d) { return d.x })
+                       .attr("cy", function(d) { return  d.y })
+                       .style("opacity", 1)
+
+                   text_background.transition(textTransition)
+                       .attr("x", function(d){ return d.x; })
+                       .attr("y", function(d){ return d.y; });
+
+                     text.transition(textTransition)
+                       .attr("x", function(d){ return d.x; })
+                       .attr("y", function(d){ return d.y; });
+
+                     //enter
+                     circle.enter()
+                     .append("circle")
+                     .attr("r", function(d) { return 0 })
+                     .attr("cx", function(d) { return d.x })
+                     .attr("cy", function(d) { return  d.y })
+                     .style("fill", function(d) { return d.children ? colorCircleHealth(d.depth) : "white"; })
+                     .transition(circleTransition)
+                     .attr("r", function(d) { return d.r })
+                     .style("fill", function(d) { return d.children ? colorCircleHealth(d.depth) : "white"; })
+
+                     text_background.enter()
+                       .append("text")
+                       .attr("opacity", 0)
+                       .attr("class", "labels_background")
+                       .attr("x", function(d) { return d.x })
+                       .attr("y", function(d) { return d.y })
+                       .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                       .text(function(d){ return d.data.key })
+                       .style("fill", "none")
+                       .style("font-size", 15)
+                       .style("stroke-width", 15*0.2)
+                       .style("stroke", function(d) {
+                         if(d.r < 30) return "none";
+                         else return "#ffffff";
+                       })
+                       .attr("text-anchor", "middle")
+                       .transition(textTransition)
+                       .style("opacity", 1)
+
+                       text.enter()
+                         .append("text")
+                         .attr("opacity", 0)
+                         .attr("class", "labels_text")
+                         .attr("x", function(d) { return d.x })
+                         .attr("y", function(d) { return d.y })
+                         .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                         .text(function(d){ return d.data.key })
+                         .style("fill", function(d) {
+                           if(d.r < 30) return "none";
+                           else return "black";
+                         })
+                         .attr("text-anchor", "middle")
+                         .style("font-size", 15)
+                         .transition(textTransition)
+                         .style("opacity", 1)
+
+                       counter += 1
+                       if (counter === years.length) {
+                        timer.stop()
+                       }
+               }// transition
+
+                d3.select("#action")
+                .on("click", function() {
+                  timer.stop()
+                })
+
+            }) // action
+
+
+
+              function drawFilteredPack(){
+                d3.selectAll("circle")
+                .remove()
+
+                d3.selectAll("text")
+                .remove()
+
+                if(timer == undefined) {
+                }
+                else {
+                  timer.stop()
+                }
+
+                var selectedYear = document.getElementById("menu").value;
+                console.log(selectedYear)
+
+                var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Health") })
+
+
+                g.append("text")
+                          .attr("class", "slider_years")
+                          .attr("x", 100)
+                          .attr("y", 100)
+                          .text(selectedYear)
+
+                var nested_grants = d3.nest()
+                  .key(function(d) { return d["Funding Org:Name"]})
+                  .key(function(d) { return d["Recipient Org:Name"] })
+                  .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                  .entries(filteredDataYear)
+
+                  var packableGrants = {key: "All Grants", values: nested_grants}
+
+                  var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                  .sum(function(d) { return d.value })
+                                  .sort(function(a, b) { return b.value - a.value; })
+
+                   var data_nodes = packLayout(rootNode).descendants()
+
+
+
+
+                  g.selectAll("circle")
+                  .data(data_nodes)
+                  .enter()
+                  .append("circle")
+                  .attr("r", function(d) {
+                     return 0;
+                   })
+                  .attr("cx", function(d) { return d.x })
+                  .attr("cy", function(d) { return  d.y })
+                  .style("fill", function(d) { return d.children ? colorCircleHealth(d.depth) : "white"; })
+                  .style("opacity", 0)
+                  .transition()
+                  .duration(1000)
+                  .attr("r", function(d) { return d.r })
+                  .style("opacity", 1)
+
+
+
+
+                  g.selectAll(".text")
+                    .data(data_nodes.filter(function(d) { return !!d.children }))
+                    .enter()
+                    .append("text")
+                    .attr("x", function(d) { return d.x  })
+                    .attr("y", function(d) { return d.y })
+                    .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                    .text(function(d){ return d.data.key })
+                    .style("fill", "none")
+                    .attr("class", "labels_background")
+                    .style("font-size", 15)
+                    .style("stroke-width", 15*0.2)
+                    .style("stroke", function(d) {
+                      if(d.r < 30) return "none";
+                      else return "#ffffff";
+                    })
+                    .attr("text-anchor", "middle")
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(1000)
+                    .style("opacity", 1)
+
+
+                  g.selectAll(".labels")
+                    .data(data_nodes.filter(function(d) { return !!d.children }))
+                    .enter()
+                    .append("text")
+                    .attr("x", function(d) { return d.x })
+                    .attr("y", function(d) { return d.y })
+                    .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                    .text(function(d){ return d.data.key })
+                    .style("fill", function(d) {
+                      if(d.r < 30) return "none";
+                      else return "black";
+                    })
+                    .attr("class", "labels_text")
+                    .attr("text-anchor", "middle")
+                    .style("font-size", 15)
+                    .raise()
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(1000)
+                    .style("opacity", 1);
+
+
+
+
+              }
+
+              d3.select("#menu")
+                .on("input", function() {
+                  drawFilteredPack();
+                })
+
+}) // Health
+
+
+// EDUCATION
+
+
+d3.select("#education").on("click", function() {
+  d3.selectAll("circle")
+            .remove()
+            d3.selectAll("text")
+            .remove()
+            if(timer) {
+           timer.stop()
+          }
+
+          d3.select("#sports").style("background-color", "white").style("color", "black")
+          d3.select("#health").style("background-color", "white").style("color", "black")
+          d3.select("#education").style("background-color", "#9b9f83").style("color", "white")
+          d3.select("#arts").style("background-color", "white").style("color", "black")
+          d3.select("#transportation").style("background-color", "white").style("color", "black")
+          d3.select("#environment").style("background-color", "white").style("color", "black")
+          d3.select("#science").style("background-color", "white").style("color", "black")
+          d3.select("#homelessness").style("background-color", "white").style("color", "black")
+          d3.select("#veterans").style("background-color", "white").style("color", "black")
+
+            function drawInitialPack(){
+              years = d3.range(2004, 2019)
+
+              var filter_data = data.filter(function(d) {
+                return (d["Award Year"] == years[0]) && (d["Theme"] == "Education")
+              })
+
+              var nested_grants = d3.nest()
+                .key(function(d) { return d["Funding Org:Name"]})
+                .key(function(d) { return d["Recipient Org:Name"] })
+                .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                .entries(filter_data)
+
+                var packableGrants = {key: "All Grants", values: nested_grants}
+
+                var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                .sum(function(d) { return d.value })
+                                .sort(function(a, b) { return b.value - a.value; })
+
+                  var sizeScale = d3.scaleSqrt()
+                  .range([0.0001,0.01]);
+
+                  packLayout.radius(d=>sizeScale(d.value));
+
+
+                  var data_nodes = packLayout(rootNode).descendants()
+                  pack.radius
+                  g.selectAll("circle")
+                  .data(data_nodes)
+                  .enter()
+                  .append("circle")
+                  .attr("class", "circle_packs")
+                  .attr("r", function(d) { return d.r })
+                  .attr("cx", function(d) { return d.x })
+                  .attr("cy", function(d) { return  d.y })
+                  .style("fill", function(d) { return d.children ? colorCircleEducation(d.depth) : "white"; })
+
+                  g.selectAll(".text")
+                    .data(data_nodes.filter(function(d) { return !!d.children }))
+                    .enter()
+                    .append("text")
+                    .attr("x", function(d) { return d.x })
+                    .attr("y", function(d) { return d.y })
+                    .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                    .text(function(d){ return d.data.key })
+                    .style("fill", "none")
+                    .attr("text-anchor", "middle")
+                    .style("font-size", 15)
+                    .attr("class", "labels_background")
+                    .style("stroke-width", 15*0.2)
+                    .style("stroke", function(d) {
+                      if(d.r < 30) return "none";
+                      else return "#ffffff";
+                    })
+
+                    g.append("text")
+                    .attr("class", "years")
+                    .attr("x", 100)
+                    .attr("y", 100)
+                    .text(years[0])
+
+
+                  g.selectAll(".labels")
+                    .data(data_nodes.filter(function(d) { return !!d.children }))
+                    .enter()
+                    .append("text")
+                    .attr("x", function(d) { return d.x })
+                    .attr("y", function(d) { return d.y })
+                    .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                    .text(function(d){ return d.data.key })
+                    .style("fill", function(d) {
+                      if(d.r < 30) return "none";
+                      else return "black";
+                    })
+                    .attr("class", "labels_text")
+                    .attr("text-anchor", "middle")
+                    .style("font-size", 15)
+                    .raise();
+
+                    /// button play
+
+
+            } // drawInitialPack
+
+            drawInitialPack();
+
+            var playButton = d3.select("#action")
+
+            playButton.on("click", function() {
+              var button = d3.select(this)
+
+                var counter = 1;
+               timer = d3.interval(transitionSports, 4000)
+
+                function transitionSports() {
+                   var new_filtered_data = data.filter(function(d) {
+                         return (d["Award Year"] == years[counter]) && (d["Theme"] == "Education")
+                        })
+
+                  var something = document.getElementById("menu").value = years[counter]
+                   console.log(something)
+
+
+                  var new_nested_grants = d3.nest()
+                    .key(function(d) { return d["Funding Org:Name"]})
+                    .key(function(d) { return d["Recipient Org:Name"] })
+                    .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                    .entries(new_filtered_data)
+
+                    var newPackableGrants = {key: "All Grants", values: new_nested_grants}
+
+                    var newRootNode = d3.hierarchy(newPackableGrants, function(d) { return d.values })
+                                    .sum(function(d) { return d.value })
+                                    .sort(function(a, b) { return b.value - a.value; })
+
+                      var new_data_nodes = packLayout(newRootNode).descendants()
+
+                    var circle = g.selectAll("circle")
+                       .data(new_data_nodes)
+
+                     var text_background = g.selectAll(".text")
+                         .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                     var text = g.selectAll(".labels")
+                         .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                          if(g.select(".years")._groups[0][0]) {
+                            g.select(".years")
+                              .attr("x", 100)
+                              .attr("y", 100)
+                              .text(years[counter])
+                          }
+                          else {
+                            g.append("text")
+                              .attr("class", "years")
+                              .attr("x", 100)
+                              .attr("y", 100)
+                              .text(years[counter])
+                          }
+
+                  var circleTransition =  d3.transition()
+                       .duration(1000)
+
+                   var textTransition = d3.transition()
+                       .duration(1000)
+
+                   // exit
+                   circle.exit()
+                       .style("fill", function(d) { return d.children ? colorCircleEducation(d.depth) : "white"; })
+                       .transition(circleTransition)
+                       .attr("r", function(d) { return 0 })
+                       .remove()
+
+                     d3.selectAll(".labels_text")
+                     .remove();
+
+                     d3.selectAll(".labels_background")
+                     .remove();
+
+                     d3.selectAll(".slider_years")
+                     .remove()
+
+                     // d3.selectAll(".years")
+                     // .remove()
+
+                   // update
+                   circle.transition(circleTransition)
+                       .style("fill", function(d) { return d.children ? colorCircleEducation(d.depth) : "white"; })
+                       .attr("class", "circle_packs")
+                       .attr("r", function(d) { return d.r })
+                       .attr("cx", function(d) { return d.x })
+                       .attr("cy", function(d) { return  d.y })
+                       .style("opacity", 1)
+
+                   text_background.transition(textTransition)
+                       .attr("x", function(d){ return d.x; })
+                       .attr("y", function(d){ return d.y; });
+
+                     text.transition(textTransition)
+                       .attr("x", function(d){ return d.x; })
+                       .attr("y", function(d){ return d.y; });
+
+                     //enter
+                     circle.enter()
+                     .append("circle")
+                     .attr("r", function(d) { return 0 })
+                     .attr("cx", function(d) { return d.x })
+                     .attr("cy", function(d) { return  d.y })
+                     .style("fill", function(d) { return d.children ? colorCircleEducation(d.depth) : "white"; })
+                     .transition(circleTransition)
+                     .attr("r", function(d) { return d.r })
+                     .style("fill", function(d) { return d.children ? colorCircleEducation(d.depth) : "white"; })
+
+                     text_background.enter()
+                       .append("text")
+                       .attr("opacity", 0)
+                       .attr("class", "labels_background")
+                       .attr("x", function(d) { return d.x })
+                       .attr("y", function(d) { return d.y })
+                       .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                       .text(function(d){ return d.data.key })
+                       .style("fill", "none")
+                       .style("font-size", 15)
+                       .style("stroke-width", 15*0.2)
+                       .style("stroke", function(d) {
+                         if(d.r < 30) return "none";
+                         else return "#ffffff";
+                       })
+                       .attr("text-anchor", "middle")
+                       .transition(textTransition)
+                       .style("opacity", 1)
+
+                       text.enter()
+                         .append("text")
+                         .attr("opacity", 0)
+                         .attr("class", "labels_text")
+                         .attr("x", function(d) { return d.x })
+                         .attr("y", function(d) { return d.y })
+                         .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                         .text(function(d){ return d.data.key })
+                         .style("fill", function(d) {
+                           if(d.r < 30) return "none";
+                           else return "black";
+                         })
+                         .attr("text-anchor", "middle")
+                         .style("font-size", 15)
+                         .transition(textTransition)
+                         .style("opacity", 1)
+
+                       counter += 1
+                       if (counter === years.length) {
+                        timer.stop()
+                       }
+               }// transition
+
+                d3.select("#action")
+                .on("click", function() {
+                  timer.stop()
+                })
+
+            }) // action
+
+
+
+              function drawFilteredPack(){
+                d3.selectAll("circle")
+                .remove()
+
+                d3.selectAll("text")
+                .remove()
+
+                if(timer == undefined) {
+                }
+                else {
+                  timer.stop()
+                }
+
+                var selectedYear = document.getElementById("menu").value;
+                console.log(selectedYear)
+
+                var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Education") })
+
+
+                g.append("text")
+                          .attr("class", "slider_years")
+                          .attr("x", 100)
+                          .attr("y", 100)
+                          .text(selectedYear)
+
+                var nested_grants = d3.nest()
+                  .key(function(d) { return d["Funding Org:Name"]})
+                  .key(function(d) { return d["Recipient Org:Name"] })
+                  .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                  .entries(filteredDataYear)
+
+                  var packableGrants = {key: "All Grants", values: nested_grants}
+
+                  var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                  .sum(function(d) { return d.value })
+                                  .sort(function(a, b) { return b.value - a.value; })
+
+                   var data_nodes = packLayout(rootNode).descendants()
+
+
+
+
+                  g.selectAll("circle")
+                  .data(data_nodes)
+                  .enter()
+                  .append("circle")
+                  .attr("r", function(d) {
+                     return 0;
+                   })
+                  .attr("cx", function(d) { return d.x })
+                  .attr("cy", function(d) { return  d.y })
+                  .style("fill", function(d) { return d.children ? colorCircleEducation(d.depth) : "white"; })
+                  .style("opacity", 0)
+                  .transition()
+                  .duration(1000)
+                  .attr("r", function(d) { return d.r })
+                  .style("opacity", 1)
+
+
+
+
+                  g.selectAll(".text")
+                    .data(data_nodes.filter(function(d) { return !!d.children }))
+                    .enter()
+                    .append("text")
+                    .attr("x", function(d) { return d.x  })
+                    .attr("y", function(d) { return d.y })
+                    .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                    .text(function(d){ return d.data.key })
+                    .style("fill", "none")
+                    .attr("class", "labels_background")
+                    .style("font-size", 15)
+                    .style("stroke-width", 15*0.2)
+                    .style("stroke", function(d) {
+                      if(d.r < 30) return "none";
+                      else return "#ffffff";
+                    })
+                    .attr("text-anchor", "middle")
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(1000)
+                    .style("opacity", 1)
+
+
+                  g.selectAll(".labels")
+                    .data(data_nodes.filter(function(d) { return !!d.children }))
+                    .enter()
+                    .append("text")
+                    .attr("x", function(d) { return d.x })
+                    .attr("y", function(d) { return d.y })
+                    .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                    .text(function(d){ return d.data.key })
+                    .style("fill", function(d) {
+                      if(d.r < 30) return "none";
+                      else return "black";
+                    })
+                    .attr("class", "labels_text")
+                    .attr("text-anchor", "middle")
+                    .style("font-size", 15)
+                    .raise()
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(1000)
+                    .style("opacity", 1);
+
+
+
+
+              }
+
+              d3.select("#menu")
+                .on("input", function() {
+                  drawFilteredPack();
+                })
+
+}) // education
+
+// ARTS
+
+  d3.select("#arts").on("click", function() {
+    d3.selectAll("circle")
+              .remove()
+              d3.selectAll("text")
+              .remove()
+              if(timer) {
+             timer.stop()
+            }
+
+            d3.select("#sports").style("background-color", "white").style("color", "black")
+            d3.select("#health").style("background-color", "white").style("color", "black")
+            d3.select("#education").style("background-color", "white").style("color", "black")
+            d3.select("#arts").style("background-color", "grey").style("color", "white")
+            d3.select("#transportation").style("background-color", "white").style("color", "black")
+            d3.select("#environment").style("background-color", "white").style("color", "black")
+            d3.select("#science").style("background-color", "white").style("color", "black")
+            d3.select("#homelessness").style("background-color", "white").style("color", "black")
+            d3.select("#veterans").style("background-color", "white").style("color", "black")
+
+              function drawInitialPack(){
+                years = d3.range(2004, 2019)
+
+                var filter_data = data.filter(function(d) {
+                  return (d["Award Year"] == years[0]) && (d["Theme"] == "Arts")
+                })
+
+                var nested_grants = d3.nest()
+                  .key(function(d) { return d["Funding Org:Name"]})
+                  .key(function(d) { return d["Recipient Org:Name"] })
+                  .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                  .entries(filter_data)
+
+                  var packableGrants = {key: "All Grants", values: nested_grants}
+
+                  var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                  .sum(function(d) { return d.value })
+                                  .sort(function(a, b) { return b.value - a.value; })
+
+                    var sizeScale = d3.scaleSqrt()
+                    .range([0.0001,0.01]);
+
+                    packLayout.radius(d=>sizeScale(d.value));
+
+
+                    var data_nodes = packLayout(rootNode).descendants()
+                    pack.radius
+                    g.selectAll("circle")
+                    .data(data_nodes)
+                    .enter()
+                    .append("circle")
+                    .attr("class", "circle_packs")
+                    .attr("r", function(d) { return d.r })
+                    .attr("cx", function(d) { return d.x })
+                    .attr("cy", function(d) { return  d.y })
+                    .style("fill", function(d) { return d.children ? colorCircleArts(d.depth) : "white"; })
+
+                    g.selectAll(".text")
+                      .data(data_nodes.filter(function(d) { return !!d.children }))
+                      .enter()
+                      .append("text")
+                      .attr("x", function(d) { return d.x })
+                      .attr("y", function(d) { return d.y })
+                      .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                      .text(function(d){ return d.data.key })
+                      .style("fill", "none")
+                      .attr("text-anchor", "middle")
+                      .style("font-size", 15)
+                      .attr("class", "labels_background")
+                      .style("stroke-width", 15*0.2)
+                      .style("stroke", function(d) {
+                        if(d.r < 30) return "none";
+                        else return "#ffffff";
+                      })
+
+                      g.append("text")
+                      .attr("class", "years")
+                      .attr("x", 100)
+                      .attr("y", 100)
+                      .text(years[0])
+
+
+                    g.selectAll(".labels")
+                      .data(data_nodes.filter(function(d) { return !!d.children }))
+                      .enter()
+                      .append("text")
+                      .attr("x", function(d) { return d.x })
+                      .attr("y", function(d) { return d.y })
+                      .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                      .text(function(d){ return d.data.key })
+                      .style("fill", function(d) {
+                        if(d.r < 30) return "none";
+                        else return "black";
+                      })
+                      .attr("class", "labels_text")
+                      .attr("text-anchor", "middle")
+                      .style("font-size", 15)
+                      .raise();
+
+                      /// button play
+
+
+              } // drawInitialPack
+
+              drawInitialPack();
+
+              var playButton = d3.select("#action")
+
+              playButton.on("click", function() {
+                var button = d3.select(this)
+
+                  var counter = 1;
+                 timer = d3.interval(transitionSports, 4000)
+
+                  function transitionSports() {
+                     var new_filtered_data = data.filter(function(d) {
+                           return (d["Award Year"] == years[counter]) && (d["Theme"] == "Arts")
+                          })
+
+                    var something = document.getElementById("menu").value = years[counter]
+                     console.log(something)
+
+
+                    var new_nested_grants = d3.nest()
+                      .key(function(d) { return d["Funding Org:Name"]})
+                      .key(function(d) { return d["Recipient Org:Name"] })
+                      .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                      .entries(new_filtered_data)
+
+                      var newPackableGrants = {key: "All Grants", values: new_nested_grants}
+
+                      var newRootNode = d3.hierarchy(newPackableGrants, function(d) { return d.values })
+                                      .sum(function(d) { return d.value })
+                                      .sort(function(a, b) { return b.value - a.value; })
+
+                        var new_data_nodes = packLayout(newRootNode).descendants()
+
+                      var circle = g.selectAll("circle")
+                         .data(new_data_nodes)
+
+                       var text_background = g.selectAll(".text")
+                           .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                       var text = g.selectAll(".labels")
+                           .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                            if(g.select(".years")._groups[0][0]) {
+                              g.select(".years")
+                                .attr("x", 100)
+                                .attr("y", 100)
+                                .text(years[counter])
+                            }
+                            else {
+                              g.append("text")
+                                .attr("class", "years")
+                                .attr("x", 100)
+                                .attr("y", 100)
+                                .text(years[counter])
+                            }
+
+                    var circleTransition =  d3.transition()
+                         .duration(1000)
+
+                     var textTransition = d3.transition()
+                         .duration(1000)
+
+                     // exit
+                     circle.exit()
+                         .style("fill", function(d) { return d.children ? colorCircleArts(d.depth) : "white"; })
+                         .transition(circleTransition)
+                         .attr("r", function(d) { return 0 })
+                         .remove()
+
+                       d3.selectAll(".labels_text")
+                       .remove();
+
+                       d3.selectAll(".labels_background")
+                       .remove();
+
+                       d3.selectAll(".slider_years")
+                       .remove()
+
+                       // d3.selectAll(".years")
+                       // .remove()
+
+                     // update
+                     circle.transition(circleTransition)
+                         .style("fill", function(d) { return d.children ? colorCircleArts(d.depth) : "white"; })
+                         .attr("class", "circle_packs")
+                         .attr("r", function(d) { return d.r })
+                         .attr("cx", function(d) { return d.x })
+                         .attr("cy", function(d) { return  d.y })
+                         .style("opacity", 1)
+
+                     text_background.transition(textTransition)
+                         .attr("x", function(d){ return d.x; })
+                         .attr("y", function(d){ return d.y; });
+
+                       text.transition(textTransition)
+                         .attr("x", function(d){ return d.x; })
+                         .attr("y", function(d){ return d.y; });
+
+                       //enter
+                       circle.enter()
+                       .append("circle")
+                       .attr("r", function(d) { return 0 })
+                       .attr("cx", function(d) { return d.x })
+                       .attr("cy", function(d) { return  d.y })
+                       .style("fill", function(d) { return d.children ? colorCircleArts(d.depth) : "white"; })
+                       .transition(circleTransition)
+                       .attr("r", function(d) { return d.r })
+                       .style("fill", function(d) { return d.children ? colorCircleArts(d.depth) : "white"; })
+
+                       text_background.enter()
+                         .append("text")
+                         .attr("opacity", 0)
+                         .attr("class", "labels_background")
+                         .attr("x", function(d) { return d.x })
+                         .attr("y", function(d) { return d.y })
+                         .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                         .text(function(d){ return d.data.key })
+                         .style("fill", "none")
+                         .style("font-size", 15)
+                         .style("stroke-width", 15*0.2)
+                         .style("stroke", function(d) {
+                           if(d.r < 30) return "none";
+                           else return "#ffffff";
+                         })
+                         .attr("text-anchor", "middle")
+                         .transition(textTransition)
+                         .style("opacity", 1)
+
+                         text.enter()
+                           .append("text")
+                           .attr("opacity", 0)
+                           .attr("class", "labels_text")
+                           .attr("x", function(d) { return d.x })
+                           .attr("y", function(d) { return d.y })
+                           .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                           .text(function(d){ return d.data.key })
+                           .style("fill", function(d) {
+                             if(d.r < 30) return "none";
+                             else return "black";
+                           })
+                           .attr("text-anchor", "middle")
+                           .style("font-size", 15)
+                           .transition(textTransition)
+                           .style("opacity", 1)
+
+                         counter += 1
+                         if (counter === years.length) {
+                          timer.stop()
+                         }
+                 }// transition
+
+                  d3.select("#action")
+                  .on("click", function() {
+                    timer.stop()
+                  })
+
+              }) // action
+
+
+
+                function drawFilteredPack(){
+                  d3.selectAll("circle")
+                  .remove()
+
+                  d3.selectAll("text")
+                  .remove()
+
+                  if(timer == undefined) {
+                  }
+                  else {
+                    timer.stop()
+                  }
+
+                  var selectedYear = document.getElementById("menu").value;
+                  console.log(selectedYear)
+
+                  var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Arts") })
+
+
+                  g.append("text")
+                            .attr("class", "slider_years")
+                            .attr("x", 100)
+                            .attr("y", 100)
+                            .text(selectedYear)
+
+                  var nested_grants = d3.nest()
+                    .key(function(d) { return d["Funding Org:Name"]})
+                    .key(function(d) { return d["Recipient Org:Name"] })
+                    .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                    .entries(filteredDataYear)
+
+                    var packableGrants = {key: "All Grants", values: nested_grants}
+
+                    var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                    .sum(function(d) { return d.value })
+                                    .sort(function(a, b) { return b.value - a.value; })
+
+                     var data_nodes = packLayout(rootNode).descendants()
+
+
+
+
+                    g.selectAll("circle")
+                    .data(data_nodes)
+                    .enter()
+                    .append("circle")
+                    .attr("r", function(d) {
+                       return 0;
+                     })
+                    .attr("cx", function(d) { return d.x })
+                    .attr("cy", function(d) { return  d.y })
+                    .style("fill", function(d) { return d.children ? colorCircleArts(d.depth) : "white"; })
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(1000)
+                    .attr("r", function(d) { return d.r })
+                    .style("opacity", 1)
+
+
+
+
+                    g.selectAll(".text")
+                      .data(data_nodes.filter(function(d) { return !!d.children }))
+                      .enter()
+                      .append("text")
+                      .attr("x", function(d) { return d.x  })
+                      .attr("y", function(d) { return d.y })
+                      .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                      .text(function(d){ return d.data.key })
+                      .style("fill", "none")
+                      .attr("class", "labels_background")
+                      .style("font-size", 15)
+                      .style("stroke-width", 15*0.2)
+                      .style("stroke", function(d) {
+                        if(d.r < 30) return "none";
+                        else return "#ffffff";
+                      })
+                      .attr("text-anchor", "middle")
+                      .style("opacity", 0)
+                      .transition()
+                      .duration(1000)
+                      .style("opacity", 1)
+
+
+                    g.selectAll(".labels")
+                      .data(data_nodes.filter(function(d) { return !!d.children }))
+                      .enter()
+                      .append("text")
+                      .attr("x", function(d) { return d.x })
+                      .attr("y", function(d) { return d.y })
+                      .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                      .text(function(d){ return d.data.key })
+                      .style("fill", function(d) {
+                        if(d.r < 30) return "none";
+                        else return "black";
+                      })
+                      .attr("class", "labels_text")
+                      .attr("text-anchor", "middle")
+                      .style("font-size", 15)
+                      .raise()
+                      .style("opacity", 0)
+                      .transition()
+                      .duration(1000)
+                      .style("opacity", 1);
+
+
+
+
+                }
+
+                d3.select("#menu")
+                  .on("input", function() {
+                    drawFilteredPack();
+                  })
+
+  }) // arts
+
+  // Transportation
+
+    d3.select("#transportation").on("click", function() {
+      d3.selectAll("circle")
+                .remove()
+                d3.selectAll("text")
+                .remove()
+                if(timer) {
+               timer.stop()
+              }
+                function drawInitialPack(){
+                  years = d3.range(2004, 2019)
+
+                  var filter_data = data.filter(function(d) {
+                    return (d["Award Year"] == years[0]) && (d["Theme"] == "Transportation")
+                  })
+
+                  d3.select("#sports").style("background-color", "white").style("color", "black")
+                  d3.select("#health").style("background-color", "white").style("color", "black")
+                  d3.select("#education").style("background-color", "white").style("color", "black")
+                  d3.select("#arts").style("background-color", "white").style("color", "black")
+                  d3.select("#transportation").style("background-color", "#996633").style("color", "white")
+                  d3.select("#environment").style("background-color", "white").style("color", "black")
+                  d3.select("#science").style("background-color", "white").style("color", "black")
+                  d3.select("#homelessness").style("background-color", "white").style("color", "black")
+                  d3.select("#veterans").style("background-color", "white").style("color", "black")
+
+                  var nested_grants = d3.nest()
+                    .key(function(d) { return d["Funding Org:Name"]})
+                    .key(function(d) { return d["Recipient Org:Name"] })
+                    .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                    .entries(filter_data)
+
+                    var packableGrants = {key: "All Grants", values: nested_grants}
+
+                    var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                    .sum(function(d) { return d.value })
+                                    .sort(function(a, b) { return b.value - a.value; })
+
+                      var sizeScale = d3.scaleSqrt()
+                      .range([0.0001,0.01]);
+
+                      packLayout.radius(d=>sizeScale(d.value));
+
+
+                      var data_nodes = packLayout(rootNode).descendants()
+                      pack.radius
+                      g.selectAll("circle")
+                      .data(data_nodes)
+                      .enter()
+                      .append("circle")
+                      .attr("class", "circle_packs")
+                      .attr("r", function(d) { return d.r })
+                      .attr("cx", function(d) { return d.x })
+                      .attr("cy", function(d) { return  d.y })
+                      .style("fill", function(d) { return d.children ? colorCircleTransportation(d.depth) : "white"; })
+
+                      g.selectAll(".text")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", "none")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .attr("class", "labels_background")
+                        .style("stroke-width", 15*0.2)
+                        .style("stroke", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "#ffffff";
+                        })
+
+                        g.append("text")
+                        .attr("class", "years")
+                        .attr("x", 100)
+                        .attr("y", 100)
+                        .text(years[0])
+
+
+                      g.selectAll(".labels")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "black";
+                        })
+                        .attr("class", "labels_text")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .raise();
+
+                        /// button play
+
+
+                } // drawInitialPack
+
+                drawInitialPack();
+
+                var playButton = d3.select("#action")
+
+                playButton.on("click", function() {
+                  var button = d3.select(this)
+
+                    var counter = 1;
+                   timer = d3.interval(transitionSports, 4000)
+
+                    function transitionSports() {
+                       var new_filtered_data = data.filter(function(d) {
+                             return (d["Award Year"] == years[counter]) && (d["Theme"] == "Transportation")
+                            })
+
+                      var something = document.getElementById("menu").value = years[counter]
+                       console.log(something)
+
+
+                      var new_nested_grants = d3.nest()
+                        .key(function(d) { return d["Funding Org:Name"]})
+                        .key(function(d) { return d["Recipient Org:Name"] })
+                        .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                        .entries(new_filtered_data)
+
+                        var newPackableGrants = {key: "All Grants", values: new_nested_grants}
+
+                        var newRootNode = d3.hierarchy(newPackableGrants, function(d) { return d.values })
+                                        .sum(function(d) { return d.value })
+                                        .sort(function(a, b) { return b.value - a.value; })
+
+                          var new_data_nodes = packLayout(newRootNode).descendants()
+
+                        var circle = g.selectAll("circle")
+                           .data(new_data_nodes)
+
+                         var text_background = g.selectAll(".text")
+                             .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                         var text = g.selectAll(".labels")
+                             .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                              if(g.select(".years")._groups[0][0]) {
+                                g.select(".years")
+                                  .attr("x", 100)
+                                  .attr("y", 100)
+                                  .text(years[counter])
+                              }
+                              else {
+                                g.append("text")
+                                  .attr("class", "years")
+                                  .attr("x", 100)
+                                  .attr("y", 100)
+                                  .text(years[counter])
+                              }
+
+                      var circleTransition =  d3.transition()
+                           .duration(1000)
+
+                       var textTransition = d3.transition()
+                           .duration(1000)
+
+                       // exit
+                       circle.exit()
+                           .style("fill", function(d) { return d.children ? colorCircleTransportation(d.depth) : "white"; })
+                           .transition(circleTransition)
+                           .attr("r", function(d) { return 0 })
+                           .remove()
+
+                         d3.selectAll(".labels_text")
+                         .remove();
+
+                         d3.selectAll(".labels_background")
+                         .remove();
+
+                         d3.selectAll(".slider_years")
+                         .remove()
+
+                         // d3.selectAll(".years")
+                         // .remove()
+
+                       // update
+                       circle.transition(circleTransition)
+                           .style("fill", function(d) { return d.children ? colorCircleTransportation(d.depth) : "white"; })
+                           .attr("class", "circle_packs")
+                           .attr("r", function(d) { return d.r })
+                           .attr("cx", function(d) { return d.x })
+                           .attr("cy", function(d) { return  d.y })
+                           .style("opacity", 1)
+
+                       text_background.transition(textTransition)
+                           .attr("x", function(d){ return d.x; })
+                           .attr("y", function(d){ return d.y; });
+
+                         text.transition(textTransition)
+                           .attr("x", function(d){ return d.x; })
+                           .attr("y", function(d){ return d.y; });
+
+                         //enter
+                         circle.enter()
+                         .append("circle")
+                         .attr("r", function(d) { return 0 })
+                         .attr("cx", function(d) { return d.x })
+                         .attr("cy", function(d) { return  d.y })
+                         .style("fill", function(d) { return d.children ? colorCircleTransportation(d.depth) : "white"; })
+                         .transition(circleTransition)
+                         .attr("r", function(d) { return d.r })
+                         .style("fill", function(d) { return d.children ? colorCircleTransportation(d.depth) : "white"; })
+
+                         text_background.enter()
+                           .append("text")
+                           .attr("opacity", 0)
+                           .attr("class", "labels_background")
+                           .attr("x", function(d) { return d.x })
+                           .attr("y", function(d) { return d.y })
+                           .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                           .text(function(d){ return d.data.key })
+                           .style("fill", "none")
+                           .style("font-size", 15)
+                           .style("stroke-width", 15*0.2)
+                           .style("stroke", function(d) {
+                             if(d.r < 30) return "none";
+                             else return "#ffffff";
+                           })
+                           .attr("text-anchor", "middle")
+                           .transition(textTransition)
+                           .style("opacity", 1)
+
+                           text.enter()
+                             .append("text")
+                             .attr("opacity", 0)
+                             .attr("class", "labels_text")
+                             .attr("x", function(d) { return d.x })
+                             .attr("y", function(d) { return d.y })
+                             .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                             .text(function(d){ return d.data.key })
+                             .style("fill", function(d) {
+                               if(d.r < 30) return "none";
+                               else return "black";
+                             })
+                             .attr("text-anchor", "middle")
+                             .style("font-size", 15)
+                             .transition(textTransition)
+                             .style("opacity", 1)
+
+                           counter += 1
+                           if (counter === years.length) {
+                            timer.stop()
+                           }
+                   }// transition
+
+                    d3.select("#action")
+                    .on("click", function() {
+                      timer.stop()
+                    })
+
+                }) // action
+
+
+
+                  function drawFilteredPack(){
+                    d3.selectAll("circle")
+                    .remove()
+
+                    d3.selectAll("text")
+                    .remove()
+
+                    if(timer == undefined) {
+                    }
+                    else {
+                      timer.stop()
+                    }
+
+                    var selectedYear = document.getElementById("menu").value;
+                    console.log(selectedYear)
+
+                    var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Transportation") })
+
+
+                    g.append("text")
+                              .attr("class", "slider_years")
+                              .attr("x", 100)
+                              .attr("y", 100)
+                              .text(selectedYear)
+
+                    var nested_grants = d3.nest()
+                      .key(function(d) { return d["Funding Org:Name"]})
+                      .key(function(d) { return d["Recipient Org:Name"] })
+                      .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                      .entries(filteredDataYear)
+
+                      var packableGrants = {key: "All Grants", values: nested_grants}
+
+                      var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                      .sum(function(d) { return d.value })
+                                      .sort(function(a, b) { return b.value - a.value; })
+
+                       var data_nodes = packLayout(rootNode).descendants()
+
+
+
+
+                      g.selectAll("circle")
+                      .data(data_nodes)
+                      .enter()
+                      .append("circle")
+                      .attr("r", function(d) {
+                         return 0;
+                       })
+                      .attr("cx", function(d) { return d.x })
+                      .attr("cy", function(d) { return  d.y })
+                      .style("fill", function(d) { return d.children ? colorCircleTransportation(d.depth) : "white"; })
+                      .style("opacity", 0)
+                      .transition()
+                      .duration(1000)
+                      .attr("r", function(d) { return d.r })
+                      .style("opacity", 1)
+
+
+
+
+                      g.selectAll(".text")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x  })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", "none")
+                        .attr("class", "labels_background")
+                        .style("font-size", 15)
+                        .style("stroke-width", 15*0.2)
+                        .style("stroke", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "#ffffff";
+                        })
+                        .attr("text-anchor", "middle")
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(1000)
+                        .style("opacity", 1)
+
+
+                      g.selectAll(".labels")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "black";
+                        })
+                        .attr("class", "labels_text")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .raise()
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(1000)
+                        .style("opacity", 1);
+
+
+
+
+                  }
+
+                  d3.select("#menu")
+                    .on("input", function() {
+                      drawFilteredPack();
+                    })
+
+    }) // transportation
+
+// Environment
+
+  d3.select("#environment").on("click", function() {
+    d3.selectAll("circle")
+              .remove()
+              d3.selectAll("text")
+              .remove()
+              if(timer) {
+             timer.stop()
+            }
+              function drawInitialPack(){
+                years = d3.range(2004, 2019)
+
+                var filter_data = data.filter(function(d) {
+                  return (d["Award Year"] == years[0]) && (d["Theme"] == "Environment")
+                })
+
+                d3.select("#sports").style("background-color", "white").style("color", "black")
+                d3.select("#health").style("background-color", "white").style("color", "black")
+                d3.select("#education").style("background-color", "white").style("color", "black")
+                d3.select("#arts").style("background-color", "white").style("color", "black")
+                d3.select("#transportation").style("background-color", "white").style("color", "black")
+                d3.select("#environment").style("background-color", "#178317").style("color", "white")
+                d3.select("#science").style("background-color", "white").style("color", "balck")
+                d3.select("#homelessness").style("background-color", "white").style("color", "balck")
+                d3.select("#veterans").style("background-color", "white").style("color", "balck")
+
+                var nested_grants = d3.nest()
+                  .key(function(d) { return d["Funding Org:Name"]})
+                  .key(function(d) { return d["Recipient Org:Name"] })
+                  .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                  .entries(filter_data)
+
+                  var packableGrants = {key: "All Grants", values: nested_grants}
+
+                  var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                  .sum(function(d) { return d.value })
+                                  .sort(function(a, b) { return b.value - a.value; })
+
+                    var sizeScale = d3.scaleSqrt()
+                    .range([0.0001,0.01]);
+
+                    packLayout.radius(d=>sizeScale(d.value));
+
+
+                    var data_nodes = packLayout(rootNode).descendants()
+                    pack.radius
+                    g.selectAll("circle")
+                    .data(data_nodes)
+                    .enter()
+                    .append("circle")
+                    .attr("class", "circle_packs")
+                    .attr("r", function(d) { return d.r })
+                    .attr("cx", function(d) { return d.x })
+                    .attr("cy", function(d) { return  d.y })
+                    .style("fill", function(d) { return d.children ? colorCircleEnvironment(d.depth) : "white"; })
+
+                    g.selectAll(".text")
+                      .data(data_nodes.filter(function(d) { return !!d.children }))
+                      .enter()
+                      .append("text")
+                      .attr("x", function(d) { return d.x })
+                      .attr("y", function(d) { return d.y })
+                      .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                      .text(function(d){ return d.data.key })
+                      .style("fill", "none")
+                      .attr("text-anchor", "middle")
+                      .style("font-size", 15)
+                      .attr("class", "labels_background")
+                      .style("stroke-width", 15*0.2)
+                      .style("stroke", function(d) {
+                        if(d.r < 30) return "none";
+                        else return "#ffffff";
+                      })
+
+                      g.append("text")
+                      .attr("class", "years")
+                      .attr("x", 100)
+                      .attr("y", 100)
+                      .text(years[0])
+
+
+                    g.selectAll(".labels")
+                      .data(data_nodes.filter(function(d) { return !!d.children }))
+                      .enter()
+                      .append("text")
+                      .attr("x", function(d) { return d.x })
+                      .attr("y", function(d) { return d.y })
+                      .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                      .text(function(d){ return d.data.key })
+                      .style("fill", function(d) {
+                        if(d.r < 30) return "none";
+                        else return "black";
+                      })
+                      .attr("class", "labels_text")
+                      .attr("text-anchor", "middle")
+                      .style("font-size", 15)
+                      .raise();
+
+                      /// button play
+
+
+              } // drawInitialPack
+
+              drawInitialPack();
+
+              var playButton = d3.select("#action")
+
+              playButton.on("click", function() {
+                var button = d3.select(this)
+
+                  var counter = 1;
+                 timer = d3.interval(transitionSports, 4000)
+
+                  function transitionSports() {
+                     var new_filtered_data = data.filter(function(d) {
+                           return (d["Award Year"] == years[counter]) && (d["Theme"] == "Environment")
+                          })
+
+                    var something = document.getElementById("menu").value = years[counter]
+                     console.log(something)
+
+
+                    var new_nested_grants = d3.nest()
+                      .key(function(d) { return d["Funding Org:Name"]})
+                      .key(function(d) { return d["Recipient Org:Name"] })
+                      .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                      .entries(new_filtered_data)
+
+                      var newPackableGrants = {key: "All Grants", values: new_nested_grants}
+
+                      var newRootNode = d3.hierarchy(newPackableGrants, function(d) { return d.values })
+                                      .sum(function(d) { return d.value })
+                                      .sort(function(a, b) { return b.value - a.value; })
+
+                        var new_data_nodes = packLayout(newRootNode).descendants()
+
+                      var circle = g.selectAll("circle")
+                         .data(new_data_nodes)
+
+                       var text_background = g.selectAll(".text")
+                           .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                       var text = g.selectAll(".labels")
+                           .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                            if(g.select(".years")._groups[0][0]) {
+                              g.select(".years")
+                                .attr("x", 100)
+                                .attr("y", 100)
+                                .text(years[counter])
+                            }
+                            else {
+                              g.append("text")
+                                .attr("class", "years")
+                                .attr("x", 100)
+                                .attr("y", 100)
+                                .text(years[counter])
+                            }
+
+                    var circleTransition =  d3.transition()
+                         .duration(1000)
+
+                     var textTransition = d3.transition()
+                         .duration(1000)
+
+                     // exit
+                     circle.exit()
+                         .style("fill", function(d) { return d.children ? colorCircleEnvironment(d.depth) : "white"; })
+                         .transition(circleTransition)
+                         .attr("r", function(d) { return 0 })
+                         .remove()
+
+                       d3.selectAll(".labels_text")
+                       .remove();
+
+                       d3.selectAll(".labels_background")
+                       .remove();
+
+                       d3.selectAll(".slider_years")
+                       .remove()
+
+                       // d3.selectAll(".years")
+                       // .remove()
+
+                     // update
+                     circle.transition(circleTransition)
+                         .style("fill", function(d) { return d.children ? colorCircleEnvironment(d.depth) : "white"; })
+                         .attr("class", "circle_packs")
+                         .attr("r", function(d) { return d.r })
+                         .attr("cx", function(d) { return d.x })
+                         .attr("cy", function(d) { return  d.y })
+                         .style("opacity", 1)
+
+                     text_background.transition(textTransition)
+                         .attr("x", function(d){ return d.x; })
+                         .attr("y", function(d){ return d.y; });
+
+                       text.transition(textTransition)
+                         .attr("x", function(d){ return d.x; })
+                         .attr("y", function(d){ return d.y; });
+
+                       //enter
+                       circle.enter()
+                       .append("circle")
+                       .attr("r", function(d) { return 0 })
+                       .attr("cx", function(d) { return d.x })
+                       .attr("cy", function(d) { return  d.y })
+                       .style("fill", function(d) { return d.children ? colorCircleEnvironment(d.depth) : "white"; })
+                       .transition(circleTransition)
+                       .attr("r", function(d) { return d.r })
+                       .style("fill", function(d) { return d.children ? colorCircleEnvironment(d.depth) : "white"; })
+
+                       text_background.enter()
+                         .append("text")
+                         .attr("opacity", 0)
+                         .attr("class", "labels_background")
+                         .attr("x", function(d) { return d.x })
+                         .attr("y", function(d) { return d.y })
+                         .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                         .text(function(d){ return d.data.key })
+                         .style("fill", "none")
+                         .style("font-size", 15)
+                         .style("stroke-width", 15*0.2)
+                         .style("stroke", function(d) {
+                           if(d.r < 30) return "none";
+                           else return "#ffffff";
+                         })
+                         .attr("text-anchor", "middle")
+                         .transition(textTransition)
+                         .style("opacity", 1)
+
+                         text.enter()
+                           .append("text")
+                           .attr("opacity", 0)
+                           .attr("class", "labels_text")
+                           .attr("x", function(d) { return d.x })
+                           .attr("y", function(d) { return d.y })
+                           .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                           .text(function(d){ return d.data.key })
+                           .style("fill", function(d) {
+                             if(d.r < 30) return "none";
+                             else return "black";
+                           })
+                           .attr("text-anchor", "middle")
+                           .style("font-size", 15)
+                           .transition(textTransition)
+                           .style("opacity", 1)
+
+                         counter += 1
+                         if (counter === years.length) {
+                          timer.stop()
+                         }
+                 }// transition
+
+                  d3.select("#action")
+                  .on("click", function() {
+                    timer.stop()
+                  })
+
+              }) // action
+
+
+
+                function drawFilteredPack(){
+                  d3.selectAll("circle")
+                  .remove()
+
+                  d3.selectAll("text")
+                  .remove()
+
+                  if(timer == undefined) {
+                  }
+                  else {
+                    timer.stop()
+                  }
+
+                  var selectedYear = document.getElementById("menu").value;
+                  console.log(selectedYear)
+
+                  var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Environment") })
+
+
+                  g.append("text")
+                            .attr("class", "slider_years")
+                            .attr("x", 100)
+                            .attr("y", 100)
+                            .text(selectedYear)
+
+                  var nested_grants = d3.nest()
+                    .key(function(d) { return d["Funding Org:Name"]})
+                    .key(function(d) { return d["Recipient Org:Name"] })
+                    .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                    .entries(filteredDataYear)
+
+                    var packableGrants = {key: "All Grants", values: nested_grants}
+
+                    var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                    .sum(function(d) { return d.value })
+                                    .sort(function(a, b) { return b.value - a.value; })
+
+                     var data_nodes = packLayout(rootNode).descendants()
+
+
+
+
+                    g.selectAll("circle")
+                    .data(data_nodes)
+                    .enter()
+                    .append("circle")
+                    .attr("r", function(d) {
+                       return 0;
+                     })
+                    .attr("cx", function(d) { return d.x })
+                    .attr("cy", function(d) { return  d.y })
+                    .style("fill", function(d) { return d.children ? colorCircleEnvironment(d.depth) : "white"; })
+                    .style("opacity", 0)
+                    .transition()
+                    .duration(1000)
+                    .attr("r", function(d) { return d.r })
+                    .style("opacity", 1)
+
+
+
+
+                    g.selectAll(".text")
+                      .data(data_nodes.filter(function(d) { return !!d.children }))
+                      .enter()
+                      .append("text")
+                      .attr("x", function(d) { return d.x  })
+                      .attr("y", function(d) { return d.y })
+                      .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                      .text(function(d){ return d.data.key })
+                      .style("fill", "none")
+                      .attr("class", "labels_background")
+                      .style("font-size", 15)
+                      .style("stroke-width", 15*0.2)
+                      .style("stroke", function(d) {
+                        if(d.r < 30) return "none";
+                        else return "#ffffff";
+                      })
+                      .attr("text-anchor", "middle")
+                      .style("opacity", 0)
+                      .transition()
+                      .duration(1000)
+                      .style("opacity", 1)
+
+
+                    g.selectAll(".labels")
+                      .data(data_nodes.filter(function(d) { return !!d.children }))
+                      .enter()
+                      .append("text")
+                      .attr("x", function(d) { return d.x })
+                      .attr("y", function(d) { return d.y })
+                      .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                      .text(function(d){ return d.data.key })
+                      .style("fill", function(d) {
+                        if(d.r < 30) return "none";
+                        else return "black";
+                      })
+                      .attr("class", "labels_text")
+                      .attr("text-anchor", "middle")
+                      .style("font-size", 15)
+                      .raise()
+                      .style("opacity", 0)
+                      .transition()
+                      .duration(1000)
+                      .style("opacity", 1);
+
+
+
+
+                }
+
+                d3.select("#menu")
+                  .on("input", function() {
+                    drawFilteredPack();
+                  })
+
+  }) // environment
+
+  // Science
+
+    d3.select("#science").on("click", function() {
+      d3.selectAll("circle")
+                .remove()
+                d3.selectAll("text")
+                .remove()
+                if(timer) {
+               timer.stop()
+              }
+                function drawInitialPack(){
+                  years = d3.range(2004, 2019)
+
+                  var filter_data = data.filter(function(d) {
+                    return (d["Award Year"] == years[0]) && (d["Theme"] == "Science")
+                  })
+
+                  d3.select("#sports").style("background-color", "white").style("color", "black")
+                  d3.select("#health").style("background-color", "white").style("color", "black")
+                  d3.select("#education").style("background-color", "white").style("color", "black")
+                  d3.select("#arts").style("background-color", "white").style("color", "black")
+                  d3.select("#transportation").style("background-color", "white").style("color", "black")
+                  d3.select("#environment").style("background-color", "white").style("color", "black")
+                  d3.select("#science").style("background-color", "#551a8b").style("color", "white")
+                  d3.select("#homelessness").style("background-color", "white").style("color", "black")
+                  d3.select("#veterans").style("background-color", "white").style("color", "black")
+
+                  var nested_grants = d3.nest()
+                    .key(function(d) { return d["Funding Org:Name"]})
+                    .key(function(d) { return d["Recipient Org:Name"] })
+                    .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                    .entries(filter_data)
+
+                    var packableGrants = {key: "All Grants", values: nested_grants}
+
+                    var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                    .sum(function(d) { return d.value })
+                                    .sort(function(a, b) { return b.value - a.value; })
+
+                      var sizeScale = d3.scaleSqrt()
+                      .range([0.0001,0.01]);
+
+                      packLayout.radius(d=>sizeScale(d.value));
+
+
+                      var data_nodes = packLayout(rootNode).descendants()
+                      pack.radius
+                      g.selectAll("circle")
+                      .data(data_nodes)
+                      .enter()
+                      .append("circle")
+                      .attr("class", "circle_packs")
+                      .attr("r", function(d) { return d.r })
+                      .attr("cx", function(d) { return d.x })
+                      .attr("cy", function(d) { return  d.y })
+                      .style("fill", function(d) { return d.children ? colorCircleScience(d.depth) : "white"; })
+
+                      g.selectAll(".text")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", "none")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .attr("class", "labels_background")
+                        .style("stroke-width", 15*0.2)
+                        .style("stroke", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "#ffffff";
+                        })
+
+                        g.append("text")
+                        .attr("class", "years")
+                        .attr("x", 100)
+                        .attr("y", 100)
+                        .text(years[0])
+
+
+                      g.selectAll(".labels")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "black";
+                        })
+                        .attr("class", "labels_text")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .raise();
+
+                        /// button play
+
+
+                } // drawInitialPack
+
+                drawInitialPack();
+
+                var playButton = d3.select("#action")
+
+                playButton.on("click", function() {
+                  var button = d3.select(this)
+
+                    var counter = 1;
+                   timer = d3.interval(transitionSports, 4000)
+
+                    function transitionSports() {
+                       var new_filtered_data = data.filter(function(d) {
+                             return (d["Award Year"] == years[counter]) && (d["Theme"] == "Science")
+                            })
+
+                      var something = document.getElementById("menu").value = years[counter]
+                       console.log(something)
+
+
+                      var new_nested_grants = d3.nest()
+                        .key(function(d) { return d["Funding Org:Name"]})
+                        .key(function(d) { return d["Recipient Org:Name"] })
+                        .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                        .entries(new_filtered_data)
+
+                        var newPackableGrants = {key: "All Grants", values: new_nested_grants}
+
+                        var newRootNode = d3.hierarchy(newPackableGrants, function(d) { return d.values })
+                                        .sum(function(d) { return d.value })
+                                        .sort(function(a, b) { return b.value - a.value; })
+
+                          var new_data_nodes = packLayout(newRootNode).descendants()
+
+                        var circle = g.selectAll("circle")
+                           .data(new_data_nodes)
+
+                         var text_background = g.selectAll(".text")
+                             .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                         var text = g.selectAll(".labels")
+                             .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                              if(g.select(".years")._groups[0][0]) {
+                                g.select(".years")
+                                  .attr("x", 100)
+                                  .attr("y", 100)
+                                  .text(years[counter])
+                              }
+                              else {
+                                g.append("text")
+                                  .attr("class", "years")
+                                  .attr("x", 100)
+                                  .attr("y", 100)
+                                  .text(years[counter])
+                              }
+
+                      var circleTransition =  d3.transition()
+                           .duration(1000)
+
+                       var textTransition = d3.transition()
+                           .duration(1000)
+
+                       // exit
+                       circle.exit()
+                           .style("fill", function(d) { return d.children ? colorCircleScience(d.depth) : "white"; })
+                           .transition(circleTransition)
+                           .attr("r", function(d) { return 0 })
+                           .remove()
+
+                         d3.selectAll(".labels_text")
+                         .remove();
+
+                         d3.selectAll(".labels_background")
+                         .remove();
+
+                         d3.selectAll(".slider_years")
+                         .remove()
+
+                         // d3.selectAll(".years")
+                         // .remove()
+
+                       // update
+                       circle.transition(circleTransition)
+                           .style("fill", function(d) { return d.children ? colorCircleScience(d.depth) : "white"; })
+                           .attr("class", "circle_packs")
+                           .attr("r", function(d) { return d.r })
+                           .attr("cx", function(d) { return d.x })
+                           .attr("cy", function(d) { return  d.y })
+                           .style("opacity", 1)
+
+                       text_background.transition(textTransition)
+                           .attr("x", function(d){ return d.x; })
+                           .attr("y", function(d){ return d.y; });
+
+                         text.transition(textTransition)
+                           .attr("x", function(d){ return d.x; })
+                           .attr("y", function(d){ return d.y; });
+
+                         //enter
+                         circle.enter()
+                         .append("circle")
+                         .attr("r", function(d) { return 0 })
+                         .attr("cx", function(d) { return d.x })
+                         .attr("cy", function(d) { return  d.y })
+                         .style("fill", function(d) { return d.children ? colorCircleScience(d.depth) : "white"; })
+                         .transition(circleTransition)
+                         .attr("r", function(d) { return d.r })
+                         .style("fill", function(d) { return d.children ? colorCircleScience(d.depth) : "white"; })
+
+                         text_background.enter()
+                           .append("text")
+                           .attr("opacity", 0)
+                           .attr("class", "labels_background")
+                           .attr("x", function(d) { return d.x })
+                           .attr("y", function(d) { return d.y })
+                           .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                           .text(function(d){ return d.data.key })
+                           .style("fill", "none")
+                           .style("font-size", 15)
+                           .style("stroke-width", 15*0.2)
+                           .style("stroke", function(d) {
+                             if(d.r < 30) return "none";
+                             else return "#ffffff";
+                           })
+                           .attr("text-anchor", "middle")
+                           .transition(textTransition)
+                           .style("opacity", 1)
+
+                           text.enter()
+                             .append("text")
+                             .attr("opacity", 0)
+                             .attr("class", "labels_text")
+                             .attr("x", function(d) { return d.x })
+                             .attr("y", function(d) { return d.y })
+                             .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                             .text(function(d){ return d.data.key })
+                             .style("fill", function(d) {
+                               if(d.r < 30) return "none";
+                               else return "black";
+                             })
+                             .attr("text-anchor", "middle")
+                             .style("font-size", 15)
+                             .transition(textTransition)
+                             .style("opacity", 1)
+
+                           counter += 1
+                           if (counter === years.length) {
+                            timer.stop()
+                           }
+                   }// transition
+
+                    d3.select("#action")
+                    .on("click", function() {
+                      timer.stop()
+                    })
+
+                }) // action
+
+
+
+                  function drawFilteredPack(){
+                    d3.selectAll("circle")
+                    .remove()
+
+                    d3.selectAll("text")
+                    .remove()
+
+                    if(timer == undefined) {
+                    }
+                    else {
+                      timer.stop()
+                    }
+
+                    var selectedYear = document.getElementById("menu").value;
+                    console.log(selectedYear)
+
+                    var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Science") })
+
+
+                    g.append("text")
+                              .attr("class", "slider_years")
+                              .attr("x", 100)
+                              .attr("y", 100)
+                              .text(selectedYear)
+
+                    var nested_grants = d3.nest()
+                      .key(function(d) { return d["Funding Org:Name"]})
+                      .key(function(d) { return d["Recipient Org:Name"] })
+                      .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                      .entries(filteredDataYear)
+
+                      var packableGrants = {key: "All Grants", values: nested_grants}
+
+                      var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                      .sum(function(d) { return d.value })
+                                      .sort(function(a, b) { return b.value - a.value; })
+
+                       var data_nodes = packLayout(rootNode).descendants()
+
+
+
+
+                      g.selectAll("circle")
+                      .data(data_nodes)
+                      .enter()
+                      .append("circle")
+                      .attr("r", function(d) {
+                         return 0;
+                       })
+                      .attr("cx", function(d) { return d.x })
+                      .attr("cy", function(d) { return  d.y })
+                      .style("fill", function(d) { return d.children ? colorCircleScience(d.depth) : "white"; })
+                      .style("opacity", 0)
+                      .transition()
+                      .duration(1000)
+                      .attr("r", function(d) { return d.r })
+                      .style("opacity", 1)
+
+
+
+
+                      g.selectAll(".text")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x  })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", "none")
+                        .attr("class", "labels_background")
+                        .style("font-size", 15)
+                        .style("stroke-width", 15*0.2)
+                        .style("stroke", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "#ffffff";
+                        })
+                        .attr("text-anchor", "middle")
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(1000)
+                        .style("opacity", 1)
+
+
+                      g.selectAll(".labels")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "black";
+                        })
+                        .attr("class", "labels_text")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .raise()
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(1000)
+                        .style("opacity", 1);
+
+
+
+
+                  }
+
+                  d3.select("#menu")
+                    .on("input", function() {
+                      drawFilteredPack();
+                    })
+
+    }) // Science
+
+  // Homelessness
+
+    d3.select("#homelessness").on("click", function() {
+      d3.selectAll("circle")
+                .remove()
+                d3.selectAll("text")
+                .remove()
+                if(timer) {
+               timer.stop()
+              }
+
+              d3.select("#sports").style("background-color", "white").style("color", "black")
+              d3.select("#health").style("background-color", "white").style("color", "black")
+              d3.select("#education").style("background-color", "white").style("color", "black")
+              d3.select("#arts").style("background-color", "white").style("color", "black")
+              d3.select("#transportation").style("background-color", "white").style("color", "black")
+              d3.select("#environment").style("background-color", "white").style("color", "black")
+              d3.select("#science").style("background-color", "white").style("color", "black")
+              d3.select("#homelessness").style("background-color", "#800000").style("color", "white")
+              d3.select("#veterans").style("background-color", "white").style("color", "black")
+
+                function drawInitialPack(){
+                  years = d3.range(2004, 2019)
+
+                  var filter_data = data.filter(function(d) {
+                    return (d["Award Year"] == years[0]) && (d["Theme"] == "Homelessness")
+                  })
+
+                  var nested_grants = d3.nest()
+                    .key(function(d) { return d["Funding Org:Name"]})
+                    .key(function(d) { return d["Recipient Org:Name"] })
+                    .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                    .entries(filter_data)
+
+                    var packableGrants = {key: "All Grants", values: nested_grants}
+
+                    var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                    .sum(function(d) { return d.value })
+                                    .sort(function(a, b) { return b.value - a.value; })
+
+                      var sizeScale = d3.scaleSqrt()
+                      .range([0.0001,0.01]);
+
+                      packLayout.radius(d=>sizeScale(d.value));
+
+
+                      var data_nodes = packLayout(rootNode).descendants()
+                      pack.radius
+                      g.selectAll("circle")
+                      .data(data_nodes)
+                      .enter()
+                      .append("circle")
+                      .attr("class", "circle_packs")
+                      .attr("r", function(d) { return d.r })
+                      .attr("cx", function(d) { return d.x })
+                      .attr("cy", function(d) { return  d.y })
+                      .style("fill", function(d) { return d.children ? colorCircleHomelessness(d.depth) : "white"; })
+
+                      g.selectAll(".text")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", "none")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .attr("class", "labels_background")
+                        .style("stroke-width", 15*0.2)
+                        .style("stroke", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "#ffffff";
+                        })
+
+                        g.append("text")
+                        .attr("class", "years")
+                        .attr("x", 100)
+                        .attr("y", 100)
+                        .text(years[0])
+
+
+                      g.selectAll(".labels")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "black";
+                        })
+                        .attr("class", "labels_text")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .raise();
+
+                        /// button play
+
+
+                } // drawInitialPack
+
+                drawInitialPack();
+
+                var playButton = d3.select("#action")
+
+                playButton.on("click", function() {
+                  var button = d3.select(this)
+
+                    var counter = 1;
+                   timer = d3.interval(transitionSports, 4000)
+
+                    function transitionSports() {
+                       var new_filtered_data = data.filter(function(d) {
+                             return (d["Award Year"] == years[counter]) && (d["Theme"] == "Homelessness")
+                            })
+
+                      var something = document.getElementById("menu").value = years[counter]
+                       console.log(something)
+
+
+                      var new_nested_grants = d3.nest()
+                        .key(function(d) { return d["Funding Org:Name"]})
+                        .key(function(d) { return d["Recipient Org:Name"] })
+                        .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                        .entries(new_filtered_data)
+
+                        var newPackableGrants = {key: "All Grants", values: new_nested_grants}
+
+                        var newRootNode = d3.hierarchy(newPackableGrants, function(d) { return d.values })
+                                        .sum(function(d) { return d.value })
+                                        .sort(function(a, b) { return b.value - a.value; })
+
+                          var new_data_nodes = packLayout(newRootNode).descendants()
+
+                        var circle = g.selectAll("circle")
+                           .data(new_data_nodes)
+
+                         var text_background = g.selectAll(".text")
+                             .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                         var text = g.selectAll(".labels")
+                             .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                              if(g.select(".years")._groups[0][0]) {
+                                g.select(".years")
+                                  .attr("x", 100)
+                                  .attr("y", 100)
+                                  .text(years[counter])
+                              }
+                              else {
+                                g.append("text")
+                                  .attr("class", "years")
+                                  .attr("x", 100)
+                                  .attr("y", 100)
+                                  .text(years[counter])
+                              }
+
+                      var circleTransition =  d3.transition()
+                           .duration(1000)
+
+                       var textTransition = d3.transition()
+                           .duration(1000)
+
+                       // exit
+                       circle.exit()
+                           .style("fill", function(d) { return d.children ? colorCircleHomelessness(d.depth) : "white"; })
+                           .transition(circleTransition)
+                           .attr("r", function(d) { return 0 })
+                           .remove()
+
+                         d3.selectAll(".labels_text")
+                         .remove();
+
+                         d3.selectAll(".labels_background")
+                         .remove();
+
+                         d3.selectAll(".slider_years")
+                         .remove()
+
+                         // d3.selectAll(".years")
+                         // .remove()
+
+                       // update
+                       circle.transition(circleTransition)
+                           .style("fill", function(d) { return d.children ? colorCircleHomelessness(d.depth) : "white"; })
+                           .attr("class", "circle_packs")
+                           .attr("r", function(d) { return d.r })
+                           .attr("cx", function(d) { return d.x })
+                           .attr("cy", function(d) { return  d.y })
+                           .style("opacity", 1)
+
+                       text_background.transition(textTransition)
+                           .attr("x", function(d){ return d.x; })
+                           .attr("y", function(d){ return d.y; });
+
+                         text.transition(textTransition)
+                           .attr("x", function(d){ return d.x; })
+                           .attr("y", function(d){ return d.y; });
+
+                         //enter
+                         circle.enter()
+                         .append("circle")
+                         .attr("r", function(d) { return 0 })
+                         .attr("cx", function(d) { return d.x })
+                         .attr("cy", function(d) { return  d.y })
+                         .style("fill", function(d) { return d.children ? colorCircleHomelessness(d.depth) : "white"; })
+                         .transition(circleTransition)
+                         .attr("r", function(d) { return d.r })
+                         .style("fill", function(d) { return d.children ? colorCircleHomelessness(d.depth) : "white"; })
+
+                         text_background.enter()
+                           .append("text")
+                           .attr("opacity", 0)
+                           .attr("class", "labels_background")
+                           .attr("x", function(d) { return d.x })
+                           .attr("y", function(d) { return d.y })
+                           .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                           .text(function(d){ return d.data.key })
+                           .style("fill", "none")
+                           .style("font-size", 15)
+                           .style("stroke-width", 15*0.2)
+                           .style("stroke", function(d) {
+                             if(d.r < 30) return "none";
+                             else return "#ffffff";
+                           })
+                           .attr("text-anchor", "middle")
+                           .transition(textTransition)
+                           .style("opacity", 1)
+
+                           text.enter()
+                             .append("text")
+                             .attr("opacity", 0)
+                             .attr("class", "labels_text")
+                             .attr("x", function(d) { return d.x })
+                             .attr("y", function(d) { return d.y })
+                             .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                             .text(function(d){ return d.data.key })
+                             .style("fill", function(d) {
+                               if(d.r < 30) return "none";
+                               else return "black";
+                             })
+                             .attr("text-anchor", "middle")
+                             .style("font-size", 15)
+                             .transition(textTransition)
+                             .style("opacity", 1)
+
+                           counter += 1
+                           if (counter === years.length) {
+                            timer.stop()
+                           }
+                   }// transition
+
+                    d3.select("#action")
+                    .on("click", function() {
+                      timer.stop()
+                    })
+
+                }) // action
+
+
+
+                  function drawFilteredPack(){
+                    d3.selectAll("circle")
+                    .remove()
+
+                    d3.selectAll("text")
+                    .remove()
+
+                    if(timer == undefined) {
+                    }
+                    else {
+                      timer.stop()
+                    }
+
+                    var selectedYear = document.getElementById("menu").value;
+                    console.log(selectedYear)
+
+                    var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Homelessness") })
+
+
+                    g.append("text")
+                              .attr("class", "slider_years")
+                              .attr("x", 100)
+                              .attr("y", 100)
+                              .text(selectedYear)
+
+                    var nested_grants = d3.nest()
+                      .key(function(d) { return d["Funding Org:Name"]})
+                      .key(function(d) { return d["Recipient Org:Name"] })
+                      .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                      .entries(filteredDataYear)
+
+                      var packableGrants = {key: "All Grants", values: nested_grants}
+
+                      var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                      .sum(function(d) { return d.value })
+                                      .sort(function(a, b) { return b.value - a.value; })
+
+                       var data_nodes = packLayout(rootNode).descendants()
+
+
+
+
+                      g.selectAll("circle")
+                      .data(data_nodes)
+                      .enter()
+                      .append("circle")
+                      .attr("r", function(d) {
+                         return 0;
+                       })
+                      .attr("cx", function(d) { return d.x })
+                      .attr("cy", function(d) { return  d.y })
+                      .style("fill", function(d) { return d.children ? colorCircleHomelessness(d.depth) : "white"; })
+                      .style("opacity", 0)
+                      .transition()
+                      .duration(1000)
+                      .attr("r", function(d) { return d.r })
+                      .style("opacity", 1)
+
+
+
+
+                      g.selectAll(".text")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x  })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", "none")
+                        .attr("class", "labels_background")
+                        .style("font-size", 15)
+                        .style("stroke-width", 15*0.2)
+                        .style("stroke", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "#ffffff";
+                        })
+                        .attr("text-anchor", "middle")
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(1000)
+                        .style("opacity", 1)
+
+
+                      g.selectAll(".labels")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "black";
+                        })
+                        .attr("class", "labels_text")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .raise()
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(1000)
+                        .style("opacity", 1);
+
+
+
+
+                  }
+
+                  d3.select("#menu")
+                    .on("input", function() {
+                      drawFilteredPack();
+                    })
+
+    }) // Homelessness
+
+  // Veterans
+
+    d3.select("#veterans").on("click", function() {
+      d3.selectAll("circle")
+                .remove()
+                d3.selectAll("text")
+                .remove()
+                if(timer) {
+               timer.stop()
+              }
+
+              d3.select("#sports").style("background-color", "white").style("color", "black")
+              d3.select("#health").style("background-color", "white").style("color", "black")
+              d3.select("#education").style("background-color", "white").style("color", "black")
+              d3.select("#arts").style("background-color", "white").style("color", "black")
+              d3.select("#transportation").style("background-color", "white").style("color", "black")
+              d3.select("#environment").style("background-color", "white").style("color", "black")
+              d3.select("#science").style("background-color", "white").style("color", "black")
+              d3.select("#homelessness").style("background-color", "white").style("color", "black")
+              d3.select("#veterans").style("background-color", "#6666b2").style("color", "white")
+
+                function drawInitialPack(){
+                  years = d3.range(2004, 2019)
+
+                  var filter_data = data.filter(function(d) {
+                    return (d["Award Year"] == years[0]) && (d["Theme"] == "Veterans")
+                  })
+
+                  var nested_grants = d3.nest()
+                    .key(function(d) { return d["Funding Org:Name"]})
+                    .key(function(d) { return d["Recipient Org:Name"] })
+                    .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                    .entries(filter_data)
+
+                    var packableGrants = {key: "All Grants", values: nested_grants}
+
+                    var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                    .sum(function(d) { return d.value })
+                                    .sort(function(a, b) { return b.value - a.value; })
+
+                      var sizeScale = d3.scaleSqrt()
+                      .range([0.0001,0.01]);
+
+                      packLayout.radius(d=>sizeScale(d.value));
+
+
+                      var data_nodes = packLayout(rootNode).descendants()
+                      pack.radius
+                      g.selectAll("circle")
+                      .data(data_nodes)
+                      .enter()
+                      .append("circle")
+                      .attr("class", "circle_packs")
+                      .attr("r", function(d) { return d.r })
+                      .attr("cx", function(d) { return d.x })
+                      .attr("cy", function(d) { return  d.y })
+                      .style("fill", function(d) { return d.children ? colorCircleVeterans(d.depth) : "white"; })
+
+                      g.selectAll(".text")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", "none")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .attr("class", "labels_background")
+                        .style("stroke-width", 15*0.2)
+                        .style("stroke", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "#ffffff";
+                        })
+
+                        g.append("text")
+                        .attr("class", "years")
+                        .attr("x", 100)
+                        .attr("y", 100)
+                        .text(years[0])
+
+
+                      g.selectAll(".labels")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "black";
+                        })
+                        .attr("class", "labels_text")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .raise();
+
+                        /// button play
+
+
+                } // drawInitialPack
+
+                drawInitialPack();
+
+                var playButton = d3.select("#action")
+
+                playButton.on("click", function() {
+                  var button = d3.select(this)
+
+                    var counter = 1;
+                   timer = d3.interval(transitionSports, 4000)
+
+                    function transitionSports() {
+                       var new_filtered_data = data.filter(function(d) {
+                             return (d["Award Year"] == years[counter]) && (d["Theme"] == "Veterans")
+                            })
+
+                      var something = document.getElementById("menu").value = years[counter]
+                       console.log(something)
+
+
+                      var new_nested_grants = d3.nest()
+                        .key(function(d) { return d["Funding Org:Name"]})
+                        .key(function(d) { return d["Recipient Org:Name"] })
+                        .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                        .entries(new_filtered_data)
+
+                        var newPackableGrants = {key: "All Grants", values: new_nested_grants}
+
+                        var newRootNode = d3.hierarchy(newPackableGrants, function(d) { return d.values })
+                                        .sum(function(d) { return d.value })
+                                        .sort(function(a, b) { return b.value - a.value; })
+
+                          var new_data_nodes = packLayout(newRootNode).descendants()
+
+                        var circle = g.selectAll("circle")
+                           .data(new_data_nodes)
+
+                         var text_background = g.selectAll(".text")
+                             .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                         var text = g.selectAll(".labels")
+                             .data(new_data_nodes.filter(function(d) { return !!d.children }))
+
+                              if(g.select(".years")._groups[0][0]) {
+                                g.select(".years")
+                                  .attr("x", 100)
+                                  .attr("y", 100)
+                                  .text(years[counter])
+                              }
+                              else {
+                                g.append("text")
+                                  .attr("class", "years")
+                                  .attr("x", 100)
+                                  .attr("y", 100)
+                                  .text(years[counter])
+                              }
+
+                      var circleTransition =  d3.transition()
+                           .duration(1000)
+
+                       var textTransition = d3.transition()
+                           .duration(1000)
+
+                       // exit
+                       circle.exit()
+                           .style("fill", function(d) { return d.children ? colorCircleVeterans(d.depth) : "white"; })
+                           .transition(circleTransition)
+                           .attr("r", function(d) { return 0 })
+                           .remove()
+
+                         d3.selectAll(".labels_text")
+                         .remove();
+
+                         d3.selectAll(".labels_background")
+                         .remove();
+
+                         d3.selectAll(".slider_years")
+                         .remove()
+
+                         // d3.selectAll(".years")
+                         // .remove()
+
+                       // update
+                       circle.transition(circleTransition)
+                           .style("fill", function(d) { return d.children ? colorCircleVeterans(d.depth) : "white"; })
+                           .attr("class", "circle_packs")
+                           .attr("r", function(d) { return d.r })
+                           .attr("cx", function(d) { return d.x })
+                           .attr("cy", function(d) { return  d.y })
+                           .style("opacity", 1)
+
+                       text_background.transition(textTransition)
+                           .attr("x", function(d){ return d.x; })
+                           .attr("y", function(d){ return d.y; });
+
+                         text.transition(textTransition)
+                           .attr("x", function(d){ return d.x; })
+                           .attr("y", function(d){ return d.y; });
+
+                         //enter
+                         circle.enter()
+                         .append("circle")
+                         .attr("r", function(d) { return 0 })
+                         .attr("cx", function(d) { return d.x })
+                         .attr("cy", function(d) { return  d.y })
+                         .style("fill", function(d) { return d.children ? colorCircleVeterans(d.depth) : "white"; })
+                         .transition(circleTransition)
+                         .attr("r", function(d) { return d.r })
+                         .style("fill", function(d) { return d.children ? colorCircleVeterans(d.depth) : "white"; })
+
+                         text_background.enter()
+                           .append("text")
+                           .attr("opacity", 0)
+                           .attr("class", "labels_background")
+                           .attr("x", function(d) { return d.x })
+                           .attr("y", function(d) { return d.y })
+                           .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                           .text(function(d){ return d.data.key })
+                           .style("fill", "none")
+                           .style("font-size", 15)
+                           .style("stroke-width", 15*0.2)
+                           .style("stroke", function(d) {
+                             if(d.r < 30) return "none";
+                             else return "#ffffff";
+                           })
+                           .attr("text-anchor", "middle")
+                           .transition(textTransition)
+                           .style("opacity", 1)
+
+                           text.enter()
+                             .append("text")
+                             .attr("opacity", 0)
+                             .attr("class", "labels_text")
+                             .attr("x", function(d) { return d.x })
+                             .attr("y", function(d) { return d.y })
+                             .style("display", function(d) { return d.parent == newRootNode ? "inline" : "none"})
+                             .text(function(d){ return d.data.key })
+                             .style("fill", function(d) {
+                               if(d.r < 30) return "none";
+                               else return "black";
+                             })
+                             .attr("text-anchor", "middle")
+                             .style("font-size", 15)
+                             .transition(textTransition)
+                             .style("opacity", 1)
+
+                           counter += 1
+                           if (counter === years.length) {
+                            timer.stop()
+                           }
+                   }// transition
+
+                    d3.select("#action")
+                    .on("click", function() {
+                      timer.stop()
+                    })
+
+                }) // action
+
+
+
+                  function drawFilteredPack(){
+                    d3.selectAll("circle")
+                    .remove()
+
+                    d3.selectAll("text")
+                    .remove()
+
+                    if(timer == undefined) {
+                    }
+                    else {
+                      timer.stop()
+                    }
+
+                    var selectedYear = document.getElementById("menu").value;
+                    console.log(selectedYear)
+
+                    var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Veterans") })
+
+
+                    g.append("text")
+                              .attr("class", "slider_years")
+                              .attr("x", 100)
+                              .attr("y", 100)
+                              .text(selectedYear)
+
+                    var nested_grants = d3.nest()
+                      .key(function(d) { return d["Funding Org:Name"]})
+                      .key(function(d) { return d["Recipient Org:Name"] })
+                      .rollup(function(d) { return d3.sum(d, function(d) { return d["Amount Awarded"] })})
+                      .entries(filteredDataYear)
+
+                      var packableGrants = {key: "All Grants", values: nested_grants}
+
+                      var rootNode = d3.hierarchy(packableGrants, function(d) { return d.values })
+                                      .sum(function(d) { return d.value })
+                                      .sort(function(a, b) { return b.value - a.value; })
+
+                       var data_nodes = packLayout(rootNode).descendants()
+
+
+
+
+                      g.selectAll("circle")
+                      .data(data_nodes)
+                      .enter()
+                      .append("circle")
+                      .attr("r", function(d) {
+                         return 0;
+                       })
+                      .attr("cx", function(d) { return d.x })
+                      .attr("cy", function(d) { return  d.y })
+                      .style("fill", function(d) { return d.children ? colorCircleVeterans(d.depth) : "white"; })
+                      .style("opacity", 0)
+                      .transition()
+                      .duration(1000)
+                      .attr("r", function(d) { return d.r })
+                      .style("opacity", 1)
+
+
+
+
+                      g.selectAll(".text")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x  })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", "none")
+                        .attr("class", "labels_background")
+                        .style("font-size", 15)
+                        .style("stroke-width", 15*0.2)
+                        .style("stroke", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "#ffffff";
+                        })
+                        .attr("text-anchor", "middle")
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(1000)
+                        .style("opacity", 1)
+
+
+                      g.selectAll(".labels")
+                        .data(data_nodes.filter(function(d) { return !!d.children }))
+                        .enter()
+                        .append("text")
+                        .attr("x", function(d) { return d.x })
+                        .attr("y", function(d) { return d.y })
+                        .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
+                        .text(function(d){ return d.data.key })
+                        .style("fill", function(d) {
+                          if(d.r < 30) return "none";
+                          else return "black";
+                        })
+                        .attr("class", "labels_text")
+                        .attr("text-anchor", "middle")
+                        .style("font-size", 15)
+                        .raise()
+                        .style("opacity", 0)
+                        .transition()
+                        .duration(1000)
+                        .style("opacity", 1);
+
+
+
+
+                  }
+
+                  d3.select("#menu")
+                    .on("input", function() {
+                      drawFilteredPack();
+                    })
+
+    }) // Veterans
+
+
+  })
+
+
+</script>
+
+</body>
+</html>

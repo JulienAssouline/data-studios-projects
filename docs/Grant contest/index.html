@@ -238,6 +238,14 @@ var svg = d3.select("#pack")
               .attr("cx", function(d) { return d.x })
               .attr("cy", function(d) { return  d.y })
               .style("fill", function(d) { return d.children ? colorCircle(d.depth) : "white"; })
+              .on("mouseover", function(d){
+                d3.select(this).style("stroke", "black")
+              })
+              .on("mouseout", function(d){
+                console.log(d3.select(this))
+                console.log(d)
+                d3.select(this).style("stroke", "none")
+              })
               .transition()
               .duration(1000)
               .attr("r", function(d) { return d.r });
@@ -293,6 +301,55 @@ var svg = d3.select("#pack")
                 .duration(1000)
                 .style("opacity", 1)
 
+                g.append("text")
+                  .attr("x", 90)
+                  .attr("y", 100)
+                  .text("Total amount in grants awarded")
+                  .attr("class", "legend_text")
+                  .style("font-size", 15)
+
+                g.append("line")
+                  .attr("x1", 310.5)
+                  .attr("y1", 95)
+                  .attr("x2", 410)
+                  .attr("y2", 95.5)
+                  .style("stroke", "black")
+                  .style("fill", "none")
+
+
+
+
+                g.append("text")
+                  .attr("x", 100)
+                  .attr("y", 300)
+                  .text("Funders")
+                  .attr("class", "legend_text")
+                  .style("font-size", 15)
+
+                g.append("line")
+                  .attr("x1", 160)
+                  .attr("y1", 295.5)
+                  .attr("x2", 243)
+                  .attr("y2", 295.5)
+                  .style("stroke", "black")
+                  .style("fill", "none")
+
+                g.append("text")
+                  .attr("x", 100)
+                  .attr("y", 400)
+                  .text("Recipients")
+                  .attr("class", "legend_text")
+                  .style("font-size", 15)
+
+                g.append("line")
+                  .attr("x1", 180)
+                  .attr("y1", 395.5)
+                  .attr("x2", 270)
+                  .attr("y2", 395.5)
+                  .style("stroke", "black")
+                  .style("fill", "none")
+
+
 
                 /// button play
 
@@ -304,6 +361,9 @@ var svg = d3.select("#pack")
         var playButton = d3.select("#action")
 
         playButton.on("click", function() {
+          d3.selectAll(".legend_text")
+                  .remove();
+          d3.selectAll("line").remove()
           var button = d3.select(this)
            // if(timer == undefined) {
               if (document.getElementById("menu").value > 2004) {
@@ -313,11 +373,6 @@ var svg = d3.select("#pack")
                     counter = 1;
                   }
             timer = d3.interval(transitionSports, 3000)
-
-            console.log(timer)
-
-
-
 
               function transitionSports() {
 
@@ -364,6 +419,30 @@ var svg = d3.select("#pack")
                             .text(years[counter])
                         }
 
+                            if (years[counter] == 2010) {
+                          g.append("text")
+                            .attr("x",  0)
+                            .attr("y", 50)
+                            .text("The theme with the most grants awarded was sports.")
+                            .style("font-size", 15)
+                            .attr("class", "science_label")
+                            .style("opacity", 0)
+                            .transition()
+                            .duration(2000)
+                            .style("opacity", 1)
+
+                          g.append("text")
+                            .attr("x",  0)
+                            .attr("y", 70)
+                            .text("The two dominant funders were Sport England and The Big Lottery Fund.")
+                            .style("font-size", 15)
+                            .attr("class", "science_label")
+                            .style("opacity", 0)
+                            .transition()
+                            .duration(2000)
+                            .style("opacity", 1)
+                        }
+
                 var circleTransition =  d3.transition()
                      .duration(1000)
 
@@ -385,6 +464,9 @@ var svg = d3.select("#pack")
 
                    d3.selectAll(".slider_years")
                    .remove()
+
+                  d3.selectAll(".legend_text")
+                  .remove();
 
                    // d3.selectAll(".years")
                    // .remove()
@@ -479,6 +561,8 @@ var svg = d3.select("#pack")
 
             d3.selectAll("text")
             .remove()
+              d3.selectAll("line").remove()
+
 
             if(timer == undefined) {
             }
@@ -487,7 +571,6 @@ var svg = d3.select("#pack")
             }
 
             var selectedYear = document.getElementById("menu").value;
-            console.log(selectedYear)
 
             var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Sports") })
 
@@ -595,6 +678,8 @@ var svg = d3.select("#pack")
           .remove()
           d3.selectAll("text")
           .remove()
+           d3.selectAll("line").remove()
+
           if(timer == undefined) {
           }
           else {
@@ -639,7 +724,6 @@ var svg = d3.select("#pack")
 
 
                 var data_nodes = packLayout(rootNode).descendants()
-                pack.radius
                 g.selectAll("circle")
                 .data(data_nodes)
                 .enter()
@@ -725,12 +809,12 @@ var svg = d3.select("#pack")
                   }
               timer = d3.interval(transitionSports, 3000)
 
-              console.log(timer)
 
 
 
 
                 function transitionSports() {
+                  d3.selectAll("line").remove()
 
                    var new_filtered_data = data.filter(function(d) {
                          return (d["Award Year"] == years[counter]) && (d["Theme"] == "Sports")
@@ -774,6 +858,30 @@ var svg = d3.select("#pack")
                               .attr("y", 20)
                               .text(years[counter])
                           }
+
+                          if (years[counter] == 2010) {
+                        g.append("text")
+                          .attr("x",  0)
+                          .attr("y", 50)
+                          .text("The theme with the most grants awarded was sports.")
+                          .style("font-size", 15)
+                          .attr("class", "science_label")
+                          .style("opacity", 0)
+                          .transition()
+                          .duration(2000)
+                          .style("opacity", 1)
+
+                        g.append("text")
+                          .attr("x",  0)
+                          .attr("y", 70)
+                          .text("The two dominant funders were Sport England and The Big Lottery Fund.")
+                          .style("font-size", 15)
+                          .attr("class", "science_label")
+                          .style("opacity", 0)
+                          .transition()
+                          .duration(2000)
+                          .style("opacity", 1)
+                      }
 
                   var circleTransition =  d3.transition()
                        .duration(1000)
@@ -890,6 +998,7 @@ var svg = d3.select("#pack")
 
               d3.selectAll("text")
               .remove()
+              d3.selectAll("line").remove()
 
               if(timer == undefined) {
               }
@@ -898,7 +1007,6 @@ var svg = d3.select("#pack")
               }
 
               var selectedYear = document.getElementById("menu").value;
-              console.log(selectedYear)
 
               var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Sports") })
 
@@ -1006,6 +1114,7 @@ d3.select("#health").on("click", function() {
             .remove()
             d3.selectAll("text")
             .remove()
+            d3.selectAll("line").remove()
             if(timer) {
            timer.stop()
           }
@@ -1122,6 +1231,7 @@ d3.select("#health").on("click", function() {
 
             playButton.on("click", function() {
               var button = d3.select(this)
+              d3.selectAll("line").remove()
 
                 if (document.getElementById("menu").value > 2004) {
                     var counter = 0;
@@ -1285,6 +1395,7 @@ d3.select("#health").on("click", function() {
               function drawFilteredPack(){
                 d3.selectAll("circle")
                 .remove()
+                d3.selectAll("line").remove()
 
                 d3.selectAll("text")
                 .remove()
@@ -1406,6 +1517,7 @@ d3.select("#education").on("click", function() {
             .remove()
             d3.selectAll("text")
             .remove()
+            d3.selectAll("line").remove()
             if(timer) {
            timer.stop()
           }
@@ -1532,6 +1644,7 @@ d3.select("#education").on("click", function() {
                timer = d3.interval(transitionSports, 4000)
 
                 function transitionSports() {
+                  d3.selectAll("line").remove()
                    var new_filtered_data = data.filter(function(d) {
                          return (d["Award Year"] == years[counter]) && (d["Theme"] == "Education")
                         })
@@ -1698,6 +1811,7 @@ d3.select("#education").on("click", function() {
 
 
               function drawFilteredPack(){
+                d3.selectAll("line").remove()
                 d3.selectAll("circle")
                 .remove()
 
@@ -1832,6 +1946,7 @@ d3.select("#education").on("click", function() {
               .remove()
               d3.selectAll("text")
               .remove()
+              d3.selectAll("line").remove()
               if(timer) {
              timer.stop()
             }
@@ -1959,12 +2074,13 @@ d3.select("#education").on("click", function() {
                  timer = d3.interval(transitionSports, 4000)
 
                   function transitionSports() {
+                    d3.selectAll("line").remove()
                      var new_filtered_data = data.filter(function(d) {
                            return (d["Award Year"] == years[counter]) && (d["Theme"] == "Arts")
                           })
 
                     var something = document.getElementById("menu").value = years[counter]
-                     console.log(something)
+
 
 
                     var new_nested_grants = d3.nest()
@@ -2143,6 +2259,7 @@ d3.select("#education").on("click", function() {
 
 
                 function drawFilteredPack(){
+                  d3.selectAll("line").remove()
                   d3.selectAll("circle")
                   .remove()
 
@@ -2156,7 +2273,6 @@ d3.select("#education").on("click", function() {
                   }
 
                   var selectedYear = document.getElementById("menu").value;
-                  console.log(selectedYear)
 
                   var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Arts") })
 
@@ -2292,12 +2408,14 @@ d3.select("#education").on("click", function() {
                 .remove()
                 d3.selectAll("text")
                 .remove()
+                d3.selectAll("line").remove()
                 if(timer) {
                timer.stop()
               }
 
               document.getElementById("menu").value = 2004
                 function drawInitialPack(){
+                  d3.selectAll("line").remove()
                   years = d3.range(2004, 2019)
 
                   var filter_data = data.filter(function(d) {
@@ -2420,12 +2538,13 @@ d3.select("#education").on("click", function() {
                    timer = d3.interval(transitionSports, 4000)
 
                     function transitionSports() {
+                      d3.selectAll("line").remove()
                        var new_filtered_data = data.filter(function(d) {
                              return (d["Award Year"] == years[counter]) && (d["Theme"] == "Transportation")
                             })
 
                       var something = document.getElementById("menu").value = years[counter]
-                       console.log(something)
+
 
 
                       var new_nested_grants = d3.nest()
@@ -2467,7 +2586,7 @@ d3.select("#education").on("click", function() {
 
                               if (years[counter] == 2013) {
                                 g.append("text")
-                                  .attr("x", w/2)
+                                  .attr("x", 0)
                                   .attr("y", 60)
                                   .text("In 2012 the Department for Transport awarded $3,747,040,226 in grants to")
                                   .style("font-size", 15)
@@ -2477,7 +2596,7 @@ d3.select("#education").on("click", function() {
                                   .style("opacity", 1)
 
                                 g.append("text")
-                                  .attr("x", w/2)
+                                  .attr("x", 0)
                                   .attr("y", 80)
                                   .text(" transportation themed recipients. No other organization awarded that many")
                                   .style("font-size", 15)
@@ -2487,7 +2606,7 @@ d3.select("#education").on("click", function() {
                                   .style("opacity", 1)
 
                                 g.append("text")
-                                  .attr("x", w/2)
+                                  .attr("x", 0)
                                   .attr("y", 100)
                                   .text(" grants in a single year.")
                                   .style("font-size", 15)
@@ -2636,6 +2755,7 @@ d3.select("#education").on("click", function() {
 
 
                   function drawFilteredPack(){
+                    d3.selectAll("line").remove()
                     d3.selectAll("circle")
                     .remove()
 
@@ -2649,7 +2769,6 @@ d3.select("#education").on("click", function() {
                     }
 
                     var selectedYear = document.getElementById("menu").value;
-                    console.log(selectedYear)
 
                     var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Transportation") })
 
@@ -2679,7 +2798,6 @@ d3.select("#education").on("click", function() {
                        })
                       .attr("cx", function(d) { return d.x })
                       .attr("cy", function(d) {
-                        console.log(d)
                         return  d.y
                       })
                       .style("fill", function(d) { return d.children ? colorCircleTransportation(d.depth) : "white"; })
@@ -2795,6 +2913,7 @@ d3.select("#education").on("click", function() {
               .remove()
               d3.selectAll("text")
               .remove()
+              d3.selectAll("line").remove()
               if(timer) {
              timer.stop()
             }
@@ -2922,12 +3041,13 @@ d3.select("#education").on("click", function() {
                  timer = d3.interval(transitionSports, 4000)
 
                   function transitionSports() {
+                    d3.selectAll("line").remove()
                      var new_filtered_data = data.filter(function(d) {
                            return (d["Award Year"] == years[counter]) && (d["Theme"] == "Environment")
                           })
 
                     var something = document.getElementById("menu").value = years[counter]
-                     console.log(something)
+
 
 
                     var new_nested_grants = d3.nest()
@@ -3086,6 +3206,7 @@ d3.select("#education").on("click", function() {
                 function drawFilteredPack(){
                   d3.selectAll("circle")
                   .remove()
+                  d3.selectAll("line").remove()
 
                   d3.selectAll("text")
                   .remove()
@@ -3097,7 +3218,6 @@ d3.select("#education").on("click", function() {
                   }
 
                   var selectedYear = document.getElementById("menu").value;
-                  console.log(selectedYear)
 
                   var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Environment") })
 
@@ -3216,6 +3336,7 @@ d3.select("#education").on("click", function() {
                 .remove()
                 d3.selectAll("text")
                 .remove()
+                d3.selectAll("line").remove()
                 if(timer) {
                timer.stop()
               }
@@ -3343,12 +3464,13 @@ d3.select("#education").on("click", function() {
                    timer = d3.interval(transitionSports, 4000)
 
                     function transitionSports() {
+                      d3.selectAll("line").remove()
                        var new_filtered_data = data.filter(function(d) {
                              return (d["Award Year"] == years[counter]) && (d["Theme"] == "Science")
                             })
 
                       var something = document.getElementById("menu").value = years[counter]
-                       console.log(something)
+
 
 
                       var new_nested_grants = d3.nest()
@@ -3393,6 +3515,22 @@ d3.select("#education").on("click", function() {
 
                        var textTransition = d3.transition()
                            .duration(1000)
+
+
+                      if (years[counter] == 2005) {
+                        g.append("text")
+                          .attr("x",  0)
+                          .attr("y", 50)
+                          .text("The Wellcome Trust accounted for 96% of amount given in grants for the science theme.")
+                          .style("font-size", 15)
+                          .attr("class", "science_label")
+                          .style("opacity", 0)
+                          .transition()
+                          .duration(2000)
+                          .style("opacity", 1)
+                      }
+
+
 
                        // exit
                        circle.exit()
@@ -3493,6 +3631,7 @@ d3.select("#education").on("click", function() {
 
 
                   function drawFilteredPack(){
+                    d3.selectAll("line").remove()
                     d3.selectAll("circle")
                     .remove()
 
@@ -3506,7 +3645,6 @@ d3.select("#education").on("click", function() {
                     }
 
                     var selectedYear = document.getElementById("menu").value;
-                    console.log(selectedYear)
 
                     var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Science") })
 
@@ -3612,6 +3750,7 @@ d3.select("#education").on("click", function() {
     d3.select("#homelessness").on("click", function() {
       d3.selectAll("circle")
                 .remove()
+                d3.selectAll("line").remove()
                 d3.selectAll("text")
                 .remove()
                 if(timer) {
@@ -3740,12 +3879,13 @@ d3.select("#education").on("click", function() {
                    timer = d3.interval(transitionSports, 4000)
 
                     function transitionSports() {
+                      d3.selectAll("line").remove()
                        var new_filtered_data = data.filter(function(d) {
                              return (d["Award Year"] == years[counter]) && (d["Theme"] == "Homelessness")
                             })
 
                       var something = document.getElementById("menu").value = years[counter]
-                       console.log(something)
+
 
 
                       var new_nested_grants = d3.nest()
@@ -3890,6 +4030,7 @@ d3.select("#education").on("click", function() {
 
 
                   function drawFilteredPack(){
+                    d3.selectAll("line").remove()
                     d3.selectAll("circle")
                     .remove()
 
@@ -3903,7 +4044,6 @@ d3.select("#education").on("click", function() {
                     }
 
                     var selectedYear = document.getElementById("menu").value;
-                    console.log(selectedYear)
 
                     var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Homelessness") })
 
@@ -4011,6 +4151,7 @@ d3.select("#education").on("click", function() {
                 .remove()
                 d3.selectAll("text")
                 .remove()
+                d3.selectAll("line").remove()
                 if(timer) {
                timer.stop()
               }
@@ -4139,12 +4280,13 @@ d3.select("#education").on("click", function() {
                    timer = d3.interval(transitionSports, 4000)
 
                     function transitionSports() {
+                      d3.selectAll("line").remove()
                        var new_filtered_data = data.filter(function(d) {
                              return (d["Award Year"] == years[counter]) && (d["Theme"] == "Veterans")
                             })
 
                       var something = document.getElementById("menu").value = years[counter]
-                       console.log(something)
+
 
 
                       var new_nested_grants = d3.nest()
@@ -4292,6 +4434,8 @@ d3.select("#education").on("click", function() {
                     d3.selectAll("circle")
                     .remove()
 
+                    d3.selectAll("line").remove()
+
                     d3.selectAll("text")
                     .remove()
 
@@ -4302,7 +4446,6 @@ d3.select("#education").on("click", function() {
                     }
 
                     var selectedYear = document.getElementById("menu").value;
-                    console.log(selectedYear)
 
                     var filteredDataYear = data.filter(function(d) {return (d["Award Year"] == selectedYear) && (d["Theme"] == "Veterans") })
 

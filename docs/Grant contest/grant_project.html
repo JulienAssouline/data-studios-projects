@@ -241,9 +241,16 @@ var svg = d3.select("#pack")
               .attr("cx", function(d) { return d.x })
               .attr("cy", function(d) { return  d.y })
               .style("fill", function(d) { return d.children ? colorCircle(d.depth) : "white"; })
+              .on("mouseover", function(d){
+                console.log(d)
+                d3.select(this).style("stroke", "black")
+              })
+              .on("mouseout", function(){
+                d3.select(this).style("stroke", "black")
+              })
               .transition()
               .duration(1000)
-              .attr("r", function(d) { return d.r });
+              .attr("r", function(d) { return d.r })
 
 
 
@@ -1343,7 +1350,7 @@ d3.select("#health").on("click", function() {
                           g.append("text")
                               .attr("x",  0)
                               .attr("y", 70)
-                              .text(" with £3,181,348,824 awarded. The most was in 2012 for the Transportation theme.")
+                              .text(" with $3,181,348,824 awarded. The most was in 2012 for the Transportation theme.")
                               .style("font-size", 15)
                               .style("opacity", 0)
                               .transition()
@@ -2651,7 +2658,7 @@ d3.select("#education").on("click", function() {
                                 g.append("text")
                                   .attr("x", 0)
                                   .attr("y", 60)
-                                  .text("In 2012 the Department for Transport awarded £3,747,040,226 in grants to")
+                                  .text("In 2012 the Department for Transport awarded $3,747,040,226 in grants to")
                                   .style("font-size", 15)
                                   .style("opacity", 0)
                                   .transition()

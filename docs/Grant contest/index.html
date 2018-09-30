@@ -231,6 +231,22 @@ var svg = d3.select("#pack")
 
 
               var data_nodes = packLayout(rootNode).descendants()
+
+              var text = g.selectAll(".text")
+                .data(data_nodes.filter(function(d) { return !!d.children }))
+                .enter()
+
+
+              var background_labels = g.selectAll(".labels")
+                .data(data_nodes.filter(function(d) { return !!d.children }))
+                .enter()
+
+              var circle_text = g.selectAll(".words")
+                .data(data_nodes)
+                .enter()
+
+
+
               pack.radius
               g.selectAll("circle")
               .data(data_nodes)
@@ -245,12 +261,7 @@ var svg = d3.select("#pack")
               .duration(1000)
               .attr("r", function(d) { return d.r });
 
-
-
-              g.selectAll(".text")
-                .data(data_nodes.filter(function(d) { return !!d.children }))
-                .enter()
-                .append("text")
+                background_labels.append("text")
                 .attr("x", function(d) { return d.x })
                 .attr("y", function(d) { return d.y })
                 .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
@@ -265,6 +276,7 @@ var svg = d3.select("#pack")
                   else return "#ffffff";
                 })
                 .style("opacity", 0)
+                .raise()
                 .transition()
                 .duration(1000)
                 .style("opacity", 1);
@@ -276,11 +288,9 @@ var svg = d3.select("#pack")
                 .text(years[0])
 
 
-              g.selectAll(".labels")
-                .data(data_nodes.filter(function(d) { return !!d.children }))
-                .enter()
-                .append("text")
-                .attr("x", function(d) { return d.x })
+
+               text.append("text")
+               .attr("x", function(d) { return d.x })
                 .attr("y", function(d) { return d.y })
                 .style("display", function(d) { return d.parent == rootNode ? "inline" : "none"})
                 .text(function(d){ return d.data.key })
@@ -292,6 +302,7 @@ var svg = d3.select("#pack")
                 .attr("text-anchor", "middle")
                 .style("font-size", 15)
                 .style("opacity", 0)
+                .raise()
                 .transition()
                 .duration(1000)
                 .style("opacity", 1)
@@ -377,9 +388,7 @@ var svg = d3.select("#pack")
         var playButton = d3.select("#action")
 
         playButton.on("click", function() {
-          d3.selectAll(".legend_text")
-                  .remove();
-          d3.selectAll("line").remove()
+
           var button = d3.select(this)
            // if(timer == undefined) {
               if (document.getElementById("menu").value > 2004) {
@@ -391,6 +400,9 @@ var svg = d3.select("#pack")
             timer = d3.interval(transitionSports, 3000)
 
               function transitionSports() {
+                d3.selectAll(".legend_text")
+                        .remove();
+                d3.selectAll("line").remove()
 
                  var new_filtered_data = data.filter(function(d) {
                        return (d["Award Year"] == years[counter]) && (d["Theme"] == "Sports")
@@ -574,7 +586,9 @@ var svg = d3.select("#pack")
             // }
             d3.select("#action")
               .on("click", function() {
-                timer.stop()
+                counter = 0
+                timer
+
               })
 
 
@@ -1023,7 +1037,8 @@ var svg = d3.select("#pack")
               // }
               d3.select("#action")
                 .on("click", function() {
-                  timer.stop()
+                  counter = 0
+                  timer
                 })
 
 
@@ -1343,7 +1358,7 @@ d3.select("#health").on("click", function() {
                           g.append("text")
                               .attr("x",  0)
                               .attr("y", 70)
-                              .text(" with £3,181,348,824 awarded. The most was in 2012 for the Transportation theme.")
+                              .text(" with $3,181,348,824 awarded. The most was in 2012 for the Transportation theme.")
                               .style("font-size", 15)
                               .style("opacity", 0)
                               .transition()
@@ -1448,7 +1463,8 @@ d3.select("#health").on("click", function() {
 
                 d3.select("#action")
                 .on("click", function() {
-                  timer.stop()
+                  counter = 0
+                  timer
                 })
 
             }) // action
@@ -1866,7 +1882,8 @@ d3.select("#education").on("click", function() {
 
                 d3.select("#action")
                 .on("click", function() {
-                  timer.stop()
+                  counter = 0
+                  timer
                 })
 
             }) // action
@@ -2314,7 +2331,8 @@ d3.select("#education").on("click", function() {
 
                   d3.select("#action")
                   .on("click", function() {
-                    timer.stop()
+                   counter = 0
+                   timer
                   })
 
               }) // action
@@ -2651,7 +2669,7 @@ d3.select("#education").on("click", function() {
                                 g.append("text")
                                   .attr("x", 0)
                                   .attr("y", 60)
-                                  .text("In 2012 the Department for Transport awarded £3,747,040,226 in grants to")
+                                  .text("In 2012 the Department for Transport awarded $3,747,040,226 in grants to")
                                   .style("font-size", 15)
                                   .style("opacity", 0)
                                   .transition()
@@ -2810,7 +2828,8 @@ d3.select("#education").on("click", function() {
 
                     d3.select("#action")
                     .on("click", function() {
-                      timer.stop()
+                     counter = 0
+                     timer
                     })
 
                 }) // action
@@ -3259,7 +3278,8 @@ d3.select("#education").on("click", function() {
 
                   d3.select("#action")
                   .on("click", function() {
-                    timer.stop()
+                    counter = 0
+                    timer
                   })
 
               }) // action
@@ -3686,7 +3706,8 @@ d3.select("#education").on("click", function() {
 
                     d3.select("#action")
                     .on("click", function() {
-                      timer.stop()
+                      counter = 0
+                      timer
                     })
 
                 }) // action
@@ -4085,7 +4106,8 @@ d3.select("#education").on("click", function() {
 
                     d3.select("#action")
                     .on("click", function() {
-                      timer.stop()
+                      counter = 0
+                      timer
                     })
 
                 }) // action
@@ -4486,7 +4508,8 @@ d3.select("#education").on("click", function() {
 
                     d3.select("#action")
                     .on("click", function() {
-                      timer.stop()
+                      counter =0
+                      timer
                     })
 
                 }) // action

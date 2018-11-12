@@ -20,12 +20,12 @@ body,html{
 
 #button{
   position: absolute;
-  top: 10px;
   cursor: pointer;
   background-color: #e7e7e7; /* Green */
     border: none;
     color: black;
     padding: 10px 10px;
+
     /*text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -36,17 +36,19 @@ button:focus {outline:0;}
 
 #checkbox-buttons{
 display: none;
- text-align: left;
  position: absolute;
- top: 60px;
+ overflow:auto;
+ width: 100%;
 
-}
-#checkboxs{
-  background-color: #fff;
-  cursor: pointer;
+
 
 
 }
+#input_wrapper{
+  position: absolute;
+  display: none;
+}
+
 
 input{
 background-color: #fff;
@@ -102,21 +104,39 @@ border: 13px solid #333;
     stroke-dasharray: 3,3;
   }
 
-  p{
-    position: absolute;
-    left: 355px;
-    top: 35px;
-    font-size: 13px;
-  }
+  .title{
+  font-size: 20px;
+  text-align:left;
+  padding: 0em 0 0 3em;
+}
+.subtitle{
+  font-size: 15px;
+  text-align:left;
+  padding: 0em 0 0 4em;
+}
+
  /* h2{
     position: absolute;
     left: 355px;
     font-size: 20px;
   }*/
+  * {-webkit-font-smoothing: antialiased;}
 
   #arrow {
   transform: rotate(90deg);
   display: inline-block;
+}
+#lines{
+  fill: none;
+}
+
+.tooltipText {
+   text-align: left;
+
+}
+.monthText{
+  text-align: left;
+  font-weight: bold;
 }
 
 /*.checkmark {
@@ -132,30 +152,35 @@ border: 13px solid #333;
   </head>
   <body>
 
-    <h2> Sentiment of canadian private tech companies</h2>
-    <p>Survey scores, September 2018</p>
+    <h2 class="title"> Sentiment of canadian private tech companies</h2>
+    <p class="subtitle">Survey scores, September 2018</p>
     <div id="wrapper">
+        </div>
+
     <button id="button">Highlight/Unhighlight Company  <span id="arrow"> &#10095;</span></button>
-    <div id = "checkbox-buttons" class="hidden">
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="Wealthsimple" checked = "checked"><span class="checkmark"></span>Wealthsimple<br>
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="Ritual" checked = "checked"><span class="checkmark"></span>Ritual<br>
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="ElementAI" checked = "checked"><span class="checkmark"></span>Element.AI<br>
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="Thalmic Labs" checked = "checked"><span class="checkmark"></span>Thalmic Labs<br>
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="Wattpad"><span class="checkmark"></span>Wattpad<br>
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="Hootsuite"><span class="checkmark"></span>Hootsuite<br>
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="Lightspeed"><span class="checkmark"></span>Lightspeed<br>
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="Breather"><span class="checkmark"></span>Breather<br>
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="Coinsquare"><span class="checkmark"></span>Coinsquare<br>
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="Article"><span class="checkmark"></span>Article<br>
-  <input id = "checkboxs" type="checkbox" name="polyhedron" value="Kik"><span class="checkmark"></span>Kik<br>
+    <div id = "checkbox-buttons">
   </div>
-    </div>
 
 
   <script>
 
-  var h = 400;
-  var w = 500;
+var clicked = false;
+
+var wrapper = d3.select("#wrapper")
+// wrapper.append("div").attr("id", "checkbox-buttons")
+// var checkbox_buttons = d3.select("#checkbox-buttons")
+var button = document.getElementById("button")
+
+wrapper.append("svg").attr("id", "chart")
+
+
+var h = 400;
+
+
+
+function redraw() {
+
+
 
   var margin = {
     left: 80,
@@ -164,42 +189,34 @@ border: 13px solid #333;
     right: 100
   }
 
+  var w = wrapper.node().getBoundingClientRect().width
+
   var width = w - margin.left - margin.right,
     height = h - margin.top - margin.bottom;
 
-    var wrapper = d3.select("#wrapper")
-
-   var div_width = wrapper.node().getBoundingClientRect().width
-
-    wrapper.append("div").attr("id", "checkbox-buttons")
-    var checkbox_buttons = document.getElementById("checkbox-buttons")
-
-      var inputs = d3.selectAll("input")
-
-    var checkox_array = [];
-     inputs._groups[0].forEach(function(d){
-        checkox_array.push({
-          checked: d.checked,
-           "CANADIAN PRIVATE TECH COMPANIES": d.value
-        })
-      })
+    // wrapper.append("div").attr("id", "legend")
 
 
-
-    wrapper.append("div").attr("id", "legend")
-
-          var svg = wrapper.append("svg")
-              .attr("width", w)
+              var svg = d3.select("#chart").attr("width", w)
               .attr("height", h)
               .append("g")
-             .attr("transform", "translate(0" + margin.left + "," + margin.top + ")");
+             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+             wrapper.append("div")
+              .attr("id", "tooltip")
+              .style("opacity", 1)
+              .style("position", "absolute")
+              .style("padding", "3px")
 
 
 
-              var parseTime = d3.timeParse("%B %y")
+              var parseTime = d3.timeParse("%B %Y")
+              var bisectDate = d3.bisector(function(d) { return d.Date; }).left
 
 
-              var xScale = d3.scaleTime().range([0, width]);
+              var xScale = d3.scaleTime()
+              .range([0, width]);
+
               var yScale = d3.scaleLinear()
                 .range([height, 0])
 
@@ -234,10 +251,77 @@ border: 13px solid #333;
               d.Date = parseTime(d.Date)
             })
 
-            console.log(data)
 
             xScale.domain(d3.extent(data, function(d) { return d.Date; }));
             yScale.domain(d3.extent(data, function(d) { return d.Score }))
+
+            // checkbox
+
+               d3.selectAll(".checkboxs").remove()
+            d3.selectAll(".checkbox_label").remove()
+            d3.selectAll("#input_wrapper").remove()
+
+            // get unqiue keys
+            var key_array = [...new Set(data.map(d => d["CANADIAN PRIVATE TECH COMPANIES"]))];
+
+            var svg_2 = d3.select("#check").attr("width", w)
+              .attr("height", h)
+              .append("g")
+             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+              button.style.left = 60 + "px"
+                 button.style.top = h + 90+ "px"
+
+             var input_width = wrapper.node().getBoundingClientRect().width/2.5
+            wrapper.append("div").attr("id", "input_wrapper").attr("class", "hidden")
+            .style("left", 60+"px")
+            .style("top", (h +140)+"px")
+            .selectAll(".inputs")
+                 .data(key_array)
+                 .enter()
+                 .append("label")
+                 .append("input")
+                 .attr("type", "checkbox")
+                 .attr("class", "checkboxs")
+                 .property('checked', true)
+                 .attr("value", function(d){
+                   return d
+                 })
+
+                 d3.selectAll("label")
+                 .data(key_array)
+                 .attr("class", "checkbox_label")
+                 .append("text").text(function (d) {
+                     return " " +d
+                 })
+
+                var checkbox_buttons = d3.select("#input_wrapper")
+                var checkbox_buttons_node = checkbox_buttons._groups[0][0]
+
+                 button.addEventListener("click", function(d){
+                  if (checkbox_buttons_node.className == "hidden") {
+                    checkbox_buttons_node.className = "show"
+                    checkbox_buttons_node.style.display = "inline-block"
+                  }
+                  else if (checkbox_buttons_node.className == "show") {
+                    checkbox_buttons_node.className = "hidden"
+                    checkbox_buttons_node.style.display = "none"
+                  }
+
+                 })
+
+
+
+            // data processing
+              var inputs = d3.selectAll(".checkboxs")
+
+            var checkox_array = [];
+             inputs._groups[0].forEach(function(d){
+                checkox_array.push({
+                  checked: d.checked,
+                   "CANADIAN PRIVATE TECH COMPANIES": d.value
+                })
+              })
 
             var data_checked = [];
             data.forEach(function(d, i){
@@ -247,27 +331,27 @@ border: 13px solid #333;
 
             // checkox_array
 
-
-
-
-
             var dataNest = d3.nest()
                     .key(function(d) {return d["CANADIAN PRIVATE TECH COMPANIES"];})
                     .entries(data_checked);
 
-            var key_array = [];
-            dataNest.forEach(function(d) {
-              key_array.push(d.key)
-            })
+            // axis
+          d3.selectAll(".axisx").remove()
 
           svg.append("g")
-            .classed("axisx", true)
+            .attr("class", "axisx")
+
+
+          svg.select(".axisx")
             .attr("transform", "translate(0," + height + ")")
             .call(xAxis)
 
+           d3.selectAll(".axisy").remove()
+
           svg.append("g")
-              .classed("axisy", true)
-              .attr("transform", "translate(0,0)")
+              .attr("class", "axisy")
+
+              svg.select(".axisy").attr("transform", "translate(0,0)")
               .call(yAxis)
               .selectAll("text")
                   .attr("transform", "translate("+ 0 + ",0)")
@@ -275,22 +359,33 @@ border: 13px solid #333;
            var  checked_boxes =d3.selectAll("input[type=checkbox]")
 
 
-          var text_update = svg.selectAll(".text")
+           // tooltip
+
+          var tooltip = d3.select("#tooltip")
+          var tooltipLine = svg.append("line");
+
+
+
+           // text
+          var text = svg.selectAll(".text")
           .data(dataNest)
-          .enter()
+
+          d3.selectAll(".text").remove()
+
+         var text_enter = text.enter()
           .append("text")
           .attr("class", function(d) {
             return "text " + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"].replace(/ /g, "")
           })
-          .attr("x", function(d) {
+
+
+         var text_update = text.merge(text_enter)
+
+          text_update.attr("x", function(d) {
             return width + 5
           })
           .attr("y", function(d) {
-            console.log(d)
-            if (d.values[1]["CANADIAN PRIVATE TECH COMPANIES"] == "Article") return yScale(d.values[1].Score) + 0
-            if (d.values[1]["CANADIAN PRIVATE TECH COMPANIES"] == "Breather") return yScale(d.values[1].Score) + 8
-            if (d.values[1]["CANADIAN PRIVATE TECH COMPANIES"] == "Ritual") return yScale(d.values[1].Score) + 5
-            return yScale(d.values[1].Score) + 3
+            return yScale(d.values[2].Score)
           })
 
         text_update.text(function(d) {
@@ -304,25 +399,51 @@ border: 13px solid #333;
           })
 
 
+        // var circles =  svg.selectAll(".circles")
+        //     .data(data_checked)
+
+        //     d3.selectAll(".circle").remove()
+
+        // var circles_enter = circles.enter()
+        //   .append("circle")
+        //   .attr("class", "circle")
+        //   .attr("r", 3)
+
+        //  var circles_update = circles.merge(circles_enter)
+
+        //  circles_update.attr("cx", function(d){
+        //   return xScale(d.Date)
+        //  })
+        //  .attr("cy", function(d){
+        //   return yScale(d.Score)
+        //  })
+        //  .attr("fill", function(d){
+        //   return color(d["CANADIAN PRIVATE TECH COMPANIES"])
+
+        //  })
+
+
+
+          // lines
 
           var lines = svg.selectAll(".lines")
               .data(dataNest)
-              .enter()
+
+            d3.selectAll(".nested").remove()
+
+           var lines_enter = lines.enter()
               .append("g")
               .attr("class", "nested")
 
-          var lines_update = lines.append("path")
+            var lines_update = lines.merge(lines_enter)
+
+          lines_update.append("path")
               .attr("class", function(d) {
                           return "line " + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"].replace(/ /g, "")
               })
               .attr("d", function(d) { return line(d.values)} )
               .style("fill", 0)
-
-         d3.selection.prototype.moveToFront = function() {
-      return this.each(function(){
-        this.parentNode.appendChild(this);
-      });
-    };
+              .attr("id", "lines")
 
 
         lines_update.style("stroke", function(d, i) {
@@ -330,22 +451,100 @@ border: 13px solid #333;
                 else return "#e4e4e4"
               })
               .style("stroke-width", 2.5)
-              .on("mouseover", function(d) {
-                d3.selectAll("path").style("opacity", 0.3).lower()
-                d3.select(this).style("opacity", 1).style("stroke-width", 2.5)
-                 d3.selectAll(".text").style("opacity", 0.3)
-                d3.select("." + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"].replace(/ /g, "")).style("opacity", 1)
-              })
-              .on("mouseout", function() {
+              .on("click", function(d) {
+
+              if (clicked == false) {
+                var path_node = this.childNodes[0]
+                 d3.selectAll("path").style("opacity", 0.3)
+                d3.select(path_node).style("opacity", 1).style("stroke-width", 2.5)
+                  d3.selectAll(".text").style("opacity", 0.3)
+                 d3.select("." + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"].replace(/ /g, "")).style("opacity", 1)
+
+                clicked = true
+              }
+              else {
                 d3.selectAll("path").style("opacity", 1).style("stroke-width", 2.5)
                 d3.selectAll(".text").style("opacity", 1)
+                clicked = false
+              }
+
+              })
+              // .on("mouseout", function() {
+              //   d3.selectAll("path").style("opacity", 1).style("stroke-width", 2.5)
+              //   d3.selectAll(".text").style("opacity", 1)
+              // })
+            var score_array = [];
+              data.forEach(function(d) {
+                score_array.push(d.Score)
               })
 
+             var max_score = Math.max.apply(null, score_array)
+
+             d3.selectAll(".line_hover").remove()
 
 
 
+             var tipBox = svg.append("rect")
+                .attr("width", width)
+                .attr("height", height)
+                .attr("opacity", 0)
+                .on("mousemove", drawTooltip)
+                .on("mouseout", removeTooltip)
 
-        d3.selectAll("#checkboxs")
+                function removeTooltip() {
+                if (tooltip) tooltip.style('display', 'none');
+                if (tooltipLine) tooltipLine.attr('stroke', 'none');
+              }
+
+
+              function drawTooltip(){
+                const monthNames = ["January", "February", "March", "April", "May", "June",
+                  "July", "August", "September", "October", "November", "December"
+                ];
+
+                const line_hover = xScale.invert(d3.mouse(this)[0]);
+                var date_hover = xScale.invert(d3.mouse(this)[0]).getMonth();
+                var date_hover_text = monthNames[xScale.invert(d3.mouse(this)[0]).getMonth()];
+
+                // console.log(d3.mouse(this)[0])
+                 // console.log(xScale.invert(d3.mouse(this)[0]).getMonth())
+                 var dateobj = xScale.invert(d3.mouse(this)[0]);
+                if(dateobj.getDate() > 15) {
+                  date_hover = date_hover + 1;
+                  date_hover_text = monthNames[date_hover];
+                }
+
+
+
+                console.log(dateobj)
+
+
+                 // yScale.invert(pos.y)
+
+                tooltipLine.attr("stroke", "grey")
+                  .attr("x1", xScale(line_hover))
+                  .attr("x2", xScale(line_hover))
+                  .attr("y1", 0)
+                  .attr("y2", height)
+                  .attr("class", "line_hover")
+                  .style('stroke-width', 1)
+
+                  tooltip.html("<p class='monthText'>"+ date_hover_text+"</p>")
+                      .style("position", "absolute")
+                      .style("background-color", "lightgrey")
+                      .style('display', 'block')
+                      .style('left', d3.event.pageX - 100+ "px")
+                      .style('top', d3.event.pageY - 20+"px")
+                      .selectAll()
+                      .data(dataNest).enter()
+                      .append('div')
+                      .attr("class", "tooltipText")
+                      .style('color', "black")
+                      .html(function(e){ return e.key + ': ' + e.values.find(function(h){ return (h.Date.getMonth()) == (date_hover) }).Score })
+              }
+
+
+        d3.selectAll(".checkboxs")
             .on("change", function(el){
               var node = this
 
@@ -370,6 +569,15 @@ border: 13px solid #333;
             if(d.values[0].checked == true) return "block"
             else return "none"
           })
+
+         //  circles_update.attr("fill", function(d){
+         //    if (d["CANADIAN PRIVATE TECH COMPANIES"] == node.value && d.checked != node.checked) {
+         //         d.checked = node.checked
+         //        }
+         //  if(d.checked == true) return color(d["CANADIAN PRIVATE TECH COMPANIES"])
+         //  else return "#e4e4e4"
+
+         // })
 
 
             })
@@ -408,26 +616,10 @@ border: 13px solid #333;
               //        return d
               //      })
 
-                  // che
-
-                 checkbox_buttons.style.left = (div_width / 1.3) + "px"
-
-                 var button = document.getElementById("button")
-
-                 button.style.left = (div_width / 1.3) + "px"
+                  // checkbox logic
 
 
-                 button.addEventListener("click", function(d){
-                  if (checkbox_buttons.className == "hidden") {
-                    checkbox_buttons.className = "show"
-                    checkbox_buttons.style.display = "block"
-                  }
-                  else {
-                    checkbox_buttons.className = "hidden"
-                    checkbox_buttons.style.display = "none"
-                  }
 
-                 })
 
 
 
@@ -435,6 +627,18 @@ border: 13px solid #333;
 
 
   })
+
+} // redraw
+
+redraw()
+
+    d3.select(window).on("resize", redraw)
+
+
+
+
+
+
 
 
 

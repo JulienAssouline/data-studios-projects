@@ -31,19 +31,34 @@ body,html{
     display: inline-block;
     font-size: 13px;*/
 }
+
 button:focus {outline:0;}
 
+.vertical_line{
+transform: rotate(90deg);
+width: 10%
+}
 
 #checkbox-buttons{
 display: none;
  position: absolute;
  overflow:auto;
- width: 100%;
-
+ opacity: 0;
 
 
 
 }
+.checkbox_label{
+  margin-right: 5px;
+}
+.checkmark {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    overflow:auto;
+}
+
 #input_wrapper{
   position: absolute;
   display: none;
@@ -59,12 +74,13 @@ border: 13px solid #333;
 
 #legend{
   position: absolute;
-  left: 50px;
-  top: 450px;
+  left: -20px;
+  top: 100px;
   width: 100%;
-  display: inline-block;
   padding: 0.5em 0 0 0em;
   margin-right: 1em;
+  cursor: pointer;
+  overflow:auto;
 }
 
 .legend{
@@ -130,6 +146,11 @@ border: 13px solid #333;
   fill: none;
 }
 
+#tooltip{
+    width: 100px;
+    pointer-events: none;
+}
+
 .tooltipText {
    text-align: left;
 
@@ -137,6 +158,7 @@ border: 13px solid #333;
 .monthText{
   text-align: left;
   font-weight: bold;
+  font-size: 12px
 }
 
 /*.checkmark {
@@ -153,9 +175,13 @@ border: 13px solid #333;
   <body>
 
     <h2 class="title"> Sentiment of canadian private tech companies</h2>
-    <p class="subtitle">Survey scores, September 2018</p>
+    <p class="subtitle">Survey scores, October 2018</p>
+    <br><br>
+             <div id = "legend"> </div>
+
     <div id="wrapper">
         </div>
+
 
     <button id="button">Highlight/Unhighlight Company  <span id="arrow"> &#10095;</span></button>
     <div id = "checkbox-buttons">
@@ -165,6 +191,10 @@ border: 13px solid #333;
   <script>
 
 var clicked = false;
+var clicked_text = false;
+ var node_clicked;
+ var legend_clicked = false;
+var node_clicked_text;
 
 var wrapper = d3.select("#wrapper")
 // wrapper.append("div").attr("id", "checkbox-buttons")
@@ -270,23 +300,27 @@ function redraw() {
              .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
               button.style.left = 60 + "px"
-                 button.style.top = h + 90+ "px"
+                 button.style.top = h + 140+ "px"
 
              var input_width = wrapper.node().getBoundingClientRect().width/2.5
-            wrapper.append("div").attr("id", "input_wrapper").attr("class", "hidden")
+         var input_labels =  wrapper.append("div").attr("id", "input_wrapper").attr("class", "hidden")
             .style("left", 60+"px")
-            .style("top", (h +140)+"px")
+            .style("top", (h +200)+"px")
             .selectAll(".inputs")
                  .data(key_array)
                  .enter()
                  .append("label")
-                 .append("input")
+
+                 input_labels.append("input")
                  .attr("type", "checkbox")
                  .attr("class", "checkboxs")
                  .property('checked', true)
                  .attr("value", function(d){
                    return d
                  })
+
+                 // input_labels.append("span").attr("class", "checkmark")
+
 
                  d3.selectAll("label")
                  .data(key_array)
@@ -299,6 +333,7 @@ function redraw() {
                 var checkbox_buttons_node = checkbox_buttons._groups[0][0]
 
                  button.addEventListener("click", function(d){
+                  clicked = true
                   if (checkbox_buttons_node.className == "hidden") {
                     checkbox_buttons_node.className = "show"
                     checkbox_buttons_node.style.display = "inline-block"
@@ -394,7 +429,7 @@ function redraw() {
           })
           .style("font-size", "12px")
           .style("display", function(d) {
-            if(d.values[0].checked == true) return "block"
+            if(d.values[0].checked == true) return "none"
             else return "none"
           })
 
@@ -451,24 +486,24 @@ function redraw() {
                 else return "#e4e4e4"
               })
               .style("stroke-width", 2.5)
-              .on("click", function(d) {
+              // .on("click", function(d) {
 
-              if (clicked == false) {
-                var path_node = this.childNodes[0]
-                 d3.selectAll("path").style("opacity", 0.3)
-                d3.select(path_node).style("opacity", 1).style("stroke-width", 2.5)
-                  d3.selectAll(".text").style("opacity", 0.3)
-                 d3.select("." + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"].replace(/ /g, "")).style("opacity", 1)
+              // if (clicked == false) {
+              //   var path_node = this.childNodes[0]
+              //    d3.selectAll("path").style("opacity", 0.3)
+              //   d3.select(path_node).style("opacity", 1).style("stroke-width", 2.5)
+              //     d3.selectAll(".text").style("opacity", 0.3)
+              //    d3.select("." + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"].replace(/ /g, "")).style("opacity", 1)
 
-                clicked = true
-              }
-              else {
-                d3.selectAll("path").style("opacity", 1).style("stroke-width", 2.5)
-                d3.selectAll(".text").style("opacity", 1)
-                clicked = false
-              }
+              //   clicked = true
+              // }
+              // else {
+              //   d3.selectAll("path").style("opacity", 1).style("stroke-width", 2.5)
+              //   d3.selectAll(".text").style("opacity", 1)
+              //   clicked = false
+              // }
 
-              })
+              // })
               // .on("mouseout", function() {
               //   d3.selectAll("path").style("opacity", 1).style("stroke-width", 2.5)
               //   d3.selectAll(".text").style("opacity", 1)
@@ -516,9 +551,10 @@ function redraw() {
 
 
 
-                console.log(dateobj)
 
+                var tooltipY = d3.event.pageY = 165;
 
+                var tooltipX = d3.event.pageX - 150 < 100 ? d3.event.pageX=100 : d3.event.pageX - 150
                  // yScale.invert(pos.y)
 
                 tooltipLine.attr("stroke", "grey")
@@ -533,15 +569,118 @@ function redraw() {
                       .style("position", "absolute")
                       .style("background-color", "lightgrey")
                       .style('display', 'block')
-                      .style('left', d3.event.pageX - 100+ "px")
-                      .style('top', d3.event.pageY - 20+"px")
+                      .style('left', tooltipX+ "px")
+                      .style('top', tooltipY + "px")
                       .selectAll()
                       .data(dataNest).enter()
                       .append('div')
                       .attr("class", "tooltipText")
                       .style('color', "black")
-                      .html(function(e){ return e.key + ': ' + e.values.find(function(h){ return (h.Date.getMonth()) == (date_hover) }).Score })
+                      .html(function(e){
+
+                        return "<hr>"+ e.key + ': ' + e.values.find(function(h){ return (h.Date.getMonth()) == (date_hover) }).Score
+                      })
               }
+
+
+              /// LEGEND ///
+
+          var legend_html = d3.select("#legend")
+
+          var legend_array = [];
+          key_array.forEach(function(d){
+            legend_array.push({
+              company: d,
+              checked: true
+            })
+          })
+          console.log(legend_array)
+
+           var legend = legend_html.selectAll(".legend-item")
+             .data(legend_array)
+
+             d3.selectAll(".legend").remove()
+
+          var legend_enter = legend.enter()
+             .append("span")
+             .attr("class", "legend")
+
+             legend_enter.append("div").attr("class", "color").attr("id", "true")
+             legend_enter.append("span").attr("class", "label")
+
+             var legend_update = legend.merge(legend_enter)
+
+             legend_update.select(".color")
+             .style("background-color", function(d, i) {
+               return color(d.company)
+             })
+             .style("border", "1px")
+              .on("mouseover", function(d){
+
+                  var node = this
+                   lines_update.style("opacity", function(d, i) {
+                    if (node.id == d.key) return 1
+                    else return 0.1
+                  })
+                   text_update.style("display", function(d) {
+                    if (node.id == d.key) return "block"
+                    else return "none"
+                  })
+
+
+               })
+              .on("mouseout", function() {
+
+                  lines_update.style("opacity", 1)
+                  d3.selectAll(".text").style("display", "none")
+
+              })
+
+             legend_update.select(".label")
+               .html(function(d) {
+                 return d.company
+               })
+               .on("mouseover", function(d){
+
+                  var node = this.innerHTML
+                   lines_update.style("opacity", function(d, i) {
+                    if (node == d.key) return 1
+                    else return 0.1
+                  })
+                    text_update.style("display", function(d) {
+                    if (node == d.key) return "block"
+                    else return "none"
+                  })
+
+               })
+              .on("mouseout", function() {
+
+                lines_update.style("opacity", 1)
+                d3.selectAll(".text").style("display", "none")
+
+              })
+
+
+                legend_update.on("mouseover", function(d) {
+                  var node = this.childNodes[1].innerHTML
+                   lines_update.style("opacity", function(d, i) {
+                    if (node == d.key) return 1
+                    else return 0.1
+                  })
+                   text_update.style("display", function(d) {
+                    if (node == d.key) return "block"
+                    else return "none"
+                  })
+                })
+                .on("mouseout", function() {
+
+                lines_update.style("opacity", 1)
+                d3.selectAll(".text").style("display", "none")
+
+              })
+
+
+                /// checkboxes
 
 
         d3.selectAll(".checkboxs")
@@ -552,8 +691,12 @@ function redraw() {
                 if (d.values[0]["CANADIAN PRIVATE TECH COMPANIES"] == node.value && d.values[0].checked != node.checked) {
                  d.values[0].checked = node.checked
                 }
-                if(d.values[0].checked == true) return color(i)
-                else return "#e4e4e4"
+                if(d.values[0].checked == true) {
+                  d3.select(this).raise()
+                }
+                if(d.values[0].checked == true) return color(i);
+                else return "#e4e4e4";
+
               })
               .style("stroke-width", 2.5)
 
@@ -566,63 +709,22 @@ function redraw() {
             if (d.values[0]["CANADIAN PRIVATE TECH COMPANIES"] == node.value && d.values[0].checked != node.checked) {
              d.values[0].checked = node.checked
             }
-            if(d.values[0].checked == true) return "block"
+            if(d.values[0].checked == true) return "none"
             else return "none"
           })
 
-         //  circles_update.attr("fill", function(d){
-         //    if (d["CANADIAN PRIVATE TECH COMPANIES"] == node.value && d.checked != node.checked) {
-         //         d.checked = node.checked
-         //        }
-         //  if(d.checked == true) return color(d["CANADIAN PRIVATE TECH COMPANIES"])
-         //  else return "#e4e4e4"
+           legend_update.select(".color")
+             .style("background-color", function(d, i) {
+              if (d.company == node.value && d.checked != node.checked) {
+                 d.checked = node.checked
+                }
+              if (d.checked == false) return "lightgrey"
+              else return color(d.company)
+             })
 
-         // })
 
 
             })
-
-
-
-
-
-
-
-              //             var legend_html = d3.select("#legend")
-
-
-              //  var legend = legend_html.selectAll(".legend-item")
-              //    .data(key_array)
-
-              //    d3.selectAll(".legend").remove()
-
-              // var legend_enter = legend.enter()
-              //    .append("span")
-              //    .attr("class", "legend")
-
-              //    legend_enter.append("div").attr("class", "color")
-              //    legend_enter.append("span").attr("class", "label")
-
-              //    var legend_update = legend.merge(legend_enter)
-
-              //    legend_update.select(".color")
-              //    .style("background-color", function(d, i) {
-              //      return color(i)
-              //    })
-              //    .style("border", "1px")
-
-              //    legend_update.select(".label")
-              //      .html(function(d) {
-              //        return d
-              //      })
-
-                  // checkbox logic
-
-
-
-
-
-
 
 
 

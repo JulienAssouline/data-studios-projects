@@ -528,12 +528,15 @@ function redraw() {
                 .on("mouseout", removeTooltip)
 
                 function removeTooltip() {
+                  d3.select(this).lower()
+
                 if (tooltip) tooltip.style('display', 'none');
                 if (tooltipLine) tooltipLine.attr('stroke', 'none');
               }
 
 
               function drawTooltip(){
+                d3.select(this).raise()
                 const monthNames = ["January", "February", "March", "April", "May", "June",
                   "July", "August", "September", "October", "November", "December"
                 ];

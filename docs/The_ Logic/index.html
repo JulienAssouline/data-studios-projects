@@ -25,6 +25,7 @@ body,html{
     border: none;
     color: black;
     padding: 10px 10px;
+    border: 0.5px solid darkgrey;
 
     /*text-align: center;
     text-decoration: none;
@@ -74,9 +75,8 @@ border: 13px solid #333;
 
 #legend{
   position: absolute;
-  left: -20px;
+  left: 55px;
   top: 100px;
-  width: 100%;
   padding: 0.5em 0 0 0em;
   margin-right: 1em;
   cursor: pointer;
@@ -149,6 +149,10 @@ border: 13px solid #333;
 #tooltip{
     width: 100px;
     pointer-events: none;
+    -moz-box-shadow: 0 0 10px #ccc;
+-webkit-box-shadow: 0 0 10px #ccc;
+box-shadow: 0 0 10px #ccc;
+border-radius: 5px
 }
 
 .tooltipText {
@@ -160,6 +164,19 @@ border: 13px solid #333;
   font-weight: bold;
   font-size: 12px;
   pointer-events: none;
+}
+
+#annotation{
+  color: grey;
+  position: absolute;
+}
+#annotation_path {
+  color: grey;
+    -webkit-transform:rotate(90deg);
+    position: absolute;
+    width:10px;
+
+
 }
 
 /*.checkmark {
@@ -177,14 +194,16 @@ border: 13px solid #333;
 
     <h2 class="title"> Sentiment of canadian private tech companies</h2>
     <p class="subtitle">Survey scores, October 2018</p>
-    <br><br>
-             <div id = "legend"> </div>
+    <p id ="annotation"> Hover to highlight a company</p>
+    <hr id = "annotation_path">
+    <div id = "legend"> </div>
 
     <div id="wrapper">
+
         </div>
 
 
-    <button id="button">Highlight/Unhighlight Company  <span id="arrow"> &#10095;</span></button>
+    <button id="button">Add/Remove to compare companies  <span id="arrow"> &#10095;</span></button>
     <div id = "checkbox-buttons">
   </div>
 
@@ -215,7 +234,7 @@ function redraw() {
 
   var margin = {
     left: 80,
-    top: 40,
+    top: 60,
     bottom: 40,
     right: 100
   }
@@ -227,6 +246,17 @@ function redraw() {
 
     // wrapper.append("div").attr("id", "legend")
 
+    /// Annotation ///
+
+   var annotation = document.getElementById("annotation")
+    annotation.style.left = w/2 +"px"
+    annotation.style.top = 70 +"px"
+
+   var annotation_path = document.getElementById("annotation_path")
+   annotation_path.style.left = w/1.8 +"px"
+   annotation_path.style.top = 100 +"px"
+
+
 
               var svg = d3.select("#chart").attr("width", w)
               .attr("height", h)
@@ -235,7 +265,7 @@ function redraw() {
 
              wrapper.append("div")
               .attr("id", "tooltip")
-              .style("opacity", 1)
+              .style("opacity", 0)
               .style("position", "absolute")
               .style("padding", "3px")
 
@@ -301,12 +331,12 @@ function redraw() {
              .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
               button.style.left = 60 + "px"
-                 button.style.top = h + 140+ "px"
+                 button.style.top = h + 110+ "px"
 
              var input_width = wrapper.node().getBoundingClientRect().width/2.5
          var input_labels =  wrapper.append("div").attr("id", "input_wrapper").attr("class", "hidden")
             .style("left", 60+"px")
-            .style("top", (h +200)+"px")
+            .style("top", (h +170)+"px")
             .selectAll(".inputs")
                  .data(key_array)
                  .enter()
@@ -556,7 +586,7 @@ function redraw() {
 
 
 
-                var tooltipY = d3.event.pageY = 165;
+                var tooltipY = d3.event.pageY = 145;
 
                 var tooltipX = d3.event.pageX - 150 < 100 ? d3.event.pageX=100 : d3.event.pageX - 150
                  // yScale.invert(pos.y)
@@ -573,6 +603,7 @@ function redraw() {
                       .style("position", "absolute")
                       .style("background-color", "lightgrey")
                       .style('display', 'block')
+                      .style("opacity", 1)
                       .style('left', tooltipX+ "px")
                       .style('top', tooltipY + "px")
                       .selectAll()

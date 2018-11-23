@@ -532,7 +532,7 @@ function redraw() {
                 return d.getMonthName() + " '" + (d.getFullYear() - 2000);
               })
               .style("font-size", "11px")
-              .style("fill", "grey")
+              .style("fill", "#707070")
 
            d3.selectAll(".axisy").remove()
 
@@ -544,7 +544,7 @@ function redraw() {
               .selectAll("text")
                   .attr("transform", "translate("+ 0 + ",0)")
                   .style("font-size", "11px")
-                  .style("fill", "grey")
+                  .style("fill", "#707070")
 
           d3.selectAll(".y_axis_labels").remove()
           d3.selectAll(".y_axis_title_shadow").remove()
@@ -570,7 +570,7 @@ function redraw() {
           .attr("y", 4)
           .text("The Logic score")
           .style("font-size", "11px")
-          .style("fill", "grey")
+          .style("fill", "#707070")
           .raise()
 
            var  checked_boxes =d3.selectAll("input[type=checkbox]")

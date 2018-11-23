@@ -349,8 +349,12 @@ function redraw() {
             var g = svg.append("g")
              .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+
+              d3.selectAll(".tooltip").remove();
+
              wrapper.append("div")
               .attr("id", "tooltip")
+              .attr("class", "tooltip")
               .style("opacity", 0)
               .style("position", "absolute")
               .style("padding", "3px")

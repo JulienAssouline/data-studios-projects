@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+ <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', serif;
+    font-size: 11px;
+    text-align: center;
+  }
+.states {
+  fill: #ccc;
+  stroke: #fff;
+}
+
+#button{
+  position: absolute;
+  cursor: pointer;
+  background-color: #e7e7e7; /* Green */
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    border: 0.5px solid darkgrey;
+}
+
+button:focus {outline:0;}
+
+input:focus {outline:0;}
+
+.vertical_line{
+transform: rotate(90deg);
+width: 10%
+}
+
+#checkbox-buttons{
+display: block;
+ position: absolute;
+ overflow:auto;
+ opacity: 1;
+}
+
+.input_labels{
+  margin-left: 5px;
+}
+
+.text_label{
+  display: inline-block;
+  margin-bottom: 12px;
+   vertical-align: middle;
+
+}
+.checkboxs {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 2px solid black;
+  padding: 5px;
+position: relative;
+}
+.checkboxs:active, .checkboxs:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.checkboxs:checked {
+  background-color: #fafafa;
+  border: 2px solid black;
+  padding: 5px;
+}
+.checkboxs:checked:after {
+  content: "\2713";
+  font-size: 9px;
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  bottom: 0px;
+  color: black;
+}
+
+.checkbox-title{
+font-size: 15px;
+  text-align:left;
+  padding: 0em 0 0 3.5em;
+  text-decoration: underline;
+}
+.checkmark {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #eee;
+    overflow:auto;
+}
+
+#input_wrapper{
+  position: absolute;
+  display: block;
+}
+
+
+input{
+background-color: #fff;
+border: 13px solid #333;
+   background: #fff;
+  color: #333;
+}
+
+#legend{
+  position: absolute;
+  left: 55px;
+  top: 90px;
+  padding: 0.5em 0 0 0em;
+  margin-right: 1em;
+  cursor: pointer;
+  overflow:auto;
+}
+
+.legend{
+  width: auto;
+  padding-left:10px;
+
+}
+.color {
+  width: 11px;
+  display: inline-block;
+  height: 11px;
+  background-color: red;
+
+}
+.label {
+  display: inline-block;
+  padding: 1em 0 0 0.4em
+
+}
+
+.axisx path {
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+  .axisx line {
+    fill: none;
+    stroke: grey;
+  }
+
+.axisy path {
+    fill: none;
+    stroke: white;
+  }
+
+.axisy line{
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+    opacity: 0.7;
+    stroke-dasharray: 3,3;
+  }
+
+  .title{
+  font-size: 20px;
+  text-align:left;
+  padding: 0em 0 0 3em;
+  font-family: "Playfair Display";
+}
+.subtitle{
+  font-size: 15px;
+  text-align:left;
+  padding: 0em 0 0 4em;
+}
+
+.y_axis_title {
+    -moz-box-shadow: 0 0 10px #ccc;
+-webkit-box-shadow: 0 0 10px #ccc;
+box-shadow: 0 0 10px #ccc;
+border-radius: 5px
+}
+
+/*.companies {
+  fill: none;
+  stroke: #aaa;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 1.5px;
+}*/
+
+
+ /* h2{
+    position: absolute;
+    left: 355px;
+    font-size: 20px;
+  }*/
+  * {-webkit-font-smoothing: antialiased;}
+
+  #arrow {
+  transform: rotate(90deg);
+  display: inline-block;
+}
+#lines{
+  fill: none;
+}
+
+#tooltip{
+    width: 100px;
+    pointer-events: none;
+    -moz-box-shadow: 0 0 10px #ccc;
+-webkit-box-shadow: 0 0 10px #ccc;
+box-shadow: 0 0 10px #ccc;
+border: 1px solid black;
+background: white;
+border-radius: 2px;
+z-index: 1;
+
+}
+
+#tooltip:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 8px solid black;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  left: 45px;
+  top:73px;
+
+}
+
+
+.tooltipText {
+   text-align: left;
+   pointer-events: none;
+}
+.monthText{
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+#annotation{
+  color: grey;
+  position: absolute;
+}
+#annotation_path {
+  color: grey;
+    -webkit-transform:rotate(90deg);
+    position: absolute;
+    width:10px;
+
+
+}
+
+.line_hover{
+  fill: grey;
+  stroke-width: 1px;
+    shape-rendering: crispEdges;
+    opacity: 1;
+    stroke-dasharray: 2,2;
+
+}
+.hover_rect{
+  cursor: crosshair;
+}
+
+.voronoi path {
+  fill: none;
+  pointer-events: all;
+}
+
+.company-hover{
+  stroke-width: 3;
+}
+
+  </style>
+  </head>
+  <body>
+
+    <h2 class="title"> The Logic's opinion survey of private tech companies</h2>
+    <br>
+    <!-- <p class="subtitle">Survey scores, October 2018</p> -->
+    <p id ="annotation"> Hover/Tap to highlight a company</p>
+    <hr id = "annotation_path">
+    <div id = "legend"> </div>
+
+    <div id="wrapper">
+
+        </div>
+
+    <p class="checkbox-title"> Check a box to select a company </p>
+    <div id = "checkbox-buttons">
+  </div>
+
+
+  <script>
+
+var clicked = false;
+var clicked_text = false;
+ var node_clicked;
+ var legend_clicked = false;
+var node_clicked_text;
+
+var wrapper = d3.select("#wrapper")
+
+
+wrapper.append("svg").attr("id", "chart")
+
+
+var h = 500;
+
+
+
+function redraw() {
+
+
+
+  var margin = {
+    left: 80,
+    top: 80,
+    bottom: 60,
+    right: 80
+  }
+
+  var w = wrapper.node().getBoundingClientRect().width
+
+  if (w < 500) {
+    margin.top = 100
+  }
+
+  var width = w - margin.left - margin.right,
+    height = h - margin.top - margin.bottom;
+
+    /// Annotation ///
+
+   var annotation = document.getElementById("annotation")
+    annotation.style.left = w/2 +"px"
+    annotation.style.top = 65 +"px"
+
+   var annotation_path = document.getElementById("annotation_path")
+   annotation_path.style.left = w/1.8 +"px"
+   annotation_path.style.top = 90 +"px"
+
+
+
+              var svg = d3.select("#chart").attr("width", w)
+              .attr("height", h)
+
+            var g = svg.append("g")
+             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+              d3.selectAll(".tooltip").remove();
+
+             wrapper.append("div")
+              .attr("id", "tooltip")
+              .attr("class", "tooltip")
+              .style("opacity", 0)
+              .style("position", "absolute")
+              .style("padding", "3px")
+
+
+
+              var parseTime = d3.timeParse("%B %Y")
+              var bisectDate = d3.bisector(function(d) { return d.Date; }).left
+
+
+              var xScale = d3.scaleTime()
+              .range([0, width]);
+
+              var yScale = d3.scaleLinear()
+                .range([height, 0])
+
+          var line = d3.line()
+              .x(function(d) { return xScale(d.Date); })
+              .y(function(d) { return yScale(d.Score); });
+
+          var voronoi = d3.voronoi()
+              .x(function(d) { return xScale(d.Date); })
+              .y(function(d) { return yScale(d.Score); })
+              .extent([[-margin.left, -margin.top], [width + margin.right, height + margin.bottom]]);
+
+          var xtickFormat = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"]
+
+
+          var xAxis = d3.axisBottom()
+              .scale(xScale)
+              .ticks(2)
+              .tickSizeOuter(0)
+
+            var yAxis = d3.axisLeft()
+              .scale(yScale)
+              .tickSize(-width,0,0)
+              .tickSizeOuter(0)
+
+
+
+             d3.csv("CANADIAN PRIVATE TECH COMPANIES The Logic.csv", function(error, data){
+            data.forEach(function(d){
+             d.Score = +d.Score
+              d.Date = parseTime(d.Date)
+            })
+
+
+
+
+            xScale.domain(d3.extent(data, function(d) { return d.Date; }));
+            yScale.domain(d3.extent(data, function(d) { return d.Score }))
+
+            // checkbox
+
+               d3.selectAll(".checkboxs").remove()
+            d3.selectAll(".checkbox_label").remove()
+            d3.selectAll("#input_wrapper").remove()
+
+            // get unqiue keys
+            var key_array = [...new Set(data.map(d => d["CANADIAN PRIVATE TECH COMPANIES"]))];
+            var Score_array = [...new Set(data.map(d => d.Score))];
+
+           var max_Month = Math.max.apply(Math, data.map(function(o) { return o.Date.getMonth(); }))
+           var max_Year = Math.max.apply(Math, data.map(function(o) { return o.Date.getFullYear(); }))
+           var max_Date = max_Month + max_Year
+
+
+          var data_current =  data.filter(function(d){
+              var month = d.Date.getMonth()
+              var year = d.Date.getFullYear()
+              var currentDate = month + year
+              return currentDate === max_Date
+            })
+
+          data_current.sort(function(a,b) { return b.Score - a.Score})
+
+            var svg_2 = d3.select("#check").attr("width", w)
+              .attr("height", h)
+              .append("g")
+             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+             var input_width = wrapper.node().getBoundingClientRect().width/2.5
+         var input_labels =  wrapper.append("div").attr("id", "input_wrapper")
+            .style("left", 50+"px")
+            .style("top", function(){
+              if(w < 500) return (h +150)+"px"
+              else return (h +130)+"px"
+
+            })
+            .selectAll(".inputs")
+                 .data(data_current)
+                 .enter()
+                 .append("label")
+
+
+                 input_labels.append("input")
+                 .attr("type", "checkbox")
+                 .attr("class", "checkboxs")
+                 .property('checked', function(d, i){
+                  if (i < 3) return true
+                  else return false
+                 })
+                 .attr("value", function(d){
+                   return d["CANADIAN PRIVATE TECH COMPANIES"]
+                 })
+
+
+                 d3.selectAll("label")
+                 .data(data_current)
+                 .attr("class", "input_labels")
+                 .append("text").text(function (d) {
+                     return " " +d["CANADIAN PRIVATE TECH COMPANIES"]
+                 })
+                 .attr("class", "text_label")
+
+                var checkbox_buttons = d3.select("#input_wrapper")
+                var checkbox_buttons_node = checkbox_buttons._groups[0][0]
+
+            // data processing
+              var inputs = d3.selectAll(".checkboxs")
+
+            var checkox_array = [];
+             inputs._groups[0].forEach(function(d){
+                checkox_array.push({
+                  checked: d.checked,
+                   "CANADIAN PRIVATE TECH COMPANIES": d.value
+                })
+              })
+
+               var colors_array = [...new Set(checkox_array.map(d => d["CANADIAN PRIVATE TECH COMPANIES"]))];
+
+
+          var color = d3.scaleOrdinal()
+            .domain(colors_array)
+            .range(['#e7a957', "#7565d0", "#0c1f25", '#5ba6c0', '#d28d4c' , '#de5e5e', '#6cb283', "#1b56dc", "#7ac7d8", "#e06c61", "#80c538"]);
+
+
+            data.map(function(d) {
+              checkox_array.forEach(function(e) {
+                if (d["CANADIAN PRIVATE TECH COMPANIES"] == e["CANADIAN PRIVATE TECH COMPANIES"]) {
+                  return d.checked = e.checked
+                }
+              })
+
+             })
+
+
+            // checkox_array
+
+            var dataNest = d3.nest()
+                    .key(function(d) {return d["CANADIAN PRIVATE TECH COMPANIES"];})
+                    .entries(data);
+
+            // axis
+          d3.selectAll(".axisx").remove()
+
+          g.append("g")
+            .attr("class", "axisx")
+
+          Date.prototype.getMonthName = function() {
+            var months = ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            return months[this.getMonth()];
+          };
+
+
+          g.select(".axisx")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+              .selectAll("text")
+              .text(function(d){
+                return d.getMonthName() + " '" + (d.getFullYear() - 2000);
+              })
+              .style("font-size", "11px")
+              .style("fill", "#707070")
+
+           d3.selectAll(".axisy").remove()
+
+          g.append("g")
+              .attr("class", "axisy")
+
+              g.select(".axisy").attr("transform", "translate(0,0)")
+              .call(yAxis)
+              .selectAll("text")
+                  .attr("transform", "translate("+ 0 + ",0)")
+                  .style("font-size", "11px")
+                  .style("fill", "#707070")
+
+          d3.selectAll(".y_axis_labels").remove()
+          d3.selectAll(".y_axis_title_shadow").remove()
+          d3.selectAll(".y_axis_title").remove()
+
+         var y_axis_labels = g.append("text").attr("class", "y_axis_labels")
+
+         y_axis_labels.append("tspan").attr("class", "y_axis_title_shadow")
+         y_axis_labels.append("tspan").attr("class", "y_axis_title")
+
+          // y_axis_labels.select(".y_axis_title_shadow")
+          // .attr("x", -15)
+          // .attr("y", 15)
+          // .text("The Logic score")
+          // .style("font-size", "11px")
+          // .style("fill", "none")
+          // .style("stroke-width", 11*0.5 +"px")
+          // .style("stroke", "#ffffff")
+          // .raise()
+
+         y_axis_labels.select(".y_axis_title")
+          .attr("x", -15)
+          .attr("y", 4)
+          .text("The Logic score")
+          .style("font-size", "11px")
+          .style("fill", "black")
+          .raise()
+
+           var  checked_boxes =d3.selectAll("input[type=checkbox]")
+
+           // text
+          var text = g.selectAll(".text")
+          .data(dataNest)
+
+          d3.selectAll(".text").remove()
+
+         var text_enter = text.enter()
+          .append("text")
+          .attr("class", function(d) {
+            return "text " + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"].replace(/ /g, "")
+          })
+
+
+         var text_update = text.merge(text_enter)
+
+          text_update.attr("x", function(d) {
+            return width + 5
+          })
+          .attr("y", function(d) {
+            return yScale(d.values[2].Score)
+          })
+
+        text_update.text(function(d) {
+          if (d.values[0]["CANADIAN PRIVATE TECH COMPANIES"] == "ElementAI") return "Element.AI"
+          else return d.values[0]["CANADIAN PRIVATE TECH COMPANIES"]
+          })
+          .style("font-size", "12px")
+          .style("display", function(d) {
+            if(d.values[0].checked == true) return "none"
+            else return "none"
+          })
+
+
+          // lines
+
+          var lines = g.append("g").attr("class", "companies")
+          .selectAll("path")
+              .data(dataNest)
+
+            d3.selectAll(".nested").remove()
+
+           var lines_enter = lines.enter()
+              .append("g")
+              .attr("class", "nested")
+
+            var lines_update = lines.merge(lines_enter)
+
+          lines_update.append("path")
+              .attr("class", function(d) {
+                          return "line " + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"].replace(/ /g, "")
+              })
+              .attr("d", function(d) {
+                d.values[0].line = this;
+                d.values[1].line = this;
+                d.values[2].line = this;
+                return line(d.values)
+              } )
+              .style("fill", 0)
+              .attr("id", "lines")
+
+
+        lines_update.style("stroke", function(d, i) {
+                if(d.values[0].checked == true) {
+                  d3.select(this).raise()
+                }
+                if(d.values[0].checked == true) return color(d.values[0]["CANADIAN PRIVATE TECH COMPANIES"])
+                else return "#e6e6e6"
+              })
+              .style("stroke-width", 2)
+
+
+           var focus = g.append("g")
+                .attr("class", "focus")
+                .attr("transform", "translate(-100,-100)");
+
+            focus.append("circle")
+                .attr("r", 4.5);
+
+            focus.append("text")
+              .attr("y", -10)
+
+              var tooltip = d3.select("#tooltip")
+
+
+            var score_array = [];
+              data.forEach(function(d) {
+                score_array.push(d.Score)
+              })
+
+             var max_score = Math.max.apply(null, score_array)
+
+             d3.selectAll(".line_hover").remove()
+
+             d3.selectAll(".voronoi").remove();
+
+             var voronoiGroup = g.append("g")
+                   .attr("class", "voronoi");
+
+              voronoiGroup.selectAll("path")
+                .data(voronoi.polygons(d3.merge(dataNest.map(function(d) { return d.values; }))))
+                .enter()
+                .append("path")
+                .attr("d", function(d) { return d ? "M" + d.join("L") + "Z" : null; })
+                .on("mouseover", drawTooltip)
+                .on("mouseout", removeTooltip)
+
+
+
+
+
+             // var tipBox = g.append("rect")
+             //    .attr("width", width)
+             //    .attr("height", height)
+             //    .attr("opacity", 0)
+             //    .attr("class", "hover_rect")
+             //    .on("mousemove", drawTooltip)
+             //    .on("mouseout", removeTooltip)
+
+                function removeTooltip(d) {
+                   d3.select(d.data.line).classed("company-hover", false)
+                   focus.attr("transform", "translate(-100,-100)")
+                   tooltip.style("opacity", 0)
+              }
+
+
+              function drawTooltip(d){
+                const monthNames = ["January", "February", "March", "April", "May", "June",
+                  "July", "August", "September", "October", "November", "December"
+                ];
+                d3.select(d.data.line).classed("company-hover", true)
+                d.data.line.parentNode.appendChild(d.data.line);
+
+                focus.attr("transform", "translate(" + xScale(d.data.Date) + "," + yScale(d.data.Score) + ")")
+
+                var stroke = window.getComputedStyle(d.data.line).getPropertyValue("stroke")
+
+                focus.select("circle").style("stroke", stroke).style("fill", "white").style("stroke-width", 3).raise()
+
+
+                tooltip.html( "<p style = 'font-size: 13px'>" + monthNames[d.data.Date.getMonth()] + "</p>" +
+                        d.data["CANADIAN PRIVATE TECH COMPANIES"] + " " + "<span style ='font-weight: bold'>" + d.data.Score +"<span>" + '<br>' +"<br>"
+                  )
+                            .style("left", xScale(d.data.Date) + 26 + "px")
+                            .style("top", yScale(d.data.Score) + 60 + "px")
+                            .style("opacity", 1)
+                            .raise()
+
+                            if (w < 500) {
+                              tooltip.style("top", yScale(d.data.Score) + 100 + "px")
+                            }
+
+
+                // console.log(d.data["CANADIAN PRIVATE TECH COMPANIES"].parentNode.appendChild(d.data["CANADIAN PRIVATE TECH COMPANIES"]))
+
+                //  var line_node = d3.select(this)
+                // line_node.raise()
+                // line_node.style("stroke-width", 3)
+                //
+
+                // const line_hover = xScale.invert(d3.mouse(this)[0]);
+                // var date_hover = xScale.invert(d3.mouse(this)[0]).getMonth();
+                // var date_hover_text = monthNames[xScale.invert(d3.mouse(this)[0]).getMonth()];
+
+                //  var dateobj = xScale.invert(d3.mouse(this)[0]);
+                // if(dateobj.getDate() > 15) {
+                //   date_hover = date_hover + 1;
+                //   date_hover_text = monthNames[date_hover];
+
+                // }
+
+                // console.log(yScale.invert(d3.mouse(this)[1]))
+
+                                // console.log(date_hover_text)
+
+
+
+
+
+                // var tooltipY = d3.event.pageY = 160;
+
+                // var tooltipX = d3.event.pageX - 150 < 100 ? d3.event.pageX=100 : d3.event.pageX - 150
+                 // yScale.invert(pos.y)
+
+                // tooltipLine.attr("stroke", "grey")
+                //   .attr("x1", xScale(line_hover))
+                //   .attr("x2", xScale(line_hover))
+                //   .attr("y1", 0)
+                //   .attr("y2", height)
+                //   .attr("class", "line_hover")
+                //   .style('stroke-width', 1)
+
+
+
+
+                  // tooltip
+                  // .html("<p class='monthText'>"+ date_hover_text + " '" + (xScale.invert(d3.mouse(this)[0]).getFullYear() - 2000)+"</p>")
+                  //     .style("position", "absolute")
+                  //     .style('display', 'block')
+                  //     .style("opacity", 1)
+                  //     .style("background-color", "lightgrey")
+                  //     // .style("border", "2px solid grey")
+                  //     .style('left', tooltipX+ "px")
+                  //     .style('top', tooltipY + "px")
+                  //     .selectAll()
+                  //     .data(dataNest).enter()
+                  //     .append('div')
+                  //     .style("background-color", "lightgrey")
+                  //     .attr("class", "tooltipText")
+                  //     .style('color', "black")
+                  //     .html(function(e){
+
+                  //       return "<hr>"+ e.key + ': ' + e.values.find(function(h){ return (h.Date.getMonth()) == (date_hover) }).Score
+                  //     })
+              }
+
+
+              /// LEGEND ///
+
+          var legend_html = d3.select("#legend")
+
+          var legend_array = [];
+
+          inputs._groups[0].forEach(function(d){
+             legend_array.push({
+               checked: d.checked,
+                company: d.value
+             })
+           })
+
+           var legend = legend_html.selectAll(".legend-item")
+             .data(legend_array)
+
+             d3.selectAll(".legend").remove()
+
+          var legend_enter = legend.enter()
+             .append("span")
+             .attr("class", "legend")
+
+             legend_enter.append("div").attr("class", "color").attr("id", "true")
+             legend_enter.append("span").attr("class", "label")
+
+             var legend_update = legend.merge(legend_enter)
+
+             legend_update.select(".color")
+             .style("background-color", function(d, i) {
+              if (d.checked == true) return color(d.company)
+              else return "#e6e6e6"
+
+             })
+             .style("border", "1px")
+              .on("mouseover", function(d){
+
+                  var node = this
+                   lines_update.style("opacity", function(d, i) {
+                    if (node.id == d.key) return 1
+                    else return 0.1
+                  })
+                   text_update.style("display", function(d) {
+                    if (node.id == d.key) return "block"
+                    else return "none"
+                  })
+
+
+               })
+              .on("mouseout", function() {
+
+                  lines_update.style("opacity", 1)
+                  d3.selectAll(".text").style("display", "none")
+
+              })
+
+             legend_update.select(".label")
+               .html(function(d) {
+                 return d.company
+               })
+               .on("mouseover", function(d){
+
+                  var node = this.innerHTML
+                   lines_update.style("opacity", function(d, i) {
+                    if (node == d.key) return 1
+                    else return 0.1
+                  })
+                    text_update.style("display", function(d) {
+                    if (node == d.key) return "block"
+                    else return "none"
+                  })
+
+               })
+              .on("mouseout", function() {
+
+                lines_update.style("opacity", 1)
+                d3.selectAll(".text").style("display", "none")
+
+              })
+
+
+                legend_update.on("mouseover", function(d) {
+                  var node = this.childNodes[1].innerHTML
+                   lines_update.style("opacity", function(d, i) {
+                    if (node == d.key) return 1
+                    else return 0.1
+                  })
+                   text_update.style("display", function(d) {
+                    if (node == d.key) return "block"
+                    else return "none"
+                  })
+                })
+                .on("mouseout", function() {
+
+                lines_update.style("opacity", 1)
+                d3.selectAll(".text").style("display", "none")
+
+              })
+
+
+                /// checkboxes
+
+
+        d3.selectAll(".checkboxs")
+            .on("change", function(el){
+              var node = this
+
+               lines_update.style("stroke", function(d, i) {
+                if (d.values[0]["CANADIAN PRIVATE TECH COMPANIES"] == node.value && d.values[0].checked != node.checked) {
+                 d.values[0].checked = node.checked
+                }
+                if(d.values[0].checked == true) {
+                  d3.select(this).raise()
+                }
+                if(d.values[0].checked == true) return color(d.values[0]["CANADIAN PRIVATE TECH COMPANIES"]);
+                else return "#e6e6e6";
+
+              })
+              .style("stroke-width", 2)
+
+          text_update.text(function(d) {
+            if (d.values[0]["CANADIAN PRIVATE TECH COMPANIES"] == "ElementAI") return "Element.AI"
+            else return d.values[0]["CANADIAN PRIVATE TECH COMPANIES"]
+          })
+          .style("font-size", "12px")
+          .style("display", function(d) {
+            if (d.values[0]["CANADIAN PRIVATE TECH COMPANIES"] == node.value && d.values[0].checked != node.checked) {
+             d.values[0].checked = node.checked
+            }
+            if(d.values[0].checked == true) return "none"
+            else return "none"
+          })
+
+           legend_update.select(".color")
+             .style("background-color", function(d, i) {
+              if (d.company == node.value && d.checked != node.checked) {
+                 d.checked = node.checked
+                }
+              if (d.checked == false) return "#e6e6e6"
+              else return color(d.company)
+             })
+
+
+
+            })
+
+            d3.selectAll(".source").remove()
+
+            // svg.append("text")
+            // .attr("x", -26)
+            // .attr("y", h-65)
+            // .text("Source: The Logic")
+            // .attr("class", "source")
+            // .style("fill", "grey")
+
+
+          d3.selectAll(".logo").remove()
+
+          g.append("svg:image")
+          .attr('x', width-50)
+          .attr('y', height )
+          .attr("height", 100)
+          .attr("width", 100)
+          .attr("xlink:href", "The Logic_no slogan.png")
+          .attr("class", "logo")
+
+
+
+  })
+
+} // redraw
+
+redraw()
+
+    d3.select(window).on("resize", redraw)
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+  </body>
+</html>

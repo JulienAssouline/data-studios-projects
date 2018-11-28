@@ -501,9 +501,9 @@ function redraw() {
           d3.selectAll(".y_axis_title_shadow").remove()
           d3.selectAll(".y_axis_title").remove()
 
-         var y_axis_labels = g.append("text").attr("class", "y_axis_labels")
-         y_axis_labels.append("tspan").attr("class", "y_axis_title_shadow")
-         y_axis_labels.append("tspan").attr("class", "y_axis_title")
+         // var y_axis_labels = g.append("text").attr("class", "y_axis_labels")
+         // y_axis_labels.append("tspan").attr("class", "y_axis_title_shadow")
+         // y_axis_labels.append("tspan").attr("class", "y_axis_title")
 
           // y_axis_labels.select(".y_axis_title_shadow")
           // .attr("x", -15)
@@ -515,12 +515,14 @@ function redraw() {
           // .style("stroke", "#ffffff")
           // .raise()
 
-         y_axis_labels.select(".y_axis_title")
-          .attr("x", -15)
-          .attr("y", 4)
+         g.append("text").attr("class", "y_axis_labels")
+          .attr("x", -280)
+          .attr("y", -40)
           .text("The Logic score")
-          .style("font-size", "12px")
+          .style("font-size", "14px")
           .style("fill", "black")
+          // .style("font-weight", "bold")
+           .attr("transform", "rotate(-90)")
           .raise()
 
 

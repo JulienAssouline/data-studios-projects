@@ -18,7 +18,6 @@ body,html{
   fill: #ccc;
   stroke: #fff;
 }
-
 /*#button{
   position: absolute;
   cursor: pointer;
@@ -28,32 +27,25 @@ body,html{
     padding: 10px 10px;
     border: 0.5px solid darkgrey;
 }*/
-
 button:focus {outline:0;}
-
 input:focus {outline:0;}
-
 .vertical_line{
 transform: rotate(90deg);
 width: 10%
 }
-
 #checkbox-buttons{
 display: block;
  position: absolute;
  overflow:auto;
  opacity: 1;
 }
-
 .input_labels{
   margin-left: 5px;
 }
-
 .text_label{
   display: inline-block;
   margin-bottom: 12px;
    vertical-align: middle;
-
 }
 .checkboxs {
   -webkit-appearance: none;
@@ -65,7 +57,6 @@ position: relative;
 .checkboxs:active, .checkboxs:checked:active {
   box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
 }
-
 .checkboxs:checked {
   background-color: #fafafa;
   border: 2px solid black;
@@ -80,7 +71,6 @@ position: relative;
   bottom: 0px;
   color: black;
 }
-
 .checkbox-title{
 font-size: 15px;
   text-align:left;
@@ -94,20 +84,16 @@ font-size: 15px;
     background-color: #eee;
     overflow:auto;
 }
-
 #input_wrapper{
   position: absolute;
   display: block;
 }
-
-
 input{
 background-color: #fff;
 border: 13px solid #333;
    background: #fff;
   color: #333;
 }
-
 #legend{
   position: absolute;
   left: 55px;
@@ -117,25 +103,20 @@ border: 13px solid #333;
   cursor: pointer;
   overflow:auto;
 }
-
 .legend{
   width: auto;
   padding-left:10px;
-
 }
 .color {
   width: 11px;
   display: inline-block;
   height: 11px;
   background-color: red;
-
 }
 .label {
   display: inline-block;
   padding: 1em 0 0 0.4em
-
 }
-
 .axisx path {
     fill: none;
     stroke: white;
@@ -146,12 +127,10 @@ border: 13px solid #333;
     fill: none;
     stroke: grey;
   }
-
 .axisy path {
     fill: none;
     stroke: white;
   }
-
 .axisy line{
     fill: none;
     stroke: #dcd9d3;
@@ -160,27 +139,24 @@ border: 13px solid #333;
     opacity: 0.7;
     stroke-dasharray: 3,3;
   }
-
   .title{
   font-size: 30px;
-  text-align:left;
-  padding: 0em 0 0 2em;
+  text-align: center;
   font-family: "Playfair Display";
   font-weight: bold;
+
 }
 .subtitle{
   font-size: 15px;
   text-align:left;
   padding: 0em 0 0 4em;
 }
-
 .y_axis_title {
     -moz-box-shadow: 0 0 10px #ccc;
 -webkit-box-shadow: 0 0 10px #ccc;
 box-shadow: 0 0 10px #ccc;
 border-radius: 5px
 }
-
 /*.companies {
   fill: none;
   stroke: #aaa;
@@ -188,15 +164,12 @@ border-radius: 5px
   stroke-linecap: round;
   stroke-width: 1.5px;
 }*/
-
-
  /* h2{
     position: absolute;
     left: 355px;
     font-size: 20px;
   }*/
   * {-webkit-font-smoothing: antialiased;}
-
   #arrow {
   transform: rotate(90deg);
   display: inline-block;
@@ -204,7 +177,6 @@ border-radius: 5px
 #lines{
   fill: none;
 }
-
 #tooltip{
     width: 100px;
     pointer-events: none;
@@ -215,9 +187,7 @@ border: 1px solid black;
 background: white;
 border-radius: 2px;
 z-index: 1;
-
 }
-
 #tooltip:before {
   content: '';
   display: block;
@@ -229,10 +199,7 @@ z-index: 1;
   border-right: 8px solid transparent;
   left: 45px;
   top:73px;
-
 }
-
-
 .tooltipText {
    text-align: left;
    pointer-events: none;
@@ -243,7 +210,6 @@ z-index: 1;
   font-size: 12px;
   pointer-events: none;
 }
-
 #annotation{
   color: grey;
   position: absolute;
@@ -253,51 +219,40 @@ z-index: 1;
     -webkit-transform:rotate(90deg);
     position: absolute;
     width:10px;
-
-
 }
-
 .line_hover{
   fill: grey;
   stroke-width: 1px;
     shape-rendering: crispEdges;
     opacity: 1;
     stroke-dasharray: 2,2;
-
 }
 .hover_rect{
   cursor: crosshair;
 }
-
 .voronoi path {
   fill: none;
   pointer-events: all;
 }
-
 .company-hover{
   stroke-width: 3;
 }
-
 #buttons{
   padding: 8px 10px;
   cursor: pointer;
   border: 1px solid white;
-  @media screen and (max-width: 680px) {
-    padding: 1px 1px;
-  }
 }
-
 #buttons_wrapper{
   position: absolute;
+  width: 100%;
   top: 100px;
-  left: 55px;
+  left:0%;
 }
-
   </style>
   </head>
   <body>
 
-    <h2 class="title" id="title"> The Logic's opinion survey of private tech companies</h2>
+    <h2 class="title" id="title">The Logic's private tech company index</h2>
     <br>
     <!-- <p class="subtitle">Survey scores, October 2018</p> -->
 <!--     <p id ="annotation"> Hover/Tap to highlight a company</p>
@@ -314,7 +269,6 @@ z-index: 1;
 
 
   <script>
-
 var clicked = false;
 var clicked_text = false;
  var node_clicked;
@@ -323,17 +277,13 @@ var node_clicked_text;
 
 var wrapper = d3.select("#wrapper")
 
-
 wrapper.append("svg").attr("id", "chart")
-
 
 var h = 600;
 
 
 
 function redraw() {
-
-
 
   var margin = {
     left: 80,
@@ -344,41 +294,37 @@ function redraw() {
 
   var w = wrapper.node().getBoundingClientRect().width
 
-  if (w < 500) {
+  if (w < 580) {
     margin.top = 130
   }
 
   var width = w - margin.left - margin.right,
     height = h - margin.top - margin.bottom;
-
     /// Annotation ///
-
    var title = document.getElementById("title")
+
+   title.style.paddingLeft = (w*0)+"%"
 
    if(w < 500) {
        title.style.fontSize = 20+"px"
+       title.style.paddingLeft = 12+"%"
    }
    else if(w < 780) {
      title.style.fontSize = 25+"px"
+     title.style.paddingLeft = 12+"%"
    }
    else {
     title.style.fontSize = 30+"px"
    }
    //  annotation.style.left = w/2 +"px"
    //  annotation.style.top = 65 +"px"
-
    // var annotation_path = document.getElementById("annotation_path")
    // annotation_path.style.left = w/1.8 +"px"
    // annotation_path.style.top = 90 +"px"
-
-
-
               var svg = d3.select("#chart").attr("width", w)
               .attr("height", h)
-
             var g = svg.append("g")
              .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
 
               d3.selectAll(".tooltip").remove();
 
@@ -390,10 +336,8 @@ function redraw() {
               .style("padding", "3px")
 
 
-
               var parseTime = d3.timeParse("%B %Y")
               var bisectDate = d3.bisector(function(d) { return d.Date; }).left
-
 
               var xScale = d3.scaleTime()
               .range([0, width]);
@@ -412,7 +356,6 @@ function redraw() {
 
           var xtickFormat = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"]
 
-
           var xAxis = d3.axisBottom()
               .scale(xScale)
               .ticks(2)
@@ -423,26 +366,18 @@ function redraw() {
               .tickSize(-width,0,0)
               .tickSizeOuter(0)
 
-
-
              d3.csv("CANADIAN PRIVATE TECH COMPANIES The Logic.csv", function(error, data){
             data.forEach(function(d){
              d.Score = +d.Score
               d.Date = parseTime(d.Date)
             })
 
-
-
-
             xScale.domain(d3.extent(data, function(d) { return d.Date; }));
             yScale.domain(d3.extent(data, function(d) { return d.Score }))
-
             // checkbox
-
                d3.selectAll(".checkboxs").remove()
             d3.selectAll(".checkbox_label").remove()
             d3.selectAll("#input_wrapper").remove()
-
             // get unqiue keys
             var key_array = [...new Set(data.map(d => d["CANADIAN PRIVATE TECH COMPANIES"]))];
             var Score_array = [...new Set(data.map(d => d.Score))];
@@ -451,13 +386,9 @@ function redraw() {
               .domain(key_array)
               .range(['#e7a957',  '#5ba6c0', "#7565d0", "#0c1f25", '#d28d4c' ,  "#7ac7d8", '#de5e5e', '#6cb283', "#1b56dc", "#e06c61", "#80c538"]);
 
-
-
-
            var max_Month = Math.max.apply(Math, data.map(function(o) { return o.Date.getMonth(); }))
            var max_Year = Math.max.apply(Math, data.map(function(o) { return o.Date.getFullYear(); }))
            var max_Date = max_Month + max_Year
-
 
           var data_current =  data.filter(function(d){
               var month = d.Date.getMonth()
@@ -467,12 +398,10 @@ function redraw() {
             })
 
           data_current.sort(function(a,b) { return b.Score - a.Score})
-
             var svg_2 = d3.select("#check").attr("width", w)
               .attr("height", h)
               .append("g")
              .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
 
           d3.selectAll("#buttons_wrapper").remove()
 
@@ -502,36 +431,6 @@ function redraw() {
               else return "14px"
             })
 
-
-          console.log(w)
-
-
-         //     var input_width = wrapper.node().getBoundingClientRect().width/2.5
-         // var input_labels =  wrapper.append("div").attr("id", "input_wrapper")
-         //    .style("left", 50+"px")
-         //    .style("top", function(){
-         //      if(w < 500) return (h +150)+"px"
-         //      else return (h +130)+"px"
-
-         //    })
-         //    .selectAll(".inputs")
-         //         .data(data_current)
-         //         .enter()
-         //         .append("label")
-
-
-         //         input_labels.append("input")
-         //         .attr("type", "checkbox")
-         //         .attr("class", "checkboxs")
-         //         .property('checked', function(d, i){
-         //          if (i < 3) return true
-         //          else return false
-         //         })
-         //         .attr("value", function(d){
-         //           return d["CANADIAN PRIVATE TECH COMPANIES"]
-         //         })
-
-
                  d3.selectAll("label")
                  .data(data_current)
                  .attr("class", "input_labels")
@@ -555,26 +454,20 @@ function redraw() {
               })
 
 
-
             data.map(function(d) {
               buttons_array.forEach(function(e) {
                 if (d["CANADIAN PRIVATE TECH COMPANIES"] == e["CANADIAN PRIVATE TECH COMPANIES"]) {
                   return d.clicked = e.clicked
                 }
               })
-
              })
 
-
             // checkox_array
-
             var dataNest = d3.nest()
                     .key(function(d) {return d["CANADIAN PRIVATE TECH COMPANIES"];})
                     .entries(data);
-
             // axis
           d3.selectAll(".axisx").remove()
-
           g.append("g")
             .attr("class", "axisx")
 
@@ -582,7 +475,6 @@ function redraw() {
             var months = ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
             return months[this.getMonth()];
           };
-
 
           g.select(".axisx")
             .attr("transform", "translate(0," + height + ")")
@@ -598,11 +490,10 @@ function redraw() {
 
           g.append("g")
               .attr("class", "axisy")
-
               g.select(".axisy").attr("transform", "translate(0,0)")
               .call(yAxis)
               .selectAll("text")
-                  .attr("transform", "translate("+ 0 + ",0)")
+                  .attr("transform", "translate("+ -5 + ",0)")
                   .style("font-size", "12px")
                   .style("fill", "#707070")
 
@@ -611,7 +502,6 @@ function redraw() {
           d3.selectAll(".y_axis_title").remove()
 
          var y_axis_labels = g.append("text").attr("class", "y_axis_labels")
-
          y_axis_labels.append("tspan").attr("class", "y_axis_title_shadow")
          y_axis_labels.append("tspan").attr("class", "y_axis_title")
 
@@ -633,8 +523,8 @@ function redraw() {
           .style("fill", "black")
           .raise()
 
-           var  checked_boxes =d3.selectAll("input[type=checkbox]")
 
+           var  checked_boxes =d3.selectAll("input[type=checkbox]")
            // text
           var text = g.selectAll(".text")
           .data(dataNest)
@@ -647,9 +537,7 @@ function redraw() {
             return "text " + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"].replace(/ /g, "")
           })
 
-
          var text_update = text.merge(text_enter)
-
           text_update.attr("x", function(d) {
             return width + 5
           })
@@ -672,8 +560,9 @@ function redraw() {
           })
 
 
-          // lines
 
+
+          // lines
           var lines = g.append("g").attr("class", "companies")
           .selectAll("path")
               .data(dataNest)
@@ -688,17 +577,16 @@ function redraw() {
 
           lines_update.append("path")
               .attr("class", function(d) {
-                          return "line " + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"].replace(/ /g, "")
+                          return "line " + d.values[0]["CANADIAN PRIVATE TECH COMPANIES"]
               })
               .attr("d", function(d) {
                 d.values[0].line = this;
                 d.values[1].line = this;
                 d.values[2].line = this;
                 return line(d.values)
-              } )
+              })
               .style("fill", 0)
               .attr("id", "lines")
-
 
         lines_update.style("stroke", function(d, i) {
                 if(d.values[0].clicked == "clicked") {
@@ -709,6 +597,41 @@ function redraw() {
               })
               .style("stroke-width", 2.5)
 
+
+        // cirlces
+
+
+
+        var circles = g.selectAll(".circles")
+          .data(data)
+
+
+          d3.selectAll(".points").remove()
+
+         var circles_enter = circles.enter()
+          .append("circle")
+          .attr("class", "points")
+
+        var circles_update = circles.merge(circles_enter)
+
+        circles_update.attr("cx", function(d){
+          return xScale(d.Date)
+        })
+        .attr("cy", function(d) {
+          return yScale(d.Score)
+        })
+        .attr("r", 3)
+        .style("fill", "white")
+        .style("stroke-width", 3)
+        .style("stroke", function(d, i) {
+          if(d.clicked == "clicked") {
+                  d3.select(this).raise()
+                }
+          if(d.clicked == "clicked") return color(d["CANADIAN PRIVATE TECH COMPANIES"])
+          else return "#e6e6e6"
+        })
+
+        // hover
 
               d3.selectAll(".focus").remove();
 
@@ -724,7 +647,6 @@ function redraw() {
 
               var tooltip = d3.select("#tooltip")
 
-
             var score_array = [];
               data.forEach(function(d) {
                 score_array.push(d.Score)
@@ -733,7 +655,6 @@ function redraw() {
              var max_score = Math.max.apply(null, score_array)
 
              d3.selectAll(".line_hover").remove()
-
              d3.selectAll(".voronoi").remove();
 
              var voronoiGroup = g.append("g")
@@ -746,10 +667,6 @@ function redraw() {
                 .attr("d", function(d) { return d ? "M" + d.join("L") + "Z" : null; })
                 .on("mouseover", drawTooltip)
                 .on("mouseout", removeTooltip)
-
-
-
-
 
              // var tipBox = g.append("rect")
              //    .attr("width", width)
@@ -764,8 +681,8 @@ function redraw() {
                    focus.attr("transform", "translate(-100,-100)")
                    tooltip.style("opacity", 0)
                    d3.selectAll("path").style("opacity", 1)
+                   circles_update.style("opacity", 1)
               }
-
 
               function drawTooltip(d){
                 const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -773,7 +690,16 @@ function redraw() {
                 ];
 
                 d3.selectAll("path").style("opacity", 0.5)
+
+                circles_update.style("opacity", function(e){
+                  var lineClass = d.data.line.className.animVal
+                  var company_adjusted_name = "line " + e["CANADIAN PRIVATE TECH COMPANIES"]
+                  if(lineClass == company_adjusted_name) return 1
+                  else return 0.5
+                })
+
                 d3.select(d.data.line).classed("company-hover", true).style("opacity", 1)
+
                 d.data.line.parentNode.appendChild(d.data.line);
 
                 focus.attr("transform", "translate(" + xScale(d.data.Date) + "," + yScale(d.data.Score) + ")")
@@ -782,7 +708,6 @@ function redraw() {
 
                 focus.select("circle").style("stroke", stroke).style("fill", "white").style("stroke-width", 3).raise()
 
-
                 tooltip.html( "<p style = 'font-size: 13px'>" + monthNames[d.data.Date.getMonth()] + "</p>" +
                         d.data["CANADIAN PRIVATE TECH COMPANIES"] + " " + "<span style ='font-weight: bold'>" + d.data.Score +"<span>" + '<br>' +"<br>"
                   )
@@ -790,122 +715,21 @@ function redraw() {
                             .style("top", yScale(d.data.Score) + 90 + "px")
                             .style("opacity", 1)
                             .raise()
-
                             if (w < 500) {
                               tooltip.style("top", yScale(d.data.Score) + 130 + "px")
                             }
-
                             else if(w<780) {
                               tooltip.style("top", yScale(d.data.Score) + 70 + "px")
                             }
-
               }
 
 
-              /// LEGEND ///
-
-          // var legend_html = d3.select("#legend")
-
-          // var legend_array = [];
-
-          // inputs._groups[0].forEach(function(d){
-          //    legend_array.push({
-          //      checked: d.checked,
-          //       company: d.value
-          //    })
-          //  })
-
-          //  var legend = legend_html.selectAll(".legend-item")
-          //    .data(legend_array)
-
-          //    d3.selectAll(".legend").remove()
-
-          // var legend_enter = legend.enter()
-          //    .append("span")
-          //    .attr("class", "legend")
-
-          //    legend_enter.append("div").attr("class", "color").attr("id", "true")
-          //    legend_enter.append("span").attr("class", "label")
-
-          //    var legend_update = legend.merge(legend_enter)
-
-          //    legend_update.select(".color")
-          //    .style("background-color", function(d, i) {
-          //     if (d.checked == true) return color(d.company)
-          //     else return "#e6e6e6"
-
-          //    })
-          //    .style("border", "1px")
-          //     .on("mouseover", function(d){
-
-          //         var node = this
-          //          lines_update.style("opacity", function(d, i) {
-          //           if (node.id == d.key) return 1
-          //           else return 0.1
-          //         })
-          //          text_update.style("display", function(d) {
-          //           if (node.id == d.key) return "block"
-          //           else return "none"
-          //         })
-
-
-          //      })
-          //     .on("mouseout", function() {
-
-          //         lines_update.style("opacity", 1)
-          //         d3.selectAll(".text").style("display", "none")
-
-          //     })
-
-          //    legend_update.select(".label")
-          //      .html(function(d) {
-          //        return d.company
-          //      })
-          //      .on("mouseover", function(d){
-
-          //         var node = this.innerHTML
-          //          lines_update.style("opacity", function(d, i) {
-          //           if (node == d.key) return 1
-          //           else return 0.1
-          //         })
-          //           text_update.style("display", function(d) {
-          //           if (node == d.key) return "block"
-          //           else return "none"
-          //         })
-
-          //      })
-          //     .on("mouseout", function() {
-
-          //       lines_update.style("opacity", 1)
-          //       d3.selectAll(".text").style("display", "none")
-
-          //     })
-
-
-          //       legend_update.on("mouseover", function(d) {
-          //         var node = this.childNodes[1].innerHTML
-          //          lines_update.style("opacity", function(d, i) {
-          //           if (node == d.key) return 1
-          //           else return 0.1
-          //         })
-          //          text_update.style("display", function(d) {
-          //           if (node == d.key) return "block"
-          //           else return "none"
-          //         })
-          //       })
-          //       .on("mouseout", function() {
-
-          //       lines_update.style("opacity", 1)
-          //       d3.selectAll(".text").style("display", "none")
-
-          //     })
-
-
-                /// checkboxes
-
+                /// button interaction
           buttons.on("click", function(el){
+
               var node = this
               var button = d3.select(this)
+
               if(this.className == "clicked") {
                 button.classed("clicked", false)
               }
@@ -922,7 +746,6 @@ function redraw() {
                            else return "black"
                          })
 
-
                lines_update.style("stroke", function(d, i) {
                       if (d.values[0]["CANADIAN PRIVATE TECH COMPANIES"] == node.value && d.values[0].clicked != node.className) {
                        d.values[0].clicked = node.className
@@ -932,68 +755,26 @@ function redraw() {
                       }
                       if(d.values[0].clicked == "clicked") return color(d.values[0]["CANADIAN PRIVATE TECH COMPANIES"]);
                       else return "#e6e6e6";
-
                     })
 
+               circles_update.style("stroke", function(d, i) {
+                if (d["CANADIAN PRIVATE TECH COMPANIES"] == node.value && d.clicked != node.className) {
+                 d.clicked = node.className
+               }
 
-          })
-
-
-        // d3.selectAll(".checkboxs")
-        //     .on("change", function(el){
-        //       var node = this
-
-        //        lines_update.style("stroke", function(d, i) {
-        //         if (d.values[0]["CANADIAN PRIVATE TECH COMPANIES"] == node.value && d.values[0].checked != node.checked) {
-        //          d.values[0].checked = node.checked
-        //         }
-        //         if(d.values[0].checked == true) {
-        //           d3.select(this).raise()
-        //         }
-        //         if(d.values[0].checked == true) return color(d.values[0]["CANADIAN PRIVATE TECH COMPANIES"]);
-        //         else return "#e6e6e6";
-
-        //       })
-        //       .style("stroke-width", 2)
-
-        //   text_update.text(function(d) {
-        //     if (d.values[0]["CANADIAN PRIVATE TECH COMPANIES"] == "ElementAI") return "Element.AI"
-        //     else return d.values[0]["CANADIAN PRIVATE TECH COMPANIES"]
-        //   })
-        //   .style("font-size", "12px")
-        //   .style("display", function(d) {
-        //     if (d.values[0]["CANADIAN PRIVATE TECH COMPANIES"] == node.value && d.values[0].checked != node.checked) {
-        //      d.values[0].checked = node.checked
-        //     }
-        //     if(d.values[0].checked == true) return "none"
-        //     else return "none"
-        //   })
-
-        //    legend_update.select(".color")
-        //      .style("background-color", function(d, i) {
-        //       if (d.company == node.value && d.checked != node.checked) {
-        //          d.checked = node.checked
-        //         }
-        //       if (d.checked == false) return "#e6e6e6"
-        //       else return color(d.company)
-        //      })
-
-
-
-        //     })
+               if(d.clicked == "clicked") return color(d["CANADIAN PRIVATE TECH COMPANIES"]);
+               else return "#e6e6e6";
+               })
+          }) // button click
 
             d3.selectAll(".source").remove()
-
             // svg.append("text")
             // .attr("x", -26)
             // .attr("y", h-65)
             // .text("Source: The Logic")
             // .attr("class", "source")
             // .style("fill", "grey")
-
-
           d3.selectAll(".logo").remove()
-
           g.append("svg:image")
           .attr('x', width-50)
           .attr('y', height )
@@ -1001,26 +782,11 @@ function redraw() {
           .attr("width", 100)
           .attr("xlink:href", "The Logic_no slogan.png")
           .attr("class", "logo")
-
-
-
   })
-
 } // redraw
-
 redraw()
 
     d3.select(window).on("resize", redraw)
-
-
-
-
-
-
-
-
-
-
   </script>
 
 

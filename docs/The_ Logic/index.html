@@ -214,6 +214,21 @@ var wrapper = d3.select("#wrapper")
 
     function updateChart(data_chart){
 
+      // wrapper.append("p")
+      //   .html("Your birth year")
+      d3.selectAll(".birthyear").remove();
+
+     var text_box = wrapper.append("input")
+      .attr("type", "text")
+      .attr("id", "birthyear")
+      .attr("value", "Your birth year")
+      .on("click", function(){
+        this.value = ""
+      })
+
+
+      console.log(document.getElementById("birthyear").value)
+
       // console.log(data_chart)
       // var temp;
       // var year
@@ -273,7 +288,7 @@ var wrapper = d3.select("#wrapper")
        xScale.domain(d3.extent(data_chart, function(d) { return d.Month; }));
       yScale.domain(d3.extent(data_chart, function(d) { return d.Temperature }))
 
-                             d3.selectAll("path").remove()
+       d3.selectAll("path").remove()
 
         if(lines_update) {
           lines_update.style("stroke", "grey")
@@ -380,6 +395,18 @@ var wrapper = d3.select("#wrapper")
 
             // var node_temp = this.id
             //             console.log(node_temp)
+
+            var birthyear = document.getElementById("birthyear").value
+            console.log(birthyear)
+
+            if (d.key == birthyear) {
+              d3.select(this).style("stroke", "red").style("opacity", 1).style("stroke-width", "2px").style("stroke-dasharray", "2,2")
+
+              g.append("text")
+              .attr("x", width + 5)
+              .attr("y", yScale(d.values[d.values.length-1].Temperature))
+              .text(d.values[d.values.length-1].Year)
+            }
 
 
 

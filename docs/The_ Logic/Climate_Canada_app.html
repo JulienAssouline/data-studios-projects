@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+ <style type="text/css">
+      /* No style rules here yet */
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  #dropdown_provinces{
+  position: absolute;
+  width: 15%;
+  top: -60px;
+  left: 330px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  padding: 0.5em 3.5em 0.5em 1em;
+}
+select.classic{
+  background-image:
+    linear-gradient(45deg, transparent 50%, black 50%),
+    linear-gradient(135deg, black 50%, transparent 50%),
+    linear-gradient(to right, white, white);
+    background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+
+}
+
+
+#dropdown_city{
+  position: absolute;
+  width: 15%;
+  top: -10px;
+  left: 550px;
+  background-color: white;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #ccc;
+  -webkit-appearance: none;
+  padding: 0.5em 3.5em 0.5em 1em;
+}
+
+select.city{
+  background-image:
+    linear-gradient(45deg, transparent 50%, black 50%),
+    linear-gradient(135deg, black 50%, transparent 50%),
+    linear-gradient(to right, white, white);
+    background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+#birthyear{
+   position: absolute;
+   width: 11%;
+  top: -10px;
+  left: 330px;
+  background-color: white;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0.5em 3.5em 0.5em 1em;
+}
+
+
+.axisx path {
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+  }
+  .axisx line {
+    fill: none;
+    stroke: grey;
+  }
+.axisy path {
+    fill: none;
+    stroke: white;
+  }
+.axisy line{
+    fill: none;
+    stroke: #dcd9d3;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+    opacity: 0.7;
+    stroke-dasharray: 3,3;
+  }
+.year_label{
+  font-size: 15px;
+}
+#animating{
+  stroke: red;
+}
+
+#wrapper{
+   position: absolute;
+  top: 130px;
+}
+
+h2{
+  font-size: 20px;
+}
+
+
+
+  </style>
+  </head>
+  <body>
+  <h2> Explore how your city's climate has changed over the years </h2>
+  <div id = "wrapper"></div>
+
+  <script>
+
+var wrapper = d3.select("#wrapper")
+
+var w = window.innerWidth
+var h = 500;
+var timer;
+var years;
+var dropdown_provinces_change;
+
+var margin = {
+  left: 40,
+  right: 130,
+  top: 40,
+  bottom: 40
+}
+
+var width = w - margin.left - margin.right,
+    height = h - margin.top - margin.bottom;
+
+
+ var svg = wrapper.append("svg")
+    .attr("id", "chart")
+    .attr("width", w)
+    .attr("height", h)
+
+   var g = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var parseMonth = d3.timeParse("%b")
+
+
+
+    d3.csv("Canadian_cities_climate.csv", function(error, data){
+
+      data = data.filter(function(d){
+        if(isNaN(d.Temperature)){
+            return false;
+        }
+        return true;
+      });
+
+      data.forEach(function(d) {
+        d.Temperature = +d.Temperature
+        d.Annual = +d.Annual
+        d.Month = parseMonth(d.Month)
+      })
+    d3.csv("provinces_cities.csv", function(error, cities_provinces){
+
+
+
+    var unique_province = [...new Set(data.map(d => d.Province))];
+    years = [...new Set(data.map(d => d.Year))];
+
+    unique_province.sort();
+
+    unique_province.unshift("Your Province");
+
+
+   var provinces_dropdown = wrapper.append("select").attr("id", "dropdown_provinces").attr("class", "classic")
+      .selectAll(".provinces")
+      .data(unique_province)
+      .enter()
+      .append("option")
+      .attr("value", function(d){
+        return d
+      })
+      .attr("selected", function(d) {
+        if (d == "Your Province") return "selected";
+      })
+      .html(function(d){
+        return d
+      })
+      .attr("id", function(d){
+        if (d== "ON") return "True"
+        else return "False"
+      })
+
+
+
+
+
+     var dropdown = document.getElementById("dropdown_provinces")
+
+     var selected_province = [];
+     dropdown.childNodes.forEach(function(d) {
+      if (d.selected == true) {
+        selected_province.push(d)
+      }
+     })
+
+    var cities_filtered_data = cities_provinces.filter(function(d){ return d.Province == selected_province[0].value })
+
+    // change in province dropdown ///
+        var andOne = 0;
+
+
+      d3.select("#dropdown_provinces").on("change", function(e){
+
+          d3.selectAll(".birthyear").remove();
+
+     var text_box = wrapper.append("input")
+      .attr("type", "text")
+      .attr("id", "birthyear")
+      .attr("class", "birthyear")
+      .attr("value", "Your birth year")
+      .on("click", function(){
+        this.value = ""
+      })
+
+        dropdown_provinces_change = true
+       var changed_province = d3.select("#dropdown_provinces").property("value")
+
+      var cities_changed_filtered_data = cities_provinces.filter(function(d){ return d.Province == changed_province })
+
+      updateDropDown(cities_changed_filtered_data)
+
+      // update the chart based on city dropdown //
+
+       d3.select("#dropdown_city").on("change", function(el, i){
+
+
+
+
+        var changed_city = d3.select("#dropdown_city").property("value")
+
+        var data_filtered = data.filter(function(d){
+         var data = changed_city == "Your City" ? "" : (d.City == changed_city) && (d.Province == changed_province)
+          return data
+        })
+
+        var city = data_filtered[0].City
+
+        document.getElementById("birthyear").value
+
+        if(document.getElementById("birthyear").value == "Your birth year") {
+
+        }
+        else{
+          updateChart(data_filtered)
+        }
+
+
+      })
+
+       var dropdown_city = d3.select("#dropdown_city").property("value")
+       var data_filtered_initial = data.filter(function(d){ return (d.City == dropdown_city) && (d.Province == changed_province) })
+
+       // updateChart(data_filtered_initial)
+
+    })
+
+      // updateDropDown(cities_filtered_data)
+
+    function updateDropDown(data_cities) {
+
+
+      d3.selectAll(".city").remove();
+
+          data_cities.sort((a,b) => (a.City > b.City) ? 1 : ((b.City > a.City) ? -1 : 0));
+
+          data_cities.unshift({City: "Your City"});
+
+
+
+
+      wrapper.append("select").attr("id", "dropdown_city").attr("class", "city")
+       .selectAll(".cities")
+       .data(data_cities)
+       .enter()
+       .append("option")
+       .attr("value", function(d) {
+         return d.City
+       })
+       .attr("selected", function(d) {
+        if (d.City == "Your City") return "selected";
+      })
+       .html(function(d){
+         return d.City
+       })
+
+    } // updateDropDown
+
+    function updateChart(data_chart, andOne){
+
+     if(d3.select("#dropdown_city").value == "---") {
+      d3.selectAll("path").remove()
+     }
+
+
+
+    var birthyear = document.getElementById("birthyear").value
+
+      console.log(birthyear)
+
+
+      d3.selectAll("text").remove()
+
+     var xScale = d3.scaleLinear()
+              .range([0, width]);
+
+      var yScale = d3.scaleLinear()
+                .range([height, 0])
+
+
+      var xAxis = d3.axisBottom()
+          .scale(xScale)
+          .tickSizeOuter(0)
+
+        var yAxis = d3.axisLeft()
+          .scale(yScale)
+          .tickSize(-width,0,0)
+          .tickSizeOuter(0)
+
+      var annual_temp = [...new Set(data_chart.map(d => d.Annual))];
+
+     var max_temp = Math.max.apply(null, annual_temp)
+
+
+
+     var first = true;
+var nextBiggest;
+var newRecord;
+
+// calculate the record years
+  var record_years_array = [];
+    data_chart.forEach(function(d) {
+
+      if (first == true) {
+         nextBiggest = d.Annual
+         first = false
+        }
+
+         if (nextBiggest < d.Annual) {
+          nextBiggest = d.Annual
+          if (nextBiggest == d.Annual) {
+
+            record_years_array.push({
+              record_year: true,
+              year: d.Year
+            })
+
+          }
+        }
+
+    })
+
+    // merge record years into dataset
+
+     data_chart.map(function(d) {
+              record_years_array.forEach(function(e) {
+                if (d.Year == e.year) {
+                  return d.record_year = e.record_year
+                }
+              })
+             })
+
+
+    function removeDuplicates(myArr, prop) {
+    return myArr.filter((obj, pos, arr) => {
+        return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos;
+    });
+}
+
+
+ var bar_char_data = removeDuplicates(data_chart, "Year")
+
+
+     var data_chart_nest = d3.nest()
+      .key(function(d){ return d.Year})
+      .entries(data_chart)
+
+       xScale.domain(d3.extent(data_chart, function(d) { return d.Year; }));
+      yScale.domain(d3.extent(data_chart, function(d) { return d.Annual }))
+
+      var colorScale = d3.scaleLinear()
+  .domain(d3.extent(data_chart, function(d) { return d.Annual }))
+  .range([0,1]);
+
+
+       d3.selectAll("path").remove()
+
+
+    d3.selectAll(".axisx").remove()
+    d3.selectAll(".y_axis_title").remove()
+
+    g.append("text")
+      .attr("x", -20)
+      .attr("y", -20)
+      .text("Temperature (°C)")
+      .attr("class", "y_axis_title")
+      .style("font-size", "12px")
+      .style("fill", "#707070")
+
+
+    g.append("g")
+            .attr("class", "axisx")
+
+
+      Date.prototype.getMonthName = function() {
+            var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+            return months[this.getMonth()];
+          };
+
+     g.select(".axisx")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+              .selectAll("text")
+              .style("font-size", "12px")
+              .style("fill", "#707070")
+
+           d3.selectAll(".axisy").remove()
+
+          g.append("g")
+              .attr("class", "axisy")
+
+              g.select(".axisy").attr("transform", "translate(0,0)")
+              .call(yAxis)
+              .selectAll("text")
+                  .attr("transform", "translate("+ -5 + ",0)")
+                  .style("font-size", "12px")
+                  .style("fill", "#707070")
+
+     var rects = g.selectAll(".rects")
+        .data(bar_char_data)
+
+    d3.selectAll(".bars").remove()
+
+     var rects_enter = rects.enter()
+        .append("rect")
+        .attr("class", "bars")
+
+     var rects_update = rects.merge(rects_enter)
+
+    var rects_transition = rects_update.attr("x", function(d){
+        return xScale(d.Year)
+     })
+     .attr("width", 5)
+     .attr("y", height)
+     .attr("height", 0)
+     .style("fill", function(d){
+      if (d.Year == birthyear) return "black";
+      return d3.interpolateMagma(colorScale(d.Annual))
+     })
+     // .style("fill", function(d) {
+     //  if (d.Annual > 0) return "darkred"
+     //  else return "darkblue"
+     // })
+
+     d3.selectAll(".birthyear_annot").remove()
+     d3.selectAll(".birthyear_annot_back").remove()
+
+
+      g.selectAll(".text")
+       .data(bar_char_data)
+       .enter()
+       .append("text")
+       .text(function(d) {
+         if (d.Year == birthyear) return birthyear + " Born"
+       })
+       .attr("x", xScale(birthyear) + 10)
+       .attr("y", function(d) {
+      if (d.Annual > 0) return yScale(d.Annual) + 20
+      else return yScale(0) + 20
+     })
+       .attr("class", "birthyear_annot_back")
+       .style("opacity", 0)
+       .style("fill", "none")
+       .style("font-size", 15)
+       .style("stroke-width", 15*0.2)
+       .style("stroke", "#ffffff")
+       .transition()
+       .duration(500)
+       .delay(function(d, i) {
+         return i * 200;
+       })
+       .style("opacity", 1)
+
+     g.selectAll(".labels")
+      .data(bar_char_data)
+      .enter()
+      .append("text")
+      .text(function(d) {
+        if (d.Year == birthyear) return birthyear + " Born"
+      })
+      .attr("x", xScale(birthyear) + 10)
+      .attr("y", function(d) {
+      if (d.Annual > 0) return yScale(d.Annual) + 20
+      else return yScale(0) + 20
+     })
+      .attr("class", "birthyear_annot")
+      .style("font-size", 15)
+      .style("opacity", 0)
+      .transition()
+      .duration(500)
+      .delay(function(d, i) {
+        return i * 200;
+      })
+      .style("opacity", 1)
+
+
+
+
+
+
+
+      //    g.append("text")
+      // .attr("x", xScale(birthyear))
+      // .attr("y", yScale(max_temp))
+      // .text("Your birthyear " + birthyear)
+      // .attr("class", "birthyear_annot")
+      // .style("opacity", 0)
+      // .transition()
+      // .duration(500)
+      // .delay(function(d, i) {
+      //   return i * 200;
+      // })
+      // .style("opacity", 1)
+
+    rects_transition.transition()
+      .duration(500)
+      .delay(function(d, i) {
+        return i * 200;
+      })
+     .attr("y", function(d) {
+      if (d.Annual > 0) return yScale(d.Annual)
+      else return yScale(0)
+     })
+     .attr("height", function(d){
+        return Math.abs(yScale(d.Annual) - yScale(0))
+      })
+
+
+     rects_transition.on("mouseover", function(d){
+            d3.selectAll("rect").style("opacity", 0.3)
+
+      d3.select(this).style("opacity", 1)
+
+      var text_y = d.Annual > 0 ? yScale(d.Annual) - 10 : yScale(d.Annual) + 20
+
+       g.append("text")
+        .attr("x", xScale(d.Year) - 30)
+        .attr("y", text_y)
+        .text(d.Annual + "°C " + d.Year)
+        .style("fill", "grey")
+        .attr("class", "mouseover_ann_back")
+        .style("font-size", 12)
+        .style("fill", "none")
+        .style("stroke-width", 15*0.1)
+        .style("stroke", "#ffffff")
+
+      g.append("text")
+        .attr("x", xScale(d.Year) - 30)
+        .attr("y", text_y)
+        .text(d.Annual + "°C " + d.Year)
+        .style("fill", "grey")
+        .attr("class", "mouseover_ann")
+        .style("font-size", 12)
+
+
+     })
+     .on("mouseout", function(d) {
+            d3.selectAll("rect").style("opacity", 1)
+            d3.selectAll(".mouseover_ann").remove()
+            d3.selectAll(".mouseover_ann_back").remove()
+
+     })
+
+
+
+
+
+
+
+
+
+    } // updateChart
+
+
+
+
+
+       })// cities_provinces
+
+    }) // data
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+  </body>
+</html>

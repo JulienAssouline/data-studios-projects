@@ -69,6 +69,10 @@ hr {
     opacity: 0.7;
 }
 
+.name {
+  width: 100%;
+}
+
 .name h1 {
   letter-spacing: .15em;
   margin: 0 auto;
@@ -84,10 +88,10 @@ hr {
   from { width: 0 }
   to { width: 100% }
 }
-@keyframes blinking-cursor {
+/*@keyframes blinking-cursor {
   from, to { border-color: transparent }
   50% { border-color: orange }
-}
+}*/
 /*
 .name h1 {
   animation:

@@ -40,6 +40,17 @@ hr {
 
 }
 
+.blocks {
+  font-size:39px;
+  color: black;
+  margin-bottom:1em;
+  margin-right:15px;
+  cursor:pointer;
+  transition: 0.4s;
+  margin-top:0.5em;
+
+}
+
 .fa {
   font-size:39px;
   color: black;

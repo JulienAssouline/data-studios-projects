@@ -76,13 +76,12 @@ hr {
 .name h1 {
   letter-spacing: .15em;
   margin: 0 auto;
-  overflow: auto;
   white-space: no-wrap;
   border-right: .15em solid orange;
   animation:
     typing 3.5s steps(40, end),
-    blinking-cursor .5s step-end;
-}
+/*    blinking-cursor .5s step-end;
+*/}
 
 @keyframes typing {
   from { width: 0 }

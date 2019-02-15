@@ -69,19 +69,16 @@ hr {
     opacity: 0.7;
 }
 
-.name {
-  width: 100%;
-}
-
 .name h1 {
   letter-spacing: .15em;
   margin: 0 auto;
-  white-space: no-wrap;
-  border-right: .15em solid orange;
+/*  overflow: auto;
+*/  white-space: no-wrap;
+/*  border-right: .15em solid orange;*/
   animation:
     typing 3.5s steps(40, end),
-/*    blinking-cursor .5s step-end;
-*/}
+    /*blinking-cursor .5s step-end;*/
+}
 
 @keyframes typing {
   from { width: 0 }

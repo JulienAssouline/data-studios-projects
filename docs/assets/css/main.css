@@ -51,6 +51,10 @@ hr {
 
 }
 
+.blocks:hover {
+    opacity: 0.7;
+}
+
 .fa {
   font-size:25px;
   color: black;

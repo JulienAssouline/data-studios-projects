@@ -73,7 +73,7 @@ hr {
   letter-spacing: .15em;
   margin: 0 auto;
   overflow: hidden;
-  white-space: no-wrap;
+  white-space: nowrap;
 /*  border-right: .15em solid orange;*/
   animation:
     typing 3.5s steps(40, end),

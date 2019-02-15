@@ -70,11 +70,9 @@ hr {
 }
 
 .name h1 {
-  display: flex;
-  justify-content: center;
   letter-spacing: .15em;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   white-space: no-wrap;
 /*  border-right: .15em solid orange;*/
   animation:

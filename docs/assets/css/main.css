@@ -76,7 +76,7 @@ hr {
   border-right: .15em solid black;
   animation:
     typing 3.5s steps(40, end),
-    blinking-cursor .5s step-end 0;
+    blinking-cursor .5s step-end 6;
     border-right: .15em solid transparent;
 }
 

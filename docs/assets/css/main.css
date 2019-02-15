@@ -41,11 +41,13 @@ hr {
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+  font-size:39px;
+  color: #E94362;
+  margin-bottom:1em;
+  margin-right:15px;
+  cursor:pointer;
+  transition: 0.4s;
+  margin-top:0.5em;
 }
 
 

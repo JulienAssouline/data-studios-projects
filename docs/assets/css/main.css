@@ -70,7 +70,6 @@ hr {
 }
 
 .name h1 {
-  font-family: monospace;
   letter-spacing: .15em;
   margin: 0 auto;
   overflow: auto;
@@ -78,7 +77,7 @@ hr {
   border-right: .15em solid orange;
   animation:
     typing 3.5s steps(40, end),
-    blinking-cursor .5s step-end infinite;
+    blinking-cursor .5s step-end;
 }
 
 @keyframes typing {

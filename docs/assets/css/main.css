@@ -83,7 +83,7 @@ hr {
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 80% }
+  to { width: 100% }
 }
 @keyframes blinking-cursor {
   from, to { border-color: transparent }

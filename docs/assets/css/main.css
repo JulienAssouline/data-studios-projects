@@ -65,15 +65,36 @@ hr {
   margin-top:0.5em;
 }
 
-
-/*.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}*/
-
 .fa:hover {
     opacity: 0.7;
 }
+
+.name h1 {
+  font-family: monospace;
+  letter-spacing: .15em;
+  margin: 0 auto;
+  overflow: auto;
+  white-space: no-wrap;
+  border-right: .15em solid orange;
+  animation:
+    typing 3.5s steps(40, end),
+    blinking-cursor .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+/*
+.name h1 {
+  animation:
+    typing 3.5s steps(40, end),
+    blinking-cursor .5s step-end infinite;
+}*/
 
 h1 {
   font-size: 54px;

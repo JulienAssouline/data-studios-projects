@@ -76,7 +76,7 @@
 
     var paragraph = d3.select(".subheading")
 
-  var values = paragraph.html(paragraph.html().replace(/./g, "<div>$&</div>").replace(/\s/g, "&nbsp;"));
+  var values = paragraph.html(paragraph.html().replace(/\S+/g, "<div>$&</div>").replace(/\s/g, "&nbsp;"));
 
    function random(min, max){
     return (Math.random() * (max - min)) + min;

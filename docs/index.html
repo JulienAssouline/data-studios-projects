@@ -72,6 +72,33 @@
         </div>
     </header>
 
+        <script>
+
+    var paragraph = d3.select(".subheading")
+
+  var values = paragraph.html(paragraph.html().replace(/./g, "<div>$&</div>").replace(/\s/g, "&nbsp;"));
+
+   function random(min, max){
+    return (Math.random() * (max - min)) + min;
+   }
+
+   console.log(d3.selectAll("p div"))
+
+   d3.selectAll("p div").each(function(d,i) {
+    console.log(this)
+    TweenMax.from(this, 2.5, {
+          opacity: 0,
+          x: random(-500, 500),
+          y: random(-500, 500),
+          z: random(-500, 500),
+          scale: .1,
+          delay: i * .02,
+          yoyo: true,
+    })
+   })
+
+    </script>
+
     <!-- Main Content -->
 
       <h2> Projects </h2>
@@ -324,32 +351,6 @@
               </div>
                <br>
     </div>
-    <script>
-
-    var paragraph = d3.select(".subheading")
-
-  var values = paragraph.html(paragraph.html().replace(/./g, "<div>$&</div>").replace(/\s/g, "&nbsp;"));
-
-   function random(min, max){
-    return (Math.random() * (max - min)) + min;
-   }
-
-   console.log(d3.selectAll("p div"))
-
-   d3.selectAll("p div").each(function(d,i) {
-    console.log(this)
-    TweenMax.from(this, 2.5, {
-          opacity: 0,
-          x: random(-500, 500),
-          y: random(-500, 500),
-          z: random(-500, 500),
-          scale: .1,
-          delay: i * .02,
-          yoyo: true,
-    })
-   })
-
-    </script>
 </body>
 
 </html>

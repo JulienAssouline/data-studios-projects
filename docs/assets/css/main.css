@@ -139,6 +139,10 @@ span{
 
 }
 
+p div {
+  display: inline-block;
+}
+
 
 .text {
   text-decoration: none;

@@ -96,8 +96,6 @@ hr {
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
   animation: dash 5s linear forwards, filling 4s ease-in forwards;
-  animation-delay: 4s;
-
 }
 
 @keyframes dash {

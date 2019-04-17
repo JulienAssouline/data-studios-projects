@@ -85,7 +85,6 @@
    console.log(d3.selectAll("p div"))
 
    d3.selectAll("p div").each(function(d,i) {
-    console.log(this)
     TweenMax.from(this, 2.5, {
           opacity: 0,
           x: random(-500, 500),

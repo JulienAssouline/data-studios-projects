@@ -9,6 +9,9 @@
   background-color: white;
 }
 
+p div {
+  display: inline-block;
+}
 
 
 #nav {
@@ -137,10 +140,6 @@ span{
   font-size: 24px;
   line-height: 1.5;
 
-}
-
-p div {
-  display: inline-block;
 }
 
 

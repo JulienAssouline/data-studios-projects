@@ -85,13 +85,13 @@
    console.log(d3.selectAll("p div"))
 
    d3.selectAll("p div").each(function(d,i) {
-    TweenMax.from(this, 2.5, {
+    TweenMax.from(this, 3.5, {
+          delay: 2,
           opacity: 0,
           x: random(-500, 500),
           y: random(-500, 500),
           z: random(-500, 500),
           scale: .1,
-          delay: i * .02,
           yoyo: true,
     })
    })

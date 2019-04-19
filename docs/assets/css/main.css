@@ -72,6 +72,10 @@ hr {
     opacity: 0.7;
 }
 
+.box {
+  height: 240px;
+}
+
 /*.name h1 {
   letter-spacing: .15em;
   overflow: hidden;

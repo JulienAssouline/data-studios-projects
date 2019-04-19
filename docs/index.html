@@ -52,7 +52,6 @@
                             </svg>
                         </div>
                         <div class="box">
-                        <p class="subheading"> I'm a data/visual/interactive journalist. I'm a graduate of Ryerson University's journalism program. I've been an intern with CBC where I worked with the interactive team and Flourish where I was a template developer. I'm also a graduate of the 2017 Lede Program for Data Journalism.</p>
                       </div>
                         <span>
                           <a href="mailto:julien1993@hotmail.ca" class="fa fa-envelope"> </a>
@@ -74,6 +73,14 @@
 
         <script>
 
+
+    d3.select(".box")
+      .append("p")
+      .attr("class", "subheading")
+      .html("Animation is the process of creating the illusion of motion and shape change by means of the rapid display of a sequence of static images that minimally differ from each other. The illusion—as in motion pictures in general—is thought to rely on the phi phenomenon. Animators are artists who specialize in the creation of animation.")
+
+
+
     var paragraph = d3.select(".subheading")
 
   var values = paragraph.html(paragraph.html().replace(/\S+/g, "<div>$&</div>").replace(/\s/g, "&nbsp;"));
@@ -81,8 +88,6 @@
    function random(min, max){
     return (Math.random() * (max - min)) + min;
    }
-
-   console.log(d3.selectAll("p div"))
 
    d3.selectAll("p div").each(function(d,i) {
     TweenMax.from(this, 3.5, {
